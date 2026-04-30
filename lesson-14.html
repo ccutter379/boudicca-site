@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 14: Boudicca's Image Across Time | Boudicca Interactive</title>
+
+  <!-- Meta -->
+  <meta name="description" content="Interactive NSW Ancient History Stage 6 resource — Boudicca case study with explicit teaching, CFU activities, source analysis, and teacher facilitation tools.">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': { DEFAULT: '#1a1a2e', mid: '#16213e', light: '#2a4d7a' },
+            'burgundy': { DEFAULT: '#8b2635', light: '#a83242' },
+            'gold': { DEFAULT: '#c9a84c', light: '#e8d292' },
+          },
+          fontFamily: {
+            'serif': ['Playfair Display', 'Georgia', 'serif'],
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans" style="background: #fefcf9;">
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress"></div>
+
+  <!-- Navigation (Glassmorphism) -->
+  <nav class="site-nav">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-5">
+        <a href="index.html" class="text-white font-serif text-xl font-bold tracking-wide hover:text-gold transition-colors">
+          Boudicca
+        </a>
+        <span class="text-white/20 hidden sm:inline">|</span>
+        <span class="text-white/40 text-xs font-sans tracking-wider hidden sm:inline">Lesson 14 of 16</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <button class="teacher-toggle" aria-label="Toggle teacher facilitation notes">Teacher Mode</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="lesson-hero grad-hero" style="background: linear-gradient(165deg, rgba(26,26,46,0.92) 0%, rgba(22,33,62,0.88) 50%, rgba(26,39,68,0.92) 100%), url('images/thornycroft-statue.jpg') center/cover no-repeat;">
+    <div class="relative z-10 max-w-3xl mx-auto reveal">
+      <span class="chapter-badge">Chapter 4 &middot; Evidence, Legacy and Skills</span>
+      <p class="text-white/40 font-sans text-sm tracking-wider uppercase mb-3">Lesson 14</p>
+      <h1 class="hero-title font-serif text-white">Boudicca&rsquo;s Image<br>Across Time</h1>
+      <p class="hero-desc">
+        How has Boudicca&rsquo;s image been constructed, reconstructed, and contested across two millennia &mdash;
+        and what do these changing representations reveal about the societies that created them?
+      </p>
+      <p class="reading-time"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> ~28 min</p>
+      <!-- Syllabus Outcomes -->
+      <details class="mt-8">
+        <summary class="text-white/25 text-xs font-sans cursor-pointer hover:text-white/40 transition-colors uppercase tracking-[0.15em]">
+          NESA Syllabus Outcomes
+        </summary>
+        <div class="mt-3 text-white/35 text-xs font-sans space-y-1 leading-relaxed">
+          <p><strong class="text-white/50">AH11-7:</strong> Discusses and evaluates differing interpretations and representations of the past</p>
+          <p><strong class="text-white/50">AH11-8:</strong> Plans and conducts historical investigations and presents reasoned conclusions, using relevant evidence from a range of sources</p>
+          <p><strong class="text-white/50">AH11-1:</strong> Describes the nature of continuity and change in the ancient world</p>
+        </div>
+      </details>
+    </div>
+    <!-- Decorative number -->
+    <div class="absolute bottom-6 right-8 font-serif text-white/[0.03] font-extrabold pointer-events-none select-none hidden md:block" style="font-size: 14rem; line-height: 1;">14</div>
+  </section>
+
+
+  <!-- ==========================================
+       LEARNING INTENTION & SUCCESS CRITERIA
+       ========================================== -->
+  <section id="lisc" class="full-section grad-lisc">
+    <div class="section-inner reveal">
+      <span class="section-label bg-navy/[0.07] text-navy">Learning Intention</span>
+      <h2 class="section-heading">What You&rsquo;ll Learn</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-8">
+        To understand how Boudicca&rsquo;s image and reputation have been constructed, reconstructed, and contested across two millennia, and to analyse what these changing representations reveal about the societies that created them.
+      </p>
+
+      <div>
+        <h3 class="font-sans text-xs font-bold uppercase tracking-[0.12em] text-gray-400 mb-2">Success Criteria</h3>
+        <p class="sc-progress-text text-xs text-gray-400 mb-1">0 of 4 criteria met</p>
+        <div class="sc-progress"><div class="sc-progress-bar"></div></div>
+        <p class="text-sm text-gray-500 mb-4">By the end of this lesson, I can:</p>
+        <div class="space-y-1">
+          <div class="sc-item"><input type="checkbox" id="sc1"><label for="sc1">Trace the changing representations of Boudicca from the Roman period to the present.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc2"><label for="sc2">Explain how Victorian Britain appropriated Boudicca&rsquo;s image for nationalist purposes.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc3"><label for="sc3">Analyse the feminist reclamation of Boudicca in the twentieth century.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc4"><label for="sc4">Evaluate the post-colonial critique of Boudicca&rsquo;s legacy and what it reveals about historical memory.</label></div>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Sharing LISC</p>
+        <p>Display the learning intention and success criteria on the board. Read them aloud and ask students to identify the <em>key verbs</em> (trace, explain, analyse, evaluate). Emphasise that this lesson returns to Lesson 1&rsquo;s themes at a deeper, more analytical level. Check understanding: <strong>&ldquo;Can someone remind us what historiography means, from Lesson 1?&rdquo;</strong> (cold call).</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       ACTIVATING PRIOR KNOWLEDGE
+       ========================================== -->
+  <section id="prior-knowledge" class="full-section grad-prior relative">
+    <span class="section-number">?</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-white/50 text-amber-700">Before We Begin</span>
+      <h2 class="section-heading">Retrieval Practice</h2>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        In Lesson 1, you were introduced to <strong>historiography</strong> and explored how the Thornycroft statue reflects Victorian values.
+        This lesson returns to those themes with a full case study of how Boudicca&rsquo;s image has changed across time.
+      </p>
+
+      <div class="mb-6">
+        <p class="font-sans text-sm font-semibold text-gray-700 mb-2">Quick retrieval &mdash; think back to what you&rsquo;ve learned:</p>
+        <div class="poll-options">
+          <button class="poll-btn">I remember Lesson 1 well</button>
+          <button class="poll-btn">I remember some of it</button>
+          <button class="poll-btn">I need a refresher</button>
+          <button class="poll-btn">I missed Lesson 1</button>
+        </div>
+      </div>
+
+      <div>
+        <label class="font-sans text-sm font-semibold text-gray-700 block mb-2" for="prior-text">
+          Write down two things you remember about how Boudicca has been represented differently across time periods:
+        </label>
+        <textarea id="prior-text" class="w-full border border-black/[0.08] rounded-2xl p-4 text-sm font-sans leading-relaxed resize-y bg-white/60 backdrop-blur min-h-[90px] focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-all"
+                  placeholder="For example: What did the Thornycroft statue tell us about the Victorians? What is presentism? Who were the Roman authors who wrote about Boudicca?"></textarea>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Activating Prior Knowledge</p>
+        <p>Use <strong>cold call</strong> to ask 3&ndash;4 students to share their retrieval answers. Key concepts to surface: historiography, the Thornycroft statue as Victorian projection, Tacitus and Dio as biased Roman sources. Frame this lesson as &ldquo;going deeper&rdquo; into the pattern they identified in Lesson 1.</p>
+        <p class="mt-2"><strong>Retrieval check:</strong> &ldquo;True or false: Historiography is the study of ancient artefacts. Thumbs up for true, down for false.&rdquo; (Answer: false &mdash; historiography is the study of how history is written and interpreted.) If fewer than 80% correct, recap the definition before proceeding.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 1: THE ROMAN CONSTRUCTION
+       ========================================== -->
+  <section id="chunk-1" class="full-section grad-chunk1 relative">
+    <span class="section-number">01</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-burgundy/10 text-burgundy">Chunk 1 of 4</span>
+      <h2 class="section-heading">The Roman Construction: Barbarian and Foil</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling (&lsquo;I Do&rsquo;)</p>
+        <p><strong>Read the first paragraph aloud</strong> and model analytical thinking: &ldquo;Notice that Tacitus didn&rsquo;t write about Boudicca because he thought she was great &mdash; he used her story to criticise how Rome governed its provinces. So even when he&rsquo;s sympathetic, he&rsquo;s not on her side. He&rsquo;s using her.&rdquo;</p>
+        <p class="mt-2">Ask: <strong>&ldquo;If the only person writing your story was your enemy, how might that change what gets recorded?&rdquo;</strong></p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          In Lesson 1, you were introduced to the concept of historiography &mdash; the study of how history is written and interpreted.
+          Lesson 14 returns to that theme with a full case study: how has Boudicca&rsquo;s image changed from the Roman period to the present day,
+          and what do those changes tell us about the societies that constructed them?
+        </p>
+        <p>
+          Boudicca is one of the most striking examples in British history of a figure whose meaning has been almost entirely constructed
+          by those who came after her. She left no writings, no recorded speeches in her own words, no monuments of her own making.
+          Every image of Boudicca &mdash; from Tacitus&rsquo;s &ldquo;wronged queen&rdquo; to Thornycroft&rsquo;s imperial warrior, from Victorian
+          nationalist hero to feminist icon &mdash; is a projection of later values onto a figure who cannot answer back.
+        </p>
+        <p>
+          The Roman writers who created the historical record of Boudicca were not neutral observers.
+          <strong>Tacitus</strong>, writing under the emperors Nerva and Trajan in the late first century AD,
+          used Boudicca as a vehicle for criticising Roman provincial misgovernance. His Boudicca is a wronged queen driven to revolt
+          by legitimate grievances &mdash; but she is also &ldquo;barbarian,&rdquo; and her revolt is ultimately defeated by Roman military
+          discipline and rational governance. For Tacitus, the revolt&rsquo;s lesson is not that Romans should liberate conquered peoples,
+          but that they should govern them justly &mdash; because injustice produces dangerous instability.
+        </p>
+        <p>
+          <strong>Cassius Dio&rsquo;s</strong> Boudicca, written over a century later, is more sensational. Dio describes her physical
+          appearance in extraordinary detail &mdash; red hair, fierce gaze, harsh voice, tall imposing frame &mdash; in ways that fit
+          the Roman literary genre of &ldquo;ethnographic&rdquo; description, which routinely attributed distinctive physical traits to
+          barbarian peoples to mark them as fundamentally different from Romans. His Boudicca is a figure of spectacle as much as history.
+        </p>
+        <p>
+          Both representations, despite their differences, share a fundamental structure: Boudicca is allowed heroic or sympathetic qualities,
+          but she remains &ldquo;other&rdquo; &mdash; a barbarian whose defeat confirms the ultimate rightness of Roman civilisation.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="c"
+           data-feedback-correct="Correct! Both Tacitus and Dio present Boudicca sympathetically in some ways, but ultimately she remains a 'barbarian other' whose defeat confirms the rightness of Roman civilisation. They are using her story for Roman purposes."
+           data-feedback-incorrect="Not quite. While both writers give Boudicca some heroic qualities, the key shared structure is that she remains an 'other' &mdash; a barbarian whose defeat ultimately confirms that Roman civilisation was right and superior.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p>Use <strong>cold call</strong>. If the majority answer incorrectly, re-teach by comparing Tacitus&rsquo;s and Dio&rsquo;s purposes: &ldquo;Both writers used Boudicca, but for different reasons. What they share is that her defeat proves Rome was right.&rdquo;</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">What do the accounts of Tacitus and Cassius Dio have in common in their representation of Boudicca?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q1" class="mt-0.5"><span>Both writers describe Boudicca&rsquo;s physical appearance in identical detail</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q1" class="mt-0.5"><span>Both writers present Boudicca as fully heroic and without flaws</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q1" class="mt-0.5"><span>Both portray her as sympathetic but ultimately a &ldquo;barbarian other&rdquo; whose defeat confirms Roman superiority</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q1" class="mt-0.5"><span>Both writers were present during the revolt and recorded events first-hand</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 2: MEDIEVAL SILENCE & REDISCOVERY
+       ========================================== -->
+  <section id="chunk-2" class="full-section grad-chunk2 relative">
+    <span class="section-number">02</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-purple-100 text-purple-700">Chunk 2 of 4</span>
+      <h2 class="section-heading">The Medieval Silence and Renaissance Rediscovery</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Guided Reading (&lsquo;We Do&rsquo;)</p>
+        <p>Have students read this section silently. Then use <strong>think-pair-share</strong>: &ldquo;Why did Boudicca disappear for almost a thousand years, and what brought her back?&rdquo; (60 seconds). Cold call 2&ndash;3 pairs.</p>
+        <p class="mt-2">Emphasise the connection between political context and historical memory: Henry VIII&rsquo;s England needed a story about defying Rome.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          After the fall of the Western Roman Empire in the late fifth century AD, Boudicca virtually disappeared from historical memory.
+          Medieval European culture drew its sense of British identity from different sources &mdash; the <strong>Arthurian legend</strong>,
+          the Anglo-Saxon foundation myths, <strong>Christian martyrology</strong> &mdash; and had little use for a pagan Celtic warrior queen.
+        </p>
+        <p>
+          The rediscovery of Boudicca in the sixteenth century was directly connected to the recovery of classical texts after the
+          <strong>Renaissance</strong> and the growth of English national consciousness. When the Italian humanist <strong>Polydore Vergil</strong>
+          published his <em>Historia Anglica</em> in 1534, drawing on Tacitus and Dio, he reintroduced Boudicca&rsquo;s story to English
+          readers for the first time in centuries. The timing was not coincidental: <strong>Henry VIII&rsquo;s England</strong>, asserting its
+          independence from Roman papal authority, found in the story of an ancient Briton defying Rome a useful historical precedent.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="d"
+           data-feedback-correct="Correct! The timing of Boudicca's rediscovery was no accident &mdash; Henry VIII's England was breaking from Rome's religious authority and needed historical examples of Britons who had successfully defied Rome."
+           data-feedback-incorrect="Not quite. The key reason for the timing was political: Henry VIII's England was asserting independence from the Roman papacy, and an ancient Briton who defied Rome was a useful precedent.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">Why was the rediscovery of Boudicca&rsquo;s story in 1534 &ldquo;not coincidental&rdquo;?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q2" class="mt-0.5"><span>New archaeological evidence of her revolt was discovered in that year</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q2" class="mt-0.5"><span>The printing press had just been invented, making books available</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q2" class="mt-0.5"><span>Medieval scholars had always known about her but chose not to write about her</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q2" class="mt-0.5"><span>Henry VIII&rsquo;s England was breaking from Rome and needed a historical precedent of Britons defying Roman authority</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 3: THE VICTORIAN APOTHEOSIS
+       ========================================== -->
+  <section id="chunk-3" class="full-section grad-chunk3 relative">
+    <span class="section-number">03</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-amber-100 text-amber-700">Chunk 3 of 4</span>
+      <h2 class="section-heading">The Victorian Apotheosis: Queen and Empress</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling: Irony Analysis</p>
+        <p><strong>Model the irony explicitly:</strong> &ldquo;A woman who fought <em>against</em> an empire was turned into a symbol <em>for</em> an empire. That&rsquo;s irony &mdash; and it&rsquo;s the most important point of this section.&rdquo;</p>
+        <p class="mt-2">Ask: <strong>&ldquo;Can you think of any modern examples where someone&rsquo;s story has been used to support something they would have opposed?&rdquo;</strong></p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Boudicca&rsquo;s transformation into a nationalist icon reached its peak in <strong>Victorian Britain</strong>.
+          The parallels between &ldquo;Boudicca&rdquo; (meaning &ldquo;victory&rdquo;) and &ldquo;Victoria&rdquo; (meaning the same thing in Latin)
+          were irresistible to Victorian commentators. A warrior queen who had defied Rome was a perfect symbol for an empire that,
+          in Victorian eyes, had surpassed Rome.
+        </p>
+        <p>
+          The <strong>Thornycroft statue</strong>, commissioned in the 1850s with the involvement of Prince Albert and finally erected
+          at Westminster Bridge in 1902, is the definitive Victorian Boudicca. She stands triumphant in a Roman-style chariot (not a Celtic one),
+          her arm extended in an imperial gesture, her daughters crouching beneath her &mdash; a vision of maternal empire. The plinth quotation
+          from Cowper&rsquo;s 1782 poem &mdash; &ldquo;Regions Caesar never knew / Thy posterity shall sway&rdquo; &mdash; explicitly positions
+          Boudicca as the forerunner of British imperial expansion.
+        </p>
+        <p>
+          The irony is profound: <strong>a woman who fought against imperial conquest was appropriated as a symbol of empire</strong>.
+          A Celtic tribal queen was turned into a proto-British nationalist. The statue tells us nothing about the historical Boudicca
+          and everything about the anxieties and ambitions of mid-Victorian Britain.
+        </p>
+      </div>
+
+      <!-- Secondary Source Box: Cowper -->
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-2">Secondary Source</p>
+        <p class="text-gray-600 text-sm mb-3">
+          <strong>Provenance:</strong> William Cowper, &ldquo;Boadicea: An Ode&rdquo; (1782), stanza 10. Published in Cowper&rsquo;s <em>Poems</em> (London, 1782).
+          Cowper (1731&ndash;1800) was an English poet writing during the reign of George III, at a time of expanding British imperial power.
+          The poem imagines a dying Druid prophesying Britain&rsquo;s future global empire &mdash; using Boudicca&rsquo;s revolt as the origin point of a triumphant national destiny.
+        </p>
+        <blockquote class="border-l-4 border-gold pl-4 italic text-gray-700 my-4">
+          &ldquo;Regions Caesar never knew<br>
+          &nbsp;&nbsp;Thy posterity shall sway,<br>
+          Where his eagles never flew,<br>
+          &nbsp;&nbsp;None invincible as they.&rdquo;
+        </blockquote>
+        <p class="text-gray-600 text-sm">
+          <strong>Historian&rsquo;s note:</strong> Cowper&rsquo;s poem is a striking example of how representations of Boudicca reveal far more about the era producing them than about the historical figure herself.
+          Writing in 1782 &mdash; at the height of British imperial expansion and during the reign of George III &mdash; Cowper transforms a Celtic rebel who fought <em>against</em> an empire into a prophet who foresees one.
+          The deep irony is unmistakable: Boudicca, whose revolt was driven by resistance to colonial exploitation, is here recruited to celebrate the very project of empire-building.
+          Note that Cowper uses the name &ldquo;Boadicea&rdquo; &mdash; a Latinised corruption of the original Brittonic name &mdash; which itself signals how far this reimagining is from any authentic Celtic voice.
+          When evaluating this source, students should ask: whose purposes does this representation serve, and what does it tell us about British national identity in the late eighteenth century?
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="b"
+           data-feedback-correct="Correct! The fundamental irony is that Boudicca fought against imperial conquest, yet the Victorians used her as a symbol to celebrate and justify their own empire. The anti-imperialist was appropriated for imperialism."
+           data-feedback-incorrect="Not quite. The key irony is about appropriation: Boudicca resisted empire, but the Victorians turned her into a symbol celebrating empire. She was used to justify the very thing she fought against.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p><strong>Gesture voting:</strong> &ldquo;Hold up A, B, C, or D with your fingers. On three &mdash; one, two, three &mdash; show me.&rdquo; If fewer than 80% show B, re-teach the irony using the Cowper poem as evidence.</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">What is the &ldquo;profound irony&rdquo; of the Victorian appropriation of Boudicca?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q3" class="mt-0.5"><span>The Victorians gave her a Roman chariot instead of a Celtic one</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q3" class="mt-0.5"><span>A woman who fought against imperial conquest was used as a symbol to celebrate empire</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q3" class="mt-0.5"><span>The statue was placed near Parliament rather than in a museum</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q3" class="mt-0.5"><span>Queen Victoria never visited the completed statue</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 4: FEMINIST & POST-COLONIAL RECLAMATIONS
+       ========================================== -->
+  <section id="chunk-4" class="full-section grad-chunk4 relative">
+    <span class="section-number">04</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-blue-100 text-blue-700">Chunk 4 of 4</span>
+      <h2 class="section-heading">Twentieth-Century Reclamations: Feminist and Post-Colonial</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Scaffolding: Comparing Perspectives</p>
+        <p>Before reading, set up a comparison: &ldquo;We&rsquo;re going to see two more versions of Boudicca. As you read, think about: What does each group <em>want</em> Boudicca to represent? And what are the problems with each approach?&rdquo;</p>
+        <p class="mt-2"><strong>Think-pair-share</strong> after reading: &ldquo;Which critique &mdash; feminist or post-colonial &mdash; do you find more convincing, and why?&rdquo;</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          The <strong>1970s women&rsquo;s liberation movement</strong> brought a new lens to Boudicca&rsquo;s story. Feminist historians and writers
+          reclaimed her as a symbol of female resistance against patriarchal and colonial power &mdash; a woman who refused to accept
+          the limitations imposed on her sex and her people by a conquering masculine empire. From this perspective, the Roman accounts
+          of her defeat were reread not as evidence of the inevitable triumph of Roman civilisation, but as the suppression of female
+          power by an anxious masculine establishment.
+        </p>
+        <p>
+          This feminist reclamation was politically valuable but historically complex. The ancient sources do not clearly position Boudicca
+          as a feminist in any modern sense &mdash; she fought as a tribal queen defending her people&rsquo;s honour and land, not as an advocate
+          for women&rsquo;s rights. Projecting modern feminist values onto her is a form of <strong>presentism</strong> &mdash; interpreting
+          the past through contemporary categories that did not exist at the time.
+        </p>
+        <p>
+          <strong>Post-colonial scholarship</strong> from the 1990s onward added a further layer of critique. Scholars began to examine how
+          Boudicca&rsquo;s image had been used by British imperialists &mdash; how the anti-imperial rebel had been turned into an imperialist symbol &mdash;
+          and to argue that this appropriation itself reflected the dynamics of colonial power. From a post-colonial perspective, the very act of
+          naming streets, pubs, and regiments after Boudicca in Britain was a form of symbolic violence: absorbing the resistant Other into the
+          imperial narrative and defusing her challenge.
+        </p>
+        <p>
+          Most recently, Celtic and British identity scholars have argued for the importance of acknowledging Boudicca&rsquo;s defeat as a
+          <strong>colonial tragedy</strong> &mdash; the destruction of a people and their culture &mdash; rather than celebrating her revolt as a
+          romantic story of heroic resistance that ultimately failed. This perspective foregrounds the long-term losses of Celtic culture under
+          Roman and later imperial domination.
+        </p>
+      </div>
+
+      <!-- Featured image: feminist/post-colonial infographic -->
+      <figure class="featured-image">
+        <img src="images/feminist-postcolonial.png" alt="Infographic comparing feminist and post-colonial perspectives on Boudicca, showing how each framework reinterprets her image and legacy." loading="lazy">
+        <figcaption class="caption"><strong>Feminist and Post-Colonial Perspectives on Boudicca.</strong> Each framework reinterprets the same historical figure through a different analytical lens, revealing different aspects of her significance.</figcaption>
+      </figure>
+
+      <!-- Timeline summary -->
+      <h3 class="font-serif text-xl font-bold text-navy mt-10 mb-4">Representations Timeline</h3>
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Date</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Event</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white/70">
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy whitespace-nowrap">c. AD 117</td><td class="px-5 py-3 text-gray-600">Tacitus: Boudicca as wronged queen; revolt as product of Roman misgovernance.</td></tr>
+            <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy whitespace-nowrap">c. AD 220</td><td class="px-5 py-3 text-gray-600">Cassius Dio: Boudicca as sensational barbarian spectacle.</td></tr>
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy whitespace-nowrap">500&ndash;1534</td><td class="px-5 py-3 text-gray-600">Medieval silence; Boudicca largely absent from historical memory.</td></tr>
+            <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy whitespace-nowrap">1534</td><td class="px-5 py-3 text-gray-600">Polydore Vergil rediscovers Boudicca in classical sources; reintroduces to English readers.</td></tr>
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy whitespace-nowrap">1611</td><td class="px-5 py-3 text-gray-600">John Fletcher&rsquo;s play <em>Bonduca</em> &mdash; Boudicca as theatrical spectacle.</td></tr>
+            <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy whitespace-nowrap">1782</td><td class="px-5 py-3 text-gray-600">Cowper&rsquo;s ode &ldquo;Boadicea&rdquo; &mdash; proto-imperialist symbol.</td></tr>
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy whitespace-nowrap">1856&ndash;1902</td><td class="px-5 py-3 text-gray-600">Thornycroft commission and statue &mdash; Victorian imperial icon.</td></tr>
+            <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy whitespace-nowrap">1970s</td><td class="px-5 py-3 text-gray-600">Feminist reclamation &mdash; symbol of female resistance.</td></tr>
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy whitespace-nowrap">1990s&ndash;2000s</td><td class="px-5 py-3 text-gray-600">Post-colonial critique &mdash; interrogation of imperial appropriation.</td></tr>
+            <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy whitespace-nowrap">2020s</td><td class="px-5 py-3 text-gray-600">Ongoing debate about Celtic identity, colonial memory, and historical ethics.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="c"
+           data-feedback-correct="Correct! Presentism means interpreting the past through present-day values and categories. Calling Boudicca a 'feminist' applies a modern concept to someone who lived in a world where that concept did not exist &mdash; she fought as a tribal queen, not as an advocate for women's rights."
+           data-feedback-incorrect="Not quite. The concern is about presentism &mdash; projecting modern values backward in time. Boudicca fought as a tribal queen defending her people, not as a feminist in the modern sense. Calling her a feminist imposes present-day categories on a very different past.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">Why is calling Boudicca a &ldquo;feminist icon&rdquo; historically problematic?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q4" class="mt-0.5"><span>Because the Roman sources prove she did not support women&rsquo;s rights</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q4" class="mt-0.5"><span>Because she lost the revolt, which undermines her status as an icon</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q4" class="mt-0.5"><span>Because it is presentism &mdash; projecting modern feminist values onto someone who fought as a tribal queen, not a women&rsquo;s rights advocate</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q4" class="mt-0.5"><span>Because Victorian writers had already claimed her as a nationalist symbol</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+
+      <div class="sequence-activity" data-answer="0,1,2,3,4,5">
+        <h3>Sequence the Periods</h3>
+        <p class="text-gray-700 font-medium mb-4">Put these periods of Boudicca&rsquo;s representation in chronological order (earliest first):</p>
+        <div class="sequence-items">
+          <div class="sequence-item" data-idx="3" draggable="true">Victorian imperial icon</div>
+          <div class="sequence-item" data-idx="5" draggable="true">Post-colonial critique</div>
+          <div class="sequence-item" data-idx="0" draggable="true">Roman construction (Tacitus &amp; Dio)</div>
+          <div class="sequence-item" data-idx="4" draggable="true">Feminist reclamation</div>
+          <div class="sequence-item" data-idx="1" draggable="true">Medieval silence</div>
+          <div class="sequence-item" data-idx="2" draggable="true">Renaissance rediscovery</div>
+        </div>
+        <button class="check-btn" style="margin-top:1rem">Check Sequence</button>
+        <div class="cfu-feedback" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       INDEPENDENT PRACTICE: REVIEW QUESTIONS
+       ========================================== -->
+  <section id="practice" class="full-section grad-practice relative">
+    <span class="section-number">Q</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-green-100 text-green-700">Independent Practice</span>
+      <h2 class="section-heading">Review Questions</h2>
+      <p class="text-sm text-gray-500 mb-6">Choose the level that challenges you, or work through all three.</p>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Independent Practice (&lsquo;You Do&rsquo;)</p>
+        <p>Students should attempt these <strong>only after a high success rate</strong> on the CFU questions. Direct all students to Foundation first.</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> Students answer Foundation Q3 on a sticky note before leaving.</p>
+      </div>
+
+      <div class="tab-group">
+        <button class="tab-btn active" data-tab="foundation">Foundation</button>
+        <button class="tab-btn" data-tab="standard">Standard</button>
+        <button class="tab-btn" data-tab="extension">Extension</button>
+      </div>
+
+      <div class="tab-content active" id="foundation" data-tab="foundation">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Identify and describe</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>What does the name &ldquo;Boudicca&rdquo; mean, and what Victorian parallel did this suggest?</li>
+          <li>In what decade was the Thornycroft statue finally erected at Westminster Bridge?</li>
+          <li>What is &ldquo;presentism&rdquo; in historical method?</li>
+        </ol>
+      </div>
+      <div class="tab-content" id="standard" data-tab="standard">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Analyse and explain</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Explain how the Victorian image of Boudicca both reflected and served the ideology of British imperialism.</li>
+          <li>Analyse how the feminist reclamation of Boudicca in the 1970s differed from the Victorian appropriation.</li>
+          <li>Using the Cowper source above, assess what this poem reveals about eighteenth-century English attitudes to empire and national identity.</li>
+        </ol>
+      </div>
+      <div class="tab-content" id="extension" data-tab="extension">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Evaluate and debate</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Evaluate the claim that &ldquo;every representation of Boudicca tells us more about the period that created it than about the historical figure herself.&rdquo; Argue a position with reference to at least three distinct historical periods.</li>
+          <li>Critically assess the post-colonial critique of Boudicca&rsquo;s legacy. Does acknowledging the political uses of historical memory undermine the validity of celebrating her revolt, or does it enhance our historical understanding?</li>
+          <li>Design a historiographical framework for analysing representations of a historical figure. Using Boudicca as your case study, demonstrate how this framework can be applied across multiple time periods and perspectives.</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="text-sm text-gray-600">By now you should structure responses independently using PEEL. If you need a refresher, revisit <a href="lesson-15.html" class="text-navy font-medium underline">Lesson 15: Essay Skills</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       KEY TERMS: FLASHCARD GLOSSARY
+       ========================================== -->
+  <section id="key-terms" class="full-section grad-terms relative">
+    <span class="section-number">A&ndash;Z</span>
+    <div class="section-inner">
+      <div class="flex items-end justify-between mb-6 reveal">
+        <div>
+          <span class="section-label bg-purple-100 text-purple-700">Key Terms</span>
+          <h2 class="section-heading mb-0">Glossary</h2>
+        </div>
+        <button class="glossary-view-toggle text-sm text-navy font-semibold hover:text-burgundy transition-colors cursor-pointer">
+          Switch to List View
+        </button>
+      </div>
+      <p class="text-sm text-gray-500 mb-6 reveal">Click each card to reveal its definition.</p>
+
+      <!-- Flashcards -->
+      <div class="flashcard-grid reveal-stagger">
+        <div class="flashcard" tabindex="0" role="button" aria-label="Flashcard: Historiography">
+          <div class="flashcard-inner"><div class="flashcard-front">Historiography</div><div class="flashcard-back">The study of how historical accounts are created, who creates them, why, and how interpretations change over time.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Presentism</div><div class="flashcard-back">The tendency to interpret the past through the values and categories of the present, often leading to anachronistic conclusions.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Post-colonial</div><div class="flashcard-back">A critical perspective that examines the ongoing effects of colonialism and the ways in which colonial power shapes historical memory and representation.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Appropriation</div><div class="flashcard-back">The act of taking something (an image, a symbol, a person) from its original context and using it for a different, often contrary, purpose.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Apotheosis</div><div class="flashcard-back">The elevation of a person (or concept) to the highest possible status; sometimes used to describe the most extreme glorification of a historical figure.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Feminist Historiography</div><div class="flashcard-back">An approach to history that centres the experiences of women and examines how gender has shaped historical events and their recording.</div></div>
+        </div>
+      </div>
+
+      <!-- List View (hidden) -->
+      <div class="glossary-list hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+            <thead>
+              <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/4">Term</th>
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Definition</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white/70">
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Historiography</td><td class="px-5 py-3 text-gray-600">The study of how historical accounts are created, who creates them, why, and how interpretations change over time.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Presentism</td><td class="px-5 py-3 text-gray-600">The tendency to interpret the past through the values and categories of the present, often leading to anachronistic conclusions.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Post-colonial</td><td class="px-5 py-3 text-gray-600">A critical perspective that examines the ongoing effects of colonialism and the ways in which colonial power shapes historical memory and representation.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Appropriation</td><td class="px-5 py-3 text-gray-600">The act of taking something from its original context and using it for a different, often contrary, purpose.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Apotheosis</td><td class="px-5 py-3 text-gray-600">The elevation of a person or concept to the highest possible status; the most extreme glorification of a historical figure.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Feminist historiography</td><td class="px-5 py-3 text-gray-600">An approach to history that centres the experiences of women and examines how gender has shaped historical events and their recording.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       REVIEW OF LEARNING
+       ========================================== -->
+  <section id="review" class="full-section grad-review relative">
+    <div class="section-inner reveal">
+      <span class="section-label bg-gold/20 text-amber-700">Review of Learning</span>
+      <h2 class="section-heading">How Did You Go?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6 text-[1.05rem]">
+        Return to the success criteria from the start of this lesson. Can you now tick off each one?
+        If any remain unticked, scroll back and review the relevant section.
+      </p>
+
+      <div class="space-y-3">
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">1</span>
+          <span class="text-gray-700">Trace the changing representations of Boudicca from the Roman period to the present.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">2</span>
+          <span class="text-gray-700">Explain how Victorian Britain appropriated Boudicca&rsquo;s image for nationalist purposes.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">3</span>
+          <span class="text-gray-700">Analyse the feminist reclamation of Boudicca in the twentieth century.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">4</span>
+          <span class="text-gray-700">Evaluate the post-colonial critique of Boudicca&rsquo;s legacy and what it reveals about historical memory.</span>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Review of Learning</p>
+        <p><strong>Self-assessment</strong> for each criterion: &ldquo;Thumbs up if confident, sideways if partly there, down if you need more help.&rdquo;</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> &ldquo;On a sticky note, write one sentence explaining why Boudicca&rsquo;s image has changed so many times across history.&rdquo; Collect as students leave.</p>
+      </div>
+
+      <!-- Exit Ticket -->
+      <div class="exit-ticket">
+        <h4>Exit Ticket</h4>
+        <label class="text-sm text-gray-600 block mb-1">One thing I learned today:</label>
+        <textarea placeholder="What was the most important thing you learned in this lesson?"></textarea>
+        <label class="text-sm text-gray-600 block mb-1">One question I still have:</label>
+        <textarea placeholder="What are you still unsure about or want to know more about?"></textarea>
+      </div>
+
+      <!-- Reflection -->
+      <div class="reflection-panel">
+        <h4>Self-Reflection</h4>
+        <p class="text-sm text-gray-600 mb-2">How confident do you feel about this lesson&rsquo;s content?</p>
+        <div class="confidence-scale">
+          <button class="confidence-btn">1<br><span class="text-[0.65rem]">Not yet</span></button>
+          <button class="confidence-btn">2<br><span class="text-[0.65rem]">Getting there</span></button>
+          <button class="confidence-btn">3<br><span class="text-[0.65rem]">Mostly</span></button>
+          <button class="confidence-btn">4<br><span class="text-[0.65rem]">Confident</span></button>
+          <button class="confidence-btn">5<br><span class="text-[0.65rem]">Mastered</span></button>
+        </div>
+        <label class="text-sm text-gray-600 block mt-3 mb-1">What do you want to revisit before the next lesson?</label>
+        <textarea class="reflection-text" placeholder="Any topics, terms, or skills you want to review?"></textarea>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       LESSON NAVIGATION
+       ========================================== -->
+  <section class="py-12 px-6" style="background: #fefcf9;">
+    <div class="max-w-3xl mx-auto lesson-nav-footer flex items-center justify-between">
+      <a href="lesson-13.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        Lesson 13
+      </a>
+      <span class="text-xs text-gray-300 tracking-wider uppercase">Lesson 14 of 16</span>
+      <a href="lesson-15.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        Lesson 15
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 text-center" style="background: linear-gradient(180deg, #fefcf9, #f5f3ed);">
+    <p class="text-sm text-gray-400 font-sans">
+      NSW Ancient History Stage 6 &middot; NESA Syllabus (2017) &middot; Case Study A
+    </p>
+    <p class="text-xs text-gray-300 mt-2 font-sans">Created by Cheryl Cutter</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glossary | Boudicca Interactive</title>
+
+  <!-- Meta -->
+  <meta name="description" content="Complete glossary of key terms for the Boudicca case study — NSW Ancient History Stage 6.">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': { DEFAULT: '#1a1a2e', mid: '#16213e', light: '#2a4d7a' },
+            'burgundy': { DEFAULT: '#8b2635', light: '#a83242' },
+            'gold': { DEFAULT: '#c9a84c', light: '#e8d292' },
+          },
+          fontFamily: {
+            'serif': ['Playfair Display', 'Georgia', 'serif'],
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .glossary-search {
+      width: 100%;
+      border: 1.5px solid rgba(0,0,0,0.1);
+      border-radius: 999px;
+      padding: 0.75rem 1.25rem 0.75rem 3rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      transition: all 0.25s;
+      background: rgba(255,255,255,0.7) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%235a5a6a' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='M21 21l-4.35-4.35'/%3E%3C/svg%3E") 1rem center no-repeat;
+    }
+    .glossary-search:focus {
+      outline: none;
+      border-color: var(--color-navy);
+      box-shadow: 0 0 0 3px rgba(26, 26, 46, 0.1);
+      background-color: white;
+    }
+    body.dark-mode .glossary-search {
+      background-color: rgba(255,255,255,0.05);
+      border-color: rgba(255,255,255,0.1);
+      color: #d0d0d8;
+    }
+    .glossary-entry {
+      padding: 1rem 1.25rem;
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,0.04);
+      transition: all 0.2s;
+    }
+    .glossary-entry:hover {
+      background: rgba(255,255,255,0.5);
+    }
+    .glossary-entry.hidden-by-search { display: none; }
+    .chapter-group { margin-bottom: 2rem; }
+    body.dark-mode .glossary-entry {
+      border-color: rgba(255,255,255,0.04);
+    }
+    body.dark-mode .glossary-entry:hover {
+      background: rgba(255,255,255,0.03);
+    }
+  </style>
+</head>
+<body class="font-sans" style="background: #fefcf9;">
+
+  <!-- Navigation -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-5">
+        <a href="index.html" class="text-white font-serif text-xl font-bold tracking-wide hover:text-gold transition-colors">
+          Boudicca
+        </a>
+        <span class="text-white/20 hidden sm:inline">|</span>
+        <span class="text-white/40 text-xs font-sans tracking-wider hidden sm:inline">Glossary</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <button class="teacher-toggle" aria-label="Toggle teacher facilitation notes">Teacher Mode</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="full-section grad-hero" style="padding: 7rem 1.5rem 4rem; min-height: auto;">
+    <div class="section-inner text-center reveal">
+      <span class="inline-block bg-white/[0.08] text-gold-light font-sans text-[0.7rem] font-semibold uppercase tracking-[0.2em] px-4 py-1.5 rounded-full mb-6 backdrop-blur-sm border border-white/[0.06]">
+        All 16 Lessons
+      </span>
+      <h1 class="font-serif text-white font-extrabold mb-4" style="font-size: clamp(2.5rem, 7vw, 4rem); letter-spacing: -0.02em;">
+        Glossary
+      </h1>
+      <p class="text-white/50 font-sans max-w-lg mx-auto">
+        Every key term from the Boudicca unit in one place. Search, browse by chapter, or use the flashcard view for revision.
+      </p>
+    </div>
+  </section>
+
+  <!-- Search -->
+  <section class="full-section" style="background: linear-gradient(180deg, #f5f3ed, #fefcf9); padding: 2.5rem 1.5rem;">
+    <div class="section-inner">
+      <input type="text" class="glossary-search" id="glossary-search" placeholder="Search terms..." aria-label="Search glossary terms">
+      <p class="text-xs text-gray-400 mt-2 text-center" id="search-count">107 terms across 16 lessons</p>
+    </div>
+  </section>
+
+  <!-- Glossary Content -->
+  <section class="full-section" style="background: #fefcf9; padding: 2rem 1.5rem 5rem;">
+    <div class="section-inner" style="max-width: 900px;">
+
+      <!-- Chapter 1 -->
+      <div class="chapter-group reveal">
+        <h2 class="font-serif text-xl font-bold text-navy mb-1">Chapter 1: Context and Background</h2>
+        <p class="text-xs text-gray-400 uppercase tracking-wider mb-4">Lessons 1&ndash;4</p>
+        <div class="space-y-1">
+          <div class="glossary-entry" data-term="agency"><span class="font-semibold text-navy">Agency</span> <span class="text-xs text-gray-400 ml-1">L7</span><p class="text-sm text-gray-600 mt-0.5">The capacity of an individual to act independently and make their own decisions; the power to influence events.</p></div>
+          <div class="glossary-entry" data-term="annexation"><span class="font-semibold text-navy">Annexation</span> <span class="text-xs text-gray-400 ml-1">L4</span><p class="text-sm text-gray-600 mt-0.5">The formal takeover of a territory by a foreign power.</p></div>
+          <div class="glossary-entry" data-term="bias"><span class="font-semibold text-navy">Bias</span> <span class="text-xs text-gray-400 ml-1">L1</span><p class="text-sm text-gray-600 mt-0.5">A tendency to favour one perspective, which can distort the presentation of information.</p></div>
+          <div class="glossary-entry" data-term="celtic"><span class="font-semibold text-navy">Celtic</span> <span class="text-xs text-gray-400 ml-1">L2</span><p class="text-sm text-gray-600 mt-0.5">Relating to a group of peoples sharing common linguistic, artistic, and religious traditions spread across Iron Age Europe.</p></div>
+          <div class="glossary-entry" data-term="client king"><span class="font-semibold text-navy">Client King</span> <span class="text-xs text-gray-400 ml-1">L4</span><p class="text-sm text-gray-600 mt-0.5">A local ruler recognised by Rome in exchange for loyalty, tribute, and cooperation.</p></div>
+          <div class="glossary-entry" data-term="client kingdom"><span class="font-semibold text-navy">Client Kingdom</span> <span class="text-xs text-gray-400 ml-1">L2</span><p class="text-sm text-gray-600 mt-0.5">A state that retains internal self-rule in exchange for loyalty, tribute, and military support to a more powerful overlord.</p></div>
+          <div class="glossary-entry" data-term="colonia"><span class="font-semibold text-navy">Colonia</span> <span class="text-xs text-gray-400 ml-1">L3</span><p class="text-sm text-gray-600 mt-0.5">A Roman colony, often settled by retired soldiers, designed to spread Roman culture and maintain control.</p></div>
+          <div class="glossary-entry" data-term="druid"><span class="font-semibold text-navy">Druid</span> <span class="text-xs text-gray-400 ml-1">L2</span><p class="text-sm text-gray-600 mt-0.5">A Celtic religious leader, judge, and educator who transmitted knowledge through oral tradition.</p></div>
+          <div class="glossary-entry" data-term="historiography"><span class="font-semibold text-navy">Historiography</span> <span class="text-xs text-gray-400 ml-1">L1</span><p class="text-sm text-gray-600 mt-0.5">The study of how history is written, interpreted, and revised across time.</p></div>
+          <div class="glossary-entry" data-term="honour culture"><span class="font-semibold text-navy">Honour Culture</span> <span class="text-xs text-gray-400 ml-1">L4</span><p class="text-sm text-gray-600 mt-0.5">A social system in which status and identity depend significantly on public reputation and the ability to defend one's dignity.</p></div>
+          <div class="glossary-entry" data-term="iceni"><span class="font-semibold text-navy">Iceni</span> <span class="text-xs text-gray-400 ml-1">L2</span><p class="text-sm text-gray-600 mt-0.5">A Celtic tribe of eastern Britain (modern Norfolk, Suffolk, and parts of Cambridgeshire) and the people led by Boudicca.</p></div>
+          <div class="glossary-entry" data-term="iconography"><span class="font-semibold text-navy">Iconography</span> <span class="text-xs text-gray-400 ml-1">L1</span><p class="text-sm text-gray-600 mt-0.5">The use of images and symbols to represent particular ideas or figures.</p></div>
+          <div class="glossary-entry" data-term="imperial cult"><span class="font-semibold text-navy">Imperial Cult</span> <span class="text-xs text-gray-400 ml-1">L3</span><p class="text-sm text-gray-600 mt-0.5">The worship of the Roman emperor as a divine figure, a key mechanism of political loyalty in the provinces.</p></div>
+          <div class="glossary-entry" data-term="la tene"><span class="font-semibold text-navy">La T&egrave;ne</span> <span class="text-xs text-gray-400 ml-1">L2</span><p class="text-sm text-gray-600 mt-0.5">The third and most sophisticated phase of Celtic culture, c. 500 BC&ndash;AD 100, characterised by distinctive curvilinear art.</p></div>
+          <div class="glossary-entry" data-term="oral tradition"><span class="font-semibold text-navy">Oral Tradition</span> <span class="text-xs text-gray-400 ml-1">L1, L2</span><p class="text-sm text-gray-600 mt-0.5">The practice of passing knowledge, laws, and history down through spoken word, story, and song rather than writing.</p></div>
+          <div class="glossary-entry" data-term="primary source"><span class="font-semibold text-navy">Primary Source</span> <span class="text-xs text-gray-400 ml-1">L1</span><p class="text-sm text-gray-600 mt-0.5">A source created at or close to the time of the events being studied.</p></div>
+          <div class="glossary-entry" data-term="procurator"><span class="font-semibold text-navy">Procurator</span> <span class="text-xs text-gray-400 ml-1">L3, L4</span><p class="text-sm text-gray-600 mt-0.5">A senior Roman official responsible for financial administration in a province. Catus Decianus was the procurator who triggered the revolt.</p></div>
+          <div class="glossary-entry" data-term="representation"><span class="font-semibold text-navy">Representation</span> <span class="text-xs text-gray-400 ml-1">L1</span><p class="text-sm text-gray-600 mt-0.5">A portrayal or depiction of a person, event, or idea, shaped by the creator's perspective and context.</p></div>
+          <div class="glossary-entry" data-term="resistance"><span class="font-semibold text-navy">Resistance</span> <span class="text-xs text-gray-400 ml-1">L3</span><p class="text-sm text-gray-600 mt-0.5">Active opposition to Roman rule, ranging from maintaining traditional customs to armed revolt.</p></div>
+          <div class="glossary-entry" data-term="romanisation"><span class="font-semibold text-navy">Romanisation</span> <span class="text-xs text-gray-400 ml-1">L3</span><p class="text-sm text-gray-600 mt-0.5">The process by which conquered peoples adopted Roman language, culture, law, and institutions.</p></div>
+          <div class="glossary-entry" data-term="scourging"><span class="font-semibold text-navy">Scourging</span> <span class="text-xs text-gray-400 ml-1">L4</span><p class="text-sm text-gray-600 mt-0.5">Flogging or whipping as a punishment. Applying it to Boudicca was a public act of humiliation.</p></div>
+          <div class="glossary-entry" data-term="secondary source"><span class="font-semibold text-navy">Secondary Source</span> <span class="text-xs text-gray-400 ml-1">L1</span><p class="text-sm text-gray-600 mt-0.5">A source created after the events, often interpreting primary sources.</p></div>
+          <div class="glossary-entry" data-term="sestertius"><span class="font-semibold text-navy">Sestertius</span> <span class="text-xs text-gray-400 ml-1">L4</span><p class="text-sm text-gray-600 mt-0.5">A Roman coin; the standard unit of accounting for large sums in the early empire.</p></div>
+          <div class="glossary-entry" data-term="torc"><span class="font-semibold text-navy">Torc</span> <span class="text-xs text-gray-400 ml-1">L2, L6, L13</span><p class="text-sm text-gray-600 mt-0.5">A twisted metal neck-ring, typically gold or silver, worn by Celtic elites as a symbol of status.</p></div>
+          <div class="glossary-entry" data-term="tribe"><span class="font-semibold text-navy">Tribe</span> <span class="text-xs text-gray-400 ml-1">L2</span><p class="text-sm text-gray-600 mt-0.5">A social and political group organised around kinship, shared territory, and loyalty to a common leader.</p></div>
+          <div class="glossary-entry" data-term="trinovantes"><span class="font-semibold text-navy">Trinovantes</span> <span class="text-xs text-gray-400 ml-1">L3</span><p class="text-sm text-gray-600 mt-0.5">A Celtic tribe of south-eastern Britain who were displaced by the veteran colony at Camulodunum and became key allies of Boudicca.</p></div>
+          <div class="glossary-entry" data-term="veteran colony"><span class="font-semibold text-navy">Veteran Colony</span> <span class="text-xs text-gray-400 ml-1">L3</span><p class="text-sm text-gray-600 mt-0.5">A settlement established for retired Roman soldiers (veterans), usually on confiscated provincial land.</p></div>
+          <div class="glossary-entry" data-term="will testament"><span class="font-semibold text-navy">Will (Testament)</span> <span class="text-xs text-gray-400 ml-1">L4</span><p class="text-sm text-gray-600 mt-0.5">A legal document stating how a person's property should be distributed after death.</p></div>
+        </div>
+      </div>
+
+      <!-- Chapter 2 -->
+      <div class="chapter-group reveal">
+        <h2 class="font-serif text-xl font-bold text-navy mb-1">Chapter 2: Sources and the Revolt</h2>
+        <p class="text-xs text-gray-400 uppercase tracking-wider mb-4">Lessons 5&ndash;8</p>
+        <div class="space-y-1">
+          <div class="glossary-entry" data-term="andraste"><span class="font-semibold text-navy">Andraste</span> <span class="text-xs text-gray-400 ml-1">L6</span><p class="text-sm text-gray-600 mt-0.5">A Celtic goddess invoked by Boudicca in Cassius Dio's account, possibly a goddess of victory or invincibility.</p></div>
+          <div class="glossary-entry" data-term="annals"><span class="font-semibold text-navy">Annals</span> <span class="text-xs text-gray-400 ml-1">L5</span><p class="text-sm text-gray-600 mt-0.5">Tacitus's major historical work covering AD 14&ndash;68. Boudicca's revolt appears in Book XIV.</p></div>
+          <div class="glossary-entry" data-term="augury"><span class="font-semibold text-navy">Augury</span> <span class="text-xs text-gray-400 ml-1">L6</span><p class="text-sm text-gray-600 mt-0.5">The practice of interpreting signs (especially animal behaviour) as omens of future events.</p></div>
+          <div class="glossary-entry" data-term="castra"><span class="font-semibold text-navy">Castra</span> <span class="text-xs text-gray-400 ml-1">L8</span><p class="text-sm text-gray-600 mt-0.5">A Roman military camp, built to a standard plan each night on campaign.</p></div>
+          <div class="glossary-entry" data-term="centurion"><span class="font-semibold text-navy">Centurion</span> <span class="text-xs text-gray-400 ml-1">L8</span><p class="text-sm text-gray-600 mt-0.5">A professional officer commanding a century (80 men) within a Roman legion.</p></div>
+          <div class="glossary-entry" data-term="coalition"><span class="font-semibold text-navy">Coalition</span> <span class="text-xs text-gray-400 ml-1">L7</span><p class="text-sm text-gray-600 mt-0.5">An alliance of different groups united around a common cause or enemy.</p></div>
+          <div class="glossary-entry" data-term="colonial resistance"><span class="font-semibold text-navy">Colonial Resistance</span> <span class="text-xs text-gray-400 ml-1">L7</span><p class="text-sm text-gray-600 mt-0.5">Active opposition to the political, economic, or cultural control exercised by an occupying power.</p></div>
+          <div class="glossary-entry" data-term="contemporaneous"><span class="font-semibold text-navy">Contemporaneous</span> <span class="text-xs text-gray-400 ml-1">L5</span><p class="text-sm text-gray-600 mt-0.5">Occurring at approximately the same time as the events described.</p></div>
+          <div class="glossary-entry" data-term="gladius"><span class="font-semibold text-navy">Gladius</span> <span class="text-xs text-gray-400 ml-1">L8, L11</span><p class="text-sm text-gray-600 mt-0.5">The Roman legionary's short sword, designed for close-quarters stabbing in tight formation.</p></div>
+          <div class="glossary-entry" data-term="immediate cause"><span class="font-semibold text-navy">Immediate Cause</span> <span class="text-xs text-gray-400 ml-1">L7</span><p class="text-sm text-gray-600 mt-0.5">A short-term trigger that directly sets off an event.</p></div>
+          <div class="glossary-entry" data-term="invented speech"><span class="font-semibold text-navy">Invented Speech</span> <span class="text-xs text-gray-400 ml-1">L6</span><p class="text-sm text-gray-600 mt-0.5">A speech composed by a historian for a historical figure, using known events and character as a guide.</p></div>
+          <div class="glossary-entry" data-term="legion"><span class="font-semibold text-navy">Legion</span> <span class="text-xs text-gray-400 ml-1">L8</span><p class="text-sm text-gray-600 mt-0.5">The basic large unit of the Roman army, approximately 5,000 heavy infantry organised into ten cohorts.</p></div>
+          <div class="glossary-entry" data-term="logistics"><span class="font-semibold text-navy">Logistics</span> <span class="text-xs text-gray-400 ml-1">L8</span><p class="text-sm text-gray-600 mt-0.5">The organisation of military supply, including food, equipment, communication, and transport.</p></div>
+          <div class="glossary-entry" data-term="noble barbarian"><span class="font-semibold text-navy">Noble Barbarian</span> <span class="text-xs text-gray-400 ml-1">L5</span><p class="text-sm text-gray-600 mt-0.5">A literary tradition portraying non-Roman peoples as morally superior to Romans, used to criticise Roman decadence.</p></div>
+          <div class="glossary-entry" data-term="pilum"><span class="font-semibold text-navy">Pilum</span> <span class="text-xs text-gray-400 ml-1">L8, L11</span><p class="text-sm text-gray-600 mt-0.5">The Roman legionary's heavy javelin, designed to penetrate shields and then bend to prevent reuse.</p></div>
+          <div class="glossary-entry" data-term="rhetoric"><span class="font-semibold text-navy">Rhetoric</span> <span class="text-xs text-gray-400 ml-1">L5, L10</span><p class="text-sm text-gray-600 mt-0.5">The art of persuasive speaking or writing. Ancient historians used rhetorical techniques including invented speeches.</p></div>
+          <div class="glossary-entry" data-term="roman history"><span class="font-semibold text-navy">Roman History</span> <span class="text-xs text-gray-400 ml-1">L6</span><p class="text-sm text-gray-600 mt-0.5">Cassius Dio's major work, written in Greek, covering Roman history from its origins to his own time.</p></div>
+          <div class="glossary-entry" data-term="second sophistic"><span class="font-semibold text-navy">Second Sophistic</span> <span class="text-xs text-gray-400 ml-1">L6</span><p class="text-sm text-gray-600 mt-0.5">A cultural movement in the Roman Empire (1st&ndash;3rd centuries AD) emphasising Greek rhetoric and literary style.</p></div>
+          <div class="glossary-entry" data-term="senatorial bias"><span class="font-semibold text-navy">Senatorial Bias</span> <span class="text-xs text-gray-400 ml-1">L5</span><p class="text-sm text-gray-600 mt-0.5">The tendency of Roman senators to criticise emperors who reduced senatorial authority.</p></div>
+          <div class="glossary-entry" data-term="seneca"><span class="font-semibold text-navy">Seneca</span> <span class="text-xs text-gray-400 ml-1">L7</span><p class="text-sm text-gray-600 mt-0.5">Roman Stoic philosopher and tutor to Emperor Nero who reportedly called in large loans to Iceni nobles.</p></div>
+          <div class="glossary-entry" data-term="testudo"><span class="font-semibold text-navy">Testudo</span> <span class="text-xs text-gray-400 ml-1">L8</span><p class="text-sm text-gray-600 mt-0.5">The "tortoise" formation: interlocked shields providing protection from missile fire.</p></div>
+          <div class="glossary-entry" data-term="underlying cause"><span class="font-semibold text-navy">Underlying Cause</span> <span class="text-xs text-gray-400 ml-1">L7</span><p class="text-sm text-gray-600 mt-0.5">A long-term structural condition that creates the environment in which an event can occur.</p></div>
+          <div class="glossary-entry" data-term="war chariot"><span class="font-semibold text-navy">War Chariot</span> <span class="text-xs text-gray-400 ml-1">L8</span><p class="text-sm text-gray-600 mt-0.5">A light, two-wheeled vehicle used by Celtic warriors for rapid movement and psychological impact.</p></div>
+        </div>
+      </div>
+
+      <!-- Chapter 3 -->
+      <div class="chapter-group reveal">
+        <h2 class="font-serif text-xl font-bold text-navy mb-1">Chapter 3: The Revolt and Aftermath</h2>
+        <p class="text-xs text-gray-400 uppercase tracking-wider mb-4">Lessons 9&ndash;12</p>
+        <div class="space-y-1">
+          <div class="glossary-entry" data-term="agricola"><span class="font-semibold text-navy">Agricola</span> <span class="text-xs text-gray-400 ml-1">L12</span><p class="text-sm text-gray-600 mt-0.5">Gnaeus Julius Agricola, governor of Britain AD 77&ndash;84, known for advancing Roman occupation and encouraging Romanisation; father-in-law of Tacitus.</p></div>
+          <div class="glossary-entry" data-term="camulodunum"><span class="font-semibold text-navy">Camulodunum</span> <span class="text-xs text-gray-400 ml-1">L9</span><p class="text-sm text-gray-600 mt-0.5">The Roman name for modern Colchester, Essex &mdash; the first Roman colonia in Britain.</p></div>
+          <div class="glossary-entry" data-term="classicianus"><span class="font-semibold text-navy">Classicianus</span> <span class="text-xs text-gray-400 ml-1">L12</span><p class="text-sm text-gray-600 mt-0.5">Gaius Julius Alpinus Classicianus, procurator of Britain after AD 61, who recommended the recall of Suetonius Paulinus; his tombstone survives in the British Museum.</p></div>
+          <div class="glossary-entry" data-term="conciliation"><span class="font-semibold text-navy">Conciliation</span> <span class="text-xs text-gray-400 ml-1">L12</span><p class="text-sm text-gray-600 mt-0.5">A policy of making peace and reducing hostility rather than continuing military repression.</p></div>
+          <div class="glossary-entry" data-term="defile"><span class="font-semibold text-navy">Defile</span> <span class="text-xs text-gray-400 ml-1">L11</span><p class="text-sm text-gray-600 mt-0.5">A narrow pass or valley that limits the width of a military advance.</p></div>
+          <div class="glossary-entry" data-term="destruction horizon"><span class="font-semibold text-navy">Destruction Horizon</span> <span class="text-xs text-gray-400 ml-1">L10, L13</span><p class="text-sm text-gray-600 mt-0.5">A distinct layer of burnt material in the soil marking a violent destruction event at a specific moment in time.</p></div>
+          <div class="glossary-entry" data-term="formation"><span class="font-semibold text-navy">Formation</span> <span class="text-xs text-gray-400 ml-1">L11</span><p class="text-sm text-gray-600 mt-0.5">The arrangement of soldiers in battle; Roman legions used tight, disciplined formations.</p></div>
+          <div class="glossary-entry" data-term="legate"><span class="font-semibold text-navy">Legate</span> <span class="text-xs text-gray-400 ml-1">L9</span><p class="text-sm text-gray-600 mt-0.5">A senior Roman officer commanding a legion, typically of senatorial rank.</p></div>
+          <div class="glossary-entry" data-term="legio ix hispana"><span class="font-semibold text-navy">Legio IX Hispana</span> <span class="text-xs text-gray-400 ml-1">L9</span><p class="text-sm text-gray-600 mt-0.5">The Ninth Legion, one of four legions stationed in Roman Britain.</p></div>
+          <div class="glossary-entry" data-term="londinium"><span class="font-semibold text-navy">Londinium</span> <span class="text-xs text-gray-400 ml-1">L10</span><p class="text-sm text-gray-600 mt-0.5">The Roman name for modern London; the commercial centre of Roman Britain.</p></div>
+          <div class="glossary-entry" data-term="mancetter"><span class="font-semibold text-navy">Mancetter</span> <span class="text-xs text-gray-400 ml-1">L11</span><p class="text-sm text-gray-600 mt-0.5">Modern Warwickshire town and the most widely accepted candidate for the site of Boudicca's final battle.</p></div>
+          <div class="glossary-entry" data-term="mona"><span class="font-semibold text-navy">Mona</span> <span class="text-xs text-gray-400 ml-1">L9</span><p class="text-sm text-gray-600 mt-0.5">The Roman name for Anglesey, the last major stronghold of the Druids in Britain.</p></div>
+          <div class="glossary-entry" data-term="municipium"><span class="font-semibold text-navy">Municipium</span> <span class="text-xs text-gray-400 ml-1">L9, L10</span><p class="text-sm text-gray-600 mt-0.5">A Roman town whose inhabitants held Latin rights, with elected local magistrates.</p></div>
+          <div class="glossary-entry" data-term="poenius postumus"><span class="font-semibold text-navy">Poenius Postumus</span> <span class="text-xs text-gray-400 ml-1">L11</span><p class="text-sm text-gray-600 mt-0.5">Acting commander of Legio II Augusta who refused to march to Suetonius's support and later committed suicide.</p></div>
+          <div class="glossary-entry" data-term="polyclitus"><span class="font-semibold text-navy">Polyclitus</span> <span class="text-xs text-gray-400 ml-1">L12</span><p class="text-sm text-gray-600 mt-0.5">An imperial freedman sent by Nero to investigate the situation in Britain after the revolt.</p></div>
+          <div class="glossary-entry" data-term="stratigraphy"><span class="font-semibold text-navy">Stratigraphy</span> <span class="text-xs text-gray-400 ml-1">L10, L13</span><p class="text-sm text-gray-600 mt-0.5">The study of geological and archaeological layers (strata) to establish chronological sequences.</p></div>
+          <div class="glossary-entry" data-term="turpilianus"><span class="font-semibold text-navy">Turpilianus</span> <span class="text-xs text-gray-400 ml-1">L12</span><p class="text-sm text-gray-600 mt-0.5">The governor who replaced Suetonius Paulinus and adopted a conciliatory policy.</p></div>
+          <div class="glossary-entry" data-term="verulamium"><span class="font-semibold text-navy">Verulamium</span> <span class="text-xs text-gray-400 ml-1">L10</span><p class="text-sm text-gray-600 mt-0.5">The Roman name for modern St Albans; a municipium with a substantial Romanised British population.</p></div>
+        </div>
+      </div>
+
+      <!-- Chapter 4 -->
+      <div class="chapter-group reveal">
+        <h2 class="font-serif text-xl font-bold text-navy mb-1">Chapter 4: Evidence, Legacy and Skills</h2>
+        <p class="text-xs text-gray-400 uppercase tracking-wider mb-4">Lessons 13&ndash;16</p>
+        <div class="space-y-1">
+          <div class="glossary-entry" data-term="analysis"><span class="font-semibold text-navy">Analysis</span> <span class="text-xs text-gray-400 ml-1">L15</span><p class="text-sm text-gray-600 mt-0.5">Explaining why something happened, what it means, or what it reveals &mdash; going beyond description to interpretation.</p></div>
+          <div class="glossary-entry" data-term="apotheosis"><span class="font-semibold text-navy">Apotheosis</span> <span class="text-xs text-gray-400 ml-1">L14</span><p class="text-sm text-gray-600 mt-0.5">The elevation of a person or concept to the highest possible status; extreme glorification of a historical figure.</p></div>
+          <div class="glossary-entry" data-term="appropriation"><span class="font-semibold text-navy">Appropriation</span> <span class="text-xs text-gray-400 ml-1">L14</span><p class="text-sm text-gray-600 mt-0.5">Taking something from its original context and using it for a different, often contrary, purpose.</p></div>
+          <div class="glossary-entry" data-term="contestability"><span class="font-semibold text-navy">Contestability</span> <span class="text-xs text-gray-400 ml-1">L16</span><p class="text-sm text-gray-600 mt-0.5">The idea that historical interpretations can be legitimately debated and different historians may reach different conclusions.</p></div>
+          <div class="glossary-entry" data-term="description"><span class="font-semibold text-navy">Description</span> <span class="text-xs text-gray-400 ml-1">L15</span><p class="text-sm text-gray-600 mt-0.5">Telling what happened without explaining its meaning or significance &mdash; the opposite of analysis.</p></div>
+          <div class="glossary-entry" data-term="essay scaffold"><span class="font-semibold text-navy">Essay Scaffold</span> <span class="text-xs text-gray-400 ml-1">L16</span><p class="text-sm text-gray-600 mt-0.5">A structured plan outlining the thesis, topic sentences, key evidence, and analytical points for each paragraph.</p></div>
+          <div class="glossary-entry" data-term="feminist historiography"><span class="font-semibold text-navy">Feminist Historiography</span> <span class="text-xs text-gray-400 ml-1">L14</span><p class="text-sm text-gray-600 mt-0.5">An approach to history that centres the experiences of women and examines how gender has shaped events.</p></div>
+          <div class="glossary-entry" data-term="historical significance"><span class="font-semibold text-navy">Historical Significance</span> <span class="text-xs text-gray-400 ml-1">L16</span><p class="text-sm text-gray-600 mt-0.5">The importance of a person, event, or development in terms of its impact on subsequent events and what it reveals about the period.</p></div>
+          <div class="glossary-entry" data-term="historiographical significance"><span class="font-semibold text-navy">Historiographical Significance</span> <span class="text-xs text-gray-400 ml-1">L16</span><p class="text-sm text-gray-600 mt-0.5">The importance of how a person or event has been interpreted, debated, and represented by historians across time.</p></div>
+          <div class="glossary-entry" data-term="inference"><span class="font-semibold text-navy">Inference</span> <span class="text-xs text-gray-400 ml-1">L13</span><p class="text-sm text-gray-600 mt-0.5">The process of drawing conclusions that go beyond directly observable evidence.</p></div>
+          <div class="glossary-entry" data-term="peel"><span class="font-semibold text-navy">PEEL</span> <span class="text-xs text-gray-400 ml-1">L15</span><p class="text-sm text-gray-600 mt-0.5">Point, Evidence, Explain, Link &mdash; a paragraph structure for building analytical arguments in essay writing.</p></div>
+          <div class="glossary-entry" data-term="peer evaluation"><span class="font-semibold text-navy">Peer Evaluation</span> <span class="text-xs text-gray-400 ml-1">L16</span><p class="text-sm text-gray-600 mt-0.5">Assessing a classmate's work using specific criteria and providing constructive feedback.</p></div>
+          <div class="glossary-entry" data-term="post-colonial"><span class="font-semibold text-navy">Post-colonial</span> <span class="text-xs text-gray-400 ml-1">L14</span><p class="text-sm text-gray-600 mt-0.5">A critical perspective examining the ongoing effects of colonialism and how colonial power shapes historical memory.</p></div>
+          <div class="glossary-entry" data-term="presentism"><span class="font-semibold text-navy">Presentism</span> <span class="text-xs text-gray-400 ml-1">L14</span><p class="text-sm text-gray-600 mt-0.5">The tendency to interpret the past through the values of the present, often leading to anachronistic conclusions.</p></div>
+          <div class="glossary-entry" data-term="radiocarbon dating"><span class="font-semibold text-navy">Radiocarbon Dating</span> <span class="text-xs text-gray-400 ml-1">L13</span><p class="text-sm text-gray-600 mt-0.5">A scientific dating method that measures the decay of carbon-14 in organic material to determine its age.</p></div>
+          <div class="glossary-entry" data-term="snettisham treasure"><span class="font-semibold text-navy">Snettisham Treasure</span> <span class="text-xs text-gray-400 ml-1">L13</span><p class="text-sm text-gray-600 mt-0.5">A hoard of over 170 gold and electrum torcs found in Norfolk, the most spectacular Iron Age gold find in Britain.</p></div>
+          <div class="glossary-entry" data-term="source integration"><span class="font-semibold text-navy">Source Integration</span> <span class="text-xs text-gray-400 ml-1">L15</span><p class="text-sm text-gray-600 mt-0.5">The skill of weaving source evidence and evaluation into the flow of an analytical paragraph.</p></div>
+          <div class="glossary-entry" data-term="synthesis"><span class="font-semibold text-navy">Synthesis</span> <span class="text-xs text-gray-400 ml-1">L16</span><p class="text-sm text-gray-600 mt-0.5">Combining evidence, arguments, and perspectives from multiple sources to create a coherent overall interpretation.</p></div>
+          <div class="glossary-entry" data-term="thesis thesis statement"><span class="font-semibold text-navy">Thesis Statement</span> <span class="text-xs text-gray-400 ml-1">L15, L16</span><p class="text-sm text-gray-600 mt-0.5">The central argument of an essay &mdash; arguable, specific, and directly answering the question.</p></div>
+          <div class="glossary-entry" data-term="topic sentence"><span class="font-semibold text-navy">Topic Sentence</span> <span class="text-xs text-gray-400 ml-1">L15</span><p class="text-sm text-gray-600 mt-0.5">The opening sentence of a paragraph that states its main argument or claim (the 'Point' in PEEL).</p></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 text-center" style="background: linear-gradient(180deg, #fefcf9, #f5f3ed);">
+    <a href="index.html" class="text-sm text-navy font-medium hover:text-burgundy transition-colors">&larr; Back to Lessons</a>
+    <p class="text-xs text-gray-300 mt-4 font-sans">NSW Ancient History Stage 6 &middot; NESA Syllabus (2017)</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    // Glossary search filter
+    const searchInput = document.getElementById('glossary-search');
+    const entries = document.querySelectorAll('.glossary-entry');
+    const countEl = document.getElementById('search-count');
+    const totalTerms = entries.length;
+
+    if (searchInput) {
+      searchInput.addEventListener('input', () => {
+        const query = searchInput.value.toLowerCase().trim();
+        let visible = 0;
+        entries.forEach(entry => {
+          const term = entry.dataset.term || '';
+          const text = entry.textContent.toLowerCase();
+          const match = !query || term.includes(query) || text.includes(query);
+          entry.classList.toggle('hidden-by-search', !match);
+          if (match) visible++;
+        });
+        countEl.textContent = query
+          ? visible + ' of ' + totalTerms + ' terms match'
+          : totalTerms + ' terms across 16 lessons';
+      });
+    }
+  </script>
+</body>
+</html>

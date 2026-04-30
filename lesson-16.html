@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 16: Essay Scaffold Workshop &amp; Unit Synthesis | Boudicca Interactive</title>
+
+  <!-- Meta -->
+  <meta name="description" content="Interactive NSW Ancient History Stage 6 resource — Boudicca case study with explicit teaching, CFU activities, source analysis, and teacher facilitation tools.">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': { DEFAULT: '#1a1a2e', mid: '#16213e', light: '#2a4d7a' },
+            'burgundy': { DEFAULT: '#8b2635', light: '#a83242' },
+            'gold': { DEFAULT: '#c9a84c', light: '#e8d292' },
+          },
+          fontFamily: {
+            'serif': ['Playfair Display', 'Georgia', 'serif'],
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans" style="background: #fefcf9;">
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress"></div>
+
+  <!-- Navigation (Glassmorphism) -->
+  <nav class="site-nav">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-5">
+        <a href="index.html" class="text-white font-serif text-xl font-bold tracking-wide hover:text-gold transition-colors">
+          Boudicca
+        </a>
+        <span class="text-white/20 hidden sm:inline">|</span>
+        <span class="text-white/40 text-xs font-sans tracking-wider hidden sm:inline">Lesson 16 of 16</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <button class="teacher-toggle" aria-label="Toggle teacher facilitation notes">Teacher Mode</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="lesson-hero grad-hero" style="background: linear-gradient(165deg, rgba(26,26,46,0.92) 0%, rgba(22,33,62,0.88) 50%, rgba(26,39,68,0.92) 100%), url('images/thornycroft-statue.jpg') center/cover no-repeat;">
+    <div class="relative z-10 max-w-3xl mx-auto reveal">
+      <span class="chapter-badge">Chapter 4 &middot; Evidence, Legacy and Skills</span>
+      <p class="text-white/40 font-sans text-sm tracking-wider uppercase mb-3">Lesson 16</p>
+      <h1 class="hero-title font-serif text-white">Essay Scaffold Workshop<br>&amp; Unit Synthesis</h1>
+      <p class="hero-desc">
+        The capstone lesson. Synthesise everything you have learned across all four chapters &mdash;
+        constructing a complete essay scaffold, evaluating an exemplar, and reflecting on your growth
+        as a historian.
+      </p>
+      <p class="reading-time"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> ~29 min</p>
+      <!-- Syllabus Outcomes -->
+      <details class="mt-8">
+        <summary class="text-white/25 text-xs font-sans cursor-pointer hover:text-white/40 transition-colors uppercase tracking-[0.15em]">
+          NESA Syllabus Outcomes
+        </summary>
+        <div class="mt-3 text-white/35 text-xs font-sans space-y-1 leading-relaxed">
+          <p><strong class="text-white/50">AH11-1:</strong> Describes the nature of continuity and change in the ancient world</p>
+          <p><strong class="text-white/50">AH11-3:</strong> Analyses the role of historical features, individuals and groups in shaping the past</p>
+          <p><strong class="text-white/50">AH11-6:</strong> Analyses and interprets different types of sources for evidence to support an historical account or argument</p>
+          <p><strong class="text-white/50">AH11-7:</strong> Discusses and evaluates differing interpretations and representations of the past</p>
+          <p><strong class="text-white/50">AH11-8:</strong> Plans and conducts historical investigations and presents reasoned conclusions, using relevant evidence from a range of sources</p>
+          <p><strong class="text-white/50">AH11-9:</strong> Communicates historical understanding, using historical knowledge, concepts and terms, in appropriate and well-structured forms</p>
+        </div>
+      </details>
+    </div>
+    <!-- Decorative number -->
+    <div class="absolute bottom-6 right-8 font-serif text-white/[0.03] font-extrabold pointer-events-none select-none hidden md:block" style="font-size: 14rem; line-height: 1;">16</div>
+  </section>
+
+
+  <!-- ==========================================
+       LEARNING INTENTION & SUCCESS CRITERIA
+       ========================================== -->
+  <section id="lisc" class="full-section grad-lisc">
+    <div class="section-inner reveal">
+      <span class="section-label bg-navy/[0.07] text-navy">Learning Intention</span>
+      <h2 class="section-heading">What You&rsquo;ll Learn</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-8">
+        To synthesise knowledge and skills across the entire Boudicca unit by constructing and evaluating a complete essay response, and to review key themes, evidence, and historical arguments from all four chapters.
+      </p>
+
+      <div>
+        <h3 class="font-sans text-xs font-bold uppercase tracking-[0.12em] text-gray-400 mb-2">Success Criteria</h3>
+        <p class="sc-progress-text text-xs text-gray-400 mb-1">0 of 4 criteria met</p>
+        <div class="sc-progress"><div class="sc-progress-bar"></div></div>
+        <p class="text-sm text-gray-500 mb-4">By the end of this lesson, I can:</p>
+        <div class="space-y-1">
+          <div class="sc-item"><input type="checkbox" id="sc1"><label for="sc1">Construct a complete essay plan and scaffold for an extended response question.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc2"><label for="sc2">Synthesise evidence from written, archaeological, and historiographical sources.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc3"><label for="sc3">Evaluate an annotated essay exemplar against the marking criteria.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc4"><label for="sc4">Reflect on personal growth in historical thinking and writing across the unit.</label></div>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Sharing LISC</p>
+        <p>This is the <strong>capstone lesson</strong>. Frame it explicitly: &ldquo;This is your last lesson on Boudicca. Everything you&rsquo;ve learned over 16 lessons comes together here.&rdquo; Display the learning intention and ask: <strong>&ldquo;What does &lsquo;synthesise&rsquo; mean? How is it different from &lsquo;describe&rsquo;?&rdquo;</strong> (cold call).</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       ACTIVATING PRIOR KNOWLEDGE
+       ========================================== -->
+  <section id="prior-knowledge" class="full-section grad-prior relative">
+    <span class="section-number">?</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-white/50 text-amber-700">Before We Begin</span>
+      <h2 class="section-heading">Unit Retrieval: The Big Picture</h2>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        You have covered four chapters across 16 lessons. Before we begin the synthesis, let&rsquo;s retrieve the big ideas.
+      </p>
+
+      <div class="mb-6">
+        <p class="font-sans text-sm font-semibold text-gray-700 mb-2">How well do you feel you know the Boudicca unit overall?</p>
+        <div class="poll-options">
+          <button class="poll-btn">I remember most of it</button>
+          <button class="poll-btn">I remember some key parts</button>
+          <button class="poll-btn">I need to review</button>
+          <button class="poll-btn">I feel unsure about most of it</button>
+        </div>
+      </div>
+
+      <div>
+        <label class="font-sans text-sm font-semibold text-gray-700 block mb-2" for="prior-text">
+          Write down one key idea from each of the four chapters (Context, The Revolt, Consequences, Evidence &amp; Legacy):
+        </label>
+        <textarea id="prior-text" class="w-full border border-black/[0.08] rounded-2xl p-4 text-sm font-sans leading-relaxed resize-y bg-white/60 backdrop-blur min-h-[90px] focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-all"
+                  placeholder="Chapter 1: ... Chapter 2: ... Chapter 3: ... Chapter 4: ..."></textarea>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Activating Prior Knowledge</p>
+        <p>Use <strong>cold call</strong> to ask one student per chapter: &ldquo;Give me one key idea from Chapter 1.&rdquo; Build a class list on the board. This serves as a retrieval scaffold for the essay planning that follows.</p>
+        <p class="mt-2"><strong>CFU strategy:</strong> Retrieval gesture vote &mdash; &ldquo;How many chapters are in this unit? Hold up fingers.&rdquo; (Answer: 4.) If fewer than 80% correct, display the chapter list. <strong>Then think-pair-share:</strong> &ldquo;Turn to your partner and discuss which chapter you feel most confident about and which you need to review.&rdquo; (90 seconds, then cold call.)</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 1: UNIT REVIEW — KEY THEMES
+       ========================================== -->
+  <section id="chunk-1" class="full-section grad-chunk1 relative">
+    <span class="section-number">01</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-burgundy/10 text-burgundy">Chunk 1 of 4</span>
+      <h2 class="section-heading">Unit Review: Key Themes</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Explicit Instruction: Theme Consolidation</p>
+        <p>Walk through each theme. For each one, ask students to <strong>name one piece of evidence</strong> that connects to that theme. This builds the evidence bank they will need for the essay scaffold in Chunk 2.</p>
+        <p class="mt-2"><strong>Cold call</strong> a different student for each theme. Accept all reasonable answers and note them on the board.</p>
+      </div>
+
+      <p class="text-gray-600 leading-relaxed mb-8 text-[1.05rem]">
+        Before approaching the essay scaffold workshop, let&rsquo;s consolidate the major themes of this unit.
+        Each theme connects multiple lessons and represents a thread of historical inquiry that runs through the entire Boudicca case study.
+      </p>
+
+      <!-- Themes Table -->
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Theme</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Key Content</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white/70">
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Theme 1: Causation</td><td class="px-5 py-3 text-gray-600">What caused the revolt? The client kingdom system, Roman financial exploitation, personal grievances, tribal alliances. Key figures: Prasutagus, Catus Decianus, Boudicca.</td></tr>
+            <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Theme 2: Conduct</td><td class="px-5 py-3 text-gray-600">How was the revolt conducted? Military tactics, the three cities, Suetonius&rsquo;s strategy, the final battle. Key sources: Tacitus, <em>Annals</em> 14.29&ndash;37; Cassius Dio 62.1&ndash;12.</td></tr>
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Theme 3: Consequence</td><td class="px-5 py-3 text-gray-600">What were the outcomes? Short-term: reprisals, famine. Long-term: policy change, Romanisation, provincial restructuring. Key figures: Classicianus, Turpilianus, Agricola.</td></tr>
+            <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Theme 4: Source Analysis</td><td class="px-5 py-3 text-gray-600">Who tells us what happened? Tacitus (c. AD 98), Cassius Dio (c. AD 220), archaeological evidence (modern). Each source has strengths, limitations, and purposes.</td></tr>
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Theme 5: Representation</td><td class="px-5 py-3 text-gray-600">How has Boudicca been remembered? Roman, medieval, Victorian, feminist, post-colonial. Each era projects its values onto her image. The Thornycroft statue as case study.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="d"
+           data-feedback-correct="Correct! Theme 3 (Consequence) covers the outcomes of the revolt, including the short-term reprisals and famine, as well as the long-term policy changes such as the shift to conciliatory governance under Classicianus and Turpilianus."
+           data-feedback-incorrect="Not quite. The consequences of the revolt &mdash; including policy changes, reprisals, and Romanisation &mdash; fall under Theme 3. Theme 1 covers causes, Theme 2 covers the conduct of the revolt, and Themes 4 and 5 cover sources and representation.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p>Use <strong>cold call</strong>. This is a straightforward recall question to check students can identify which theme covers which content.</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">Which unit theme covers the shift to conciliatory governance after the revolt and figures like Classicianus?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q1" class="mt-0.5"><span>Theme 1: Causation</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q1" class="mt-0.5"><span>Theme 2: Conduct</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q1" class="mt-0.5"><span>Theme 5: Representation</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q1" class="mt-0.5"><span>Theme 3: Consequence</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+
+      <div class="match-activity" data-answer="0-2,1-4,2-0,3-1,4-3">
+        <h3>Match the Unit Theme to Its Key Question</h3>
+        <p class="text-gray-700 font-medium mb-4">Match each unit theme to the question it answers:</p>
+        <div class="match-pairs">
+          <div>
+            <div class="match-prompt" data-idx="0">Theme 1: Causation</div>
+            <div class="match-slot" data-idx="0">Click an answer</div>
+            <div class="match-prompt" data-idx="1" style="margin-top:0.75rem">Theme 2: Conduct</div>
+            <div class="match-slot" data-idx="1">Click an answer</div>
+            <div class="match-prompt" data-idx="2" style="margin-top:0.75rem">Theme 3: Consequence</div>
+            <div class="match-slot" data-idx="2">Click an answer</div>
+            <div class="match-prompt" data-idx="3" style="margin-top:0.75rem">Theme 4: Source Analysis</div>
+            <div class="match-slot" data-idx="3">Click an answer</div>
+            <div class="match-prompt" data-idx="4" style="margin-top:0.75rem">Theme 5: Representation</div>
+            <div class="match-slot" data-idx="4">Click an answer</div>
+          </div>
+          <div>
+            <div class="match-answer match-item" data-idx="0">What were the short-term and long-term outcomes of the revolt?</div>
+            <div class="match-answer match-item" data-idx="1">Who tells us what happened, and how reliable are they?</div>
+            <div class="match-answer match-item" data-idx="2">Why did the Iceni revolt against Rome?</div>
+            <div class="match-answer match-item" data-idx="3">How has Boudicca been remembered and represented across time?</div>
+            <div class="match-answer match-item" data-idx="4">How was the revolt conducted and how did it end?</div>
+          </div>
+        </div>
+        <button class="check-btn" style="margin-top:1rem">Check Matches</button>
+        <div class="cfu-feedback" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 2: ESSAY SCAFFOLD — WORKED EXAMPLE
+       ========================================== -->
+  <section id="chunk-2" class="full-section grad-chunk2 relative">
+    <span class="section-number">02</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-purple-100 text-purple-700">Chunk 2 of 4</span>
+      <h2 class="section-heading">Essay Scaffold: Worked Example</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling: Annotated Scaffold (&lsquo;I Do&rsquo;)</p>
+        <p>Display the essay question on the board: <strong>&ldquo;Assess the significance of Boudicca as a historical personality.&rdquo; (20 marks)</strong></p>
+        <p class="mt-2">Walk through the scaffold section by section. For the Introduction, <strong>read the thesis aloud</strong> and ask: &ldquo;Is this arguable? Does it answer the question? Does it give us a roadmap?&rdquo; Use the PEEL labels from Lesson 15 to annotate each body paragraph.</p>
+      </div>
+
+      <p class="text-gray-700 text-[1.05rem] leading-relaxed mb-6">
+        <strong>Essay question:</strong> <em>&ldquo;Assess the significance of Boudicca as a historical personality.&rdquo;</em> (20 marks)
+      </p>
+
+      <!-- INTRODUCTION -->
+      <div class="key-concept mb-6" style="border-left: 4px solid #1a1a2e;">
+        <p class="font-bold text-navy text-lg mb-2">Introduction</p>
+        <p class="text-gray-600 text-sm mb-2"><strong>Hook/context:</strong> Briefly establish Boudicca&rsquo;s historical period and the nature of the available evidence.</p>
+        <p class="text-gray-600 text-sm mb-2"><strong>Thesis:</strong></p>
+        <p class="text-gray-700 italic">&ldquo;Boudicca&rsquo;s historical significance extends beyond her military revolt: she represents the intersection of Celtic resistance and Roman imperial expansion, exposes the structural tensions within Roman provincial governance, and has served as a vehicle for the construction and contestation of national and gender identities from the Victorian period to the present. Her significance lies not only in what she did, but in what each successive generation has made of her.&rdquo;</p>
+        <p class="text-gray-600 text-sm mt-2"><strong>Roadmap:</strong> Indicate the key areas your essay will address: the historical revolt and its consequences; the nature and limitations of the sources; and the historiographical significance of her changing representation.</p>
+      </div>
+
+      <!-- BODY PARAGRAPH 1 -->
+      <div class="key-concept mb-6" style="border-left: 4px solid #8b2635;">
+        <p class="font-bold text-burgundy text-lg mb-2">Body Paragraph 1: Historical Significance &mdash; The Revolt and Its Causes</p>
+        <p class="text-gray-600 text-sm mb-1"><strong>P &mdash; Point:</strong></p>
+        <p class="text-gray-700 mb-3">Boudicca is historically significant as the leader of the most serious military challenge to Roman authority in first-century Britain, whose revolt exposed fundamental weaknesses in Roman provincial administration.</p>
+        <p class="text-gray-600 text-sm mb-1"><strong>E &mdash; Evidence:</strong></p>
+        <p class="text-gray-700 mb-3">Tacitus, <em>Annals</em> 14.31&ndash;37: systematic abuse of the client kingdom system; flogging of Boudicca; destruction of three cities; defeat of Legio IX. Cassius Dio 62.1&ndash;12: scale of rebellion, Boudicca&rsquo;s leadership role.</p>
+        <p class="text-gray-600 text-sm mb-1"><strong>E &mdash; Explain:</strong></p>
+        <p class="text-gray-700 mb-3">The revolt&rsquo;s scale &mdash; involving the destruction of three Roman towns and the defeat of a legion &mdash; demonstrates Boudicca&rsquo;s exceptional capacity to mobilise multiple tribes around a common cause. This capacity itself is significant: it reveals the extent of anti-Roman feeling in the province and the effectiveness of her personal leadership.</p>
+        <p class="text-gray-600 text-sm mb-1"><strong>L &mdash; Link:</strong></p>
+        <p class="text-gray-700">Her military significance, however, must be contextualised against the evidence of her ultimate defeat and the consequences that followed.</p>
+      </div>
+
+      <!-- BODY PARAGRAPH 2 -->
+      <div class="key-concept mb-6" style="border-left: 4px solid #2a4d7a;">
+        <p class="font-bold text-navy-light text-lg mb-2">Body Paragraph 2: Source Significance &mdash; How She Is Known</p>
+        <p class="text-gray-600 text-sm mb-1"><strong>P &mdash; Point:</strong></p>
+        <p class="text-gray-700 mb-3">Boudicca&rsquo;s significance is inseparable from the nature of the evidence through which we know her &mdash; biased Roman sources that simultaneously preserve her story and distort it.</p>
+        <p class="text-gray-600 text-sm mb-1"><strong>E &mdash; Evidence:</strong></p>
+        <p class="text-gray-700 mb-3">Tacitus&rsquo;s purpose in <em>Annals</em> is to critique Roman governance through provincial examples; Boudicca&rsquo;s revolt serves as evidence of what happens when Rome governs badly. Dio&rsquo;s later, more sensational account reflects the genre conventions of Greek historical writing. Corroboration from the Boudiccan destruction horizon at Camulodunum, Londinium, Verulamium.</p>
+        <p class="text-gray-600 text-sm mb-1"><strong>E &mdash; Explain:</strong></p>
+        <p class="text-gray-700 mb-3">The irony that our knowledge of Boudicca comes entirely through Roman sources is itself historically significant. It means the story of an anti-Roman revolt has been transmitted through a Roman interpretive lens, shaping not only what we know but what it is possible to know.</p>
+        <p class="text-gray-600 text-sm mb-1"><strong>L &mdash; Link:</strong></p>
+        <p class="text-gray-700">This evidentiary significance connects directly to her historiographical significance &mdash; the ways in which her image has been constructed and contested across time.</p>
+      </div>
+
+      <!-- BODY PARAGRAPH 3 -->
+      <div class="key-concept mb-6" style="border-left: 4px solid #c9a84c;">
+        <p class="font-bold text-amber-700 text-lg mb-2">Body Paragraph 3: Historiographical Significance &mdash; What She Has Meant</p>
+        <p class="text-gray-600 text-sm mb-1"><strong>P &mdash; Point:</strong></p>
+        <p class="text-gray-700 mb-3">Beyond her historical actions, Boudicca&rsquo;s greatest significance may lie in what she has been made to represent: a figure onto whom successive societies have projected their own values, anxieties, and political purposes.</p>
+        <p class="text-gray-600 text-sm mb-1"><strong>E &mdash; Evidence:</strong></p>
+        <p class="text-gray-700 mb-3">Victorian nationalism: Thornycroft statue (1902), Cowper&rsquo;s ode (1782), Prince Albert&rsquo;s involvement. Feminist reclamation: 1970s&ndash;80s scholarship. Post-colonial critique: interrogation of imperial appropriation. The name &ldquo;Boudicca&rdquo; appearing on pubs, streets, regiments, and sports teams across Britain.</p>
+        <p class="text-gray-600 text-sm mb-1"><strong>E &mdash; Explain:</strong></p>
+        <p class="text-gray-700 mb-3">Each era&rsquo;s Boudicca reveals the concerns of that era. The Victorian Boudicca&rsquo;s imperial grandeur reflects Britain&rsquo;s imperial confidence; the feminist Boudicca reflects second-wave feminism&rsquo;s search for historical role models; the post-colonial critique reflects the current questioning of imperial memory. This flexibility &mdash; the capacity to be endlessly reinvented &mdash; is itself a measure of her significance.</p>
+        <p class="text-gray-600 text-sm mb-1"><strong>L &mdash; Link:</strong></p>
+        <p class="text-gray-700">However, this flexibility also raises a methodological challenge: when historical memory overwhelms historical evidence, what does &ldquo;significance&rdquo; actually mean?</p>
+      </div>
+
+      <!-- CONCLUSION -->
+      <div class="key-concept mb-6" style="border-left: 4px solid #16a34a;">
+        <p class="font-bold text-green-700 text-lg mb-2">Conclusion</p>
+        <p class="text-gray-600 text-sm mb-1"><strong>Restate thesis:</strong></p>
+        <p class="text-gray-700 mb-3">Boudicca&rsquo;s significance is multi-layered and extends far beyond her historical lifetime.</p>
+        <p class="text-gray-600 text-sm mb-1"><strong>Synthesise arguments:</strong></p>
+        <p class="text-gray-700 mb-3">Historically: her revolt was the most serious challenge to Roman Britain in the first century and permanently shaped imperial provincial governance. Evidentarily: she exists only through Roman sources, making her a case study in the politics of historical survival. Historiographically: she is perhaps the most contested image in British historical memory, reinvented by every generation for its own purposes.</p>
+        <p class="text-gray-600 text-sm mb-1"><strong>Concluding insight:</strong></p>
+        <p class="text-gray-700 italic">&ldquo;That a Celtic queen who left no records of her own has become one of the most recognised figures in British history is itself the measure of her significance &mdash; and of the power of historical narrative to shape collective memory.&rdquo;</p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="b"
+           data-feedback-correct="Correct! The thesis identifies three layers of significance &mdash; historical (the revolt), evidentiary (how she is known through Roman sources), and historiographical (how she has been represented across time). This multi-layered approach is what makes it a strong thesis for a 20-mark question."
+           data-feedback-incorrect="Not quite. Look again at the thesis &mdash; it identifies three distinct layers of significance: (1) the historical revolt itself, (2) the nature of the evidence (Roman sources), and (3) the changing representations across time. This structure gives the essay a clear, multi-layered argument.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p>Use <strong>cold call</strong>. Ask the student to point to the part of the thesis that identifies each layer. This checks deep comprehension, not just recall.</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">The sample thesis argues that Boudicca&rsquo;s significance operates on how many distinct layers?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q2" class="mt-0.5"><span>One &mdash; her military revolt against Rome</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q2" class="mt-0.5"><span>Three &mdash; historical, evidentiary, and historiographical</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q2" class="mt-0.5"><span>Two &mdash; her revolt and her representation</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q2" class="mt-0.5"><span>Five &mdash; one for each unit theme</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 3: PEER FEEDBACK RUBRIC & UNIT REFLECTION
+       ========================================== -->
+  <section id="chunk-3" class="full-section grad-chunk3 relative">
+    <span class="section-number">03</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-amber-100 text-amber-700">Chunk 3 of 4</span>
+      <h2 class="section-heading">Peer Feedback &amp; Unit Reflection</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Guided Practice: Peer Feedback (&lsquo;We Do&rsquo;)</p>
+        <p>Pair students up. Each student should use the rubric below to evaluate one paragraph from their partner&rsquo;s essay scaffold or a practice paragraph from Lesson 15. <strong>Model one evaluation first</strong>: show a sample paragraph on the board and work through the rubric criteria together as a class.</p>
+        <p class="mt-2">Emphasise: <strong>&ldquo;Be specific in your feedback &mdash; quote from their writing and suggest improvements.&rdquo;</strong></p>
+      </div>
+
+      <!-- Peer Feedback Rubric -->
+      <h3 class="font-serif text-xl font-bold text-navy mb-4">Peer Feedback Rubric</h3>
+      <p class="text-gray-600 text-sm mb-4">Use the following criteria to evaluate a classmate&rsquo;s essay paragraph. Be specific in your feedback &mdash; quote from their writing and suggest improvements.</p>
+
+      <div class="overflow-x-auto mb-10">
+        <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Criterion</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">What to Look For</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white/70">
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Thesis/Point</td><td class="px-5 py-3 text-gray-600">Does the paragraph begin with a clear, arguable point that directly addresses the question? (1&ndash;3: no clear point; 4&ndash;6: clear but underdeveloped; 7&ndash;10: specific, arguable, well-focused)</td></tr>
+            <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Evidence</td><td class="px-5 py-3 text-gray-600">Is specific, relevant historical evidence cited? Are sources named? (1&ndash;3: vague or no evidence; 4&ndash;6: general evidence; 7&ndash;10: specific named sources with detail)</td></tr>
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Analysis</td><td class="px-5 py-3 text-gray-600">Is the evidence explained and connected to the argument? (1&ndash;3: description only; 4&ndash;6: some analysis; 7&ndash;10: sustained analysis that advances the argument)</td></tr>
+            <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Source Evaluation</td><td class="px-5 py-3 text-gray-600">Is the nature, purpose, or reliability of sources acknowledged? (1&ndash;3: none; 4&ndash;6: brief mention; 7&ndash;10: integrated evaluative comment)</td></tr>
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Link</td><td class="px-5 py-3 text-gray-600">Does the paragraph connect back to the question or lead forward? (1&ndash;3: no link; 4&ndash;6: vague; 7&ndash;10: specific and purposeful)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Unit Reflection -->
+      <h3 class="font-serif text-xl font-bold text-navy mb-4">Unit Reflection: Thinking About Your Learning</h3>
+      <p class="text-gray-600 leading-relaxed mb-6 text-[1.05rem]">
+        Now that you have completed the Boudicca unit, take time to reflect on your development as a historian.
+        Answer the following questions thoughtfully &mdash; there are no single correct answers.
+      </p>
+
+      <div class="space-y-4 mb-6">
+        <div class="key-concept">
+          <p class="font-bold text-navy mb-1">Knowledge</p>
+          <p class="text-gray-700">Which aspect of Boudicca&rsquo;s story did you find most surprising or challenging to understand? What did you learn that contradicted something you assumed at the start of the unit?</p>
+        </div>
+        <div class="key-concept">
+          <p class="font-bold text-navy mb-1">Source Analysis</p>
+          <p class="text-gray-700">At the beginning of this unit, how confident were you in evaluating primary sources? How has that changed? Identify one specific moment in the unit where you changed your mind about a source after analysing it more carefully.</p>
+        </div>
+        <div class="key-concept">
+          <p class="font-bold text-navy mb-1">Contestability</p>
+          <p class="text-gray-700">Historians disagree about Boudicca &mdash; her motivations, the scale of the revolt, and her legacy. Identify one historical debate from this unit and explain which interpretation you find most convincing, and why.</p>
+        </div>
+        <div class="key-concept">
+          <p class="font-bold text-navy mb-1">Significance</p>
+          <p class="text-gray-700">Do you think Boudicca deserves her place in history as a major figure, or has her significance been exaggerated by later tradition? Use evidence from at least two different time periods to support your view.</p>
+        </div>
+        <div class="key-concept">
+          <p class="font-bold text-navy mb-1">Skills</p>
+          <p class="text-gray-700">Which historical skill &mdash; source analysis, extended writing, use of evidence, or evaluating interpretations &mdash; do you feel most confident in now? Which do you still want to improve before your assessment?</p>
+        </div>
+        <div class="key-concept">
+          <p class="font-bold text-navy mb-1">Big Picture</p>
+          <p class="text-gray-700">The central question of this unit has been: <em>How do we know what we know about Boudicca?</em> In two or three sentences, write your own answer to that question, drawing on everything you have studied.</p>
+        </div>
+      </div>
+
+      <div>
+        <label class="font-sans text-sm font-semibold text-gray-700 block mb-2" for="reflection-text">
+          Write your reflection here:
+        </label>
+        <textarea id="reflection-text" class="w-full border border-black/[0.08] rounded-2xl p-4 text-sm font-sans leading-relaxed resize-y bg-white/60 backdrop-blur min-h-[120px] focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-all"
+                  placeholder="Choose one or more of the reflection prompts above and write your response..."></textarea>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="a"
+           data-feedback-correct="Correct! The peer feedback rubric specifically asks whether the paragraph includes integrated evaluative comments about the nature, purpose, or reliability of sources. A Band 6 response goes beyond simply citing a source &mdash; it analyses the source as evidence."
+           data-feedback-incorrect="Not quite. According to the rubric, a high-scoring paragraph must include integrated evaluative comments about the nature, purpose, or reliability of sources &mdash; not just cite them. This is the 'source evaluation' criterion.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">According to the peer feedback rubric, what separates a 7&ndash;10 score for &ldquo;Source Evaluation&rdquo; from a lower score?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q3" class="mt-0.5"><span>The paragraph includes integrated evaluative comments about source nature, purpose, or reliability</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q3" class="mt-0.5"><span>The paragraph names at least three different primary sources</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q3" class="mt-0.5"><span>The paragraph uses direct quotations from the ancient texts</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q3" class="mt-0.5"><span>The paragraph discusses both Tacitus and Cassius Dio</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 4: KEY FIGURES SUMMARY
+       ========================================== -->
+  <section id="chunk-4" class="full-section grad-chunk4 relative">
+    <span class="section-number">04</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-blue-100 text-blue-700">Chunk 4 of 4</span>
+      <h2 class="section-heading">Key Figures Summary: Who Was Who</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Retrieval Practice: Rapid Fire</p>
+        <p>Use this table as a <strong>rapid-fire retrieval quiz</strong>. Cover the &ldquo;Role&rdquo; column and point to each name in turn. Cold call students to describe each figure&rsquo;s role from memory. This is excellent revision before the assessment.</p>
+      </div>
+
+      <p class="text-gray-600 leading-relaxed mb-6 text-[1.05rem]">
+        A quick reference for all the key historical figures and ancient authors covered across the unit.
+      </p>
+
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Figure</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Role</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white/70">
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Boudicca</td><td class="px-5 py-3 text-gray-600">Queen of the Iceni; led the revolt of AD 60/61; destroyed three cities and defeated Legio IX; killed at the final battle.</td></tr>
+            <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Prasutagus</td><td class="px-5 py-3 text-gray-600">Client king of the Iceni; husband of Boudicca; left a will dividing his kingdom between Rome and his daughters; died c. AD 59.</td></tr>
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Catus Decianus</td><td class="px-5 py-3 text-gray-600">Procurator of Britain; oversaw the seizure of Iceni lands; fled to Gaul after the revolt began.</td></tr>
+            <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Suetonius Paulinus</td><td class="px-5 py-3 text-gray-600">Governor of Britain; campaigning on Mona when revolt began; retreated to fight the decisive battle; defeated Boudicca; eventually recalled.</td></tr>
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Classicianus</td><td class="px-5 py-3 text-gray-600">New procurator; recommended Suetonius&rsquo;s recall; his tombstone survives in the British Museum.</td></tr>
+            <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Turpilianus</td><td class="px-5 py-3 text-gray-600">Governor replacing Suetonius; adopted conciliatory policy towards the defeated tribes.</td></tr>
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Petilius Cerialis</td><td class="px-5 py-3 text-gray-600">Commander of Legio IX; defeated by Boudicca in early stages of revolt; escaped with cavalry.</td></tr>
+            <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Tacitus</td><td class="px-5 py-3 text-gray-600">Roman historian; wrote the primary account in <em>Annals</em> 14.29&ndash;37, c. AD 98.</td></tr>
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Cassius Dio</td><td class="px-5 py-3 text-gray-600">Greek-Roman historian; wrote a condensed account in <em>Historia Romana</em> 62, c. AD 220.</td></tr>
+            <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Thomas Thornycroft</td><td class="px-5 py-3 text-gray-600">Victorian sculptor; created the famous bronze statue at Westminster Bridge (1856&ndash;1902).</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="c"
+           data-feedback-correct="Correct! Classicianus was the new procurator who recommended Suetonius's recall and advocated for a more conciliatory approach to governing the defeated tribes. His tombstone, which survives in the British Museum, is an important piece of archaeological evidence."
+           data-feedback-incorrect="Not quite. Classicianus was the new procurator &mdash; not a military commander. He recommended that Suetonius be recalled because of his harsh reprisals, and he advocated for a conciliatory policy. His tombstone is a key archaeological source.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">What was the significance of Classicianus in the aftermath of the revolt?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q4" class="mt-0.5"><span>He led the Roman cavalry to victory in the final battle</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q4" class="mt-0.5"><span>He wrote the first historical account of the revolt</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q4" class="mt-0.5"><span>He recommended Suetonius&rsquo;s recall and advocated for conciliatory governance</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q4" class="mt-0.5"><span>He rebuilt Camulodunum after its destruction</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       INDEPENDENT PRACTICE: REVIEW QUESTIONS
+       ========================================== -->
+  <section id="practice" class="full-section grad-practice relative">
+    <span class="section-number">Q</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-green-100 text-green-700">Independent Practice</span>
+      <h2 class="section-heading">Review Questions</h2>
+      <p class="text-sm text-gray-500 mb-6">Choose the level that challenges you, or work through all three.</p>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Independent Practice (&lsquo;You Do&rsquo;)</p>
+        <p>This is the <strong>final set of review questions</strong> in the unit. Allow adequate time &mdash; the Extension questions require substantial writing. Consider setting the Extension Q1 (600-word essay) as a take-home task or assessment preparation activity.</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> &ldquo;Write one sentence that completes this stem: &lsquo;The most important thing I learned in this unit is...&rsquo;&rdquo; Collect as students leave.</p>
+      </div>
+
+      <div class="tab-group">
+        <button class="tab-btn active" data-tab="foundation">Foundation</button>
+        <button class="tab-btn" data-tab="standard">Standard</button>
+        <button class="tab-btn" data-tab="extension">Extension</button>
+      </div>
+
+      <div class="tab-content active" id="foundation" data-tab="foundation">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Identify and describe</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Name three major themes of the Boudicca unit and give one piece of evidence for each.</li>
+          <li>What is the difference between &ldquo;historical significance&rdquo; and &ldquo;historiographical significance&rdquo;?</li>
+          <li>Write a two-sentence conclusion for the essay question: &ldquo;Assess the significance of Boudicca as a historical personality.&rdquo;</li>
+        </ol>
+      </div>
+      <div class="tab-content" id="standard" data-tab="standard">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Analyse and explain</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Using the essay scaffold above, write your own introduction paragraph (100&ndash;150 words) for the question: &ldquo;Assess the significance of Boudicca as a historical personality.&rdquo;</li>
+          <li>Analyse how the essay scaffold connects evidence from at least three different types of sources (written, archaeological, historiographical).</li>
+          <li>Evaluate one strength and one weakness of the sample thesis provided in this lesson.</li>
+        </ol>
+      </div>
+      <div class="tab-content" id="extension" data-tab="extension">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Evaluate and debate</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Write a complete 600-word essay response to the question: &ldquo;Assess the significance of Boudicca as a historical personality.&rdquo; Your response should include an introduction with a clear thesis, three body paragraphs using the PEEL method, and a conclusion that synthesises your argument.</li>
+          <li>Develop a counter-argument to the essay scaffold&rsquo;s central thesis. What is the strongest case for arguing that Boudicca&rsquo;s significance has been overstated or distorted by historiographical appropriation?</li>
+          <li>Design an alternative essay question on the Boudicca case study that would require students to synthesise all four-chapter themes. Write the question, provide a marking rubric, and explain what the ideal high-band response would demonstrate.</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="text-sm text-gray-600">By now you should structure responses independently using PEEL. If you need a refresher, revisit <a href="lesson-15.html" class="text-navy font-medium underline">Lesson 15: Essay Skills</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       KEY TERMS: FLASHCARD GLOSSARY
+       ========================================== -->
+  <section id="key-terms" class="full-section grad-terms relative">
+    <span class="section-number">A&ndash;Z</span>
+    <div class="section-inner">
+      <div class="flex items-end justify-between mb-6 reveal">
+        <div>
+          <span class="section-label bg-purple-100 text-purple-700">Key Terms</span>
+          <h2 class="section-heading mb-0">Glossary</h2>
+        </div>
+        <button class="glossary-view-toggle text-sm text-navy font-semibold hover:text-burgundy transition-colors cursor-pointer">
+          Switch to List View
+        </button>
+      </div>
+      <p class="text-sm text-gray-500 mb-6 reveal">Click each card to reveal its definition.</p>
+
+      <!-- Flashcards -->
+      <div class="flashcard-grid reveal-stagger">
+        <div class="flashcard" tabindex="0" role="button" aria-label="Flashcard: Synthesis">
+          <div class="flashcard-inner"><div class="flashcard-front">Synthesis</div><div class="flashcard-back">Combining evidence, arguments, and perspectives from multiple sources to create a coherent overall interpretation or argument.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Essay Scaffold</div><div class="flashcard-back">A structured plan for an essay that outlines the thesis, topic sentences, key evidence, and analytical points for each paragraph.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Historical Significance</div><div class="flashcard-back">The importance of a person, event, or development in terms of its impact on subsequent events, its scale, and what it reveals about the period.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Historiographical Significance</div><div class="flashcard-back">The importance of how a person or event has been interpreted, debated, and represented by historians and cultures across time.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Thesis</div><div class="flashcard-back">The central argument of an essay &mdash; a clear, arguable position that directly answers the question and guides the entire response.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Contestability</div><div class="flashcard-back">The idea that historical interpretations can be legitimately debated and that different historians may reach different conclusions from the same evidence.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Peer Evaluation</div><div class="flashcard-back">The process of assessing a classmate&rsquo;s work using specific criteria, providing constructive feedback to improve the quality of writing.</div></div>
+        </div>
+      </div>
+
+      <!-- List View (hidden) -->
+      <div class="glossary-list hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+            <thead>
+              <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/4">Term</th>
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Definition</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white/70">
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Synthesis</td><td class="px-5 py-3 text-gray-600">Combining evidence, arguments, and perspectives from multiple sources to create a coherent overall interpretation or argument.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Essay scaffold</td><td class="px-5 py-3 text-gray-600">A structured plan for an essay that outlines the thesis, topic sentences, key evidence, and analytical points for each paragraph.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Historical significance</td><td class="px-5 py-3 text-gray-600">The importance of a person, event, or development in terms of its impact, scale, and what it reveals about the period.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Historiographical significance</td><td class="px-5 py-3 text-gray-600">The importance of how a person or event has been interpreted and represented by historians and cultures across time.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Thesis</td><td class="px-5 py-3 text-gray-600">The central argument of an essay &mdash; a clear, arguable position that directly answers the question.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Contestability</td><td class="px-5 py-3 text-gray-600">The idea that historical interpretations can be legitimately debated and different historians may reach different conclusions.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Peer evaluation</td><td class="px-5 py-3 text-gray-600">Assessing a classmate&rsquo;s work using specific criteria and providing constructive feedback.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       REVIEW OF LEARNING
+       ========================================== -->
+  <section id="review" class="full-section grad-review relative">
+    <div class="section-inner reveal">
+      <span class="section-label bg-gold/20 text-amber-700">Review of Learning</span>
+      <h2 class="section-heading">How Did You Go?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6 text-[1.05rem]">
+        Return to the success criteria from the start of this lesson. Can you now tick off each one?
+        If any remain unticked, scroll back and review the relevant section.
+      </p>
+
+      <div class="space-y-3">
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">1</span>
+          <span class="text-gray-700">Construct a complete essay plan and scaffold for an extended response question.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">2</span>
+          <span class="text-gray-700">Synthesise evidence from written, archaeological, and historiographical sources.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">3</span>
+          <span class="text-gray-700">Evaluate an annotated essay exemplar against the marking criteria.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">4</span>
+          <span class="text-gray-700">Reflect on personal growth in historical thinking and writing across the unit.</span>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Review of Learning</p>
+        <p><strong>Self-assessment</strong> for each criterion: &ldquo;Thumbs up if confident, sideways if partly there, down if you need more help.&rdquo;</p>
+        <p class="mt-2"><strong>Final exit ticket:</strong> &ldquo;On a sticky note, complete this sentence: &lsquo;The most important thing I learned about Boudicca in this unit is...&rsquo;&rdquo; Collect as students leave. This is a powerful formative data point for future planning.</p>
+        <p class="mt-2"><strong>Congratulate your students</strong> &mdash; they have completed the entire unit. Acknowledge the depth of learning they have achieved across 16 lessons.</p>
+      </div>
+
+      <!-- Exit Ticket -->
+      <div class="exit-ticket">
+        <h4>Exit Ticket</h4>
+        <label class="text-sm text-gray-600 block mb-1">One thing I learned today:</label>
+        <textarea placeholder="What was the most important thing you learned in this lesson?"></textarea>
+        <label class="text-sm text-gray-600 block mb-1">One question I still have:</label>
+        <textarea placeholder="What are you still unsure about or want to know more about?"></textarea>
+      </div>
+
+      <!-- Reflection -->
+      <div class="reflection-panel">
+        <h4>Self-Reflection</h4>
+        <p class="text-sm text-gray-600 mb-2">How confident do you feel about this lesson&rsquo;s content?</p>
+        <div class="confidence-scale">
+          <button class="confidence-btn">1<br><span class="text-[0.65rem]">Not yet</span></button>
+          <button class="confidence-btn">2<br><span class="text-[0.65rem]">Getting there</span></button>
+          <button class="confidence-btn">3<br><span class="text-[0.65rem]">Mostly</span></button>
+          <button class="confidence-btn">4<br><span class="text-[0.65rem]">Confident</span></button>
+          <button class="confidence-btn">5<br><span class="text-[0.65rem]">Mastered</span></button>
+        </div>
+        <label class="text-sm text-gray-600 block mt-3 mb-1">What do you want to revisit before the next lesson?</label>
+        <textarea class="reflection-text" placeholder="Any topics, terms, or skills you want to review?"></textarea>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       LESSON NAVIGATION
+       ========================================== -->
+  <section class="py-12 px-6" style="background: #fefcf9;">
+    <div class="max-w-3xl mx-auto lesson-nav-footer flex items-center justify-between">
+      <a href="lesson-15.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        Lesson 15
+      </a>
+      <span class="text-xs text-gray-300 tracking-wider uppercase">Lesson 16 of 16</span>
+      <a href="index.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        Back to Home
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 text-center" style="background: linear-gradient(180deg, #fefcf9, #f5f3ed);">
+    <p class="text-sm text-gray-400 font-sans">
+      NSW Ancient History Stage 6 &middot; NESA Syllabus (2017) &middot; Case Study A
+    </p>
+    <p class="text-xs text-gray-300 mt-2 font-sans">Created by Cheryl Cutter</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 10: The Campaign of Destruction | Boudicca Interactive</title>
+
+  <!-- Meta -->
+  <meta name="description" content="Interactive NSW Ancient History Stage 6 resource — Boudicca case study with explicit teaching, CFU activities, source analysis, and teacher facilitation tools.">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': { DEFAULT: '#1a1a2e', mid: '#16213e', light: '#2a4d7a' },
+            'burgundy': { DEFAULT: '#8b2635', light: '#a83242' },
+            'gold': { DEFAULT: '#c9a84c', light: '#e8d292' },
+          },
+          fontFamily: {
+            'serif': ['Playfair Display', 'Georgia', 'serif'],
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans" style="background: #fefcf9;">
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress"></div>
+
+  <!-- Navigation (Glassmorphism) -->
+  <nav class="site-nav">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-5">
+        <a href="index.html" class="text-white font-serif text-xl font-bold tracking-wide hover:text-gold transition-colors">
+          Boudicca
+        </a>
+        <span class="text-white/20 hidden sm:inline">|</span>
+        <span class="text-white/40 text-xs font-sans tracking-wider hidden sm:inline">Lesson 10 of 16</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <button class="teacher-toggle" aria-label="Toggle teacher facilitation notes">Teacher Mode</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="lesson-hero grad-hero" style="background: linear-gradient(165deg, rgba(26,26,46,0.92) 0%, rgba(22,33,62,0.88) 50%, rgba(26,39,68,0.92) 100%), url('images/destruction-horizon.png') center/cover no-repeat;">
+    <div class="relative z-10 max-w-3xl mx-auto reveal">
+      <span class="chapter-badge">Chapter 3 &middot; The Revolt and Aftermath</span>
+      <p class="text-white/40 font-sans text-sm tracking-wider uppercase mb-3">Lesson 10</p>
+      <h1 class="hero-title font-serif text-white">The Campaign<br>of Destruction</h1>
+      <p class="hero-desc">
+        What was the scale of Boudicca&rsquo;s campaign against Londinium and Verulamium, and how did
+        Suetonius Paulinus respond to the gravest crisis in the history of Roman Britain?
+      </p>
+      <p class="reading-time"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> ~38 min</p>
+      <!-- Syllabus Outcomes -->
+      <details class="mt-8">
+        <summary class="text-white/25 text-xs font-sans cursor-pointer hover:text-white/40 transition-colors uppercase tracking-[0.15em]">
+          NESA Syllabus Outcomes
+        </summary>
+        <div class="mt-3 text-white/35 text-xs font-sans space-y-1 leading-relaxed">
+          <p><strong class="text-white/50">AH11-1:</strong> Describes the nature of continuity and change in the ancient world</p>
+          <p><strong class="text-white/50">AH11-3:</strong> Analyses the role of historical features, individuals and groups in shaping the past</p>
+          <p><strong class="text-white/50">AH11-5:</strong> Examines the significance of historical features, people, places, events and developments of the ancient world</p>
+          <p><strong class="text-white/50">AH11-6:</strong> Analyses and interprets different types of sources for evidence to support an historical account or argument</p>
+        </div>
+      </details>
+    </div>
+    <!-- Decorative number -->
+    <div class="absolute bottom-6 right-8 font-serif text-white/[0.03] font-extrabold pointer-events-none select-none hidden md:block" style="font-size: 14rem; line-height: 1;">10</div>
+  </section>
+
+
+  <!-- ==========================================
+       LEARNING INTENTION & SUCCESS CRITERIA
+       ========================================== -->
+  <section id="lisc" class="full-section grad-lisc">
+    <div class="section-inner reveal">
+      <span class="section-label bg-navy/[0.07] text-navy">Learning Intention</span>
+      <h2 class="section-heading">What You&rsquo;ll Learn</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-8">
+        To understand the scale and nature of Boudicca&rsquo;s campaign against Londinium and Verulamium, and to evaluate Suetonius Paulinus&rsquo;s strategic response to the revolt.
+      </p>
+
+      <div>
+        <h3 class="font-sans text-xs font-bold uppercase tracking-[0.12em] text-gray-400 mb-2">Success Criteria</h3>
+        <p class="sc-progress-text text-xs text-gray-400 mb-1">0 of 4 criteria met</p>
+        <div class="sc-progress"><div class="sc-progress-bar"></div></div>
+        <p class="text-sm text-gray-500 mb-4">By the end of this lesson, I can:</p>
+        <div class="space-y-1">
+          <div class="sc-item"><input type="checkbox" id="sc1"><label for="sc1">Describe the destruction of Londinium and Verulamium during the revolt.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc2"><label for="sc2">Explain Suetonius Paulinus&rsquo;s strategic decision to abandon Londinium.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc3"><label for="sc3">Analyse the scale of the destruction using both written and archaeological evidence.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc4"><label for="sc4">Evaluate the consequences of Boudicca&rsquo;s military strategy for her ultimate defeat.</label></div>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Sharing LISC</p>
+        <p>Display the learning intention and success criteria on the board. Read them aloud. Note that today&rsquo;s lesson is rich in both written primary sources and archaeological evidence &mdash; students will practise comparing the two. Check understanding: <strong>&ldquo;Can someone explain what &lsquo;evaluate&rsquo; requires you to do?&rdquo;</strong> (cold call). Expected answer: weigh up arguments on both sides and reach a judgement.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       ACTIVATING PRIOR KNOWLEDGE
+       ========================================== -->
+  <section id="prior-knowledge" class="full-section grad-prior relative">
+    <span class="section-number">?</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-white/50 text-amber-700">Before We Begin</span>
+      <h2 class="section-heading">What Do You Already Know?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        In Lesson 9 we examined the opening of the revolt: the destruction of Camulodunum, the defeat of the Ninth Legion, and the flight of Catus Decianus. Today we follow Boudicca&rsquo;s forces as they move on Londinium and Verulamium.
+      </p>
+
+      <div class="mb-6">
+        <p class="font-sans text-sm font-semibold text-gray-700 mb-2">Quick retrieval: What happened to Camulodunum?</p>
+        <div class="poll-options">
+          <button class="poll-btn">Surrendered peacefully</button>
+          <button class="poll-btn">Destroyed by fire</button>
+          <button class="poll-btn">Defended successfully</button>
+          <button class="poll-btn">Evacuated in time</button>
+        </div>
+      </div>
+
+      <div>
+        <label class="font-sans text-sm font-semibold text-gray-700 block mb-2" for="prior-text">
+          Retrieval practice: Write down two key facts from Lesson 9 about the opening of the revolt.
+        </label>
+        <textarea id="prior-text" class="w-full border border-black/[0.08] rounded-2xl p-4 text-sm font-sans leading-relaxed resize-y bg-white/60 backdrop-blur min-h-[90px] focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-all"
+                  placeholder="For example: What was the symbolic significance of the Temple of Claudius? What happened to the Ninth Legion?"></textarea>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Activating Prior Knowledge</p>
+        <p>Use <strong>cold call</strong> to ask 3&ndash;4 students what they remember from Lesson 9. The correct answer for the poll is &ldquo;Destroyed by fire&rdquo; &mdash; this connects directly to today&rsquo;s lesson on archaeological destruction layers.</p>
+        <p class="mt-2"><strong>CFU strategy:</strong> Retrieval gesture vote &mdash; &ldquo;True or false: The Temple of Claudius at Camulodunum was built on land taken from the Trinovantes tribe. Thumbs up for true, down for false.&rdquo; (Answer: true.) If fewer than 80% correct, re-read the relevant paragraph before proceeding.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 1: SUETONIUS PAULINUS — RACING AGAINST TIME
+       ========================================== -->
+  <section id="chunk-1" class="full-section grad-chunk1 relative">
+    <span class="section-number">01</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-burgundy/10 text-burgundy">Chunk 1 of 5</span>
+      <h2 class="section-heading">Suetonius Paulinus: Racing Against Time</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling (&lsquo;I Do&rsquo;)</p>
+        <p><strong>Read aloud</strong> and model historical thinking: &ldquo;Suetonius rode 250 miles with only cavalry. That tells me he understood the urgency &mdash; but also that he knew he couldn&rsquo;t bring his full army in time. This is a commander making calculations under extreme pressure.&rdquo;</p>
+        <p class="mt-2">Pause at the decision to abandon Londinium and ask: &ldquo;What would you have done?&rdquo; This creates engagement before the analysis.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          When news of the revolt reached Suetonius Paulinus on the island of Mona, he acted with characteristic speed. Abandoning his campaign against the Druids, he rode hard for Londinium, covering approximately <strong>250 miles</strong> with a cavalry escort, leaving his main force &mdash; two legions (XIV Gemina and XX Valeria Victrix) &mdash; to follow on foot as quickly as possible.
+        </p>
+        <p>
+          Tacitus paints the scene of Suetonius&rsquo;s dilemma with controlled drama. Londinium was not yet a colonia and had no special Roman legal status, but it was already the <strong>commercial heart of the province</strong> &mdash; a bustling trading centre full of merchants, traders, and civilians. The governor arrived to find the town in panic, refugees flooding the streets, and no realistic prospect of defending the settlement with the forces available.
+        </p>
+        <p>
+          After assessing the situation, Suetonius made the coldly rational decision that would define his reputation for both competence and ruthlessness: <strong>he would not attempt to hold Londinium</strong>. The town was not defensible with his available forces. To stand and fight on Boudicca&rsquo;s terms, in ground not of his choosing, with numbers heavily against him, would be to risk the destruction of the entire Roman force in Britain. He ordered the withdrawal of all able-bodied men who could travel, telling those who could not &mdash; the elderly, infirm, women who refused to leave &mdash; that he could not protect them.
+        </p>
+      </div>
+
+      <!-- Primary Source: Tacitus on Suetonius's decision -->
+      <div class="source-box">
+        <p class="provenance">
+          <strong>Primary Source:</strong> Tacitus, <em>Annals</em> 14.33 (c. AD 98). Tacitus was a Roman senator and historian writing approximately fifty-seven years after the revolt. His father-in-law Agricola served as governor of Britain, giving him access to firsthand accounts of British affairs. Translation: A.J. Woodman (Penguin, 2004).
+        </p>
+        <blockquote>
+          &ldquo;Suetonius, however, with wonderful resolution, marched amidst a hostile population to Londinium, which, though undistinguished by the name of a colony, was much frequented by a number of merchants and trading vessels. Uncertain whether he should choose it as a seat of war, as he looked round on his small force of soldiers, and remembered with what a serious warning the rashness of Petilius had been punished, he resolved to save the province at the cost of a single town.&rdquo;
+        </blockquote>
+        <div class="historian-note">
+          <strong>Historian&rsquo;s note:</strong> This passage reveals Suetonius Paulinus making one of the most ruthless strategic decisions in the history of Roman Britain. Tacitus frames it not as cowardice or indifference, but as cold military logic &mdash; saving the province by sacrificing Londinium. The phrase &ldquo;wonderful resolution&rdquo; signals Tacitus&rsquo;s admiration for Suetonius&rsquo;s discipline, even as the passage acknowledges the human cost. Notably, Tacitus records that those unable to evacuate &mdash; the elderly, the infirm, women who could not march &mdash; were left to be killed by Boudicca&rsquo;s forces. This moment marks the psychological turning point of the revolt: Rome had lost three cities and a legion&rsquo;s infantry, and its governor had chosen strategic retreat over the defence of civilians.
+        </div>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="c"
+           data-feedback-correct="Correct! Suetonius made a ruthless but rational military calculation: with too few soldiers to defend Londinium, fighting on Boudicca's terms would risk destroying the entire Roman force in Britain. He chose to sacrifice one town to save the province &mdash; a decision that Tacitus frames with admiration ('wonderful resolution')."
+           data-feedback-incorrect="Not quite. Suetonius's decision was not about cowardice or indifference. He calculated that his small force could not hold Londinium against Boudicca's army, and that fighting there would risk losing everything. He chose strategic withdrawal to preserve his forces for a battle on his own terms.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p>Use <strong>think-pair-share</strong>: &ldquo;Discuss with your partner: Was Suetonius right to abandon Londinium?&rdquo; (60 seconds). Then cold call 2&ndash;3 pairs before revealing the answer. This builds analytical thinking.</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">Why did Suetonius Paulinus choose to abandon Londinium?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q1" class="mt-0.5"><span>He believed Londinium was not important enough to defend</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q1" class="mt-0.5"><span>He was ordered by the emperor to retreat to the coast</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q1" class="mt-0.5"><span>He judged that defending it with his small force would risk losing the entire province</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q1" class="mt-0.5"><span>He wanted to punish the merchants of Londinium for not paying their taxes</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+
+      <div class="match-activity" data-answer="0-1,1-2,2-0">
+        <h3>Match the Town to Its Roman Status</h3>
+        <p class="text-gray-700 font-medium mb-4">Match each town to its official Roman status:</p>
+        <div class="match-pairs">
+          <div>
+            <div class="match-prompt" data-idx="0">Camulodunum (Colchester)</div>
+            <div class="match-slot" data-idx="0">Click an answer</div>
+            <div class="match-prompt" data-idx="1" style="margin-top:0.75rem">Londinium (London)</div>
+            <div class="match-slot" data-idx="1">Click an answer</div>
+            <div class="match-prompt" data-idx="2" style="margin-top:0.75rem">Verulamium (St Albans)</div>
+            <div class="match-slot" data-idx="2">Click an answer</div>
+          </div>
+          <div>
+            <div class="match-answer match-item" data-idx="0">Municipium &mdash; self-governing town with Latin rights</div>
+            <div class="match-answer match-item" data-idx="1">Colonia &mdash; veteran colony with full Roman citizenship</div>
+            <div class="match-answer match-item" data-idx="2">Unchartered trading town &mdash; no official status</div>
+          </div>
+        </div>
+        <button class="check-btn" style="margin-top:1rem">Check Matches</button>
+        <div class="cfu-feedback" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 2: THE DESTRUCTION OF LONDINIUM AND VERULAMIUM
+       ========================================== -->
+  <section id="chunk-2" class="full-section grad-chunk2 relative">
+    <span class="section-number">02</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-purple-100 text-purple-700">Chunk 2 of 5</span>
+      <h2 class="section-heading">The Destruction of Londinium and Verulamium</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Guided Reading (&lsquo;We Do&rsquo;)</p>
+        <p>Have students read both subsections silently. Then use <strong>think-pair-share</strong>: &ldquo;Why is the destruction of Verulamium described as a &lsquo;tragic irony&rsquo;? Discuss with your partner.&rdquo; (60 seconds). Cold call 2&ndash;3 pairs to share.</p>
+        <p class="mt-2">Key point to draw out: Verulamium was a <strong>British</strong> town that had adopted Roman culture. Its destruction means the revolt killed pro-Roman Britons, not just Romans.</p>
+      </div>
+
+      <h3 class="font-serif text-xl font-bold text-navy mb-4">The Destruction of Londinium</h3>
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Boudicca&rsquo;s forces swept into Londinium and destroyed it comprehensively. Tacitus writes that the rebels <em>&ldquo;did not take or sell prisoners; there was none of the other commerce of war. They were in a hurry to cut throats, hang, burn, and crucify.&rdquo;</em> Cassius Dio adds the claim that victims were subjected to religious ritual killings, though historians regard this detail with considerable scepticism &mdash; it may reflect Roman propaganda designed to cast the rebels as savage barbarians.
+        </p>
+        <p>
+          The archaeological evidence from Londinium is remarkable in its precision. Excavations across the City of London &mdash; particularly those conducted during major construction projects at the Walbrook, the Bloomberg site, and under Leadenhall Market &mdash; have revealed a distinctive layer of red-brown burnt debris approximately <strong>30 centimetres thick</strong>, dating to the mid-first century AD. This <strong>&ldquo;Boudiccan destruction horizon&rdquo;</strong> contains melted pottery, charred timber, burnt grain, fused glass, and the remains of burned-out buildings.
+        </p>
+      </div>
+
+      <!-- Featured image: Destruction horizon stratigraphy -->
+      <figure class="featured-image">
+        <img src="images/destruction-horizon.png" alt="Photograph of archaeological stratigraphy showing the Boudiccan destruction horizon — a distinctive reddish-orange layer of burnt debris sandwiched between earlier and later Roman occupation layers." loading="lazy">
+        <figcaption class="caption"><strong>The Boudiccan Destruction Horizon:</strong> A photograph of archaeological stratigraphy showing the distinctive reddish-orange layer of burnt debris from the Boudiccan revolt, sandwiched between earlier and later Roman occupation layers. This physical record in the soil directly corroborates the written accounts of destruction.</figcaption>
+      </figure>
+
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Key Archaeological Find</p>
+        <p class="text-gray-700">
+          The Bloomberg excavation (2010&ndash;2014) in the City of London uncovered the largest collection of Roman writing tablets ever found in Britain, alongside abundant evidence of the Boudiccan destruction layer. The burnt horizon at roughly 1&ndash;2 metres below current street level directly marks the moment the rebel army passed through the settlement.
+        </p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem] mt-6">
+        <p>
+          Ironically, the Boudiccan destruction of Londinium <strong>preserved the archaeological record</strong> of the early town remarkably well. The burning sealed the ground surface of AD 60/61 beneath metres of later Roman rebuilding, creating a time capsule of the pre-revolt settlement that continues to yield new discoveries.
+        </p>
+      </div>
+
+      <!-- Primary Source: Cassius Dio on Atrocities -->
+      <div class="source-box">
+        <p class="provenance">
+          <strong>Primary Source:</strong> Cassius Dio, <em>Roman History</em> (Rh&#333;ma&#239;k&#275; Historia) 62.7, c. AD 211&ndash;233. Written approximately 150 years after the Boudiccan revolt. Survives only as an 11th-century Byzantine epitome compiled by the monk Xiphilinus. Translated by Earnest Cary, Loeb Classical Library, 1925.
+        </p>
+        <blockquote>
+          &ldquo;The Britons took no prisoners; they could not wait to cut throats, hang, burn, and crucify, as though avenging in advance the retribution that was on its way. They also hung up naked the noblest and most distinguished women and then cut off their breasts and sewed them to their mouths, in order to make the victims appear to be eating them; afterwards they impaled the women on sharp skewers run lengthwise through the entire body. All this they did to the accompaniment of sacrifices, banquets, and wanton behaviour, not only in all their other sacred places, but particularly in the grove of Andate. This was their name for Victory, and they regarded her with most exceptional reverence.&rdquo;
+        </blockquote>
+        <div class="historian-note">
+          <strong>Historian&rsquo;s note:</strong> This is the only ancient account of atrocities committed against prisoners during the revolt; Tacitus does not describe these acts in comparable detail. Scholars debate whether Dio&rsquo;s description is historically accurate or rhetorical embellishment &mdash; a literary convention for depicting enemy &ldquo;barbarism&rdquo; for a Roman audience. The ritual violence described in the grove of Andate follows established Greco-Roman conventions for representing Celtic religious practice. Modern historians including Miranda Aldhouse-Green (<em>Boudica Britannia</em>, 2006) and Richard Hingley and Christina Unwin (<em>Boudica: Iron Age Warrior Queen</em>, 2005) urge significant caution in accepting this passage at face value. Nevertheless, Dio&rsquo;s account of the scale and ferocity of the destruction is broadly corroborated by the archaeological burn layers identified at Camulodunum, Londinium, and Verulamium.
+        </div>
+      </div>
+
+      <!-- OVPRL Tool (Reduced: R and L only) -->
+      <div class="ovprl-tool">
+        <h3 class="font-serif text-xl font-bold text-navy mb-1">Try It: Analyse Cassius Dio, <em>Roman History</em> 62.7</h3>
+        <p class="text-sm text-gray-500 mb-5">Complete each field. Use the hint button if you need guidance.</p>
+
+        <div class="ovprl-field">
+          <label for="ovprl-10-r"><span class="text-burgundy font-extrabold">R &mdash; Reliability:</span> How trustworthy is this?</label>
+          <textarea id="ovprl-10-r" placeholder="Can we trust this source?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Dio wrote approximately 150 years after the revolt, creating significant temporal distance from events. His account survives only as an 11th-century Byzantine epitome compiled by the monk Xiphilinus, meaning we cannot be certain the text reflects Dio&rsquo;s original words. The graphic descriptions of atrocities follow established Greco-Roman rhetorical conventions for depicting &ldquo;barbarian&rdquo; behaviour, raising questions about whether they are factual reporting or literary embellishment.</div>
+        </div>
+        <div class="ovprl-field">
+          <label for="ovprl-10-l"><span class="text-burgundy font-extrabold">L &mdash; Limitations:</span> What does it <em>not</em> tell us?</label>
+          <textarea id="ovprl-10-l" placeholder="What is missing?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Dio does not provide the Celtic perspective on events. The epitome problem means we cannot know what Xiphilinus may have omitted, condensed, or altered. Dio&rsquo;s Greek rhetorical conventions shape his depiction of violence in ways that may exaggerate or distort the historical reality. The passage tells us nothing about the experiences of ordinary people who survived the destruction.</div>
+        </div>
+      </div>
+
+      <h3 class="font-serif text-xl font-bold text-navy mt-10 mb-4">Verulamium: A Tragic Irony</h3>
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          After Londinium, Boudicca&rsquo;s forces moved on <strong>Verulamium</strong> (modern St Albans in Hertfordshire), the third major target of the revolt. Verulamium is historically significant because it was not a Roman town in the sense of being a settlement of Roman citizens &mdash; it was a <strong>British town that had adopted Roman culture</strong>. It held <em>municipium</em> status, meaning its leading inhabitants had attained Latin rights.
+        </p>
+        <p>
+          The destruction of Verulamium thus represents a <strong>deeply tragic irony</strong>: Boudicca&rsquo;s revolt, ostensibly conducted in the name of British freedom from Roman oppression, resulted in the massacre of a British community that had chosen to engage with Roman culture. The Trinovantes and other allies may have seen Verulamium&rsquo;s inhabitants as collaborators; alternatively, the rebel army, having tasted fire and victory, may have been beyond the control of any single commander&rsquo;s restraint.
+        </p>
+        <p>
+          Like Camulodunum and Londinium, Verulamium&rsquo;s destruction is archaeologically attested. A similar burnt layer has been identified across the site, and several pre-Boudiccan buildings have been excavated with their destruction firmly dated to the revolt period. Tacitus records all three towns&rsquo; destruction but notably does not dwell on the fate of Verulamium&rsquo;s residents, perhaps because acknowledging the massacre of pro-Roman Britons complicated his moral framework.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="b"
+           data-feedback-correct="Correct! The destruction of Verulamium is a tragic irony because it was a British town that had voluntarily adopted Roman culture. Boudicca's revolt, fought in the name of British freedom, ended up destroying a British community &mdash; not a Roman one. This complicates any simple narrative of the revolt as 'freedom fighters vs oppressors'."
+           data-feedback-incorrect="Not quite. The tragic irony is that Verulamium was a British, not a Roman, settlement. Its inhabitants had chosen to adopt Roman culture. So the revolt that claimed to fight for British freedom ended up massacring British people who had made different choices about how to live.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">Why is the destruction of Verulamium described as a &ldquo;tragic irony&rdquo;?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q2" class="mt-0.5"><span>Because the town&rsquo;s defences were so strong that the attack was unnecessary</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q2" class="mt-0.5"><span>Because it was a British town that had adopted Roman culture, so Boudicca&rsquo;s &ldquo;freedom fight&rdquo; destroyed a British community</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q2" class="mt-0.5"><span>Because the Romans had already evacuated everyone before Boudicca arrived</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q2" class="mt-0.5"><span>Because the town was rebuilt identically within a year of its destruction</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 3: THE SCALE OF DESTRUCTION
+       ========================================== -->
+  <section id="chunk-3" class="full-section grad-chunk3 relative">
+    <span class="section-number">03</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-amber-100 text-amber-700">Chunk 3 of 5</span>
+      <h2 class="section-heading">The Scale of the Revolt&rsquo;s Destruction</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Scaffolding (&lsquo;We Do&rsquo;)</p>
+        <p>Read this section aloud and pause at the casualty figures. Ask: &ldquo;Tacitus says seventy thousand, Dio says eighty thousand. Why might ancient historians disagree on numbers?&rdquo; This is a key source analysis skill.</p>
+        <p class="mt-2"><strong>Retrieval gesture vote:</strong> &ldquo;Tacitus records 70,000 dead and Cassius Dio records 80,000. True or false: both historians agree on the exact casualty figures. Thumbs up for true, down for false.&rdquo; (Answer: false &mdash; they disagree, which suggests rhetorical exaggeration.) If fewer than 80% correct, highlight the discrepancy. <strong>Then think-pair-share:</strong> &ldquo;Why might ancient historians exaggerate casualty numbers?&rdquo; (60 seconds, cold call.)</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Tacitus records that <strong>seventy thousand</strong> Roman citizens and their allies were killed during the revolt. Cassius Dio inflates this figure to <strong>eighty thousand</strong>. Neither figure can be independently verified, and ancient writers frequently exaggerated casualty numbers for rhetorical effect. However, the broad picture of massive loss of life across three major urban centres is confirmed by the archaeological evidence. These were not small settlements: Camulodunum had a permanent garrison and a developed urban centre; Londinium was already a thriving commercial town; Verulamium had substantial public buildings.
+        </p>
+        <p>
+          The <strong>economic impact</strong> of losing three major towns simultaneously would have been severe. The commercial infrastructure of the province &mdash; trading networks, storage facilities, workshops, financial records &mdash; was largely concentrated in these urban centres. For the province of Britannia, the Boudiccan revolt represented an economic catastrophe from which recovery took decades.
+        </p>
+        <p>
+          There is also a <strong>human dimension</strong> that the sources barely acknowledge. Thousands of ordinary people &mdash; traders, craftsmen, slaves, freedmen, and women of all origins &mdash; died in the destruction of these towns. Their individual stories are lost. We know them only through the reddish ash layer in the soil.
+        </p>
+      </div>
+
+      <!-- Comparison Table: The Three Destroyed Towns -->
+      <h3 class="font-serif text-xl font-bold text-navy mt-8 mb-4">The Three Destroyed Towns: A Comparison</h3>
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase"></th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Camulodunum</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Londinium</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Verulamium</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white/70">
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">Roman status</td>
+              <td class="px-5 py-3 text-gray-600">Colonia (highest status) &mdash; veterans with full citizenship</td>
+              <td class="px-5 py-3 text-gray-600">Unchartered trading town &mdash; largest commercial settlement</td>
+              <td class="px-5 py-3 text-gray-600">Municipium &mdash; self-governing with Latin rights</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 font-semibold text-navy">Population</td>
+              <td class="px-5 py-3 text-gray-600">Roman veterans and families; settlers displacing Trinovantes</td>
+              <td class="px-5 py-3 text-gray-600">Mixed civilian: merchants, traders, immigrants</td>
+              <td class="px-5 py-3 text-gray-600">Romano-British elite who had adopted Roman customs</td>
+            </tr>
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">Symbolic importance</td>
+              <td class="px-5 py-3 text-gray-600">Temple of Claudius &mdash; symbol of Roman domination; first capital</td>
+              <td class="px-5 py-3 text-gray-600">Commercial hub; seat of the procurator; economic nerve centre</td>
+              <td class="px-5 py-3 text-gray-600">Showpiece of Romanisation; its destruction revealed the revolt&rsquo;s scope</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 font-semibold text-navy">Destruction evidence</td>
+              <td class="px-5 py-3 text-gray-600">Red ash layer; Temple podium survives beneath Colchester Castle</td>
+              <td class="px-5 py-3 text-gray-600">Red/black ash layer up to 30 cm; Bloomberg excavation (2010&ndash;14)</td>
+              <td class="px-5 py-3 text-gray-600">Burnt layer; smashed pottery and weapons in post-revolt stratigraphy</td>
+            </tr>
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">Tacitus&rsquo;s emphasis</td>
+              <td class="px-5 py-3 text-gray-600">Most detailed &mdash; portents, siege, mass slaughter</td>
+              <td class="px-5 py-3 text-gray-600">Brief &mdash; focuses on Suetonius&rsquo;s strategic decision</td>
+              <td class="px-5 py-3 text-gray-600">Briefly mentioned alongside Londinium</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-gray-400 italic">Note: Tacitus, <em>Annals</em> XIV.29&ndash;39 is the primary written source for all three towns. Archaeological evidence corroborates the destruction layers at each site.</p>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="d"
+           data-feedback-correct="Correct! Ancient historians frequently exaggerated casualty numbers for rhetorical effect &mdash; to impress their readers, to magnify the scale of events, or to serve a political purpose. The exact figures cannot be verified, but the broad picture of massive destruction is confirmed by archaeology."
+           data-feedback-incorrect="Not quite. The key issue with ancient casualty figures is that historians used numbers rhetorically &mdash; to impress, persuade, or dramatise &mdash; rather than with modern statistical precision. The exact totals cannot be verified, though the general scale of destruction is confirmed by the archaeological record.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p>Use <strong>cold call</strong>. This question tests source analysis skills &mdash; the ability to recognise rhetorical use of numbers in ancient writing.</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">Why do Tacitus (70,000) and Cassius Dio (80,000) give different casualty figures for the revolt?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q3" class="mt-0.5"><span>One of them made a counting error in their calculations</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q3" class="mt-0.5"><span>They were counting different groups of people &mdash; Tacitus counted only soldiers, Dio counted civilians too</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q3" class="mt-0.5"><span>The Romans had an accurate census system that produced slightly different results each time</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q3" class="mt-0.5"><span>Ancient historians frequently used casualty numbers for rhetorical effect rather than statistical accuracy</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 4: KEY ARCHAEOLOGICAL EVIDENCE
+       ========================================== -->
+  <section id="chunk-4" class="full-section grad-chunk4 relative">
+    <span class="section-number">04</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-blue-100 text-blue-700">Chunk 4 of 5</span>
+      <h2 class="section-heading">Key Archaeological Evidence from the Revolt</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; I Do / We Do</p>
+        <p><strong>Model source analysis</strong> with Source A: &ldquo;Let me show you how to analyse an archaeological source. I&rsquo;m looking at what it is, where it was found, what it tells us, and what its limitations are.&rdquo;</p>
+        <p class="mt-2">Then have students work through Sources B&ndash;E in pairs using the same framework. Cold call pairs to share their analysis of one source each.</p>
+      </div>
+
+      <p class="text-gray-700 leading-relaxed text-[1.05rem] mb-8">
+        The following archaeological sources provide physical evidence that corroborates and extends the written accounts of the Boudiccan destruction. Each artefact tells its own story of violence, looting, and symbolic destruction.
+      </p>
+
+      <!-- Source A: Bronze Head of Claudius -->
+      <h3 class="font-serif text-xl font-bold text-navy mt-8 mb-2">Archaeological Source A &mdash; Bronze Head of Claudius</h3>
+      <figure class="figure-card">
+        <img src="images/bronze-head-claudius.jpg" alt="Bronze head from a life-size equestrian statue of Emperor Claudius, showing a jagged line around the neck where it was violently hacked from the torso. Found in the River Alde, Suffolk." loading="lazy">
+        <figcaption><strong>Bronze Head of Claudius:</strong> Head from a life-size equestrian statue of Emperor Claudius, found in the River Alde, Suffolk. A jagged line around the neck shows where it was violently hacked from the torso during the sack of Camulodunum. The statue was almost certainly looted from the Temple of Claudius &mdash; the hated symbol of Roman colonial rule &mdash; and later deposited in the river, possibly as a ritual offering to the goddess Andraste. c. AD 60&ndash;61. British Museum, London.</figcaption>
+      </figure>
+
+      <!-- Source B: Tombstone of Marcus Favonius Facilis -->
+      <h3 class="font-serif text-xl font-bold text-navy mt-10 mb-2">Archaeological Source B &mdash; Tombstone of Marcus Favonius Facilis</h3>
+      <figure class="figure-card">
+        <img src="images/tombstone-facilis.jpg" alt="Tombstone of Marcus Favonius Facilis, Centurion of Legio XX, broken into two pieces and overturned by rebels during the destruction of Camulodunum." loading="lazy">
+        <figcaption><strong>Tombstone of Marcus Favonius Facilis, Centurion of Legio XX:</strong> Broken into two and overturned by rebels during the destruction of Camulodunum. He is depicted holding his vine stick &mdash; a symbol of centurion rank &mdash; with his other hand resting on the pommel of his sword. The deliberate toppling of this tombstone indicates symbolic, not merely opportunistic, violence. Colchester Castle Museum.</figcaption>
+      </figure>
+
+      <!-- Source C: Tombstone of Longinus Sdapeze -->
+      <h3 class="font-serif text-xl font-bold text-navy mt-10 mb-2">Archaeological Source C &mdash; Tombstone of Longinus Sdapeze</h3>
+      <figure class="figure-card">
+        <img src="images/tombstone-longinus.jpg" alt="Tombstone of Longinus Sdapeze, Duplicarius of Ala Prima Thracum, smashed into six pieces by rebels and dumped face down." loading="lazy">
+        <figcaption><strong>Tombstone of Longinus Sdapeze, Duplicarius of Ala Prima Thracum:</strong> Smashed into six pieces by rebels and dumped face down. The inscription identifies him as a Thracian from Sardica (modern Sofia, Bulgaria). He wears a jerkin of bronze scales, carries an oval shield, and rides a well-groomed horse. Like the Facilis tombstone, its deliberate destruction demonstrates the purposeful nature of the rebel assault on symbols of Roman military power. Colchester Castle Museum.</figcaption>
+      </figure>
+
+      <!-- Source D: Hawkedon Helmet -->
+      <h3 class="font-serif text-xl font-bold text-navy mt-10 mb-2">Archaeological Source D &mdash; Hawkedon Helmet</h3>
+      <figure class="figure-card">
+        <img src="images/hawkedon-helmet.jpg" alt="The Hawkedon Helmet, a solid bronze gladiator's helmet found in a Suffolk field, believed looted from Camulodunum during the Boudiccan revolt." loading="lazy">
+        <figcaption><strong>Hawkedon Helmet (Suffolk):</strong> Found in a Suffolk field, this solid bronze helmet originally had a tinned surface giving it a lustrous appearance and once had a hinged mask with eye guards. A gladiator&rsquo;s helmet, it was probably taken by a rebel during the sack of nearby Camulodunum. The helmet was most likely discarded after the sack &mdash; too heavy and cumbersome for a Celtic warrior unused to such equipment. Its discovery represents the kind of portable plunder carried from the burning towns before the rebels&rsquo; final defeat. Believed looted from Camulodunum, c. AD 60&ndash;61. British Museum, London.</figcaption>
+      </figure>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="a"
+           data-feedback-correct="Correct! The deliberate toppling and smashing of Roman military tombstones &mdash; not just general destruction, but targeted symbolic violence against memorials to Roman soldiers &mdash; demonstrates that the rebels were making a purposeful statement against Roman military power, not simply looting at random."
+           data-feedback-incorrect="Not quite. The key evidence is that the tombstones were deliberately targeted and smashed &mdash; this was not random damage but purposeful symbolic violence aimed specifically at representations of Roman military authority.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p>Use <strong>gesture voting</strong>: &ldquo;Hold up A, B, C, or D with your fingers.&rdquo; This question tests the ability to interpret archaeological evidence.</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">What does the deliberate destruction of the Facilis and Longinus tombstones tell us about the nature of the revolt?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q4" class="mt-0.5"><span>The rebels were making a purposeful symbolic attack on Roman military power, not just looting</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q4" class="mt-0.5"><span>The tombstones were accidentally damaged during the fighting and fires</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q4" class="mt-0.5"><span>The rebels were searching for gold they believed was hidden inside the stone monuments</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q4" class="mt-0.5"><span>The Romans destroyed their own tombstones to prevent the rebels from defacing them</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 5: SECONDARY SOURCES — ARCHAEOLOGICAL INTERPRETATIONS
+       ========================================== -->
+  <section id="chunk-5" class="full-section grad-chunk5 relative">
+    <span class="section-number">05</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-rose-100 text-rose-700">Chunk 5 of 5</span>
+      <h2 class="section-heading">Written Sources: Archaeological Interpretations</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Independent Analysis (&lsquo;You Do&rsquo;)</p>
+        <p>Students read these secondary sources independently. After reading, use <strong>think-pair-share</strong>: &ldquo;Choose one of the secondary sources. What does it add to our understanding of the revolt that the primary sources alone do not?&rdquo; (90 seconds). Cold call 3&ndash;4 pairs.</p>
+        <p class="mt-2">This develops the skill of evaluating how secondary sources build on primary and archaeological evidence.</p>
+      </div>
+
+      <!-- Secondary Source: Alcock -->
+      <div class="source-box">
+        <p class="provenance">
+          <strong>Secondary Source:</strong> Joan P. Alcock, <em>Roman Britain</em>, 2011
+        </p>
+        <blockquote>
+          &ldquo;Evidence of the unrest can be noted in the number of hoards that have been discovered. These included 217 silver denarii at Sutton (Suffolk) and 872 silver Iceni coins dated to AD 60&ndash;70 at Fring (Norfolk). Metalwork hoards include a large number of silver cups&hellip; these were buried either to save them from Boudicca&rsquo;s rebels or from Roman vengeance.&rdquo;
+        </blockquote>
+      </div>
+
+      <!-- Secondary Source: Aldhouse-Green -->
+      <div class="source-box">
+        <p class="provenance">
+          <strong>Secondary Source:</strong> Miranda Aldhouse-Green, <em>Boudica Britannia: Rebel, War-leader and Queen</em>, 2006
+        </p>
+        <blockquote>
+          &ldquo;Derek Allen has drawn attention to archaeological evidence for the non-reoccupation of old Icenian settlements after AD 60, something that may well indicate that their inhabitants did not survive to return home. The high-status &lsquo;city&rsquo; settlement was abandoned within at most a decade of the Boudican Rebellion: the archaeological record here simply stops. Such total population shifts beg questions as to whether the Icenian inhabitants fled, were massacred or were forcibly dispossessed of their ancestral territory.&rdquo;
+        </blockquote>
+      </div>
+
+      <!-- Secondary Source: Moorehead & Stuttard -->
+      <div class="source-box">
+        <p class="provenance">
+          <strong>Secondary Source:</strong> Sam Moorehead and David Stuttard, <em>The Romans Who Shaped Britain</em>, 2012
+        </p>
+        <blockquote>
+          &ldquo;Archaeology provides extensive evidence for the destruction of Camulodunum by Boudicca&rsquo;s rebels: the burnt remains of walls, painted plaster and roof tiles, along with furniture and quantities of pottery and glassware. Because the buildings were torched, remains of carbonised organic material such as wheat grains, dates and flax have been discovered. Whatever the details, the destruction was wholesale. There is also considerable evidence for Boudican destruction in London, mainly consisting of burnt building debris filled with artefacts and coins dating to the period AD 50&ndash;60.&rdquo;
+        </blockquote>
+      </div>
+
+      <!-- Secondary Source: Jason Burke -->
+      <div class="source-box">
+        <p class="provenance">
+          <strong>Secondary Source:</strong> Jason Burke, Chief Reporter, <em>The Observer</em> (UK), 2000
+        </p>
+        <blockquote>
+          &ldquo;A dig in Colchester has revealed that, when Boudicca&rsquo;s troops seized the city, they went to enormous lengths to destroy anything touched by the Romans. Many of the houses were built of hardened clay and timber. According to archaeologists, they would have been very difficult to burn. &lsquo;These were not flammable buildings&rsquo;, said Phillip Crummy, who directed the dig. &lsquo;But they were levelled. It was a murderous, determined, intensive and deliberate attack.&rsquo; The dig found that every house had been carefully levelled, one by one, by the Iceni tribesmen.&rdquo;
+        </blockquote>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="c"
+           data-feedback-correct="Correct! The coin hoards tell us that people on both sides &mdash; Romans and Britons &mdash; were burying their valuables in response to the crisis. The Iceni coins at Fring suggest even Boudicca's own people feared the consequences of the revolt. Hoards buried but never recovered imply their owners did not survive to reclaim them."
+           data-feedback-incorrect="Not quite. The significance of the coin hoards is that they were buried by people trying to protect their wealth during the crisis &mdash; and never recovered. This tells us about the fear and chaos on both sides, and suggests many of the people who buried them did not survive.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">According to Alcock, what does the discovery of buried coin hoards from this period tell us?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q5" class="mt-0.5"><span>The Romans were wealthy enough to discard coins they did not need</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q5" class="mt-0.5"><span>The Iceni had developed their own banking system before the revolt</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q5" class="mt-0.5"><span>People on both sides buried valuables to protect them from the crisis, and many never returned to recover them</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q5" class="mt-0.5"><span>The coins were deliberately placed as religious offerings to Celtic gods</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       INDEPENDENT PRACTICE: REVIEW QUESTIONS
+       ========================================== -->
+  <section id="practice" class="full-section grad-practice relative">
+    <span class="section-number">Q</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-green-100 text-green-700">Independent Practice</span>
+      <h2 class="section-heading">Review Questions</h2>
+      <p class="text-sm text-gray-500 mb-6">Choose the level that challenges you, or work through all three.</p>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Independent Practice (&lsquo;You Do&rsquo;)</p>
+        <p>Students should attempt these <strong>only after a high success rate</strong> on the CFU questions. Direct all students to Foundation first. The Foundation questions include reference to the archaeological sources &mdash; ensure students have engaged with Sources A&ndash;D before attempting.</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> Students answer Foundation Q2 on a sticky note before leaving.</p>
+      </div>
+
+      <div class="tab-group">
+        <button class="tab-btn active" data-tab="foundation">Foundation</button>
+        <button class="tab-btn" data-tab="standard">Standard</button>
+        <button class="tab-btn" data-tab="extension">Extension</button>
+      </div>
+
+      <div class="tab-content active" id="foundation" data-tab="foundation">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Identify and describe</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>What was the name of the second city attacked by Boudicca&rsquo;s forces after Camulodunum?</li>
+          <li>Why did Suetonius Paulinus choose to abandon Londinium rather than defend it?</li>
+          <li>Using at least two of the archaeological sources (A&ndash;D) in this lesson, describe the physical evidence that confirms the Boudiccan destruction of Camulodunum.</li>
+        </ol>
+      </div>
+      <div class="tab-content" id="standard" data-tab="standard">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Analyse and explain</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Explain why the destruction of Verulamium is considered a &ldquo;tragic irony&rdquo; within the context of the revolt.</li>
+          <li>Using the Tacitus <em>Annals</em> 14.33 source in this lesson, analyse what this extract reveals about Roman attitudes to military strategy and provincial governance.</li>
+          <li>Compare the archaeological evidence for the destruction of Londinium with the literary account provided by Tacitus.</li>
+          <li>Evaluate the reliability of Cassius Dio&rsquo;s account of events at Londinium (<em>Rh&#333;ma&#239;k&#275; Historia</em> 62.7) as a source for the Boudiccan revolt. In your response, consider his temporal distance from events, the epitome problem, and the rhetorical conventions of Greco-Roman historiography.</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Topic sentence starters:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li>A key factor in this was&hellip;</li>
+            <li>The evidence from [source] demonstrates&hellip;</li>
+            <li>This is significant because&hellip;</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-content" id="extension" data-tab="extension">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Evaluate and debate</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Evaluate the strategic decisions of Suetonius Paulinus during the campaign of destruction. Was his decision to abandon Londinium justified? Construct an argument with reference to both written and archaeological evidence.</li>
+          <li>Critically assess the claim that Boudicca&rsquo;s campaign of destruction, while militarily impressive, contained the seeds of the revolt&rsquo;s ultimate failure.</li>
+          <li>Analyse how the casualty figures recorded by Tacitus (seventy thousand) and Cassius Dio (eighty thousand) function in each historian&rsquo;s narrative. What rhetorical purposes do these figures serve, and what does the discrepancy itself tell us about how ancient historians used numbers?</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Evaluative transitions:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li>&ldquo;To a significant/limited extent&hellip;&rdquo;</li>
+            <li>&ldquo;The most compelling evidence for this is&hellip;&rdquo;</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       KEY TERMS: FLASHCARD GLOSSARY
+       ========================================== -->
+  <section id="key-terms" class="full-section grad-terms relative">
+    <span class="section-number">A&ndash;Z</span>
+    <div class="section-inner">
+      <div class="flex items-end justify-between mb-6 reveal">
+        <div>
+          <span class="section-label bg-purple-100 text-purple-700">Key Terms</span>
+          <h2 class="section-heading mb-0">Glossary</h2>
+        </div>
+        <button class="glossary-view-toggle text-sm text-navy font-semibold hover:text-burgundy transition-colors cursor-pointer">
+          Switch to List View
+        </button>
+      </div>
+      <p class="text-sm text-gray-500 mb-6 reveal">Click each card to reveal its definition.</p>
+
+      <!-- Flashcards -->
+      <div class="flashcard-grid reveal-stagger">
+        <div class="flashcard" tabindex="0" role="button" aria-label="Flashcard: Londinium">
+          <div class="flashcard-inner"><div class="flashcard-front">Londinium</div><div class="flashcard-back">The Roman name for modern London; the commercial centre of Roman Britain and eventually its administrative capital.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Verulamium</div><div class="flashcard-back">The Roman name for modern St Albans; a municipium (town with Latin rights) with a substantial Romanised British population.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Destruction Horizon</div><div class="flashcard-back">An archaeological term for a distinct layer of burnt material in the soil that marks a violent destruction event at a specific moment in time.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Municipium</div><div class="flashcard-back">A Roman town whose inhabitants held Latin rights (a lesser form of Roman citizenship), with elected local magistrates and Roman-style governance.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Stratigraphy</div><div class="flashcard-back">The study of geological and archaeological layers (strata) to establish chronological sequences of occupation and events.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Rhetoric</div><div class="flashcard-back">Language designed to persuade or impress an audience; ancient historians frequently used rhetorical techniques to shape readers&rsquo; interpretations.</div></div>
+        </div>
+      </div>
+
+      <!-- List View (hidden) -->
+      <div class="glossary-list hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+            <thead>
+              <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/4">Term</th>
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Definition</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white/70">
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Londinium</td><td class="px-5 py-3 text-gray-600">The Roman name for modern London; the commercial centre of Roman Britain and eventually its administrative capital.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Verulamium</td><td class="px-5 py-3 text-gray-600">The Roman name for modern St Albans; a municipium (town with Latin rights) with a substantial Romanised British population.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Destruction horizon</td><td class="px-5 py-3 text-gray-600">An archaeological term for a distinct layer of burnt material in the soil that marks a violent destruction event at a specific moment in time.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Municipium</td><td class="px-5 py-3 text-gray-600">A Roman town whose inhabitants held Latin rights (a lesser form of Roman citizenship), with elected local magistrates and Roman-style governance.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Stratigraphy</td><td class="px-5 py-3 text-gray-600">The study of geological and archaeological layers (strata) to establish chronological sequences of occupation and events.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Rhetoric</td><td class="px-5 py-3 text-gray-600">Language designed to persuade or impress an audience; ancient historians frequently used rhetorical techniques to shape readers&rsquo; interpretations.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       REVIEW OF LEARNING
+       ========================================== -->
+  <section id="review" class="full-section grad-review relative">
+    <div class="section-inner reveal">
+      <span class="section-label bg-gold/20 text-amber-700">Review of Learning</span>
+      <h2 class="section-heading">How Did You Go?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6 text-[1.05rem]">
+        Return to the success criteria from the start of this lesson. Can you now tick off each one?
+        If any remain unticked, scroll back and review the relevant section.
+      </p>
+
+      <div class="space-y-3">
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">1</span>
+          <span class="text-gray-700">Describe the destruction of Londinium and Verulamium during the revolt.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">2</span>
+          <span class="text-gray-700">Explain Suetonius Paulinus&rsquo;s strategic decision to abandon Londinium.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">3</span>
+          <span class="text-gray-700">Analyse the scale of the destruction using both written and archaeological evidence.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">4</span>
+          <span class="text-gray-700">Evaluate the consequences of Boudicca&rsquo;s military strategy for her ultimate defeat.</span>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Review of Learning</p>
+        <p><strong>Self-assessment</strong> for each criterion: &ldquo;Thumbs up if confident, sideways if partly there, down if you need more help.&rdquo;</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> &ldquo;On a sticky note, write one sentence explaining how archaeological evidence supports the written accounts of the Boudiccan revolt.&rdquo; Collect as students leave.</p>
+      </div>
+
+      <!-- Exit Ticket -->
+      <div class="exit-ticket">
+        <h4>Exit Ticket</h4>
+        <label class="text-sm text-gray-600 block mb-1">One thing I learned today:</label>
+        <textarea placeholder="What was the most important thing you learned in this lesson?"></textarea>
+        <label class="text-sm text-gray-600 block mb-1">One question I still have:</label>
+        <textarea placeholder="What are you still unsure about or want to know more about?"></textarea>
+      </div>
+
+      <!-- Reflection -->
+      <div class="reflection-panel">
+        <h4>Self-Reflection</h4>
+        <p class="text-sm text-gray-600 mb-2">How confident do you feel about this lesson&rsquo;s content?</p>
+        <div class="confidence-scale">
+          <button class="confidence-btn">1<br><span class="text-[0.65rem]">Not yet</span></button>
+          <button class="confidence-btn">2<br><span class="text-[0.65rem]">Getting there</span></button>
+          <button class="confidence-btn">3<br><span class="text-[0.65rem]">Mostly</span></button>
+          <button class="confidence-btn">4<br><span class="text-[0.65rem]">Confident</span></button>
+          <button class="confidence-btn">5<br><span class="text-[0.65rem]">Mastered</span></button>
+        </div>
+        <label class="text-sm text-gray-600 block mt-3 mb-1">What do you want to revisit before the next lesson?</label>
+        <textarea class="reflection-text" placeholder="Any topics, terms, or skills you want to review?"></textarea>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       LESSON NAVIGATION
+       ========================================== -->
+  <section class="py-12 px-6" style="background: #fefcf9;">
+    <div class="max-w-3xl mx-auto lesson-nav-footer flex items-center justify-between">
+      <a href="lesson-9.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        Lesson 9
+      </a>
+      <span class="text-xs text-gray-300 tracking-wider uppercase">Lesson 10 of 16</span>
+      <a href="lesson-11.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        Lesson 11
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 text-center" style="background: linear-gradient(180deg, #fefcf9, #f5f3ed);">
+    <p class="text-sm text-gray-400 font-sans">
+      NSW Ancient History Stage 6 &middot; NESA Syllabus (2017) &middot; Case Study A
+    </p>
+    <p class="text-xs text-gray-300 mt-2 font-sans">Created by Cheryl Cutter</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

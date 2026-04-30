@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 6: Cassius Dio &mdash; A Later Voice | Boudicca Interactive</title>
+
+  <!-- Meta -->
+  <meta name="description" content="Interactive NSW Ancient History Stage 6 resource — Boudicca case study with explicit teaching, CFU activities, source analysis, and teacher facilitation tools.">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': { DEFAULT: '#1a1a2e', mid: '#16213e', light: '#2a4d7a' },
+            'burgundy': { DEFAULT: '#8b2635', light: '#a83242' },
+            'gold': { DEFAULT: '#c9a84c', light: '#e8d292' },
+          },
+          fontFamily: {
+            'serif': ['Playfair Display', 'Georgia', 'serif'],
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans" style="background: #fefcf9;">
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress"></div>
+
+  <!-- Navigation (Glassmorphism) -->
+  <nav class="site-nav">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-5">
+        <a href="index.html" class="text-white font-serif text-xl font-bold tracking-wide hover:text-gold transition-colors">
+          Boudicca
+        </a>
+        <span class="text-white/20 hidden sm:inline">|</span>
+        <span class="text-white/40 text-xs font-sans tracking-wider hidden sm:inline">Lesson 6 of 16</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <button class="teacher-toggle" aria-label="Toggle teacher facilitation notes">Teacher Mode</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="lesson-hero grad-hero" style="background: linear-gradient(165deg, rgba(26,26,46,0.92) 0%, rgba(22,33,62,0.88) 50%, rgba(26,39,68,0.92) 100%), url('images/cassius-dio-portrait.png') center/cover no-repeat;">
+    <div class="relative z-10 max-w-3xl mx-auto reveal">
+      <span class="chapter-badge">Chapter 2 &middot; Sources and the Revolt</span>
+      <p class="text-white/40 font-sans text-sm tracking-wider uppercase mb-3">Lesson 6</p>
+      <h1 class="hero-title font-serif text-white">Cassius Dio:<br>A Later Voice</h1>
+      <p class="hero-desc">
+        A Roman senator writing in Greek, 150 years after the revolt &mdash;
+        what does Cassius Dio add to our understanding of Boudicca, and how far can we trust him?
+      </p>
+      <p class="reading-time"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> ~32 min</p>
+      <!-- Syllabus Outcomes -->
+      <details class="mt-8">
+        <summary class="text-white/25 text-xs font-sans cursor-pointer hover:text-white/40 transition-colors uppercase tracking-[0.15em]">
+          NESA Syllabus Outcomes
+        </summary>
+        <div class="mt-3 text-white/35 text-xs font-sans space-y-1 leading-relaxed">
+          <p><strong class="text-white/50">AH11-6:</strong> Analyses and interprets different types of sources for evidence to support an historical account or argument</p>
+          <p><strong class="text-white/50">AH11-7:</strong> Discusses and evaluates differing interpretations and representations of the past</p>
+          <p><strong class="text-white/50">AH11-4:</strong> Accounts for the different perspectives of individuals and groups</p>
+        </div>
+      </details>
+    </div>
+    <!-- Decorative number -->
+    <div class="absolute bottom-6 right-8 font-serif text-white/[0.03] font-extrabold pointer-events-none select-none hidden md:block" style="font-size: 14rem; line-height: 1;">06</div>
+  </section>
+
+
+  <!-- ==========================================
+       LEARNING INTENTION & SUCCESS CRITERIA
+       ========================================== -->
+  <section id="lisc" class="full-section grad-lisc">
+    <div class="section-inner reveal">
+      <span class="section-label bg-navy/[0.07] text-navy">Learning Intention</span>
+      <h2 class="section-heading">What You&rsquo;ll Learn</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-8">
+        To understand who Cassius Dio was and how his account of Boudicca&rsquo;s revolt differs from Tacitus&rsquo;s &mdash; and to evaluate what those differences tell us about ancient historiography.
+      </p>
+
+      <div>
+        <h3 class="font-sans text-xs font-bold uppercase tracking-[0.12em] text-gray-400 mb-2">Success Criteria</h3>
+        <p class="sc-progress-text text-xs text-gray-400 mb-1">0 of 4 criteria met</p>
+        <div class="sc-progress"><div class="sc-progress-bar"></div></div>
+        <p class="text-sm text-gray-500 mb-4">By the end of this lesson, I can:</p>
+        <div class="space-y-1">
+          <div class="sc-item"><input type="checkbox" id="sc1"><label for="sc1">Explain the background and historical position of Cassius Dio.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc2"><label for="sc2">Identify the key features of Cassius Dio&rsquo;s account that differ from Tacitus&rsquo;s.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc3"><label for="sc3">Analyse how Dio&rsquo;s description of Boudicca reflects Roman gender assumptions and literary conventions.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc4"><label for="sc4">Evaluate the relative reliability of Tacitus and Cassius Dio as sources for the revolt.</label></div>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Sharing LISC</p>
+        <p>Display the learning intention and success criteria on the board. Ask students: <strong>&ldquo;How does today&rsquo;s learning intention connect to what we studied in Lesson 5?&rdquo;</strong> (cold call). The key link is that we&rsquo;re now examining the <em>second</em> major ancient source for the revolt, and comparing it with the first.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       ACTIVATING PRIOR KNOWLEDGE
+       ========================================== -->
+  <section id="prior-knowledge" class="full-section grad-prior relative">
+    <span class="section-number">?</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-white/50 text-amber-700">Before We Begin</span>
+      <h2 class="section-heading">What Do You Already Know?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        In Lesson 5, we studied Tacitus &mdash; the most important ancient source for Boudicca&rsquo;s revolt.
+        Today we meet the second source: Cassius Dio. Let&rsquo;s start by checking what you remember from last lesson.
+      </p>
+
+      <div class="mb-6">
+        <p class="font-sans text-sm font-semibold text-gray-700 mb-2">How confident are you about Tacitus from Lesson 5?</p>
+        <div class="poll-options">
+          <button class="poll-btn">Need a refresher</button>
+          <button class="poll-btn">Remember some</button>
+          <button class="poll-btn">Remember most</button>
+          <button class="poll-btn">Very confident</button>
+        </div>
+      </div>
+
+      <div>
+        <label class="font-sans text-sm font-semibold text-gray-700 block mb-2" for="prior-text">
+          Quick retrieval: Name two key biases of Tacitus that we identified in Lesson 5.
+        </label>
+        <textarea id="prior-text" class="w-full border border-black/[0.08] rounded-2xl p-4 text-sm font-sans leading-relaxed resize-y bg-white/60 backdrop-blur min-h-[90px] focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-all"
+                  placeholder="For example: senatorial bias, noble barbarian trope, moralising history, gender assumptions..."></textarea>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Retrieval Practice</p>
+        <p>Use <strong>cold call</strong> to ask 3&ndash;4 students to name one bias of Tacitus from Lesson 5. Then ask: <strong>&ldquo;Why did Tacitus have better access to information about the revolt than most other Roman historians?&rdquo;</strong> (Agricola connection).</p>
+        <p class="mt-2"><strong>CFU strategy:</strong> Retrieval gesture vote &mdash; &ldquo;True or false: Tacitus had a personal family connection to Britain through his father-in-law. Thumbs up for true, down for false.&rdquo; (Answer: true &mdash; his father-in-law Agricola served as governor.) If fewer than 80% correct, recap the Agricola connection before proceeding.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 1: WHO WAS CASSIUS DIO?
+       ========================================== -->
+  <section id="chunk-1" class="full-section grad-chunk1 relative">
+    <span class="section-number">01</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-burgundy/10 text-burgundy">Chunk 1 of 4</span>
+      <h2 class="section-heading">Who Was Cassius Dio?</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling (&lsquo;I Do&rsquo;)</p>
+        <p><strong>Think-aloud as you introduce Dio:</strong> &ldquo;Straight away I notice he&rsquo;s writing about 150 years after the revolt. That&rsquo;s like someone today writing about events from the 1870s. What does that tell us about his access to evidence?&rdquo;</p>
+        <p class="mt-2"><strong>Read the first paragraph aloud</strong>, then pause to check understanding before continuing.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Cassius Dio Cocceianus (c. AD 155 &ndash; c. AD 235) was a Roman senator of Greek origin, born in Bithynia (modern Turkey). He served as consul (twice) and as governor of several provinces, and he was a close adviser to the Emperor Septimius Severus. His major work, <strong>Roman History</strong>, covered the history of Rome from its legendary origins to his own time &mdash; a massive undertaking written in Greek, not Latin.
+        </p>
+        <p>
+          Dio wrote his account of Boudicca&rsquo;s revolt approximately <strong>160 years after the events</strong>. He had no access to any living memory of the revolt and relied entirely on earlier written sources &mdash; including, very likely, Tacitus himself, though he adds considerable material not found in the <em>Annals</em>. He wrote in a Greek literary tradition that valued dramatic narrative, set speeches, and moral exempla (illustrative examples of virtue or vice). His <em>Roman History</em> is more theatrical than Tacitus&rsquo;s work, reflecting the influence of Greek historical writing (especially Thucydides) and the literary conventions of the Second Sophistic movement.
+        </p>
+        <p>
+          Unlike Tacitus, Dio had no family connection to Britain. His account of the revolt lacks the political precision of Tacitus&rsquo;s version and compensates with dramatic detail: vivid physical descriptions, elaborate speeches, and attention to omens and supernatural signs. Whether these additions reflect real traditions preserved in sources available to Dio, or are largely his own literary invention, is impossible to determine with certainty.
+        </p>
+      </div>
+
+      <!-- Featured image: Cassius Dio portrait -->
+      <figure class="featured-image">
+        <img src="images/cassius-dio-portrait.png" alt="Historical engraving of Cassius Dio. No authenticated contemporary portrait survives &mdash; this is a later artistic representation." loading="lazy">
+        <figcaption class="caption"><strong>Historical engraving of Cassius Dio.</strong> No authenticated contemporary portrait survives &mdash; this is a later artistic representation, reflecting how later ages imagined the ancient historian.</figcaption>
+      </figure>
+
+      <!-- Historian Profile Card -->
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Historian Profile: Cassius Dio</p>
+        <div class="space-y-2 text-gray-700 text-sm">
+          <p><strong>Full name:</strong> Lucius Cassius Dio Cocceianus</p>
+          <p><strong>Born:</strong> c. AD 155, Nicaea, Bithynia (modern north-west Turkey)</p>
+          <p><strong>Died:</strong> c. AD 235</p>
+          <p><strong>Role:</strong> Roman Senator &middot; Lawyer &middot; Consul (twice) &middot; Provincial Governor</p>
+          <p><strong>Language:</strong> Greek (not Latin &mdash; unusual for a Roman senator)</p>
+          <p><strong>Writing style:</strong> Epic, dramatic, rhetorical &mdash; influenced by Greek historiography</p>
+          <p class="mt-3"><strong>Principal Works:</strong></p>
+          <ul class="list-disc ml-5 space-y-1">
+            <li><strong>Roman History</strong> (c. AD 211&ndash;233) &mdash; An 80-volume history of Rome from its founding to AD 229. The Boudicca account appears in Book LXII. Dio spent approximately 10 years researching and 12 years writing the work.</li>
+            <li><strong>Surviving condition:</strong> Books XXXVI&ndash;LX survive in full. Books LXI&ndash;LXX (including Boudicca) survive only as Xiphilinus&rsquo;s epitome (c. 11th century AD).</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- The Epitome Problem -->
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Critical Context: The Epitome Problem</p>
+        <p class="text-gray-700 text-sm leading-relaxed">
+          The sections of Cassius Dio&rsquo;s <em>Roman History</em> covering Boudicca&rsquo;s revolt (Book LXII) <strong>do not survive in Dio&rsquo;s original text</strong>. They exist only as an <strong>epitome</strong> &mdash; an abridged summary made by the Byzantine monk John Xiphilinus in the 11th century AD. This means:
+        </p>
+        <ul class="list-disc ml-5 mt-2 space-y-1 text-gray-700 text-sm">
+          <li>We are reading a summary of a summary &mdash; not Dio&rsquo;s own words.</li>
+          <li>Xiphilinus may have selected, condensed or altered Dio&rsquo;s original account.</li>
+          <li>The famous physical description of Boudicca (tall, red hair, harsh voice, golden torque) comes from this epitomised text &mdash; not from Dio&rsquo;s hand directly.</li>
+        </ul>
+      </div>
+
+      <!-- Temporal Distance -->
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Temporal Distance: How Far Was Dio from the Events?</p>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          <strong>Boudiccan Revolt</strong> (c. AD 60&ndash;61) &rarr; Tacitus writes ~40&ndash;57 years later &rarr; <strong>Dio born</strong> c. AD 155 (~95 years after the revolt) &rarr; <strong>Dio writes</strong> c. AD 211&ndash;233 (~150&ndash;170 years after the revolt) &rarr; <strong>Xiphilinus epitome</strong> c. AD 1071 (~1,000 years after the revolt).
+        </p>
+        <p class="text-gray-600 text-sm mt-2 leading-relaxed">
+          Compare with Tacitus: written ~40&ndash;57 years after the revolt with eyewitness access through Agricola. Dio wrote ~150 years later with no British connection &mdash; and his Boudicca chapters survive only through a medieval summary made a further 800 years on.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="b"
+           data-feedback-correct="Correct! An epitome is an abridged summary. Dio&rsquo;s Boudicca chapters survive only as a summary made by the Byzantine monk Xiphilinus around 1,000 years after the events &mdash; meaning we do not have Dio&rsquo;s original words."
+           data-feedback-incorrect="Not quite. An epitome is a shortened summary of a longer work. The key problem is that we are reading Xiphilinus&rsquo;s 11th-century summary, not what Dio himself actually wrote.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p>Use <strong>cold call</strong>. This is a crucial concept &mdash; if fewer than 80% answer correctly, re-teach using the analogy: &ldquo;Imagine someone writing a one-page summary of a 300-page book, 800 years later. How much of the original would you trust?&rdquo;</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">What is the &lsquo;epitome problem&rsquo; with Cassius Dio&rsquo;s account of Boudicca?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q1" class="mt-0.5"><span>Dio&rsquo;s original text was written in a language no one can read</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q1" class="mt-0.5"><span>His Boudicca chapters survive only as a medieval summary by Xiphilinus, not Dio&rsquo;s own words</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q1" class="mt-0.5"><span>Dio&rsquo;s account was censored by the Roman emperor</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q1" class="mt-0.5"><span>The text was damaged in a fire and only fragments remain</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 2: DIO'S PRIMARY SOURCES
+       ========================================== -->
+  <section id="chunk-2" class="full-section grad-chunk2 relative">
+    <span class="section-number">02</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-purple-100 text-purple-700">Chunk 2 of 4</span>
+      <h2 class="section-heading">Dio&rsquo;s Account: The Primary Sources</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Guided Reading (&lsquo;We Do&rsquo;)</p>
+        <p>Read each source extract aloud. After each one, use <strong>think-pair-share</strong>: &ldquo;How does this passage differ from what Tacitus told us? What details are new?&rdquo; (60 seconds). Cold call 2&ndash;3 pairs.</p>
+      </div>
+
+      <p class="text-gray-700 leading-relaxed text-[1.05rem] mb-6">
+        The following passages from Dio&rsquo;s <em>Roman History</em> (via Xiphilinus&rsquo;s epitome) provide the most vivid physical description of Boudicca in any ancient source, as well as unique details about Celtic religious practice.
+      </p>
+
+      <!-- Source 1: Physical description and speech -->
+      <div class="source-box">
+        <p class="provenance"><strong>PRIMARY SOURCE</strong> &mdash; Cassius Dio, <em>Roman History</em>, Book LXII, Chapters 1&ndash;6. Written c. AD 220. Translation by Earnest Cary, Loeb Classical Library, 1914 (public domain). This is the fullest surviving ancient description of Boudicca&rsquo;s appearance and her speech before the revolt.</p>
+        <blockquote>
+          &ldquo;Boudicca was very tall in stature, in appearance most terrifying, in the glance of her eye most fierce, and her voice was harsh; a great mass of the tawniest hair fell to her hips; around her neck was a large golden necklace; and she wore a tunic of diverse colours over which a thick mantle was fastened with a brooch. This was her invariable attire&hellip; She now grasped a spear to help her terrify all beholders, and spoke to them as follows: &lsquo;We British are accustomed to woman commanders in war&hellip; But now it is not as a woman descended from noble ancestry, but as one of the people that I am avenging lost freedom, my scourged body, the outraged honour of my daughters. Roman lust has gone so far that not even our bodies are left unpolluted&hellip; This is the work of a woman &mdash; let us men show them what we can do.&rsquo;&rdquo;
+        </blockquote>
+        <div class="historian-note">
+          <strong>Historian&rsquo;s note:</strong> Dio&rsquo;s physical description &mdash; tall, terrifying, fierce-eyed, harsh-voiced, with flowing tawny hair and a golden torc &mdash; creates an image of a figure who is both impressive and frightening. The torc (golden necklace) is archaeologically accurate as a symbol of Celtic noble status, but the overall portrait conforms to literary stereotypes of the &ldquo;terrifying barbarian.&rdquo; Note how Dio&rsquo;s version of Boudicca&rsquo;s speech ends differently from Tacitus&rsquo;s: where Tacitus has her say &ldquo;This was a woman&rsquo;s resolve; as for the men, they might live and be slaves,&rdquo; Dio has her say &ldquo;This is the work of a woman &mdash; let us men show them what we can do.&rdquo; Both versions challenge Roman gender norms, but in different directions.
+        </div>
+      </div>
+
+      <!-- Source 2: Andraste divination -->
+      <div class="source-box">
+        <p class="provenance"><strong>PRIMARY SOURCE</strong> &mdash; Cassius Dio, <em>Roman History</em>, Book LXII, Chapter 6. Written c. AD 220. Translation by Earnest Cary (public domain). This passage describes Boudicca&rsquo;s ritual of divination before battle &mdash; one of the most famous passages in ancient accounts of Celtic religion.</p>
+        <blockquote>
+          &ldquo;Having finished speaking, she employed a species of divination, letting a hare escape from the fold of her dress; and since it ran on what they considered the auspicious side, the whole multitude shouted with pleasure, and Boudicca, raising her hand toward heaven, said: &lsquo;I thank thee, Andraste, and call upon thee as woman speaking to woman; for I rule over no burden-bearing Egyptians as did Nitocris, nor over trafficking Assyrians as did Semiramis, nor over the Romans themselves as did Messalina and afterwards Agrippina and now Nero&hellip; but over Britons, men that know not how to till the soil or ply a trade, but are thoroughly versed in the art of war and hold all things in common, even children and wives, so that the latter possess the same valour as the men&hellip; Grant me victory and preservation of life!&rsquo;&rdquo;
+        </blockquote>
+        <div class="historian-note">
+          <strong>Historian&rsquo;s note:</strong> This passage is unique to Dio &mdash; it appears nowhere in Tacitus. The goddess Andraste is otherwise unknown, though her name may derive from a Celtic word related to &ldquo;invincibility.&rdquo; The hare divination ritual appears realistic &mdash; Celtic peoples did practise augury &mdash; though the specific detail may be Dio&rsquo;s invention or drawn from a source now lost. Most significantly, Dio has Boudicca compare herself to famous foreign queens (Nitocris, Semiramis), then contrast herself favourably with Roman empresses. This is clearly a literary construction: Boudicca would not have known or cared about Nitocris of Egypt. Dio is using her to make a point about the contrast between noble British freedom and Roman imperial corruption.
+        </div>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="d"
+           data-feedback-correct="Correct! Boudicca, a Celtic queen, would have had no knowledge of or interest in Egyptian queens like Nitocris. These comparisons are Dio&rsquo;s literary invention, designed to make a point about Roman corruption by contrasting Boudicca with foreign and Roman empresses."
+           data-feedback-incorrect="Not quite. The key issue is that these are classical literary references that a Celtic queen would not have known. Dio is putting his own rhetorical arguments into Boudicca&rsquo;s mouth.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p><strong>Think-pair-share:</strong> &ldquo;Discuss with your partner: why is the reference to Nitocris a problem for treating this speech as historically accurate?&rdquo; (30 seconds). Then cold call 2 pairs.</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">Why do historians believe Boudicca&rsquo;s prayer to Andraste (comparing herself to Nitocris and Semiramis) was composed by Dio, not actually spoken by Boudicca?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q2" class="mt-0.5"><span>Because Boudicca spoke Celtic, not Greek</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q2" class="mt-0.5"><span>Because prayers were forbidden in Celtic culture</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q2" class="mt-0.5"><span>Because the text was damaged and is incomplete</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q2" class="mt-0.5"><span>Because a Celtic queen would not have known about Egyptian and Assyrian queens &mdash; these are Dio&rsquo;s literary references</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 3: COMPARING TACITUS AND DIO
+       ========================================== -->
+  <section id="chunk-3" class="full-section grad-chunk3 relative">
+    <span class="section-number">03</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-amber-100 text-amber-700">Chunk 3 of 4</span>
+      <h2 class="section-heading">Comparing Tacitus and Cassius Dio</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Scaffolding (&lsquo;We Do&rsquo;)</p>
+        <p>Work through the comparison table together as a class. For each row, ask: <strong>&ldquo;What does this difference mean for how we use each source?&rdquo;</strong></p>
+        <p class="mt-2"><strong>Retrieval gesture vote:</strong> &ldquo;Who wrote closer in time to the revolt &mdash; Tacitus or Cassius Dio? Hold up 1 finger for Tacitus, 2 for Dio. On three &mdash; show me.&rdquo; (Answer: 1 &mdash; Tacitus, ~57 years vs ~160 years.) If fewer than 80% correct, revisit the temporal distance comparison. <strong>Then think-pair-share:</strong> &ldquo;Turn to your partner &mdash; which source would you trust more for this event, and why?&rdquo; (90 seconds, then cold call.)</p>
+      </div>
+
+      <p class="text-gray-700 leading-relaxed text-[1.05rem] mb-6">
+        Tacitus and Cassius Dio are our only extended ancient sources for Boudicca&rsquo;s revolt. Understanding their differences is essential for evaluating the evidence.
+      </p>
+
+      <!-- Comparison Table -->
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Category</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Tacitus</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Cassius Dio</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white/70">
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">Date written</td>
+              <td class="px-5 py-3 text-gray-600">c. AD 117</td>
+              <td class="px-5 py-3 text-gray-600">c. AD 211&ndash;233</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 font-semibold text-navy">Years after revolt</td>
+              <td class="px-5 py-3 text-gray-600">~50&ndash;57 years</td>
+              <td class="px-5 py-3 text-gray-600">~150&ndash;170 years</td>
+            </tr>
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">Language</td>
+              <td class="px-5 py-3 text-gray-600">Latin</td>
+              <td class="px-5 py-3 text-gray-600">Greek</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 font-semibold text-navy">Eyewitness link</td>
+              <td class="px-5 py-3 text-gray-600">Yes &mdash; via Agricola</td>
+              <td class="px-5 py-3 text-gray-600">None</td>
+            </tr>
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">Survives as</td>
+              <td class="px-5 py-3 text-gray-600">Partial original text</td>
+              <td class="px-5 py-3 text-gray-600">Byzantine epitome (Xiphilinus)</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 font-semibold text-navy">Boudicca chapters</td>
+              <td class="px-5 py-3 text-gray-600"><em>Annals</em> XIV.29&ndash;39</td>
+              <td class="px-5 py-3 text-gray-600"><em>Roman History</em> LXII.1&ndash;12</td>
+            </tr>
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">Physical description</td>
+              <td class="px-5 py-3 text-gray-600">Not given</td>
+              <td class="px-5 py-3 text-gray-600">Detailed (tall, red hair, torque)</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 font-semibold text-navy">Pre-battle speech</td>
+              <td class="px-5 py-3 text-gray-600">Yes (<em>Annals</em> XIV.35&ndash;36)</td>
+              <td class="px-5 py-3 text-gray-600">Yes (<em>Roman History</em> LXII.3&ndash;6)</td>
+            </tr>
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">Andraste episode</td>
+              <td class="px-5 py-3 text-gray-600">Not mentioned</td>
+              <td class="px-5 py-3 text-gray-600">Described in detail</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 font-semibold text-navy">Overall reliability</td>
+              <td class="px-5 py-3 text-gray-600">Higher for this event</td>
+              <td class="px-5 py-3 text-gray-600">Lower &mdash; but valuable cross-check</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Key Biases -->
+      <h3 class="font-serif text-xl font-bold text-navy mt-8 mb-3">Key Biases &amp; Analytical Perspectives</h3>
+
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Temporal Distance</p>
+        <p class="text-gray-700 text-sm leading-relaxed">
+          Writing approximately 150 years after the revolt, Dio had no living informants and no direct access to eyewitnesses. He relied on earlier written accounts &mdash; possibly including Tacitus himself &mdash; and official Roman records. Any detail unique to Dio (not found in Tacitus) deserves particular scrutiny.
+        </p>
+      </div>
+
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Greek Literary Conventions</p>
+        <p class="text-gray-700 text-sm leading-relaxed">
+          Dio wrote in Greek and was deeply shaped by Greek historiographical traditions &mdash; particularly Thucydides. His rhetorical speeches (including Boudicca&rsquo;s pre-battle address) follow Greek conventions: they are literary compositions designed to illuminate character and situation, not verbatim records. The famous physical description of Boudicca is almost certainly a Greek literary portrait, not Roman reportage.
+        </p>
+      </div>
+
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Orientalising &amp; Exotic Detail</p>
+        <p class="text-gray-700 text-sm leading-relaxed">
+          Dio&rsquo;s account adds sensational detail absent in Tacitus &mdash; particularly the graphic description of Roman women being tortured and impaled at the sanctuary of Andraste (<em>Roman History</em> 62.7). Scholars debate whether this reflects genuine tradition or rhetorical invention designed to establish Boudicca&rsquo;s revolt as a transgression of civilised order requiring Roman restoration.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="a"
+           data-feedback-correct="Correct! Where both Tacitus and Dio agree on a detail, we can be more confident it reflects a genuine tradition about the revolt. Agreement between independent sources strengthens the evidence."
+           data-feedback-incorrect="Not quite. When two independent ancient sources agree on a detail, it increases our confidence that the detail is based on a genuine tradition &mdash; even though neither source is perfect.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">When Tacitus and Cassius Dio <strong>agree</strong> on a detail about the revolt, historians treat that detail with:</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q3" class="mt-0.5"><span>Higher confidence, because agreement between independent sources strengthens the evidence</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q3" class="mt-0.5"><span>Suspicion, because both sources are Roman and therefore equally biased</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q3" class="mt-0.5"><span>Rejection, because ancient sources are inherently unreliable</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q3" class="mt-0.5"><span>Certainty, because two sources prove something definitely happened</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+
+      <div class="match-activity" data-answer="0-1,1-0,2-3,3-2">
+        <h3>Match the Feature to the Historian</h3>
+        <p class="text-gray-700 font-medium mb-4">Match each feature of the Boudicca account to the historian it best describes:</p>
+        <div class="match-pairs">
+          <div>
+            <div class="match-prompt" data-idx="0">Wrote ~57 years after the revolt with eyewitness access</div>
+            <div class="match-slot" data-idx="0">Click an answer</div>
+            <div class="match-prompt" data-idx="1" style="margin-top:0.75rem">Wrote ~160 years after the revolt with no British connection</div>
+            <div class="match-slot" data-idx="1">Click an answer</div>
+            <div class="match-prompt" data-idx="2" style="margin-top:0.75rem">Includes vivid physical description and dramatic speeches</div>
+            <div class="match-slot" data-idx="2">Click an answer</div>
+            <div class="match-prompt" data-idx="3" style="margin-top:0.75rem">Compressed, ironic Latin prose with political focus</div>
+            <div class="match-slot" data-idx="3">Click an answer</div>
+          </div>
+          <div>
+            <div class="match-answer match-item" data-idx="0">Cassius Dio</div>
+            <div class="match-answer match-item" data-idx="1">Tacitus</div>
+            <div class="match-answer match-item" data-idx="2">Tacitus</div>
+            <div class="match-answer match-item" data-idx="3">Cassius Dio</div>
+          </div>
+        </div>
+        <button class="check-btn" style="margin-top:1rem">Check Matches</button>
+        <div class="cfu-feedback" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 4: THE PROBLEM OF INVENTED SPEECHES & OVPRL
+       ========================================== -->
+  <section id="chunk-4" class="full-section grad-chunk4 relative">
+    <span class="section-number">04</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-blue-100 text-blue-700">Chunk 4 of 4</span>
+      <h2 class="section-heading">The Problem of Invented Speeches</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Discussion (&lsquo;We Do&rsquo;)</p>
+        <p>This section requires careful handling. Use <strong>think-pair-share</strong> for the key question: &ldquo;Does the fact that these speeches are &lsquo;invented&rsquo; make them useless as historical sources?&rdquo; Allow 90 seconds for pair discussion, then cold call 3 pairs. Guide students toward the nuanced answer: they are useless as records of Celtic speech but invaluable as evidence of Roman historiography.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Both Tacitus and Cassius Dio include speeches by Boudicca &mdash; and <strong>neither could possibly have known what she actually said</strong>. In ancient historical writing, speeches were a recognised literary device: historians composed speeches that they believed a historical figure would or should have said given their character and situation, using them to make explicit the themes and moral lessons of their narrative.
+        </p>
+        <p>
+          The Greek historian Thucydides (5th century BC) famously acknowledged this practice: <em>&ldquo;I have made each side say what seemed to me most appropriate given the circumstances, keeping as close as possible to the general sense of what was actually said.&rdquo;</em> Roman historians followed a similar convention. This means that Boudicca&rsquo;s speeches, as reported by Tacitus and Dio, tell us more about what these Roman historians wanted her to represent than about what she actually said.
+        </p>
+      </div>
+
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Critical Thinking: Are Invented Speeches Useless?</p>
+        <p class="text-gray-700 text-sm leading-relaxed">
+          Does the fact that these speeches are &ldquo;invented&rdquo; make them useless as historical sources? <strong>Not necessarily.</strong> They still reveal: (1) what Romans knew or believed about Celtic customs; (2) what political and moral points the historian wanted to make; and (3) how the revolt was understood by educated Romans. They are invaluable sources for <em>Roman historiography</em> &mdash; even if not for Celtic history.
+        </p>
+      </div>
+
+      <!-- Extension quote -->
+      <div class="source-box">
+        <p class="provenance"><strong>EXTENSION</strong></p>
+        <blockquote>
+          &ldquo;Boudicca, a Briton woman of the royal family and possessed of greater intelligence than often belongs to women&hellip;&rdquo;<br>
+          &mdash; Cassius Dio (via Xiphilinus), <em>Roman History</em> 62.2
+        </blockquote>
+        <div class="historian-note">
+          This opening characterisation of Boudicca immediately signals Dio&rsquo;s assumptions about gender and intelligence. Using this statement and your knowledge of both Dio&rsquo;s context and the epitome problem, evaluate: To what extent is Cassius Dio&rsquo;s account of Boudicca a useful historical source? In your response, consider the temporal distance, the epitome problem, Dio&rsquo;s Greek literary conventions, and the specific features of his account that cannot be verified against Tacitus.
+        </div>
+      </div>
+
+      <!-- OVPRL Scaffold -->
+      <h3 class="font-serif text-xl font-bold text-navy mt-8 mb-3">OVPRL Source Analysis Scaffold &mdash; Cassius Dio, <em>Roman History</em> 62.2</h3>
+
+      <div class="ovprl-tool">
+        <p class="text-sm text-gray-500 mb-5">Complete each field. Use the hint button if you need guidance.</p>
+
+        <div class="ovprl-field">
+          <label for="ovprl-6-o"><span class="text-burgundy font-extrabold">O &mdash; Origin:</span> Who created this source? When? Where?</label>
+          <textarea id="ovprl-6-o" placeholder="Who wrote it? When? In what language? How does it survive?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Roman historian Cassius Dio (writing c. AD 211&ndash;233), Roman History Book LXII, surviving as an epitome by Byzantine monk John Xiphilinus (c. AD 1071). Written in Greek approximately 150 years after the revolt.</div>
+        </div>
+        <div class="ovprl-field">
+          <label for="ovprl-6-v"><span class="text-burgundy font-extrabold">V &mdash; Value:</span> What useful information does this source provide?</label>
+          <textarea id="ovprl-6-v" placeholder="What can we learn from this source?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Provides an account independent of Tacitus, allowing cross-checking. Contains unique details &mdash; including Boudicca&rsquo;s physical description and the Andraste episode &mdash; that may preserve separate traditions. Useful for understanding how the revolt was remembered in later Roman tradition.</div>
+        </div>
+        <div class="ovprl-field">
+          <label for="ovprl-6-p"><span class="text-burgundy font-extrabold">P &mdash; Purpose:</span> Why was this source created?</label>
+          <textarea id="ovprl-6-p" placeholder="Why did the author write this?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Historical record and moral exemplum. Like Tacitus, Dio uses Boudicca to make arguments about Roman virtue, barbarism and the consequences of provincial mismanagement. His purpose is also to entertain and instruct a Roman audience &mdash; not to produce a neutral record.</div>
+        </div>
+        <div class="ovprl-field">
+          <label for="ovprl-6-r"><span class="text-burgundy font-extrabold">R &mdash; Reliability:</span> How trustworthy is this source?</label>
+          <textarea id="ovprl-6-r" placeholder="Can we trust this source? Why or why not?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Lower reliability than Tacitus for the revolt itself: far greater temporal distance, no eyewitness connection, and we read through a medieval intermediary. More reliable as a guide to how the revolt was understood in later Roman tradition.</div>
+        </div>
+        <div class="ovprl-field">
+          <label for="ovprl-6-l"><span class="text-burgundy font-extrabold">L &mdash; Limitations:</span> What does this source <em>not</em> tell us?</label>
+          <textarea id="ovprl-6-l" placeholder="What is missing from this source?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Approximately 150 years from events; no direct sources available. Surviving only as an 11th-century Byzantine epitome &mdash; Xiphilinus&rsquo;s abridgement, not Dio&rsquo;s own words. Greek rhetorical conventions shape all speeches and descriptions. No independent access to Britain or British sources. Sensational details may be rhetorical invention rather than historical record.</div>
+        </div>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="c"
+           data-feedback-correct="Correct! Even though invented speeches do not record Boudicca&rsquo;s actual words, they are valuable because they reveal what Romans believed about Celtic customs, what moral points the historian wanted to make, and how the revolt was remembered."
+           data-feedback-incorrect="Not quite. While invented speeches are not reliable records of what was actually said, they still provide valuable evidence about Roman beliefs, literary conventions, and how the revolt was understood by educated Romans.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">The invented speeches in Tacitus and Dio are best described as:</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q4" class="mt-0.5"><span>Completely useless as historical evidence because they are fictional</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q4" class="mt-0.5"><span>Reliable records of what Boudicca actually said to her troops</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q4" class="mt-0.5"><span>Valuable as evidence of Roman attitudes and historiography, even though they do not record Boudicca&rsquo;s actual words</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q4" class="mt-0.5"><span>Direct translations from Celtic oral tradition into Greek and Latin</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       INDEPENDENT PRACTICE: REVIEW QUESTIONS
+       ========================================== -->
+  <section id="practice" class="full-section grad-practice relative">
+    <span class="section-number">Q</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-green-100 text-green-700">Independent Practice</span>
+      <h2 class="section-heading">Review Questions</h2>
+      <p class="text-sm text-gray-500 mb-6">Choose the level that challenges you, or work through all three.</p>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Independent Practice (&lsquo;You Do&rsquo;)</p>
+        <p>Students should attempt these <strong>only after a high success rate</strong> on the CFU questions. Direct all students to Foundation first.</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> Students answer Foundation Q1 on a sticky note before leaving.</p>
+      </div>
+
+      <div class="tab-group">
+        <button class="tab-btn active" data-tab="foundation">Foundation</button>
+        <button class="tab-btn" data-tab="standard">Standard</button>
+        <button class="tab-btn" data-tab="extension">Extension</button>
+      </div>
+
+      <div class="tab-content active" id="foundation" data-tab="foundation">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Identify and describe</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>When did Cassius Dio write his account of Boudicca&rsquo;s revolt, and in what language?</li>
+          <li>Give two ways in which Cassius Dio&rsquo;s account of Boudicca differs from Tacitus&rsquo;s account.</li>
+          <li>What is the name of the goddess Boudicca prays to in Cassius Dio&rsquo;s account?</li>
+        </ol>
+      </div>
+      <div class="tab-content" id="standard" data-tab="standard">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Analyse and explain</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Explain why Cassius Dio&rsquo;s account is considered less reliable than Tacitus&rsquo;s as a historical source.</li>
+          <li>Analyse Cassius Dio&rsquo;s physical description of Boudicca. What does it reveal about Roman attitudes toward gender and &ldquo;barbarian&rdquo; peoples?</li>
+          <li>Assess the practice of invented speeches in ancient historiography. Does Tacitus or Dio give the more &ldquo;useful&rdquo; speech &mdash; and why?</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Sentence starters:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li>This source is valuable because&hellip;</li>
+            <li>However, a key limitation is&hellip;</li>
+            <li>The evidence suggests that&hellip;</li>
+            <li>This can be compared with&hellip; which shows&hellip;</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-content" id="extension" data-tab="extension">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Evaluate and debate</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Evaluate the relative historical value of Tacitus and Cassius Dio as sources for Boudicca&rsquo;s revolt. In your answer, consider their dates, purposes, methods, and the different types of information they provide.</li>
+          <li>Critically analyse Dio&rsquo;s account of Boudicca&rsquo;s prayer to Andraste. To what extent should this passage be read as evidence about Celtic religious practice, and to what extent is it a literary construction?</li>
+          <li>Using both Tacitus and Dio, construct an argument about what we can and cannot know about the historical Boudicca. What can we confidently claim? What remains speculation?</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Evaluative language:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li>&ldquo;To a significant/limited extent&hellip;&rdquo;</li>
+            <li>&ldquo;While X is important, Y was more significant because&hellip;&rdquo;</li>
+            <li>&ldquo;The most convincing interpretation is&hellip; because&hellip;&rdquo;</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       KEY TERMS: FLASHCARD GLOSSARY
+       ========================================== -->
+  <section id="key-terms" class="full-section grad-terms relative">
+    <span class="section-number">A&ndash;Z</span>
+    <div class="section-inner">
+      <div class="flex items-end justify-between mb-6 reveal">
+        <div>
+          <span class="section-label bg-purple-100 text-purple-700">Key Terms</span>
+          <h2 class="section-heading mb-0">Glossary</h2>
+        </div>
+        <button class="glossary-view-toggle text-sm text-navy font-semibold hover:text-burgundy transition-colors cursor-pointer">
+          Switch to List View
+        </button>
+      </div>
+      <p class="text-sm text-gray-500 mb-6 reveal">Click each card to reveal its definition.</p>
+
+      <!-- Flashcards -->
+      <div class="flashcard-grid reveal-stagger">
+        <div class="flashcard" tabindex="0" role="button" aria-label="Flashcard: Roman History">
+          <div class="flashcard-inner"><div class="flashcard-front">Roman History</div><div class="flashcard-back">Cassius Dio&rsquo;s major work, written in Greek, covering Roman history from its origins to his own time.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Second Sophistic</div><div class="flashcard-back">A cultural movement in the Roman Empire (1st&ndash;3rd centuries AD) that emphasised Greek rhetoric, literary style, and education.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Invented Speech</div><div class="flashcard-back">A speech composed by a historian for a historical figure, using known events and the figure&rsquo;s character as a guide.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Andraste</div><div class="flashcard-back">A Celtic goddess invoked by Boudicca in Cassius Dio&rsquo;s account, possibly a goddess of victory or invincibility.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Augury</div><div class="flashcard-back">The practice of interpreting signs (especially animal behaviour) as omens of future events, common in Celtic and Roman religion.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Torc</div><div class="flashcard-back">A twisted metal neck-ring, typically gold, worn by Celtic elites. Visible evidence of royal status in Dio&rsquo;s description.</div></div>
+        </div>
+      </div>
+
+      <!-- List View (hidden) -->
+      <div class="glossary-list hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+            <thead>
+              <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/4">Term</th>
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Definition</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white/70">
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Roman History</td><td class="px-5 py-3 text-gray-600">Cassius Dio&rsquo;s major work, written in Greek, covering Roman history from its origins to his own time.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Second Sophistic</td><td class="px-5 py-3 text-gray-600">A cultural movement in the Roman Empire (1st&ndash;3rd centuries AD) that emphasised Greek rhetoric, literary style, and education.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Invented speech</td><td class="px-5 py-3 text-gray-600">A speech composed by a historian for a historical figure, using known events and the figure&rsquo;s character as a guide.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Andraste</td><td class="px-5 py-3 text-gray-600">A Celtic goddess invoked by Boudicca in Cassius Dio&rsquo;s account, possibly a goddess of victory or invincibility.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Augury</td><td class="px-5 py-3 text-gray-600">The practice of interpreting signs (especially animal behaviour) as omens of future events, common in Celtic and Roman religion.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Torc</td><td class="px-5 py-3 text-gray-600">A twisted metal neck-ring, typically gold, worn by Celtic elites. Visible evidence of royal status in Dio&rsquo;s description.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       REVIEW OF LEARNING
+       ========================================== -->
+  <section id="review" class="full-section grad-review relative">
+    <div class="section-inner reveal">
+      <span class="section-label bg-gold/20 text-amber-700">Review of Learning</span>
+      <h2 class="section-heading">How Did You Go?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6 text-[1.05rem]">
+        Return to the success criteria from the start of this lesson. Can you now tick off each one?
+        If any remain unticked, scroll back and review the relevant section.
+      </p>
+
+      <div class="space-y-3">
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">1</span>
+          <span class="text-gray-700">Explain the background and historical position of Cassius Dio.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">2</span>
+          <span class="text-gray-700">Identify the key features of Cassius Dio&rsquo;s account that differ from Tacitus&rsquo;s.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">3</span>
+          <span class="text-gray-700">Analyse how Dio&rsquo;s description of Boudicca reflects Roman gender assumptions and literary conventions.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">4</span>
+          <span class="text-gray-700">Evaluate the relative reliability of Tacitus and Cassius Dio as sources for the revolt.</span>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Review of Learning</p>
+        <p><strong>Self-assessment</strong> for each criterion: &ldquo;Thumbs up if confident, sideways if partly there, down if you need more help.&rdquo;</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> &ldquo;On a sticky note, write one difference between Tacitus and Cassius Dio as sources for the revolt.&rdquo; Collect as students leave.</p>
+      </div>
+
+      <!-- Exit Ticket -->
+      <div class="exit-ticket">
+        <h4>Exit Ticket</h4>
+        <label class="text-sm text-gray-600 block mb-1">One thing I learned today:</label>
+        <textarea placeholder="What was the most important thing you learned in this lesson?"></textarea>
+        <label class="text-sm text-gray-600 block mb-1">One question I still have:</label>
+        <textarea placeholder="What are you still unsure about or want to know more about?"></textarea>
+      </div>
+
+      <!-- Reflection -->
+      <div class="reflection-panel">
+        <h4>Self-Reflection</h4>
+        <p class="text-sm text-gray-600 mb-2">How confident do you feel about this lesson&rsquo;s content?</p>
+        <div class="confidence-scale">
+          <button class="confidence-btn">1<br><span class="text-[0.65rem]">Not yet</span></button>
+          <button class="confidence-btn">2<br><span class="text-[0.65rem]">Getting there</span></button>
+          <button class="confidence-btn">3<br><span class="text-[0.65rem]">Mostly</span></button>
+          <button class="confidence-btn">4<br><span class="text-[0.65rem]">Confident</span></button>
+          <button class="confidence-btn">5<br><span class="text-[0.65rem]">Mastered</span></button>
+        </div>
+        <label class="text-sm text-gray-600 block mt-3 mb-1">What do you want to revisit before the next lesson?</label>
+        <textarea class="reflection-text" placeholder="Any topics, terms, or skills you want to review?"></textarea>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       LESSON NAVIGATION
+       ========================================== -->
+  <section class="py-12 px-6" style="background: #fefcf9;">
+    <div class="max-w-3xl mx-auto lesson-nav-footer flex items-center justify-between">
+      <a href="lesson-5.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        Lesson 5
+      </a>
+      <span class="text-xs text-gray-300 tracking-wider uppercase">Lesson 6 of 16</span>
+      <a href="lesson-7.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        Lesson 7
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 text-center" style="background: linear-gradient(180deg, #fefcf9, #f5f3ed);">
+    <p class="text-sm text-gray-400 font-sans">
+      NSW Ancient History Stage 6 &middot; NESA Syllabus (2017) &middot; Case Study A
+    </p>
+    <p class="text-xs text-gray-300 mt-2 font-sans">Created by Cheryl Cutter</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 1: Representations of Boudicca | Boudicca Interactive</title>
+
+  <!-- Meta -->
+  <meta name="description" content="Interactive NSW Ancient History Stage 6 resource — Boudicca case study with explicit teaching, CFU activities, source analysis, and teacher facilitation tools.">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': { DEFAULT: '#1a1a2e', mid: '#16213e', light: '#2a4d7a' },
+            'burgundy': { DEFAULT: '#8b2635', light: '#a83242' },
+            'gold': { DEFAULT: '#c9a84c', light: '#e8d292' },
+          },
+          fontFamily: {
+            'serif': ['Playfair Display', 'Georgia', 'serif'],
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans" style="background: #fefcf9;">
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress"></div>
+
+  <!-- Navigation (Glassmorphism) -->
+  <nav class="site-nav">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-5">
+        <a href="index.html" class="text-white font-serif text-xl font-bold tracking-wide hover:text-gold transition-colors">
+          Boudicca
+        </a>
+        <span class="text-white/20 hidden sm:inline">|</span>
+        <span class="text-white/40 text-xs font-sans tracking-wider hidden sm:inline">Lesson 1 of 16</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <button class="teacher-toggle" aria-label="Toggle teacher facilitation notes">Teacher Mode</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="lesson-hero grad-hero" style="background: linear-gradient(165deg, rgba(26,26,46,0.92) 0%, rgba(22,33,62,0.88) 50%, rgba(26,39,68,0.92) 100%), url('images/thornycroft-statue.jpg') center/cover no-repeat;">
+    <div class="relative z-10 max-w-3xl mx-auto reveal">
+      <span class="chapter-badge">Chapter 1 &middot; Context and Background</span>
+      <p class="text-white/40 font-sans text-sm tracking-wider uppercase mb-3">Lesson 1</p>
+      <h1 class="hero-title font-serif text-white">Representations<br>of Boudicca</h1>
+      <p class="hero-desc">
+        How and why have images of Boudicca changed across two thousand years &mdash;
+        and what do those changes tell us about the people who created them?
+      </p>
+      <p class="reading-time"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> ~25 min</p>
+      <!-- Syllabus Outcomes -->
+      <details class="mt-8">
+        <summary class="text-white/25 text-xs font-sans cursor-pointer hover:text-white/40 transition-colors uppercase tracking-[0.15em]">
+          NESA Syllabus Outcomes
+        </summary>
+        <div class="mt-3 text-white/35 text-xs font-sans space-y-1 leading-relaxed">
+          <p><strong class="text-white/50">AH11-1:</strong> Describes the nature of continuity and change in the ancient world</p>
+          <p><strong class="text-white/50">AH11-7:</strong> Discusses and evaluates differing interpretations and representations of the past</p>
+          <p><strong class="text-white/50">AH11-6:</strong> Analyses and interprets different types of sources for evidence</p>
+        </div>
+      </details>
+    </div>
+    <!-- Decorative number -->
+    <div class="absolute bottom-6 right-8 font-serif text-white/[0.03] font-extrabold pointer-events-none select-none hidden md:block" style="font-size: 14rem; line-height: 1;">01</div>
+  </section>
+
+
+  <!-- ==========================================
+       LEARNING INTENTION & SUCCESS CRITERIA
+       ========================================== -->
+  <section id="lisc" class="full-section grad-lisc">
+    <div class="section-inner reveal">
+      <span class="section-label bg-navy/[0.07] text-navy">Learning Intention</span>
+      <h2 class="section-heading">What You&rsquo;ll Learn</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-8">
+        To understand how and why representations of Boudicca have changed across time, and to consider what these representations reveal about the people who created them.
+      </p>
+
+      <div>
+        <h3 class="font-sans text-xs font-bold uppercase tracking-[0.12em] text-gray-400 mb-2">Success Criteria</h3>
+        <p class="sc-progress-text text-xs text-gray-400 mb-1">0 of 4 criteria met</p>
+        <div class="sc-progress"><div class="sc-progress-bar"></div></div>
+        <p class="text-sm text-gray-500 mb-4">By the end of this lesson, I can:</p>
+        <div class="space-y-1">
+          <div class="sc-item"><input type="checkbox" id="sc1"><label for="sc1">Explain what historiography means and why it matters when studying ancient figures.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc2"><label for="sc2">Identify at least three different representations of Boudicca from different time periods.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc3"><label for="sc3">Explain how context shapes historical representation.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc4"><label for="sc4">Analyse the ways in which the Thornycroft statue reflects Victorian values.</label></div>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Sharing LISC</p>
+        <p>Display the learning intention and success criteria on the board. Read them aloud and ask students to identify the <em>key verbs</em> (explain, identify, analyse). This helps students understand what level of thinking is expected. Check understanding: <strong>&ldquo;Can someone put the learning intention into their own words?&rdquo;</strong> (cold call).</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       ACTIVATING PRIOR KNOWLEDGE
+       ========================================== -->
+  <section id="prior-knowledge" class="full-section grad-prior relative">
+    <span class="section-number">?</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-white/50 text-amber-700">Before We Begin</span>
+      <h2 class="section-heading">What Do You Already Know?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        Before we begin, take a moment to think about what you already know &mdash; or think you know &mdash; about Boudicca.
+        There are no wrong answers here.
+      </p>
+
+      <div class="mb-6">
+        <p class="font-sans text-sm font-semibold text-gray-700 mb-2">How much do you already know about Boudicca?</p>
+        <div class="poll-options">
+          <button class="poll-btn">Nothing yet</button>
+          <button class="poll-btn">Heard the name</button>
+          <button class="poll-btn">Know some details</button>
+          <button class="poll-btn">Know a lot</button>
+        </div>
+      </div>
+
+      <div>
+        <label class="font-sans text-sm font-semibold text-gray-700 block mb-2" for="prior-text">
+          Jot down anything you know or think you know about Boudicca:
+        </label>
+        <textarea id="prior-text" class="w-full border border-black/[0.08] rounded-2xl p-4 text-sm font-sans leading-relaxed resize-y bg-white/60 backdrop-blur min-h-[90px] focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-all"
+                  placeholder="For example: Was she a queen? When did she live? What did she do? Where have you seen her mentioned?"></textarea>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Activating Prior Knowledge</p>
+        <p>Use <strong>cold call</strong> to ask 3&ndash;4 students what they wrote. Accept all responses without correction &mdash; the purpose is retrieval, not assessment. Note any misconceptions to return to later.</p>
+        <p class="mt-2"><strong>Prior knowledge gauge:</strong> &ldquo;Thumbs up if you&rsquo;ve heard of Boudicca before today, thumbs sideways if the name sounds familiar, thumbs down if it&rsquo;s completely new.&rdquo; This is not a CFU &mdash; it gauges the class baseline to help you pitch the lesson appropriately.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 1: WHAT IS HISTORIOGRAPHY?
+       ========================================== -->
+  <section id="chunk-1" class="full-section grad-chunk1 relative">
+    <span class="section-number">01</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-burgundy/10 text-burgundy">Chunk 1 of 5</span>
+      <h2 class="section-heading">What Is Historiography?</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling (&lsquo;I Do&rsquo;)</p>
+        <p><strong>Model with an everyday example</strong> before reading the text: &ldquo;Think about how two different news outlets might report the same football match. One might focus on the winning team&rsquo;s brilliance, the other on the losing team&rsquo;s mistakes. Same event &mdash; different story. That&rsquo;s what historiography studies.&rdquo;</p>
+        <p class="mt-2"><strong>Read the first paragraph aloud</strong>, then pause to check understanding before continuing.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          History is not simply a record of what happened. It is always an <em>interpretation</em> &mdash; a story constructed
+          by people with their own perspectives, cultural backgrounds, political purposes, and limited access to evidence.
+          The study of how historical accounts are constructed, who writes them, why they write them, and how interpretations
+          change over time is called <strong>historiography</strong>.
+        </p>
+        <p>
+          When we study a figure like Boudicca, we are not only studying a person from the first century AD. We are also
+          studying every scholar, artist, poet, filmmaker, and government official who has re-created her image in the
+          centuries since. Each of these retellings tells us as much about the <em>teller</em> as it does about the original subject.
+        </p>
+        <p>
+          For ancient history students in NSW, historiography is a core skill
+          (<strong>AH11-7</strong>). You will need to ask: Who created this source? When? For what audience?
+          What was their purpose? What do they include or leave out &mdash; and why?
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="b"
+           data-feedback-correct="Correct! Historiography is the study of how history itself is written and interpreted &mdash; not just what happened, but who tells the story and why."
+           data-feedback-incorrect="Not quite. Historiography is specifically about how history is written and interpreted &mdash; studying the storytellers, not just the story.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p>Use <strong>cold call</strong>. If they answer incorrectly, ask: &ldquo;Who can help?&rdquo; Aim for 80%+ success before moving on.</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">Historiography is best defined as:</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q1" class="mt-0.5"><span>The study of ancient artefacts and objects</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q1" class="mt-0.5"><span>The study of how history is written, interpreted, and revised over time</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q1" class="mt-0.5"><span>The study of important historical figures and their achievements</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q1" class="mt-0.5"><span>The study of archaeological dig sites</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 2: WHY IS BOUDICCA CHALLENGING?
+       ========================================== -->
+  <section id="chunk-2" class="full-section grad-chunk2 relative">
+    <span class="section-number">02</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-purple-100 text-purple-700">Chunk 2 of 5</span>
+      <h2 class="section-heading">Why Is Boudicca Such a Challenging Figure to Study?</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Guided Reading (&lsquo;We Do&rsquo;)</p>
+        <p>Have students read this section silently. Then use <strong>think-pair-share</strong>: &ldquo;Turn to your partner and discuss: What is the main problem historians face when studying Boudicca?&rdquo; (60 seconds). Cold call 2&ndash;3 pairs.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Boudicca presents a unique historiographical problem: <strong>the people who recorded her story were her enemies</strong>.
+          The only extended written accounts come from two Roman historians &mdash;
+          <strong>Tacitus</strong>, writing around AD 98, and <strong>Cassius Dio</strong>, writing around AD 220.
+          Neither was present during the revolt. Neither was Celtic. Both were writing for Roman audiences.
+        </p>
+        <p>
+          The Celtic peoples of Britain left no written records of their own. They preserved knowledge through
+          <strong>oral tradition</strong> &mdash; stories, songs, and religious teaching passed down by bards and Druids.
+          This oral tradition left no traces that survive to the present day. As a result, we can only approach
+          Boudicca&rsquo;s story through the lens of those who opposed her.
+        </p>
+      </div>
+
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Key Concept</p>
+        <p class="text-gray-700">
+          The absence of Celtic written sources is not simply a gap in evidence &mdash; it is <em>itself a product of
+          Roman conquest</em>. The suppression of Druidic practice, the destruction of native culture, and the
+          imposition of Latin literacy all contributed to the silence of Celtic voices in the historical record.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="b"
+           data-feedback-correct="Correct! The only written accounts come from Roman historians &mdash; Boudicca's enemies &mdash; which means we see her story entirely through a Roman lens."
+           data-feedback-incorrect="Not quite. The key challenge is that the only written sources are Roman &mdash; written by the people who conquered and opposed Boudicca's people.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">The main reason Boudicca is particularly difficult to study is that:</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q2" class="mt-0.5"><span>There are too many conflicting sources about her</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q2" class="mt-0.5"><span>The only written accounts come from her enemies, the Romans</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q2" class="mt-0.5"><span>She lived too long ago for any evidence to survive</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q2" class="mt-0.5"><span>Her story was deliberately hidden by the British government</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 3: THE THORNYCROFT STATUE
+       ========================================== -->
+  <section id="chunk-3" class="full-section grad-chunk3 relative">
+    <span class="section-number">03</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-amber-100 text-amber-700">Chunk 3 of 5</span>
+      <h2 class="section-heading">The Thornycroft Statue: A Victorian Boudicca</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling: Source Analysis Think-Aloud</p>
+        <p>Display an image of the Thornycroft statue and <strong>model source analysis</strong> using a think-aloud:</p>
+        <ul class="list-disc ml-5 mt-1 space-y-1">
+          <li>&ldquo;I notice the chariot looks Roman, not Celtic&hellip; I wonder why the sculptor chose that?&rdquo;</li>
+          <li>&ldquo;She&rsquo;s standing upright and powerful&hellip; this tells me the Victorians wanted her to look like a leader.&rdquo;</li>
+          <li>&ldquo;The statue is right next to Parliament&hellip; that positioning is deliberate.&rdquo;</li>
+        </ul>
+        <p class="mt-2">This makes expert thinking <strong>visible</strong> to students.</p>
+      </div>
+
+      <!-- Featured image: Thornycroft Statue -->
+      <figure class="featured-image">
+        <img src="images/thornycroft-statue.jpg" alt="Thomas Thornycroft's bronze statue 'Boadicea and Her Daughters' (1902) at Westminster Bridge, London. Boudicca stands triumphant in a scythed chariot with rearing horses." loading="lazy">
+        <figcaption class="caption"><strong>Thomas Thornycroft, <em>Boadicea and Her Daughters</em> (1902)</strong>, Westminster Bridge, London. The most famous &mdash; and most historically inaccurate &mdash; image of Boudicca.</figcaption>
+      </figure>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          The most famous visual representation of Boudicca is the bronze statue at the northern end of
+          <strong>Westminster Bridge</strong>, facing the Houses of Parliament. Sculpted by
+          <strong>Thomas Thornycroft</strong> and erected in <strong>1902</strong>,
+          <em>&ldquo;Boadicea and Her Daughters&rdquo;</em> shows a triumphant warrior queen standing upright in a
+          scythed chariot drawn by two rearing horses, her daughters crouching beside her.
+        </p>
+        <p>
+          This image is powerful and instantly recognisable &mdash; but it is a <strong>Victorian image, not an ancient one</strong>.
+          Thornycroft began work in the 1850s, inspired by parallels drawn between Boudicca and
+          Queen Victoria (whose name also means &ldquo;victory&rdquo; in Latin). Prince Albert was personally involved,
+          envisioning the statue as a monument to British imperial strength.
+        </p>
+        <p>
+          The chariot is <strong>historically inaccurate</strong>. It is modelled on Roman chariots, not the lighter
+          Celtic war-chariots used by the Iceni. The scythed wheels reflect Victorian imagination more than
+          archaeological evidence. The statue says more about <strong>Britain&rsquo;s imperial confidence</strong>
+          than about the historical Boudicca.
+        </p>
+        <p>
+          The plinth inscription quotes William Cowper&rsquo;s 1782 poem:
+          <em>&ldquo;REGIONS CAESAR NEVER KNEW / THY POSTERITY SHALL SWAY&rdquo;</em>
+          &mdash; celebrating British imperial expansion in Boudicca&rsquo;s name, despite the profound irony
+          of a freedom fighter being used to justify empire.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="c"
+           data-feedback-correct="Correct! The statue was created in the Victorian era and reflects Victorian imperial values &mdash; it tells us about the Victorians, not about the historical Boudicca."
+           data-feedback-incorrect="Not quite. The key insight is that the statue reveals Victorian values and imperial confidence, not historical facts about Boudicca herself.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p><strong>Gesture voting:</strong> &ldquo;Hold up A, B, C, or D with your fingers. On three &mdash; one, two, three &mdash; show me.&rdquo; If fewer than 80% show C, re-teach using the chariot example.</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">The Thornycroft statue tells us more about:</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q3" class="mt-0.5"><span>Celtic chariot design and technology</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q3" class="mt-0.5"><span>Boudicca&rsquo;s actual physical appearance</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q3" class="mt-0.5"><span>Victorian Britain&rsquo;s imperial values and confidence</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q3" class="mt-0.5"><span>Roman military tactics in first-century Britain</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 4: REPRESENTATIONS ACROSS TIME
+       ========================================== -->
+  <section id="chunk-4" class="full-section grad-chunk4 relative">
+    <span class="section-number">04</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-blue-100 text-blue-700">Chunk 4 of 5</span>
+      <h2 class="section-heading">Representations Across Time</h2>
+      <p class="text-gray-600 leading-relaxed mb-8 text-[1.05rem]">
+        Each era has reshaped Boudicca to reflect its own values and concerns. Understanding this pattern of
+        re-interpretation is central to historical thinking.
+      </p>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Scaffolding</p>
+        <p>Walk through the timeline together. For each entry, ask: &ldquo;What does this representation tell us about <em>that</em> time period?&rdquo;</p>
+        <p class="mt-2"><strong>Gesture voting (retrieval check):</strong> &ldquo;True or false: Boudicca has been continuously remembered from the Roman period to today. Thumbs up for true, thumbs down for false.&rdquo; (Answer: false &mdash; she disappeared during the medieval period.) If fewer than 80% show thumbs down, re-read the medieval silence entry together before moving on.</p>
+        <p class="mt-1"><strong>Then think-pair-share:</strong> &ldquo;Turn to your partner &mdash; which representation surprised you most and why?&rdquo; (60 seconds, then cold call 2&ndash;3 pairs.)</p>
+      </div>
+
+      <!-- Timeline -->
+      <div class="timeline reveal-stagger">
+        <div class="timeline-item">
+          <p class="timeline-date">c. AD 117</p>
+          <p class="timeline-desc"><strong>Tacitus</strong> portrays Boudicca as a wronged queen whose revolt was provoked by Roman injustice. Sympathetic but she remains a &ldquo;barbarian&rdquo; &mdash; a foil for Roman moral criticism.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">c. AD 220</p>
+          <p class="timeline-desc"><strong>Cassius Dio</strong> depicts her as a terrifying, almost supernatural figure &mdash; tall, fierce, with red hair and a harsh voice. More dramatic and sensational.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">500&ndash;1400</p>
+          <p class="timeline-desc"><strong>Medieval silence.</strong> Boudicca largely disappears from historical memory, overshadowed by Christian and Arthurian narratives.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">c. 1534</p>
+          <p class="timeline-desc"><strong>Polydore Vergil</strong> rediscovers her story in Roman sources and reintroduces it to English readers.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">1600s&ndash;1700s</p>
+          <p class="timeline-desc">Appears in <strong>plays and poems</strong> as a symbol of British resistance, including Fletcher&rsquo;s <em>Bonduca</em> (1611) and Cowper&rsquo;s <em>Boadicea</em> (1782).</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">1850s&ndash;1902</p>
+          <p class="timeline-desc"><strong>Victorian Britain</strong> reimagines her as a national heroine and proto-imperialist. Thornycroft&rsquo;s statue becomes the defining image.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">1970s&ndash;1990s</p>
+          <p class="timeline-desc"><strong>Feminist historians</strong> reclaim her as a symbol of female power and resistance against patriarchal oppression.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">2000s&ndash;today</p>
+          <p class="timeline-desc"><strong>Post-colonial scholars</strong> interrogate how her image has been used for nationalist and imperialist purposes.</p>
+        </div>
+      </div>
+
+      <!-- Video: Boudica Through the Ages -->
+      <div class="mt-10 mb-10 reveal">
+        <h3 class="font-serif text-xl font-bold text-navy mb-2">Boudica Through the Ages</h3>
+        <p class="text-gray-500 text-sm mb-4">Watch how Boudicca has been represented across two thousand years of art, literature, and film.</p>
+        <div class="featured-image" style="border-radius: 20px; overflow: hidden;">
+          <video controls preload="metadata" poster="images/thornycroft-statue.jpg"
+                 style="width: 100%; display: block; border-radius: 20px 20px 0 0;">
+            <source src="images/boudica-through-the-ages.mp4" type="video/mp4">
+            Your browser does not support the video element.
+          </video>
+          <div class="caption">
+            <strong>Boudica Through the Ages</strong> &mdash; From Roman histories to Victorian statues to modern cinema, each era has reshaped Boudicca in its own image.
+          </div>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Video</p>
+        <p>Play the video as a class. Pause at key moments and ask: &ldquo;What values does <em>this</em> representation reflect?&rdquo; This reinforces the lesson&rsquo;s central question &mdash; that representations tell us about the creator, not just the subject.</p>
+        <p class="mt-2"><strong>After viewing:</strong> Cold call 2&ndash;3 students: &ldquo;Which representation from the video surprised you most, and why?&rdquo;</p>
+      </div>
+
+      <!-- Image gallery: contrasting representations -->
+      <h3 class="font-serif text-xl font-bold text-navy mt-10 mb-4">Boudicca Through Different Eyes</h3>
+      <p class="text-gray-500 text-sm mb-4">Compare how different eras have imagined the same historical figure.</p>
+      <div class="image-gallery reveal">
+        <figure class="figure-card">
+          <img src="images/edwardian-stained-glass.jpg" alt="Edwardian stained glass window depicting Boadicea in the Queens' Window at the Moot Hall, Colchester Town Hall, Essex." loading="lazy">
+          <figcaption><strong>Edwardian stained glass (early 1900s)</strong> — The &ldquo;Queens&rsquo; Window&rdquo; in Colchester Town Hall depicts Boudicca as a regal, idealised figure with golden hair and a crown.</figcaption>
+        </figure>
+        <figure class="figure-card">
+          <img src="images/boudica-film-2023.jpg" alt="Film poster for Boudica: Queen of War (2023), starring Olga Kurylenko as a fierce, battle-worn Boudicca." loading="lazy">
+          <figcaption><strong><em>Boudica: Queen of War</em> (2023)</strong> — A modern film depicts Boudicca as a raw, visceral warrior &mdash; a far cry from the regal Edwardian or triumphant Victorian image.</figcaption>
+        </figure>
+      </div>
+
+      <!-- Full-width infographic -->
+      <div class="featured-image mt-10 reveal">
+        <img src="images/representations-infographic.jpg" alt="Infographic comparing Victorian 'Imperial' Boudicca (1902) with modern cinematic depictions, showing how representations of the same figure change across time." loading="lazy">
+        <figcaption class="caption"><strong>Boudicca: The Warrior Queen Through the Lens of Time.</strong> This infographic compares the Victorian &ldquo;imperial&rdquo; Boudicca with modern cinematic depictions, illustrating how each era projects its own values onto the same historical figure.</figcaption>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="b"
+           data-feedback-correct="Correct! Between approximately 500 and 1400 AD, Boudicca was largely forgotten, replaced by Christian saints and Arthurian legends."
+           data-feedback-incorrect="Not quite. It was during the medieval period (500&ndash;1400) that Boudicca virtually disappeared from historical memory.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">During which period did Boudicca largely disappear from historical memory?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q4" class="mt-0.5"><span>The Roman period (1st&ndash;5th centuries AD)</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q4" class="mt-0.5"><span>The Medieval period (500&ndash;1400)</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q4" class="mt-0.5"><span>The Victorian period (1837&ndash;1901)</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q4" class="mt-0.5"><span>The 20th century</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+
+      <div class="match-activity" data-answer="0-2,1-0,2-1,3-3">
+        <h3>Match the Era to the Representation</h3>
+        <p class="text-gray-700 font-medium mb-4">Match each time period to how Boudicca was represented:</p>
+        <div class="match-pairs">
+          <div>
+            <div class="match-prompt" data-idx="0">Roman period</div>
+            <div class="match-slot" data-idx="0">Click an answer below</div>
+            <div class="match-prompt" data-idx="1" style="margin-top:0.75rem">Medieval period</div>
+            <div class="match-slot" data-idx="1">Click an answer below</div>
+            <div class="match-prompt" data-idx="2" style="margin-top:0.75rem">Victorian era</div>
+            <div class="match-slot" data-idx="2">Click an answer below</div>
+            <div class="match-prompt" data-idx="3" style="margin-top:0.75rem">1970s&ndash;1990s</div>
+            <div class="match-slot" data-idx="3">Click an answer below</div>
+          </div>
+          <div>
+            <div class="match-answer match-item" data-idx="0">Largely forgotten &mdash; overshadowed by Arthurian narratives</div>
+            <div class="match-answer match-item" data-idx="1">National heroine and symbol of imperial power</div>
+            <div class="match-answer match-item" data-idx="2">Wronged queen and &ldquo;barbarian&rdquo; used for Roman moral criticism</div>
+            <div class="match-answer match-item" data-idx="3">Symbol of female power and resistance against patriarchy</div>
+          </div>
+        </div>
+        <button class="check-btn" style="margin-top:1rem">Check Matches</button>
+        <div class="cfu-feedback" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 5: OVPRL FRAMEWORK
+       ========================================== -->
+  <section id="chunk-5" class="full-section grad-chunk5 relative">
+    <span class="section-number">05</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-rose-100 text-rose-700">Chunk 5 of 5</span>
+      <h2 class="section-heading">How to Approach Sources</h2>
+      <p class="text-gray-700 leading-relaxed text-[1.05rem] mb-6">
+        When working with any source &mdash; primary or secondary &mdash; apply the <strong>OVPRL framework</strong>:
+      </p>
+
+      <!-- OVPRL Table -->
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Letter</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Stands For</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Ask Yourself</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white/70">
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-extrabold text-burgundy text-lg">O</td><td class="px-5 py-3 font-semibold">Origin</td><td class="px-5 py-3 text-gray-600">Who created this source? When? Where?</td></tr>
+            <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-extrabold text-burgundy text-lg">V</td><td class="px-5 py-3 font-semibold">Value</td><td class="px-5 py-3 text-gray-600">What useful information does this source provide?</td></tr>
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-extrabold text-burgundy text-lg">P</td><td class="px-5 py-3 font-semibold">Purpose</td><td class="px-5 py-3 text-gray-600">Why was this source created? What was the author trying to achieve?</td></tr>
+            <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-extrabold text-burgundy text-lg">R</td><td class="px-5 py-3 font-semibold">Reliability</td><td class="px-5 py-3 text-gray-600">How trustworthy is this source? Any biases or limitations?</td></tr>
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-extrabold text-burgundy text-lg">L</td><td class="px-5 py-3 font-semibold">Limitations</td><td class="px-5 py-3 text-gray-600">What does this source <em>not</em> tell us? What is missing?</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Gradual Release: I Do, We Do, You Do</p>
+        <ol class="list-decimal ml-5 mt-1 space-y-1">
+          <li><strong>I Do:</strong> Model the O (Origin) field yourself, thinking aloud as you type.</li>
+          <li><strong>We Do:</strong> Complete V and P together as a class, taking suggestions.</li>
+          <li><strong>You Do:</strong> Students complete R and L independently.</li>
+        </ol>
+        <p class="mt-2">Check understanding after each step. Use <strong>cold call</strong> to share responses.</p>
+      </div>
+
+      <!-- Interactive OVPRL Tool -->
+      <div class="ovprl-tool">
+        <h3 class="font-serif text-xl font-bold text-navy mb-1">Try It: Analyse the Thornycroft Statue</h3>
+        <p class="text-sm text-gray-500 mb-5">Complete each field. Use the hint button if you need guidance.</p>
+
+        <div class="ovprl-field">
+          <label for="ovprl-o"><span class="text-burgundy font-extrabold">O &mdash; Origin:</span> Who created this? When? Where?</label>
+          <textarea id="ovprl-o" placeholder="Who made it? When? Where is it located?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Sculpted by Thomas Thornycroft; commissioned 1856 with Prince Albert's involvement; erected 1902 at Westminster Bridge, London.</div>
+        </div>
+        <div class="ovprl-field">
+          <label for="ovprl-v"><span class="text-burgundy font-extrabold">V &mdash; Value:</span> What useful information does it provide?</label>
+          <textarea id="ovprl-v" placeholder="What can we learn from this source?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Valuable as evidence of how the Victorians understood and used Boudicca's image. Shows she was seen as a symbol of British strength and imperial destiny.</div>
+        </div>
+        <div class="ovprl-field">
+          <label for="ovprl-p"><span class="text-burgundy font-extrabold">P &mdash; Purpose:</span> Why was this created?</label>
+          <textarea id="ovprl-p" placeholder="Why did the creator make this?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Created to celebrate British imperial power and national identity. Prince Albert's involvement suggests royal endorsement of Boudicca as a symbol of empire.</div>
+        </div>
+        <div class="ovprl-field">
+          <label for="ovprl-r"><span class="text-burgundy font-extrabold">R &mdash; Reliability:</span> How trustworthy is this?</label>
+          <textarea id="ovprl-r" placeholder="Can we trust this source?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Unreliable as evidence of Boudicca's actual appearance or Celtic culture &mdash; the Roman-style chariot is historically inaccurate. Highly reliable as evidence of Victorian attitudes.</div>
+        </div>
+        <div class="ovprl-field">
+          <label for="ovprl-l"><span class="text-burgundy font-extrabold">L &mdash; Limitations:</span> What does it <em>not</em> tell us?</label>
+          <textarea id="ovprl-l" placeholder="What is missing?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Tells us nothing about Boudicca's actual appearance, the Celtic perspective, or the devastating defeat that ended her campaign.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       INDEPENDENT PRACTICE: REVIEW QUESTIONS
+       ========================================== -->
+  <section id="practice" class="full-section grad-practice relative">
+    <span class="section-number">Q</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-green-100 text-green-700">Independent Practice</span>
+      <h2 class="section-heading">Review Questions</h2>
+      <p class="text-sm text-gray-500 mb-6">Choose the level that challenges you, or work through all three.</p>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Independent Practice (&lsquo;You Do&rsquo;)</p>
+        <p>Students should attempt these <strong>only after a high success rate</strong> on the CFU questions. Direct all students to Foundation first.</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> Students answer Foundation Q3 on a sticky note before leaving.</p>
+      </div>
+
+      <div class="tab-group">
+        <button class="tab-btn active" data-tab="foundation">Foundation</button>
+        <button class="tab-btn" data-tab="standard">Standard</button>
+        <button class="tab-btn" data-tab="extension">Extension</button>
+      </div>
+
+      <div class="tab-content active" id="foundation" data-tab="foundation">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Recall and describe</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>What is the name of the sculptor who created the famous statue of Boudicca near Westminster Bridge?</li>
+          <li>Give two examples of how Boudicca&rsquo;s image has changed across different time periods.</li>
+          <li>What does the word &lsquo;historiography&rsquo; mean?</li>
+        </ol>
+      </div>
+      <div class="tab-content" id="standard" data-tab="standard">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Analyse and explain</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Explain why the Thornycroft statue tells us more about Victorian Britain than about the historical Boudicca.</li>
+          <li>Analyse how the absence of Celtic written sources affects our ability to understand Boudicca&rsquo;s revolt.</li>
+          <li>Using OVPRL, assess the value and limitations of the Thornycroft statue as a historical source.</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Sentence starters to help structure your response:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li>One reason this is significant is&hellip;</li>
+            <li>This source/evidence suggests that&hellip;</li>
+            <li>This can be explained by&hellip;</li>
+            <li>A key example of this is&hellip; which demonstrates&hellip;</li>
+          </ul>
+          <p class="mt-3 font-semibold text-sm mb-2">Paragraph frame:</p>
+          <p class="text-gray-600 italic">[Point] One important factor was&hellip; [Evidence] This is supported by&hellip; who states/shows that&hellip; [Explain] This evidence reveals that&hellip; because&hellip; [Link] Therefore, this demonstrates that&hellip;</p>
+        </div>
+      </div>
+      <div class="tab-content" id="extension" data-tab="extension">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Evaluate and debate</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Evaluate the argument that every representation of Boudicca reveals more about the interpreter than about the historical figure. Use at least three examples.</li>
+          <li>To what extent is it possible to separate the &ldquo;historical Boudicca&rdquo; from the &ldquo;mythologised Boudicca&rdquo;?</li>
+          <li>Critically analyse the irony of Boudicca&rsquo;s Victorian image. How does the appropriation of an anti-imperial rebel to justify British imperialism reflect the power of historical narrative?</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Essay structure guide:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li><strong>Introduction:</strong> Define key terms, state your argument clearly</li>
+            <li><strong>Body paragraphs:</strong> Use PEEL &mdash; Point, Evidence, Explain, Link</li>
+            <li><strong>Conclusion:</strong> Restate your argument, synthesise (don&rsquo;t just repeat)</li>
+          </ul>
+          <p class="mt-2 text-gray-600">Evaluative starters: &ldquo;To a significant/limited extent&hellip;&rdquo; &ldquo;While X is important, Y was more significant because&hellip;&rdquo; &ldquo;The evidence suggests that&hellip; however&hellip;&rdquo;</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       KEY TERMS: FLASHCARD GLOSSARY
+       ========================================== -->
+  <section id="key-terms" class="full-section grad-terms relative">
+    <span class="section-number">A&ndash;Z</span>
+    <div class="section-inner">
+      <div class="flex items-end justify-between mb-6 reveal">
+        <div>
+          <span class="section-label bg-purple-100 text-purple-700">Key Terms</span>
+          <h2 class="section-heading mb-0">Glossary</h2>
+        </div>
+        <button class="glossary-view-toggle text-sm text-navy font-semibold hover:text-burgundy transition-colors cursor-pointer">
+          Switch to List View
+        </button>
+      </div>
+      <p class="text-sm text-gray-500 mb-6 reveal">Click each card to reveal its definition.</p>
+
+      <!-- Flashcards -->
+      <div class="flashcard-grid reveal-stagger">
+        <div class="flashcard" tabindex="0" role="button" aria-label="Flashcard: Historiography">
+          <div class="flashcard-inner"><div class="flashcard-front">Historiography</div><div class="flashcard-back">The study of how history is written, interpreted, and revised across time.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Representation</div><div class="flashcard-back">A portrayal or depiction of a person, event, or idea, shaped by the creator&rsquo;s perspective and context.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Primary Source</div><div class="flashcard-back">A source created at or close to the time of the events being studied.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Secondary Source</div><div class="flashcard-back">A source created after the events, often interpreting primary sources.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Bias</div><div class="flashcard-back">A tendency to favour one perspective, which can distort the presentation of information.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Oral Tradition</div><div class="flashcard-back">The practice of passing knowledge, laws, and history down through spoken word, story, and song rather than writing.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Iconography</div><div class="flashcard-back">The use of images and symbols to represent particular ideas or figures.</div></div>
+        </div>
+      </div>
+
+      <!-- List View (hidden) -->
+      <div class="glossary-list hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+            <thead>
+              <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/4">Term</th>
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Definition</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white/70">
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Historiography</td><td class="px-5 py-3 text-gray-600">The study of how history is written, interpreted, and revised across time.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Representation</td><td class="px-5 py-3 text-gray-600">A portrayal or depiction shaped by the creator&rsquo;s perspective and context.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Primary source</td><td class="px-5 py-3 text-gray-600">A source created at or close to the time of the events being studied.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Secondary source</td><td class="px-5 py-3 text-gray-600">A source created after the events, often interpreting primary sources.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Bias</td><td class="px-5 py-3 text-gray-600">A tendency to favour one perspective, which can distort the presentation of information.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Oral tradition</td><td class="px-5 py-3 text-gray-600">Passing knowledge down through spoken word, story, and song rather than writing.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Iconography</td><td class="px-5 py-3 text-gray-600">The use of images and symbols to represent particular ideas or figures.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       REVIEW OF LEARNING
+       ========================================== -->
+  <section id="review" class="full-section grad-review relative">
+    <div class="section-inner reveal">
+      <span class="section-label bg-gold/20 text-amber-700">Review of Learning</span>
+      <h2 class="section-heading">How Did You Go?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6 text-[1.05rem]">
+        Return to the success criteria from the start of this lesson. Can you now tick off each one?
+        If any remain unticked, scroll back and review the relevant section.
+      </p>
+
+      <div class="space-y-3">
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">1</span>
+          <span class="text-gray-700">Explain what historiography means and why it matters when studying ancient figures.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">2</span>
+          <span class="text-gray-700">Identify at least three different representations of Boudicca from different time periods.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">3</span>
+          <span class="text-gray-700">Explain how context shapes historical representation.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">4</span>
+          <span class="text-gray-700">Analyse the ways in which the Thornycroft statue reflects Victorian values.</span>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Review of Learning</p>
+        <p><strong>Self-assessment</strong> for each criterion: &ldquo;Thumbs up if confident, sideways if partly there, down if you need more help.&rdquo;</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> &ldquo;On a sticky note, write one thing you learned today that surprised you about Boudicca.&rdquo; Collect as students leave.</p>
+      </div>
+
+      <!-- Exit Ticket -->
+      <div class="exit-ticket">
+        <h4>Exit Ticket</h4>
+        <label class="text-sm text-gray-600 block mb-1">One thing I learned today:</label>
+        <textarea placeholder="What was the most important thing you learned in this lesson?"></textarea>
+        <label class="text-sm text-gray-600 block mb-1">One question I still have:</label>
+        <textarea placeholder="What are you still unsure about or want to know more about?"></textarea>
+      </div>
+
+      <!-- Reflection -->
+      <div class="reflection-panel">
+        <h4>Self-Reflection</h4>
+        <p class="text-sm text-gray-600 mb-2">How confident do you feel about this lesson&rsquo;s content?</p>
+        <div class="confidence-scale">
+          <button class="confidence-btn">1<br><span class="text-[0.65rem]">Not yet</span></button>
+          <button class="confidence-btn">2<br><span class="text-[0.65rem]">Getting there</span></button>
+          <button class="confidence-btn">3<br><span class="text-[0.65rem]">Mostly</span></button>
+          <button class="confidence-btn">4<br><span class="text-[0.65rem]">Confident</span></button>
+          <button class="confidence-btn">5<br><span class="text-[0.65rem]">Mastered</span></button>
+        </div>
+        <label class="text-sm text-gray-600 block mt-3 mb-1">What do you want to revisit before the next lesson?</label>
+        <textarea class="reflection-text" placeholder="Any topics, terms, or skills you want to review?"></textarea>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       LESSON NAVIGATION
+       ========================================== -->
+  <section class="py-12 px-6" style="background: #fefcf9;">
+    <div class="max-w-3xl mx-auto lesson-nav-footer flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        Home
+      </a>
+      <span class="text-xs text-gray-300 tracking-wider uppercase">Lesson 1 of 16</span>
+      <a href="lesson-2.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        Lesson 2
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 text-center" style="background: linear-gradient(180deg, #fefcf9, #f5f3ed);">
+    <p class="text-sm text-gray-400 font-sans">
+      NSW Ancient History Stage 6 &middot; NESA Syllabus (2017) &middot; Case Study A
+    </p>
+    <p class="text-xs text-gray-300 mt-2 font-sans">Created by Cheryl Cutter</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 12: Aftermath of the Revolt | Boudicca Interactive</title>
+
+  <!-- Meta -->
+  <meta name="description" content="Interactive NSW Ancient History Stage 6 resource — Boudicca case study with explicit teaching, CFU activities, source analysis, and teacher facilitation tools.">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': { DEFAULT: '#1a1a2e', mid: '#16213e', light: '#2a4d7a' },
+            'burgundy': { DEFAULT: '#8b2635', light: '#a83242' },
+            'gold': { DEFAULT: '#c9a84c', light: '#e8d292' },
+          },
+          fontFamily: {
+            'serif': ['Playfair Display', 'Georgia', 'serif'],
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans" style="background: #fefcf9;">
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress"></div>
+
+  <!-- Navigation (Glassmorphism) -->
+  <nav class="site-nav">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-5">
+        <a href="index.html" class="text-white font-serif text-xl font-bold tracking-wide hover:text-gold transition-colors">
+          Boudicca
+        </a>
+        <span class="text-white/20 hidden sm:inline">|</span>
+        <span class="text-white/40 text-xs font-sans tracking-wider hidden sm:inline">Lesson 12 of 16</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <button class="teacher-toggle" aria-label="Toggle teacher facilitation notes">Teacher Mode</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="lesson-hero grad-hero" style="background: linear-gradient(165deg, rgba(26,26,46,0.92) 0%, rgba(22,33,62,0.88) 50%, rgba(26,39,68,0.92) 100%);">
+    <div class="relative z-10 max-w-3xl mx-auto reveal">
+      <span class="chapter-badge">Chapter 3 &middot; The Revolt and Aftermath</span>
+      <p class="text-white/40 font-sans text-sm tracking-wider uppercase mb-3">Lesson 12</p>
+      <h1 class="hero-title font-serif text-white">Aftermath of<br>the Revolt</h1>
+      <p class="hero-desc">
+        What happened after the revolt was crushed? How did Rome respond &mdash;
+        and how did the revolt change the way Britain was governed?
+      </p>
+      <p class="reading-time"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> ~26 min</p>
+      <!-- Syllabus Outcomes -->
+      <details class="mt-8">
+        <summary class="text-white/25 text-xs font-sans cursor-pointer hover:text-white/40 transition-colors uppercase tracking-[0.15em]">
+          NESA Syllabus Outcomes
+        </summary>
+        <div class="mt-3 text-white/35 text-xs font-sans space-y-1 leading-relaxed">
+          <p><strong class="text-white/50">AH11-1:</strong> Describes the nature of continuity and change in the ancient world</p>
+          <p><strong class="text-white/50">AH11-3:</strong> Analyses the role of historical features, individuals and groups in shaping the past</p>
+          <p><strong class="text-white/50">AH11-7:</strong> Discusses and evaluates differing interpretations and representations of the past</p>
+        </div>
+      </details>
+    </div>
+    <!-- Decorative number -->
+    <div class="absolute bottom-6 right-8 font-serif text-white/[0.03] font-extrabold pointer-events-none select-none hidden md:block" style="font-size: 14rem; line-height: 1;">12</div>
+  </section>
+
+
+  <!-- ==========================================
+       LEARNING INTENTION & SUCCESS CRITERIA
+       ========================================== -->
+  <section id="lisc" class="full-section grad-lisc">
+    <div class="section-inner reveal">
+      <span class="section-label bg-navy/[0.07] text-navy">Learning Intention</span>
+      <h2 class="section-heading">What You&rsquo;ll Learn</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-8">
+        To understand the immediate and long-term consequences of the Boudiccan revolt for Roman Britain, focusing on the policies of Suetonius Paulinus and his successors, and the lasting impact on Roman provincial governance.
+      </p>
+
+      <div>
+        <h3 class="font-sans text-xs font-bold uppercase tracking-[0.12em] text-gray-400 mb-2">Success Criteria</h3>
+        <p class="sc-progress-text text-xs text-gray-400 mb-1">0 of 4 criteria met</p>
+        <div class="sc-progress"><div class="sc-progress-bar"></div></div>
+        <p class="text-sm text-gray-500 mb-4">By the end of this lesson, I can:</p>
+        <div class="space-y-1">
+          <div class="sc-item"><input type="checkbox" id="sc1"><label for="sc1">Describe the immediate Roman response to the revolt under Suetonius Paulinus.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc2"><label for="sc2">Explain the role of Gaius Julius Alpinus Classicianus in shifting Roman policy.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc3"><label for="sc3">Analyse the short and long-term consequences of the revolt for native Britons.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc4"><label for="sc4">Evaluate how the revolt changed Roman approaches to provincial governance in Britain.</label></div>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Sharing LISC</p>
+        <p>Display the learning intention and success criteria on the board. Read them aloud and ask students to identify the <em>key verbs</em> (describe, explain, analyse, evaluate). Check understanding: <strong>&ldquo;Can someone put the learning intention into their own words?&rdquo;</strong> (cold call).</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       ACTIVATING PRIOR KNOWLEDGE
+       ========================================== -->
+  <section id="prior-knowledge" class="full-section grad-prior relative">
+    <span class="section-number">?</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-white/50 text-amber-700">Before We Begin</span>
+      <h2 class="section-heading">What Do You Already Know?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        Before we explore what happened after the revolt, let&rsquo;s recall the outcome of the final battle from Lesson 11.
+      </p>
+
+      <div class="mb-6">
+        <p class="font-sans text-sm font-semibold text-gray-700 mb-2">How well do you remember the final battle?</p>
+        <div class="poll-options">
+          <button class="poll-btn">Not well</button>
+          <button class="poll-btn">Some details</button>
+          <button class="poll-btn">Most details</button>
+          <button class="poll-btn">Very well</button>
+        </div>
+      </div>
+
+      <div>
+        <label class="font-sans text-sm font-semibold text-gray-700 block mb-2" for="prior-text">
+          Retrieval practice &mdash; answer these from memory before we begin:
+        </label>
+        <textarea id="prior-text" class="w-full border border-black/[0.08] rounded-2xl p-4 text-sm font-sans leading-relaxed resize-y bg-white/60 backdrop-blur min-h-[90px] focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-all"
+                  placeholder="1. What terrain did Suetonius choose for the battle? 2. What happened to Boudicca's warriors when they tried to retreat? 3. How did Boudicca die (according to Tacitus)?"></textarea>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Activating Prior Knowledge</p>
+        <p>Use <strong>cold call</strong> to ask 3&ndash;4 students for their answers. Correct answers: (1) A narrow defile with forest behind; (2) They were trapped by their own wagons and slaughtered; (3) Tacitus says she took poison to avoid capture.</p>
+        <p class="mt-2"><strong>Retrieval check:</strong> &ldquo;True or false: Boudicca won the final battle against the Romans. Thumbs up for true, down for false.&rdquo; (Answer: false &mdash; Suetonius Paulinus defeated Boudicca&rsquo;s forces at the final battle.) If fewer than 80% correct, briefly recap the outcome before proceeding.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 1: THE PUNITIVE CAMPAIGN
+       ========================================== -->
+  <section id="chunk-1" class="full-section grad-chunk1 relative">
+    <span class="section-number">01</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-burgundy/10 text-burgundy">Chunk 1 of 4</span>
+      <h2 class="section-heading">The Punitive Campaign: Suetonius Unbowed</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling (&lsquo;I Do&rsquo;)</p>
+        <p><strong>Read the first paragraph aloud</strong> and model critical thinking: &ldquo;Notice the contradiction here &mdash; Suetonius is punishing the very people he needs to govern. He&rsquo;s destroying the crops they need to survive, which means they can&rsquo;t pay taxes either. This is a short-term emotional response that creates long-term problems. Can you think of other historical examples where a ruler&rsquo;s revenge backfired?&rdquo;</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          The military victory did not end the crisis. Suetonius Paulinus, with the methodical ruthlessness that characterised his approach throughout the revolt, launched a systematic <strong>punitive campaign</strong> against the tribes that had participated in the rebellion. He devastated their lands, burned crops, and destroyed settlements. Roman reinforcements arrived from Germany &mdash; two thousand legionaries, eight auxiliary cohorts, and a thousand cavalry &mdash; strengthening the battered garrison.
+        </p>
+        <p>
+          The consequences for the native population were severe. Tacitus records that those tribes that had remained wavering or had been hostile were reduced by fire and sword. The deliberate destruction of crops, however, created a problem Suetonius may not have anticipated: winter was approaching, and the people he was punishing had not planted crops because they had expected victory and Roman plunder to supply their needs. The result was <strong>widespread famine</strong>.
+        </p>
+        <p>
+          Suetonius&rsquo;s approach was strategically problematic. A province stripped of its agricultural base, its towns destroyed, and its population decimated by war, famine, and reprisal could not pay taxes, supply the army, or maintain the peace. The proconsul was <strong>punishing a province he needed to govern</strong>. His superiors in Rome began to take notice.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="c"
+           data-feedback-correct="Correct! Suetonius's punitive campaign destroyed crops and farms, which meant the province could not produce food, pay taxes, or supply the army. He was undermining the very province he needed to govern &mdash; a strategic contradiction."
+           data-feedback-incorrect="Not quite. The key problem was practical: by destroying the province's agricultural base, Suetonius made it impossible for the population to pay taxes, feed themselves, or supply his army. Punishment was creating more problems than it solved.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p>Use <strong>cold call</strong>. If they answer incorrectly, ask: &ldquo;Who can help?&rdquo; Aim for 80%+ success before moving on.</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">Why was Suetonius&rsquo;s punitive campaign strategically problematic?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q1" class="mt-0.5"><span>It angered the emperor Nero, who preferred diplomacy</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q1" class="mt-0.5"><span>The Roman army was too weakened to carry out the campaign</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q1" class="mt-0.5"><span>Destroying the province&rsquo;s agricultural base meant it could not pay taxes or supply the army</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q1" class="mt-0.5"><span>The British tribes surrendered immediately, making punishment unnecessary</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 2: CLASSICIANUS
+       ========================================== -->
+  <section id="chunk-2" class="full-section grad-chunk2 relative">
+    <span class="section-number">02</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-purple-100 text-purple-700">Chunk 2 of 4</span>
+      <h2 class="section-heading">Classicianus and the Call for Conciliation</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Guided Reading (&lsquo;We Do&rsquo;)</p>
+        <p>Have students read this section silently. Then use <strong>think-pair-share</strong>: &ldquo;Turn to your partner and discuss: Why was it significant that Classicianus was of Gaulish origin?&rdquo; (60 seconds). Cold call 2&ndash;3 pairs.</p>
+        <p class="mt-2">Emphasise the archaeological discovery of Classicianus&rsquo;s tomb &mdash; this is a rare moment where a person named in a text is confirmed by physical evidence.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          The new procurator appointed to replace Catus Decianus was <strong>Gaius Julius Alpinus Classicianus</strong> &mdash; a man of Gaulish origin whose own people had experienced Roman conquest and whose approach to provincial governance was fundamentally different from his predecessor&rsquo;s.
+        </p>
+        <p>
+          Classicianus sent a private report to Rome recommending that Suetonius be replaced. The report, as summarised by Tacitus, argued that the ongoing war would never be brought to a peaceful conclusion while Suetonius remained governor, because Suetonius&rsquo;s personal pride bound up his own failures with the outcome of the war &mdash; any peace would look like an admission that the revolt had not been fully crushed. A fresh governor without this history, Classicianus argued, could treat the defeated tribes with mercy and restore stability.
+        </p>
+      </div>
+
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Archaeological Discovery</p>
+        <p class="text-gray-700">
+          The tomb of Classicianus himself was discovered in Roman London in 1852 and again in 1935. Fragments of his inscribed tombstone, erected by his wife Julia Pacata, are now displayed in the <strong>British Museum</strong>. The tomb represents one of the rare moments when an individual named in a written source is directly confirmed by archaeological evidence &mdash; an extraordinary convergence of history and archaeology.
+        </p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          The emperor Nero sent a freedman, <strong>Polyclitus</strong>, to investigate the situation. Tacitus notes with dry irony that Polyclitus, an imperial freedman of no military experience, was treated with enormous deference by Roman soldiers who had just defeated Boudicca&rsquo;s hundreds of thousands, but that the British tribespeople found the sight of a freedman commanding generals and armies incomprehensible. Polyclitus&rsquo;s report appears to have supported Classicianus: Suetonius was eventually recalled, following a pretext involving the loss of some ships, and replaced by the more conciliatory <strong>Publius Petronius Turpilianus</strong>.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="b"
+           data-feedback-correct="Correct! Classicianus argued that Suetonius's personal pride made peace impossible &mdash; any peace would look like admitting the revolt hadn't been fully crushed. A fresh governor without this personal stake could treat the defeated tribes with mercy."
+           data-feedback-incorrect="Not quite. Classicianus's key argument was about Suetonius's personal pride: because Suetonius had tied his reputation to crushing the revolt completely, he could never accept a peace that looked like compromise. Only a new governor could offer mercy.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">What was Classicianus&rsquo;s main argument for replacing Suetonius?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q2" class="mt-0.5"><span>Suetonius had lost too many soldiers and could not maintain control</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q2" class="mt-0.5"><span>Suetonius&rsquo;s personal pride prevented him from making peace with the defeated tribes</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q2" class="mt-0.5"><span>Suetonius was secretly planning to declare himself emperor</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q2" class="mt-0.5"><span>Suetonius was too old and ill to continue governing effectively</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+
+      <div class="match-activity" data-answer="0-2,1-0,2-3,3-1">
+        <h3>Match the Figure to Their Role in the Aftermath</h3>
+        <p class="text-gray-700 font-medium mb-4">Match each historical figure to their role after the revolt:</p>
+        <div class="match-pairs">
+          <div>
+            <div class="match-prompt" data-idx="0">Suetonius Paulinus</div>
+            <div class="match-slot" data-idx="0">Click an answer</div>
+            <div class="match-prompt" data-idx="1" style="margin-top:0.75rem">Classicianus</div>
+            <div class="match-slot" data-idx="1">Click an answer</div>
+            <div class="match-prompt" data-idx="2" style="margin-top:0.75rem">Turpilianus</div>
+            <div class="match-slot" data-idx="2">Click an answer</div>
+            <div class="match-prompt" data-idx="3" style="margin-top:0.75rem">Polyclitus</div>
+            <div class="match-slot" data-idx="3">Click an answer</div>
+          </div>
+          <div>
+            <div class="match-answer match-item" data-idx="0">New procurator who recommended recalling the governor</div>
+            <div class="match-answer match-item" data-idx="1">Imperial freedman sent by Nero to investigate</div>
+            <div class="match-answer match-item" data-idx="2">Governor who led the punitive campaign against rebel tribes</div>
+            <div class="match-answer match-item" data-idx="3">Replacement governor who adopted a conciliatory policy</div>
+          </div>
+        </div>
+        <button class="check-btn" style="margin-top:1rem">Check Matches</button>
+        <div class="cfu-feedback" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 3: THE NEW POLICY
+       ========================================== -->
+  <section id="chunk-3" class="full-section grad-chunk3 relative">
+    <span class="section-number">03</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-amber-100 text-amber-700">Chunk 3 of 4</span>
+      <h2 class="section-heading">The New Policy: From Repression to Reconstruction</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling: Source Analysis</p>
+        <p>Before reading the Tacitus source below, set up the context: &ldquo;Tacitus admired military toughness. He&rsquo;s going to describe the new peaceful policy &mdash; but pay attention to how he describes it. What words reveal his bias?&rdquo; After reading, model identifying the phrase &lsquo;dishonorable name of peace&rsquo; as revealing Tacitus&rsquo;s senatorial bias toward military glory.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Turpilianus adopted a policy of <strong>non-provocation and reconstruction</strong>. Tacitus, who deeply admired Suetonius and his military hardness, is scornful &mdash; he describes Turpilianus as exchanging &ldquo;their own slaughter for the dishonorable name of peace.&rdquo; But this reflects Tacitus&rsquo;s senatorial bias toward military glory rather than an objective assessment of good governance.
+        </p>
+        <p>
+          The shift in policy had practical wisdom behind it. Rome had learned from the revolt that the systematic humiliation of provincial elites &mdash; taking their land, flogging their queens, assaulting their daughters &mdash; risked producing exactly the kind of mass uprising that had nearly torn the province from the empire. The new approach emphasised <strong>co-opting the native nobility</strong> into Roman administrative structures, encouraging the construction of Roman-style public buildings and amenities, and moderating the financial exploitation that had contributed to the revolt.
+        </p>
+        <p>
+          The <strong>Agricolan period</strong> of Roman Britain, which followed in the late first century AD, represents the flowering of this new approach. Under <strong>Gnaeus Julius Agricola</strong> (governor AD 77&ndash;84), Roman Britain saw significant urban expansion, the construction of fora and basilicae, the encouragement of Latin education among the British elite, and major military advances into northern Britain and Scotland.
+        </p>
+      </div>
+
+      <!-- Primary Source Box -->
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Primary Source</p>
+        <p class="text-xs text-gray-500 mb-3"><strong>Provenance:</strong> Tacitus, <em>Agricola</em> 21 (c. AD 98). The <em>Agricola</em> is a biographical work about Tacitus&rsquo;s father-in-law, who served as governor of Britain (AD 77&ndash;84). As a celebratory biography, it presents Agricola&rsquo;s policies &mdash; including Romanisation &mdash; in a deliberately favourable light. Translation: Harold Mattingly, revised S.A. Handford (Penguin, 1970).</p>
+        <blockquote class="border-l-4 border-burgundy/30 pl-4 italic text-gray-600 leading-relaxed">
+          &ldquo;Agricola gave private encouragement and official assistance to the building of temples, public squares, and good houses&hellip; He educated the sons of the chiefs in the liberal arts and expressed a preference for British ability over the trained skills of Gauls. The result was that instead of loathing the Latin language they became eager to speak it effectively.&rdquo;
+        </blockquote>
+        <p class="text-sm text-gray-600 mt-3">
+          <strong>Historian&rsquo;s note:</strong> This passage is one of antiquity&rsquo;s clearest descriptions of deliberate <strong>Romanisation</strong> &mdash; the systematic replacement of native culture with Roman customs, language, and urban life. Tacitus presents this positively, framing it as civilising progress. However, modern historians read it with considerable irony: Tacitus himself, just a few chapters later in the same work, has the Caledonian chieftain Calgacus describe Roman rule as &ldquo;they create a desolation and call it peace.&rdquo; The <em>Agricola</em> therefore contains within itself both the Roman justification for cultural imperialism and a sharp critique of it.
+        </p>
+      </div>
+
+      <!-- Timeline of events -->
+      <h3 class="font-serif text-xl font-bold text-navy mt-10 mb-4">Timeline: From Revolt to Recovery</h3>
+      <div class="timeline reveal-stagger">
+        <div class="timeline-item">
+          <p class="timeline-date">AD 60/61</p>
+          <p class="timeline-desc">Revolt crushed at the final battle. Suetonius begins punitive campaign.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">AD 61</p>
+          <p class="timeline-desc">Classicianus reports to Rome; recommends Suetonius&rsquo;s recall.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">AD 61</p>
+          <p class="timeline-desc">Nero sends Polyclitus to investigate. Suetonius eventually recalled.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">c. AD 62</p>
+          <p class="timeline-desc">Turpilianus appointed governor; shift to conciliation begins.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">AD 70s</p>
+          <p class="timeline-desc">Recovery and urban rebuilding of Londinium, Verulamium, Camulodunum.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">AD 77&ndash;84</p>
+          <p class="timeline-desc">Agricola as governor; Romanisation, urban expansion, military advance.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">AD 122</p>
+          <p class="timeline-desc">Emperor Hadrian visits Britain; Hadrian&rsquo;s Wall construction begins.</p>
+        </div>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="d"
+           data-feedback-correct="Correct! The new Roman approach after the revolt focused on co-opting the native nobility into Roman administrative structures, building Roman-style public amenities, and moderating financial exploitation &mdash; a process historians call 'Romanisation'."
+           data-feedback-incorrect="Not quite. After the revolt, Rome shifted to a policy of integration and reconstruction. The key strategy was co-opting the native nobility into Roman structures, encouraging Roman culture and building, and reducing the exploitation that had caused the revolt.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p><strong>Gesture voting:</strong> &ldquo;Hold up A, B, C, or D with your fingers. On three &mdash; one, two, three &mdash; show me.&rdquo;</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">What was the key feature of Rome&rsquo;s new approach to governing Britain after the revolt?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q3" class="mt-0.5"><span>Withdrawing all Roman troops and granting Britain independence</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q3" class="mt-0.5"><span>Doubling the military garrison and ruling by fear</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q3" class="mt-0.5"><span>Deporting all native Britons and replacing them with Roman settlers</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q3" class="mt-0.5"><span>Co-opting native elites into Roman structures and encouraging Romanisation</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 4: THE LEGACY FOR NATIVE BRITONS
+       ========================================== -->
+  <section id="chunk-4" class="full-section grad-chunk4 relative">
+    <span class="section-number">04</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-blue-100 text-blue-700">Chunk 4 of 4</span>
+      <h2 class="section-heading">The Legacy for Native Britons</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Scaffolding: Two Sides</p>
+        <p>This section presents a nuanced argument &mdash; the revolt had both devastating short-term consequences and paradoxically positive long-term effects. Use <strong>think-pair-share</strong>: &ldquo;With your partner, create a two-column table: &lsquo;Short-term consequences&rsquo; and &lsquo;Long-term consequences.&rsquo; Fill it in from the text.&rdquo; (2 minutes). Cold call 3 pairs to share one entry each.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          The long-term consequences of the Boudiccan revolt for the native British population were <strong>deeply ambiguous</strong>. In the short term, the defeat brought devastating reprisals, famine, and the loss of a generation of warriors. The Iceni as a distinct political entity effectively ceased to exist after the revolt &mdash; there is no further mention of them as an independent tribe in Roman sources.
+        </p>
+        <p>
+          In the longer term, the revolt may have paradoxically <strong>improved</strong> the situation of the remaining British population. The recognition in Rome that systematic exploitation could destabilise the province led to more careful management of provincial affairs. The new class of <strong>Romanised Britons</strong> that emerged in the late first and second centuries AD &mdash; builders, administrators, soldiers, merchants &mdash; found genuine opportunities for advancement within the imperial system.
+        </p>
+        <p>
+          Yet this assimilation came at a <strong>profound cultural cost</strong>. Celtic language, religion, and oral tradition were progressively marginalised. The Druids were suppressed. The bards who had kept Celtic memory alive faded from the historical record. What replaced them was Roman Latin culture &mdash; impressive, durable, but not the culture of the people who had followed Boudicca into battle.
+        </p>
+      </div>
+
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Key Question</p>
+        <p class="text-gray-700">
+          Was Romanisation a form of progress or a form of cultural destruction? This question has no simple answer &mdash; and the tension between the two views is central to understanding the legacy of Boudicca&rsquo;s revolt.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="a"
+           data-feedback-correct="Correct! While individual Romanised Britons gained opportunities for advancement, the process of Romanisation meant the progressive loss of Celtic language, religion, oral tradition, and cultural identity. The Iceni as a distinct people effectively disappeared."
+           data-feedback-incorrect="Not quite. The cultural cost of Romanisation was the loss of Celtic identity &mdash; language, religion, and oral traditions were progressively replaced by Roman Latin culture. Individual Britons gained opportunities, but their culture was fundamentally transformed.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">What was the main cultural cost of Romanisation for native Britons?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q4" class="mt-0.5"><span>Celtic language, religion, and oral tradition were progressively marginalised and replaced</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q4" class="mt-0.5"><span>Native Britons were forbidden from holding any positions of authority</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q4" class="mt-0.5"><span>All British children were sent to Rome for education</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q4" class="mt-0.5"><span>Celtic art and metalwork were destroyed by Roman soldiers</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       INDEPENDENT PRACTICE: REVIEW QUESTIONS
+       ========================================== -->
+  <section id="practice" class="full-section grad-practice relative">
+    <span class="section-number">Q</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-green-100 text-green-700">Independent Practice</span>
+      <h2 class="section-heading">Review Questions</h2>
+      <p class="text-sm text-gray-500 mb-6">Choose the level that challenges you, or work through all three.</p>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Independent Practice (&lsquo;You Do&rsquo;)</p>
+        <p>Students should attempt these <strong>only after a high success rate</strong> on the CFU questions. Direct all students to Foundation first.</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> Students answer Foundation Q1 on a sticky note before leaving.</p>
+      </div>
+
+      <div class="tab-group">
+        <button class="tab-btn active" data-tab="foundation">Foundation</button>
+        <button class="tab-btn" data-tab="standard">Standard</button>
+        <button class="tab-btn" data-tab="extension">Extension</button>
+      </div>
+
+      <div class="tab-content active" id="foundation" data-tab="foundation">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Identify and describe</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>What was the name of the new procurator appointed after Catus Decianus fled?</li>
+          <li>What policy did Turpilianus pursue when he replaced Suetonius Paulinus?</li>
+          <li>Where is the tombstone of Classicianus now displayed?</li>
+        </ol>
+      </div>
+      <div class="tab-content" id="standard" data-tab="standard">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Analyse and explain</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Explain why Classicianus recommended the recall of Suetonius Paulinus. What does this reveal about Roman approaches to provincial governance?</li>
+          <li>Analyse the short-term consequences of the revolt for the native British population.</li>
+          <li>Using the Tacitus source above, assess what this passage reveals about Roman attitudes to the &ldquo;civilisation&rdquo; of conquered peoples.</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Topic sentence starters:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li>A key factor in this was&hellip;</li>
+            <li>The evidence from [source] demonstrates&hellip;</li>
+            <li>This is significant because&hellip;</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-content" id="extension" data-tab="extension">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Evaluate and debate</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Evaluate the argument that the Roman response to the Boudiccan revolt was ultimately more significant than the revolt itself in determining the future character of Roman Britain.</li>
+          <li>Critically assess Tacitus&rsquo;s characterisation of Turpilianus&rsquo;s conciliatory policy as &ldquo;dishonorable peace.&rdquo; Whose perspective does this reflect, and what does it omit?</li>
+          <li>To what extent did the Boudiccan revolt change the nature of Roman imperial governance in Britain? Use evidence from both before and after the revolt to support your argument.</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Evaluative transitions:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li>&ldquo;To a significant/limited extent&hellip;&rdquo;</li>
+            <li>&ldquo;The most compelling evidence for this is&hellip;&rdquo;</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       KEY TERMS: FLASHCARD GLOSSARY
+       ========================================== -->
+  <section id="key-terms" class="full-section grad-terms relative">
+    <span class="section-number">A&ndash;Z</span>
+    <div class="section-inner">
+      <div class="flex items-end justify-between mb-6 reveal">
+        <div>
+          <span class="section-label bg-purple-100 text-purple-700">Key Terms</span>
+          <h2 class="section-heading mb-0">Glossary</h2>
+        </div>
+        <button class="glossary-view-toggle text-sm text-navy font-semibold hover:text-burgundy transition-colors cursor-pointer">
+          Switch to List View
+        </button>
+      </div>
+      <p class="text-sm text-gray-500 mb-6 reveal">Click each card to reveal its definition.</p>
+
+      <!-- Flashcards -->
+      <div class="flashcard-grid reveal-stagger">
+        <div class="flashcard" tabindex="0" role="button" aria-label="Flashcard: Turpilianus">
+          <div class="flashcard-inner"><div class="flashcard-front">Turpilianus</div><div class="flashcard-back">Publius Petronius Turpilianus, the governor who replaced Suetonius Paulinus and adopted a conciliatory policy towards the defeated tribes.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Classicianus</div><div class="flashcard-back">Gaius Julius Alpinus Classicianus, procurator of Britain after AD 61, who recommended the recall of Suetonius Paulinus to Rome; his tombstone survives in the British Museum.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Polyclitus</div><div class="flashcard-back">An imperial freedman sent by Nero to investigate the situation in Britain after the revolt; his report supported Classicianus&rsquo;s recommendation.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Romanisation</div><div class="flashcard-back">The process by which conquered peoples adopted Roman language, culture, architecture, religion, and administrative practices.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Agricola</div><div class="flashcard-back">Gnaeus Julius Agricola, governor of Britain AD 77&ndash;84, known for advancing Roman occupation northward and encouraging Romanisation; father-in-law of Tacitus.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Conciliation</div><div class="flashcard-back">A policy of making peace and reducing hostility rather than continuing military repression after a revolt.</div></div>
+        </div>
+      </div>
+
+      <!-- List View (hidden) -->
+      <div class="glossary-list hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+            <thead>
+              <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/4">Term</th>
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Definition</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white/70">
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Turpilianus</td><td class="px-5 py-3 text-gray-600">Publius Petronius Turpilianus, the governor who replaced Suetonius Paulinus and adopted a conciliatory policy towards the defeated tribes.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Classicianus</td><td class="px-5 py-3 text-gray-600">Gaius Julius Alpinus Classicianus, procurator of Britain after AD 61, who recommended the recall of Suetonius Paulinus to Rome; his tombstone survives in the British Museum.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Polyclitus</td><td class="px-5 py-3 text-gray-600">An imperial freedman sent by Nero to investigate the situation in Britain after the revolt; his report supported Classicianus&rsquo;s recommendation.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Romanisation</td><td class="px-5 py-3 text-gray-600">The process by which conquered peoples adopted Roman language, culture, architecture, religion, and administrative practices.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Agricola</td><td class="px-5 py-3 text-gray-600">Gnaeus Julius Agricola, governor of Britain AD 77&ndash;84, known for advancing Roman occupation northward and encouraging Romanisation; father-in-law of Tacitus.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Conciliation</td><td class="px-5 py-3 text-gray-600">A policy of making peace and reducing hostility rather than continuing military repression after a revolt.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       REVIEW OF LEARNING
+       ========================================== -->
+  <section id="review" class="full-section grad-review relative">
+    <div class="section-inner reveal">
+      <span class="section-label bg-gold/20 text-amber-700">Review of Learning</span>
+      <h2 class="section-heading">How Did You Go?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6 text-[1.05rem]">
+        Return to the success criteria from the start of this lesson. Can you now tick off each one?
+        If any remain unticked, scroll back and review the relevant section.
+      </p>
+
+      <div class="space-y-3">
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">1</span>
+          <span class="text-gray-700">Describe the immediate Roman response to the revolt under Suetonius Paulinus.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">2</span>
+          <span class="text-gray-700">Explain the role of Gaius Julius Alpinus Classicianus in shifting Roman policy.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">3</span>
+          <span class="text-gray-700">Analyse the short and long-term consequences of the revolt for native Britons.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">4</span>
+          <span class="text-gray-700">Evaluate how the revolt changed Roman approaches to provincial governance in Britain.</span>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Review of Learning</p>
+        <p><strong>Self-assessment</strong> for each criterion: &ldquo;Thumbs up if confident, sideways if partly there, down if you need more help.&rdquo;</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> &ldquo;On a sticky note, write one way the Boudiccan revolt changed how Rome governed Britain.&rdquo; Collect as students leave.</p>
+      </div>
+
+      <!-- Exit Ticket -->
+      <div class="exit-ticket">
+        <h4>Exit Ticket</h4>
+        <label class="text-sm text-gray-600 block mb-1">One thing I learned today:</label>
+        <textarea placeholder="What was the most important thing you learned in this lesson?"></textarea>
+        <label class="text-sm text-gray-600 block mb-1">One question I still have:</label>
+        <textarea placeholder="What are you still unsure about or want to know more about?"></textarea>
+      </div>
+
+      <!-- Reflection -->
+      <div class="reflection-panel">
+        <h4>Self-Reflection</h4>
+        <p class="text-sm text-gray-600 mb-2">How confident do you feel about this lesson&rsquo;s content?</p>
+        <div class="confidence-scale">
+          <button class="confidence-btn">1<br><span class="text-[0.65rem]">Not yet</span></button>
+          <button class="confidence-btn">2<br><span class="text-[0.65rem]">Getting there</span></button>
+          <button class="confidence-btn">3<br><span class="text-[0.65rem]">Mostly</span></button>
+          <button class="confidence-btn">4<br><span class="text-[0.65rem]">Confident</span></button>
+          <button class="confidence-btn">5<br><span class="text-[0.65rem]">Mastered</span></button>
+        </div>
+        <label class="text-sm text-gray-600 block mt-3 mb-1">What do you want to revisit before the next lesson?</label>
+        <textarea class="reflection-text" placeholder="Any topics, terms, or skills you want to review?"></textarea>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       LESSON NAVIGATION
+       ========================================== -->
+  <section class="py-12 px-6" style="background: #fefcf9;">
+    <div class="max-w-3xl mx-auto lesson-nav-footer flex items-center justify-between">
+      <a href="lesson-11.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        Lesson 11
+      </a>
+      <span class="text-xs text-gray-300 tracking-wider uppercase">Lesson 12 of 16</span>
+      <a href="lesson-13.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        Lesson 13
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 text-center" style="background: linear-gradient(180deg, #fefcf9, #f5f3ed);">
+    <p class="text-sm text-gray-400 font-sans">
+      NSW Ancient History Stage 6 &middot; NESA Syllabus (2017) &middot; Case Study A
+    </p>
+    <p class="text-xs text-gray-300 mt-2 font-sans">Created by Cheryl Cutter</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

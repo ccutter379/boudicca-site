@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 7: Causes of the Revolt | Boudicca Interactive</title>
+
+  <!-- Meta -->
+  <meta name="description" content="Interactive NSW Ancient History Stage 6 resource — Boudicca case study with explicit teaching, CFU activities, source analysis, and teacher facilitation tools.">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': { DEFAULT: '#1a1a2e', mid: '#16213e', light: '#2a4d7a' },
+            'burgundy': { DEFAULT: '#8b2635', light: '#a83242' },
+            'gold': { DEFAULT: '#c9a84c', light: '#e8d292' },
+          },
+          fontFamily: {
+            'serif': ['Playfair Display', 'Georgia', 'serif'],
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans" style="background: #fefcf9;">
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress"></div>
+
+  <!-- Navigation (Glassmorphism) -->
+  <nav class="site-nav">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-5">
+        <a href="index.html" class="text-white font-serif text-xl font-bold tracking-wide hover:text-gold transition-colors">
+          Boudicca
+        </a>
+        <span class="text-white/20 hidden sm:inline">|</span>
+        <span class="text-white/40 text-xs font-sans tracking-wider hidden sm:inline">Lesson 7 of 16</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <button class="teacher-toggle" aria-label="Toggle teacher facilitation notes">Teacher Mode</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="lesson-hero grad-hero" style="background: linear-gradient(165deg, rgba(26,26,46,0.92) 0%, rgba(22,33,62,0.88) 50%, rgba(26,39,68,0.92) 100%), url('images/causes-fishbone-diagram.png') center/cover no-repeat;">
+    <div class="relative z-10 max-w-3xl mx-auto reveal">
+      <span class="chapter-badge">Chapter 2 &middot; Sources and the Revolt</span>
+      <p class="text-white/40 font-sans text-sm tracking-wider uppercase mb-3">Lesson 7</p>
+      <h1 class="hero-title font-serif text-white">Causes of<br>the Revolt</h1>
+      <p class="hero-desc">
+        Why did Boudicca&rsquo;s revolt erupt with such devastating force in AD 60&ndash;61?
+        Was it a spontaneous explosion of fury, or a carefully planned campaign of resistance?
+      </p>
+      <p class="reading-time"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> ~28 min</p>
+      <!-- Syllabus Outcomes -->
+      <details class="mt-8">
+        <summary class="text-white/25 text-xs font-sans cursor-pointer hover:text-white/40 transition-colors uppercase tracking-[0.15em]">
+          NESA Syllabus Outcomes
+        </summary>
+        <div class="mt-3 text-white/35 text-xs font-sans space-y-1 leading-relaxed">
+          <p><strong class="text-white/50">AH11-2:</strong> Proposes ideas about the varying causes and effects of events and developments</p>
+          <p><strong class="text-white/50">AH11-3:</strong> Analyses the role of historical features, individuals and groups in shaping the past</p>
+          <p><strong class="text-white/50">AH11-6:</strong> Analyses and interprets different types of sources for evidence to support an historical account or argument</p>
+        </div>
+      </details>
+    </div>
+    <!-- Decorative number -->
+    <div class="absolute bottom-6 right-8 font-serif text-white/[0.03] font-extrabold pointer-events-none select-none hidden md:block" style="font-size: 14rem; line-height: 1;">07</div>
+  </section>
+
+
+  <!-- ==========================================
+       LEARNING INTENTION & SUCCESS CRITERIA
+       ========================================== -->
+  <section id="lisc" class="full-section grad-lisc">
+    <div class="section-inner reveal">
+      <span class="section-label bg-navy/[0.07] text-navy">Learning Intention</span>
+      <h2 class="section-heading">What You&rsquo;ll Learn</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-8">
+        To identify and analyse both the immediate and the deeper structural causes of Boudicca&rsquo;s revolt, and to evaluate the extent to which the revolt was spontaneous or organised.
+      </p>
+
+      <div>
+        <h3 class="font-sans text-xs font-bold uppercase tracking-[0.12em] text-gray-400 mb-2">Success Criteria</h3>
+        <p class="sc-progress-text text-xs text-gray-400 mb-1">0 of 4 criteria met</p>
+        <div class="sc-progress"><div class="sc-progress-bar"></div></div>
+        <p class="text-sm text-gray-500 mb-4">By the end of this lesson, I can:</p>
+        <div class="space-y-1">
+          <div class="sc-item"><input type="checkbox" id="sc1"><label for="sc1">Distinguish between immediate/short-term and underlying/long-term causes of the revolt.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc2"><label for="sc2">Explain the role of the Trinovantes as allies in the revolt.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc3"><label for="sc3">Evaluate the evidence for and against the revolt being pre-planned.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc4"><label for="sc4">Assess the relative importance of different causes using historical evidence.</label></div>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Sharing LISC</p>
+        <p>Display the learning intention and success criteria on the board. Ask students to identify the <em>key verbs</em> (distinguish, explain, evaluate, assess). Check understanding: <strong>&ldquo;What is the difference between an &lsquo;immediate&rsquo; cause and an &lsquo;underlying&rsquo; cause? Can someone give me a modern example?&rdquo;</strong> (cold call).</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       ACTIVATING PRIOR KNOWLEDGE
+       ========================================== -->
+  <section id="prior-knowledge" class="full-section grad-prior relative">
+    <span class="section-number">?</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-white/50 text-amber-700">Before We Begin</span>
+      <h2 class="section-heading">What Do You Already Know?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        In Lessons 5 and 6, we studied the two ancient historians who wrote about Boudicca &mdash; Tacitus and Cassius Dio.
+        Both described the events that triggered the revolt. Today we analyse those causes in detail.
+      </p>
+
+      <div class="mb-6">
+        <p class="font-sans text-sm font-semibold text-gray-700 mb-2">What do you remember about what triggered Boudicca&rsquo;s revolt?</p>
+        <div class="poll-options">
+          <button class="poll-btn">Not much yet</button>
+          <button class="poll-btn">Something about her family</button>
+          <button class="poll-btn">Romans mistreated her</button>
+          <button class="poll-btn">Remember the details</button>
+        </div>
+      </div>
+
+      <div>
+        <label class="font-sans text-sm font-semibold text-gray-700 block mb-2" for="prior-text">
+          Quick retrieval: From the Tacitus source extract in Lesson 5, what specific events triggered the revolt?
+        </label>
+        <textarea id="prior-text" class="w-full border border-black/[0.08] rounded-2xl p-4 text-sm font-sans leading-relaxed resize-y bg-white/60 backdrop-blur min-h-[90px] focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-all"
+                  placeholder="Think back to what Tacitus said about Prasutagus's death, Boudicca's treatment, and the actions of Roman officials..."></textarea>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Retrieval Practice</p>
+        <p>Use <strong>cold call</strong> to ask 3&ndash;4 students what they remember from the Tacitus source extract about the causes of the revolt. Key points to elicit: Prasutagus&rsquo;s will was ignored, Boudicca was flogged, her daughters were assaulted, Iceni lands were confiscated.</p>
+        <p class="mt-2"><strong>Retrieval check:</strong> &ldquo;True or false: The revolt was triggered by the Roman invasion of Britain. Thumbs up for true, down for false.&rdquo; (Answer: false &mdash; the invasion was in AD 43, but the revolt was triggered by the treatment of Boudicca and the Iceni after Prasutagus&rsquo;s death in AD 60.) If fewer than 80% correct, recap the immediate triggers before proceeding.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 1: IMMEDIATE CAUSES
+       ========================================== -->
+  <section id="chunk-1" class="full-section grad-chunk1 relative">
+    <span class="section-number">01</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-burgundy/10 text-burgundy">Chunk 1 of 5</span>
+      <h2 class="section-heading">Thinking About Causation</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling (&lsquo;I Do&rsquo;)</p>
+        <p><strong>Use an everyday analogy before reading the text:</strong> &ldquo;Think about a bushfire. The immediate cause might be a lightning strike &mdash; but the underlying cause is months of drought and dry fuel. Without both, the fire doesn&rsquo;t happen. Historical events work the same way.&rdquo;</p>
+        <p class="mt-2"><strong>Read the introductory paragraph aloud</strong>, then pause to check understanding before continuing.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Historical events rarely have a single cause. To understand why Boudicca&rsquo;s revolt erupted with such devastating force, we need to distinguish between <strong>immediate triggers</strong> (the specific events that &ldquo;lit the fuse&rdquo;) and <strong>underlying structural causes</strong> (the long-term conditions that created a situation ready to explode). Both types of cause are necessary to explain why the revolt happened when and how it did.
+        </p>
+      </div>
+
+      <!-- Fishbone diagram image -->
+      <figure class="featured-image">
+        <img src="images/causes-fishbone-diagram.png" alt="Fishbone cause-and-effect diagram showing the immediate triggers and underlying structural causes of Boudicca's revolt in AD 60-61." loading="lazy">
+        <figcaption class="caption"><strong>Cause-and-effect diagram:</strong> The immediate triggers and underlying structural causes of Boudicca&rsquo;s revolt. The &lsquo;fishbone&rsquo; structure shows how multiple factors converged to produce the uprising.</figcaption>
+      </figure>
+
+      <h3 class="font-serif text-xl font-bold text-navy mt-8 mb-3">Immediate Causes: The Spark</h3>
+      <p class="text-gray-700 leading-relaxed text-[1.05rem] mb-6">
+        The immediate triggers for the revolt were the events following the death of Prasutagus in AD 60. These were not simply unfortunate administrative errors &mdash; they were a systematic pattern of abuse that left the Iceni leadership with no alternative but armed revolt.
+      </p>
+
+      <!-- Immediate causes table -->
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Event</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">What Happened</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white/70">
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">Annexation of Iceni kingdom</td>
+              <td class="px-5 py-3 text-gray-600">Rome ignored Prasutagus&rsquo;s will and annexed the entire Iceni kingdom as if it were conquered territory, abolishing the client kingdom entirely.</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 font-semibold text-navy">Property confiscation</td>
+              <td class="px-5 py-3 text-gray-600">Iceni nobles were stripped of their ancestral estates. Roman officials &mdash; centurions and slaves acting on official orders &mdash; looted the royal household.</td>
+            </tr>
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">Flogging of Boudicca</td>
+              <td class="px-5 py-3 text-gray-600">Boudicca was publicly flogged (a punishment used for slaves and criminals), destroying her status and publicly humiliating the entire tribe.</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 font-semibold text-navy">Assault on daughters</td>
+              <td class="px-5 py-3 text-gray-600">Boudicca&rsquo;s daughters were sexually assaulted by Roman soldiers &mdash; an act that, in Celtic honour-culture, destroyed the family&rsquo;s dignity and demanded violent restitution.</td>
+            </tr>
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">Debt collection</td>
+              <td class="px-5 py-3 text-gray-600">Roman financiers simultaneously called in loans to Iceni nobles, creating economic catastrophe for families already stripped of their land and property.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="b"
+           data-feedback-correct="Correct! Flogging was a punishment used for slaves and criminals in Roman society. By publicly flogging Boudicca &mdash; a queen &mdash; the Romans deliberately destroyed her status and humiliated the entire Iceni tribe."
+           data-feedback-incorrect="Not quite. The flogging was not a minor incident &mdash; it was a deliberate act of public humiliation. In Roman society, flogging was reserved for slaves and criminals, so inflicting it on a queen was a profound insult to her entire people.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p>Use <strong>cold call</strong>. If fewer than 80% answer correctly, re-teach by explaining the Roman social hierarchy and what flogging signified.</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">Why was the public flogging of Boudicca particularly significant as a cause of the revolt?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q1" class="mt-0.5"><span>It caused a physical injury that prevented her from leading her people</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q1" class="mt-0.5"><span>It was a punishment for slaves and criminals, deliberately destroying a queen&rsquo;s status and humiliating her tribe</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q1" class="mt-0.5"><span>It was the first time Rome had punished a Celtic leader</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q1" class="mt-0.5"><span>It was ordered by the Emperor Nero personally</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 2: UNDERLYING CAUSES
+       ========================================== -->
+  <section id="chunk-2" class="full-section grad-chunk2 relative">
+    <span class="section-number">02</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-purple-100 text-purple-700">Chunk 2 of 5</span>
+      <h2 class="section-heading">Underlying Causes: The Powder Keg</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Guided Reading (&lsquo;We Do&rsquo;)</p>
+        <p>Have students read this section silently. Then use <strong>think-pair-share</strong>: &ldquo;Turn to your partner and discuss: Which underlying cause do you think was most important, and why?&rdquo; (60 seconds). Cold call 2&ndash;3 pairs.</p>
+      </div>
+
+      <p class="text-gray-700 leading-relaxed text-[1.05rem] mb-6">
+        These immediate triggers were explosive only because of <strong>decades of accumulated resentment</strong>. The underlying causes of the revolt stretched back to the conquest itself and beyond.
+      </p>
+
+      <div class="space-y-4">
+        <div class="key-concept">
+          <p class="font-bold text-navy mb-1">Land Seizures</p>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            The veteran colony at Camulodunum had dispossessed the Trinovantes of their ancestral lands. Similar, if smaller-scale, land confiscations had occurred throughout the newly conquered territories.
+          </p>
+        </div>
+
+        <div class="key-concept">
+          <p class="font-bold text-navy mb-1">Financial Exploitation</p>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Roman tax collection, loan practices, and economic extraction created chronic hardship for tribal elites who had expected a partnership, not subordination.
+          </p>
+        </div>
+
+        <div class="key-concept">
+          <p class="font-bold text-navy mb-1">Religious Suppression</p>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            The destruction of Druidic centres and the imposition of the Imperial Cult represented a direct attack on Celtic spiritual and intellectual life.
+          </p>
+        </div>
+
+        <div class="key-concept">
+          <p class="font-bold text-navy mb-1">Cultural Humiliation</p>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            The systematic replacement of tribal laws, customs, and leadership structures with Roman alternatives denied Celtic peoples their identity.
+          </p>
+        </div>
+
+        <div class="key-concept">
+          <p class="font-bold text-navy mb-1">Broken Promises</p>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            The client-kingdom system had promised a degree of self-determination that Roman practice consistently violated. The Iceni were not the first tribe to discover this betrayal.
+          </p>
+        </div>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="d"
+           data-feedback-correct="Correct! &lsquo;Underlying causes&rsquo; are long-term structural conditions that create the environment in which an event can occur. They explain why the situation was ready to explode, even before the immediate trigger."
+           data-feedback-incorrect="Not quite. Underlying causes are the long-term conditions &mdash; years or decades of accumulated grievance &mdash; that made the revolt possible. They are different from the immediate trigger (Boudicca&rsquo;s flogging).">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">Which of the following best describes an &lsquo;underlying cause&rsquo; of the revolt?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q2" class="mt-0.5"><span>The flogging of Boudicca in AD 60</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q2" class="mt-0.5"><span>The death of Prasutagus</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q2" class="mt-0.5"><span>The Roman decision to ignore Prasutagus&rsquo;s will</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q2" class="mt-0.5"><span>Years of land seizures, financial exploitation, and broken promises since the conquest</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+
+      <div class="match-activity" data-answer="0-1,1-0,2-1,3-0">
+        <h3>Match the Cause to Its Type</h3>
+        <p class="text-gray-700 font-medium mb-4">Classify each cause as &ldquo;Immediate&rdquo; or &ldquo;Underlying&rdquo;:</p>
+        <div class="match-pairs">
+          <div>
+            <div class="match-prompt" data-idx="0">Flogging of Boudicca and assault on her daughters</div>
+            <div class="match-slot" data-idx="0">Click an answer</div>
+            <div class="match-prompt" data-idx="1" style="margin-top:0.75rem">Years of land seizures since the Roman conquest</div>
+            <div class="match-slot" data-idx="1">Click an answer</div>
+            <div class="match-prompt" data-idx="2" style="margin-top:0.75rem">Annexation of the Iceni kingdom after Prasutagus&rsquo;s death</div>
+            <div class="match-slot" data-idx="2">Click an answer</div>
+            <div class="match-prompt" data-idx="3" style="margin-top:0.75rem">Financial exploitation and forced loans by Roman investors</div>
+            <div class="match-slot" data-idx="3">Click an answer</div>
+          </div>
+          <div>
+            <div class="match-answer match-item" data-idx="0">Underlying</div>
+            <div class="match-answer match-item" data-idx="1">Immediate</div>
+          </div>
+        </div>
+        <button class="check-btn" style="margin-top:1rem">Check Matches</button>
+        <div class="cfu-feedback" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 3: THE TRINOVANTES
+       ========================================== -->
+  <section id="chunk-3" class="full-section grad-chunk3 relative">
+    <span class="section-number">03</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-amber-100 text-amber-700">Chunk 3 of 5</span>
+      <h2 class="section-heading">The Trinovantes: Key Allies</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Scaffolding (&lsquo;We Do&rsquo;)</p>
+        <p>Ask students: <strong>&ldquo;Why is it significant that the Trinovantes joined the revolt, given that they had previously been Roman allies?&rdquo;</strong> Use <strong>think-pair-share</strong> (60 seconds), then cold call 2&ndash;3 pairs. Guide them toward the idea that even Rome&rsquo;s friends had been pushed beyond endurance.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          The Trinovantes were a Celtic tribe of south-eastern Britain who had previously been allies of Rome &mdash; they had welcomed Caesar during his expeditions and had initially cooperated with the Claudian conquest. Their support for Boudicca was therefore particularly significant: it demonstrated that <strong>even Rome&rsquo;s former friends had been pushed beyond endurance</strong>.
+        </p>
+        <p>
+          The Trinovantes&rsquo;s grievances were specific and material. Their territory had been seized to create the veteran colony at Camulodunum, and they were forced to fund and maintain the Temple of Claudius &mdash; an ongoing financial burden and religious insult. Veterans treated the local population as conquered enemies, commandeering labour and property with impunity. The Trinovantes joined the revolt not out of cultural solidarity with the Iceni but out of their own unbearable experience of Roman colonialism.
+        </p>
+        <p>
+          Their involvement transformed what might have been a localised Iceni uprising into a <strong>regional coalition</strong>. Tacitus&rsquo;s phrase &mdash; the Trinovantes &ldquo;and others who had agreed by secret conspiracies to reassert their freedom&rdquo; &mdash; suggests a level of prior coordination between tribes that argues against the revolt being entirely spontaneous.
+        </p>
+      </div>
+
+      <!-- Primary Source: Trinovantes -->
+      <div class="source-box">
+        <p class="provenance"><strong>PRIMARY SOURCE</strong> &mdash; Tacitus, <em>Annals</em>, Book XIV, Chapter 31. Written c. AD 98. This passage describes the Trinovantes&rsquo; reasons for joining the revolt.</p>
+        <blockquote>
+          &ldquo;The Trinobantes and others who had not yet been broken in by subjugation had agreed by secret conspiracies to reassert their freedom. Their most bitter hatred was against the veterans; who, settled as they lately were in the colony of Camulodunum, were driving people from their homes, ejecting them from their lands, calling them captives and slaves, and abetted in their insolence by the soldiers&hellip; The temple erected to the Divine Claudius was a blatant stronghold of alien domination, and the priests chosen to serve it were bound, under the pretext of religion, to pour out their fortunes like water.&rdquo;
+        </blockquote>
+        <div class="historian-note">
+          <strong>Historian&rsquo;s note:</strong> Tacitus is specific about the Trinovantes&rsquo; grievances: dispossession, personal insults, forced religious service, and financial drain. Note the phrase &ldquo;alien domination&rdquo; &mdash; remarkably strong language for a Roman historian. Tacitus appears to be deliberately using the Trinovantes&rsquo; perspective to highlight Roman failure. The phrase &ldquo;pour out their fortunes like water&rdquo; for temple funding reflects the resentment of communities forced to subsidise a religion they found repugnant.
+        </div>
+      </div>
+
+      <div class="ovprl-tool">
+        <h3 class="font-serif text-lg font-bold text-navy mb-1">Analyse This Source: Reliability &amp; Limitations</h3>
+        <p class="text-sm text-gray-500 mb-4">By now you should be able to identify Origin, Value, and Purpose independently. Focus on the harder skills:</p>
+        <div class="ovprl-field">
+          <label for="ovprl-7-r"><span class="text-burgundy font-extrabold">R &mdash; Reliability:</span> How trustworthy is Tacitus here?</label>
+          <textarea id="ovprl-7-r" placeholder="Consider: When was this written? What biases does Tacitus have? Is he an eyewitness?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Tacitus is reasonably reliable for the broad events — he had access to official records and eyewitness accounts through Agricola. However, his language (&ldquo;alien domination&rdquo;, &ldquo;pour out their fortunes like water&rdquo;) reveals a moralising purpose: he uses the Trinovantes&rsquo; suffering to criticise Roman governance, not just to record events.</div>
+        </div>
+        <div class="ovprl-field">
+          <label for="ovprl-7-l"><span class="text-burgundy font-extrabold">L &mdash; Limitations:</span> What does this source NOT tell us?</label>
+          <textarea id="ovprl-7-l" placeholder="What is missing? Whose voice is absent?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">This source does not include the Trinovantes&rsquo; own perspective — we hear their grievances only through Roman words. It does not tell us about internal tribal debates, the role of women in the decision to revolt, or the experiences of ordinary people (not just elites). Tacitus may also understate the scale of Roman abuses to maintain his credibility as a Roman senator.</div>
+        </div>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="c"
+           data-feedback-correct="Correct! The Trinovantes had their own specific grievances &mdash; land seizure, forced temple funding, and mistreatment by veterans. They joined because of their own unbearable experience of Roman colonialism, not simply out of loyalty to Boudicca."
+           data-feedback-incorrect="Not quite. The Trinovantes joined because of their own direct experience of Roman oppression &mdash; particularly the seizure of their lands for the veteran colony and being forced to fund the Temple of Claudius.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p><strong>Gesture voting:</strong> &ldquo;Hold up A, B, C, or D with your fingers. On three &mdash; one, two, three &mdash; show me.&rdquo; If fewer than 80% show C, re-read the relevant paragraph together.</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">Why did the Trinovantes join Boudicca&rsquo;s revolt?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q3" class="mt-0.5"><span>They had always been enemies of Rome and were looking for an opportunity to attack</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q3" class="mt-0.5"><span>Boudicca personally convinced them through a treaty negotiation</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q3" class="mt-0.5"><span>Their lands had been seized for a veteran colony, and they were forced to fund the Temple of Claudius</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q3" class="mt-0.5"><span>They shared the same religion as the Iceni and wanted to defend their druids</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 4: SPONTANEOUS OR ORGANISED?
+       ========================================== -->
+  <section id="chunk-4" class="full-section grad-chunk4 relative">
+    <span class="section-number">04</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-blue-100 text-blue-700">Chunk 4 of 5</span>
+      <h2 class="section-heading">Was the Revolt Spontaneous or Organised?</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Structured Debate (&lsquo;We Do&rsquo;)</p>
+        <p>Divide the class into two groups. One argues for pre-planning, the other for spontaneity. Each group has 3 minutes to prepare using the evidence table, then 2 minutes to present. Close with <strong>cold call</strong> &mdash; select 2&ndash;3 students from each side: &ldquo;Name one specific piece of evidence from the table that your side used.&rdquo; Allow 5+ seconds wait time. This requires articulation, not a quick binary vote.</p>
+      </div>
+
+      <p class="text-gray-700 leading-relaxed text-[1.05rem] mb-6">
+        Historians debate whether Boudicca&rsquo;s revolt was a spontaneous eruption of fury or a pre-planned, coordinated military campaign. The evidence points in both directions.
+      </p>
+
+      <!-- Evidence comparison table -->
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/2">Evidence for Pre-Planning</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/2">Evidence for Spontaneity</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white/70">
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 text-gray-600">Tacitus mentions &ldquo;secret conspiracies&rdquo; between tribes &mdash; suggesting prior coordination.</td>
+              <td class="px-5 py-3 text-gray-600">The immediate trigger (Boudicca&rsquo;s flogging) created an emotional crisis that drove immediate action.</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 text-gray-600">The revolt struck multiple targets in rapid succession &mdash; Camulodunum, Londinium, Verulamium &mdash; suggesting logistical preparation.</td>
+              <td class="px-5 py-3 text-gray-600">The attack on Verulamium &mdash; a tribe that had partially cooperated with Rome &mdash; suggests the revolt grew beyond its original target list.</td>
+            </tr>
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 text-gray-600">Assembling a force reportedly numbering in the tens of thousands required advance planning for supplies, communication, and coordination.</td>
+              <td class="px-5 py-3 text-gray-600">The army&rsquo;s lack of supply lines and inability to sustain a prolonged campaign suggests limited long-term planning.</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 text-gray-600">The choice of targets (the veteran colony, the trade hub, the Romanised tribal capital) suggests strategic intent.</td>
+              <td class="px-5 py-3 text-gray-600">The catastrophic tactical error at the final battle &mdash; positioning wagons to block retreat &mdash; suggests tactical naivety inconsistent with professional military planning.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="a"
+           data-feedback-correct="Correct! &lsquo;Secret conspiracies&rsquo; implies that tribes were coordinating in advance of the revolt &mdash; making plans before the trigger event. This is the strongest evidence for pre-planning in the ancient sources."
+           data-feedback-incorrect="Not quite. Tacitus&rsquo;s phrase &lsquo;agreed by secret conspiracies&rsquo; directly implies that tribes were coordinating and planning before the revolt erupted &mdash; suggesting it was not entirely spontaneous.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">Which piece of evidence most strongly suggests the revolt involved <strong>pre-planning</strong>?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q4" class="mt-0.5"><span>Tacitus&rsquo;s phrase &ldquo;agreed by secret conspiracies to reassert their freedom&rdquo;</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q4" class="mt-0.5"><span>The emotional crisis caused by Boudicca&rsquo;s flogging</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q4" class="mt-0.5"><span>The positioning of wagons at the final battle</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q4" class="mt-0.5"><span>The lack of supply lines for the British army</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 5: INDIVIDUAL AGENCY VS STRUCTURAL FORCES
+       ========================================== -->
+  <section id="chunk-5" class="full-section grad-chunk5 relative">
+    <span class="section-number">05</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-rose-100 text-rose-700">Chunk 5 of 5</span>
+      <h2 class="section-heading">Individual Agency vs Structural Forces</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Discussion (&lsquo;We Do&rsquo;)</p>
+        <p>This is a sophisticated historiographical concept. Use <strong>think-pair-share</strong> for the key question: &ldquo;Was the revolt Boudicca&rsquo;s personal achievement, or would it have happened without her?&rdquo; Allow 90 seconds for pair discussion, then cold call 3 pairs. Guide students toward the nuanced answer: both factors are necessary.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          The debate over spontaneity versus planning also connects to a larger historical question: how much did <strong>individual agency</strong> (Boudicca&rsquo;s leadership decisions) matter compared to <strong>structural forces</strong> (the underlying conditions of colonial oppression)?
+        </p>
+        <p>
+          On one hand, without the specific provocation of Boudicca&rsquo;s personal humiliation &mdash; the flogging, the assault on her daughters &mdash; the revolt might never have ignited at all. Her leadership, her ability to channel tribal anger into coordinated military action, and her personal authority as a wronged queen were essential. On the other hand, the conditions for revolt had been building for nearly twenty years. Someone, eventually, would have been the catalyst.
+        </p>
+        <p>
+          Modern historians like Richard Hingley and Christina Unwin argue that Boudicca&rsquo;s revolt is best understood as a <strong>colonial resistance movement</strong> &mdash; structured by the same forces that drove similar movements in other colonised societies throughout history &mdash; in which individual leadership channelled collective grievance into action. The personal and the structural cannot be separated.
+        </p>
+      </div>
+
+      <!-- Secondary Source -->
+      <div class="source-box">
+        <p class="provenance"><strong>SECONDARY SOURCE</strong> &mdash; Richard Hingley and Christina Unwin, <em>Boudicca: Iron Age Warrior Queen</em> (2005), Hambledon and London. This is a scholarly secondary source re-evaluating Boudicca&rsquo;s revolt through the lens of colonial resistance studies. The passage below is paraphrased.</p>
+        <blockquote>
+          Hingley and Unwin (2005) argue that the revolt of AD 60&ndash;61 cannot be reduced to a single act of Roman injustice against Boudicca and her daughters. In their view, the uprising was the product of nearly two decades of Roman economic exploitation, cultural suppression, and political betrayal stretching back to the Claudian conquest of AD 43. While Boudicca&rsquo;s personal suffering provided the immediate trigger, the deeper conditions for revolt had been accumulating long before her flogging &mdash; and it was this broader pattern of colonial grievance that transformed a dynastic dispute into a mass uprising.
+        </blockquote>
+        <div class="historian-note">
+          <strong>Historian&rsquo;s note:</strong> Hingley and Unwin represent a modern historiographical approach that places Boudicca&rsquo;s revolt within a broader framework of anti-colonial resistance. Note how their focus shifts from the &ldquo;great individual&rdquo; model (the revolt as Boudicca&rsquo;s personal achievement) to the structural model (the revolt as the product of systemic colonial oppression). This is an example of how contemporary scholarly values &mdash; in this case, post-colonial theory &mdash; shape historical interpretation.
+        </div>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="c"
+           data-feedback-correct="Correct! Hingley and Unwin argue that the revolt was the product of systemic colonial oppression over nearly two decades. While Boudicca&rsquo;s personal suffering was the immediate trigger, the structural conditions made some kind of revolt likely regardless."
+           data-feedback-incorrect="Not quite. Hingley and Unwin&rsquo;s key argument is that the revolt was caused by nearly two decades of accumulated colonial grievance &mdash; not just by Boudicca&rsquo;s personal suffering, and not simply by one act of Roman injustice.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">Hingley and Unwin (2005) argue that Boudicca&rsquo;s revolt is best understood as:</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q5" class="mt-0.5"><span>A spontaneous emotional reaction to Boudicca&rsquo;s personal suffering</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q5" class="mt-0.5"><span>A purely military campaign planned by professional Celtic generals</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q5" class="mt-0.5"><span>A colonial resistance movement driven by nearly two decades of systemic oppression</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q5" class="mt-0.5"><span>An inevitable consequence of Celtic cultural superiority over Rome</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       INDEPENDENT PRACTICE: REVIEW QUESTIONS
+       ========================================== -->
+  <section id="practice" class="full-section grad-practice relative">
+    <span class="section-number">Q</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-green-100 text-green-700">Independent Practice</span>
+      <h2 class="section-heading">Review Questions</h2>
+      <p class="text-sm text-gray-500 mb-6">Choose the level that challenges you, or work through all three.</p>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Independent Practice (&lsquo;You Do&rsquo;)</p>
+        <p>Students should attempt these <strong>only after a high success rate</strong> on the CFU questions. Direct all students to Foundation first.</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> Students answer Foundation Q3 on a sticky note before leaving: &ldquo;What is the difference between an immediate cause and an underlying cause?&rdquo;</p>
+      </div>
+
+      <div class="tab-group">
+        <button class="tab-btn active" data-tab="foundation">Foundation</button>
+        <button class="tab-btn" data-tab="standard">Standard</button>
+        <button class="tab-btn" data-tab="extension">Extension</button>
+      </div>
+
+      <div class="tab-content active" id="foundation" data-tab="foundation">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Identify and describe</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Name two immediate causes and two underlying causes of Boudicca&rsquo;s revolt.</li>
+          <li>Why did the Trinovantes join Boudicca&rsquo;s revolt? Give two specific reasons.</li>
+          <li>What is the difference between &lsquo;immediate&rsquo; and &lsquo;underlying&rsquo; causes in historical analysis?</li>
+        </ol>
+      </div>
+      <div class="tab-content" id="standard" data-tab="standard">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Analyse and explain</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Explain how the financial exploitation of Iceni nobles contributed to the outbreak of revolt.</li>
+          <li>Analyse the evidence that suggests the revolt involved prior planning and coordination between tribes.</li>
+          <li>Using Tacitus as a source, assess the significance of the Trinovantes&rsquo; participation in the revolt.</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Sentence starters:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li>This source is valuable because&hellip;</li>
+            <li>However, a key limitation is&hellip;</li>
+            <li>The evidence suggests that&hellip;</li>
+            <li>This can be compared with&hellip; which shows&hellip;</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-content" id="extension" data-tab="extension">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Evaluate and debate</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Evaluate the relative importance of individual agency (Boudicca&rsquo;s personal suffering and leadership) versus structural forces (colonial oppression) in causing the revolt. Use evidence from both ancient sources and modern scholarship.</li>
+          <li>To what extent was Boudicca&rsquo;s revolt &ldquo;inevitable&rdquo; given the conditions of Roman rule in Britain by AD 60? Construct a detailed argument for or against this position.</li>
+          <li>Critically assess Hingley and Unwin&rsquo;s interpretation of the revolt as a &ldquo;colonial resistance movement.&rdquo; Does this modern framework enhance or distort our understanding of the ancient evidence?</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Evaluative language:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li>&ldquo;To a significant/limited extent&hellip;&rdquo;</li>
+            <li>&ldquo;While X is important, Y was more significant because&hellip;&rdquo;</li>
+            <li>&ldquo;The most convincing interpretation is&hellip; because&hellip;&rdquo;</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       KEY TERMS: FLASHCARD GLOSSARY
+       ========================================== -->
+  <section id="key-terms" class="full-section grad-terms relative">
+    <span class="section-number">A&ndash;Z</span>
+    <div class="section-inner">
+      <div class="flex items-end justify-between mb-6 reveal">
+        <div>
+          <span class="section-label bg-purple-100 text-purple-700">Key Terms</span>
+          <h2 class="section-heading mb-0">Glossary</h2>
+        </div>
+        <button class="glossary-view-toggle text-sm text-navy font-semibold hover:text-burgundy transition-colors cursor-pointer">
+          Switch to List View
+        </button>
+      </div>
+      <p class="text-sm text-gray-500 mb-6 reveal">Click each card to reveal its definition.</p>
+
+      <!-- Flashcards -->
+      <div class="flashcard-grid reveal-stagger">
+        <div class="flashcard" tabindex="0" role="button" aria-label="Flashcard: Immediate cause">
+          <div class="flashcard-inner"><div class="flashcard-front">Immediate Cause</div><div class="flashcard-back">A short-term trigger that directly sets off an event, even though deeper conditions may have made it likely.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Underlying Cause</div><div class="flashcard-back">A long-term structural condition that creates the environment in which an event can occur.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Coalition</div><div class="flashcard-back">An alliance of different groups united around a common cause or enemy.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Agency</div><div class="flashcard-back">The capacity of an individual to act independently and make their own decisions; the power to influence events.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Colonial Resistance</div><div class="flashcard-back">Active opposition to the political, economic, or cultural control exercised by an occupying power over a conquered people.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Seneca</div><div class="flashcard-back">Roman Stoic philosopher and tutor to Emperor Nero who reportedly called in large loans to Iceni nobles before the revolt.</div></div>
+        </div>
+      </div>
+
+      <!-- List View (hidden) -->
+      <div class="glossary-list hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+            <thead>
+              <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/4">Term</th>
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Definition</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white/70">
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Immediate cause</td><td class="px-5 py-3 text-gray-600">A short-term trigger that directly sets off an event, even though deeper conditions may have made it likely.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Underlying cause</td><td class="px-5 py-3 text-gray-600">A long-term structural condition that creates the environment in which an event can occur.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Coalition</td><td class="px-5 py-3 text-gray-600">An alliance of different groups united around a common cause or enemy.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Agency</td><td class="px-5 py-3 text-gray-600">The capacity of an individual to act independently and make their own decisions; the power to influence events.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Colonial resistance</td><td class="px-5 py-3 text-gray-600">Active opposition to the political, economic, or cultural control exercised by an occupying power over a conquered people.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Seneca</td><td class="px-5 py-3 text-gray-600">Roman Stoic philosopher and tutor to Emperor Nero who reportedly called in large loans to Iceni nobles before the revolt.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       REVIEW OF LEARNING
+       ========================================== -->
+  <section id="review" class="full-section grad-review relative">
+    <div class="section-inner reveal">
+      <span class="section-label bg-gold/20 text-amber-700">Review of Learning</span>
+      <h2 class="section-heading">How Did You Go?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6 text-[1.05rem]">
+        Return to the success criteria from the start of this lesson. Can you now tick off each one?
+        If any remain unticked, scroll back and review the relevant section.
+      </p>
+
+      <div class="space-y-3">
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">1</span>
+          <span class="text-gray-700">Distinguish between immediate/short-term and underlying/long-term causes of the revolt.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">2</span>
+          <span class="text-gray-700">Explain the role of the Trinovantes as allies in the revolt.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">3</span>
+          <span class="text-gray-700">Evaluate the evidence for and against the revolt being pre-planned.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">4</span>
+          <span class="text-gray-700">Assess the relative importance of different causes using historical evidence.</span>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Review of Learning</p>
+        <p><strong>Self-assessment</strong> for each criterion: &ldquo;Thumbs up if confident, sideways if partly there, down if you need more help.&rdquo;</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> &ldquo;On a sticky note, name one immediate cause and one underlying cause of the revolt.&rdquo; Collect as students leave.</p>
+      </div>
+
+      <!-- Exit Ticket -->
+      <div class="exit-ticket">
+        <h4>Exit Ticket</h4>
+        <label class="text-sm text-gray-600 block mb-1">One thing I learned today:</label>
+        <textarea placeholder="What was the most important thing you learned in this lesson?"></textarea>
+        <label class="text-sm text-gray-600 block mb-1">One question I still have:</label>
+        <textarea placeholder="What are you still unsure about or want to know more about?"></textarea>
+      </div>
+
+      <!-- Reflection -->
+      <div class="reflection-panel">
+        <h4>Self-Reflection</h4>
+        <p class="text-sm text-gray-600 mb-2">How confident do you feel about this lesson&rsquo;s content?</p>
+        <div class="confidence-scale">
+          <button class="confidence-btn">1<br><span class="text-[0.65rem]">Not yet</span></button>
+          <button class="confidence-btn">2<br><span class="text-[0.65rem]">Getting there</span></button>
+          <button class="confidence-btn">3<br><span class="text-[0.65rem]">Mostly</span></button>
+          <button class="confidence-btn">4<br><span class="text-[0.65rem]">Confident</span></button>
+          <button class="confidence-btn">5<br><span class="text-[0.65rem]">Mastered</span></button>
+        </div>
+        <label class="text-sm text-gray-600 block mt-3 mb-1">What do you want to revisit before the next lesson?</label>
+        <textarea class="reflection-text" placeholder="Any topics, terms, or skills you want to review?"></textarea>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       LESSON NAVIGATION
+       ========================================== -->
+  <section class="py-12 px-6" style="background: #fefcf9;">
+    <div class="max-w-3xl mx-auto lesson-nav-footer flex items-center justify-between">
+      <a href="lesson-6.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        Lesson 6
+      </a>
+      <span class="text-xs text-gray-300 tracking-wider uppercase">Lesson 7 of 16</span>
+      <a href="lesson-8.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        Lesson 8
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 text-center" style="background: linear-gradient(180deg, #fefcf9, #f5f3ed);">
+    <p class="text-sm text-gray-400 font-sans">
+      NSW Ancient History Stage 6 &middot; NESA Syllabus (2017) &middot; Case Study A
+    </p>
+    <p class="text-xs text-gray-300 mt-2 font-sans">Created by Cheryl Cutter</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

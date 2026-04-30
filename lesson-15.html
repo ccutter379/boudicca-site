@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 15: Essay Writing Skills &mdash; The PEEL Method | Boudicca Interactive</title>
+
+  <!-- Meta -->
+  <meta name="description" content="Interactive NSW Ancient History Stage 6 resource — Boudicca case study with explicit teaching, CFU activities, source analysis, and teacher facilitation tools.">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': { DEFAULT: '#1a1a2e', mid: '#16213e', light: '#2a4d7a' },
+            'burgundy': { DEFAULT: '#8b2635', light: '#a83242' },
+            'gold': { DEFAULT: '#c9a84c', light: '#e8d292' },
+          },
+          fontFamily: {
+            'serif': ['Playfair Display', 'Georgia', 'serif'],
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans" style="background: #fefcf9;">
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress"></div>
+
+  <!-- Navigation (Glassmorphism) -->
+  <nav class="site-nav">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-5">
+        <a href="index.html" class="text-white font-serif text-xl font-bold tracking-wide hover:text-gold transition-colors">
+          Boudicca
+        </a>
+        <span class="text-white/20 hidden sm:inline">|</span>
+        <span class="text-white/40 text-xs font-sans tracking-wider hidden sm:inline">Lesson 15 of 16</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <button class="teacher-toggle" aria-label="Toggle teacher facilitation notes">Teacher Mode</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="lesson-hero grad-hero">
+    <div class="relative z-10 max-w-3xl mx-auto reveal">
+      <span class="chapter-badge">Chapter 4 &middot; Evidence, Legacy and Skills</span>
+      <p class="text-white/40 font-sans text-sm tracking-wider uppercase mb-3">Lesson 15</p>
+      <h1 class="hero-title font-serif text-white">Essay Writing Skills:<br>The PEEL Method</h1>
+      <p class="hero-desc">
+        How do you build analytical paragraphs that move beyond description to argument?
+        This lesson equips you with the PEEL framework, thesis construction, and source integration skills
+        you need for NSW Ancient History essays.
+      </p>
+      <p class="reading-time"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> ~26 min</p>
+      <!-- Syllabus Outcomes -->
+      <details class="mt-8">
+        <summary class="text-white/25 text-xs font-sans cursor-pointer hover:text-white/40 transition-colors uppercase tracking-[0.15em]">
+          NESA Syllabus Outcomes
+        </summary>
+        <div class="mt-3 text-white/35 text-xs font-sans space-y-1 leading-relaxed">
+          <p><strong class="text-white/50">AH11-1:</strong> Describes the nature of continuity and change in the ancient world</p>
+          <p><strong class="text-white/50">AH11-6:</strong> Analyses and interprets different types of sources for evidence to support an historical account or argument</p>
+          <p><strong class="text-white/50">AH11-9:</strong> Communicates historical understanding, using historical knowledge, concepts and terms, in appropriate and well-structured forms</p>
+        </div>
+      </details>
+    </div>
+    <!-- Decorative number -->
+    <div class="absolute bottom-6 right-8 font-serif text-white/[0.03] font-extrabold pointer-events-none select-none hidden md:block" style="font-size: 14rem; line-height: 1;">15</div>
+  </section>
+
+
+  <!-- ==========================================
+       LEARNING INTENTION & SUCCESS CRITERIA
+       ========================================== -->
+  <section id="lisc" class="full-section grad-lisc">
+    <div class="section-inner reveal">
+      <span class="section-label bg-navy/[0.07] text-navy">Learning Intention</span>
+      <h2 class="section-heading">What You&rsquo;ll Learn</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-8">
+        To develop the skills required to write well-structured, evidence-rich analytical paragraphs and essays in NSW Ancient History, using the PEEL paragraph method and effective thesis construction.
+      </p>
+
+      <div>
+        <h3 class="font-sans text-xs font-bold uppercase tracking-[0.12em] text-gray-400 mb-2">Success Criteria</h3>
+        <p class="sc-progress-text text-xs text-gray-400 mb-1">0 of 4 criteria met</p>
+        <div class="sc-progress"><div class="sc-progress-bar"></div></div>
+        <p class="text-sm text-gray-500 mb-4">By the end of this lesson, I can:</p>
+        <div class="space-y-1">
+          <div class="sc-item"><input type="checkbox" id="sc1"><label for="sc1">Explain the PEEL paragraph structure and apply it to a Boudicca question.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc2"><label for="sc2">Construct a clear, arguable thesis statement for an Ancient History essay question.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc3"><label for="sc3">Integrate primary source evidence effectively into analytical paragraphs.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc4"><label for="sc4">Evaluate the quality of analytical writing using the PEEL framework.</label></div>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Sharing LISC</p>
+        <p>Display the learning intention and success criteria on the board. Emphasise that this is a <strong>skills lesson</strong> &mdash; the content is familiar from earlier lessons, but the focus is on <em>how to write about it</em>. Ask: <strong>&ldquo;What is the difference between knowing history and writing history well?&rdquo;</strong> (cold call).</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       ACTIVATING PRIOR KNOWLEDGE
+       ========================================== -->
+  <section id="prior-knowledge" class="full-section grad-prior relative">
+    <span class="section-number">?</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-white/50 text-amber-700">Before We Begin</span>
+      <h2 class="section-heading">What Do You Already Know About Essay Writing?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        You have spent the previous 14 lessons building your knowledge of Boudicca &mdash; her world, her revolt,
+        and how she has been remembered. Now it&rsquo;s time to turn that knowledge into <strong>well-structured writing</strong>.
+      </p>
+
+      <div class="mb-6">
+        <p class="font-sans text-sm font-semibold text-gray-700 mb-2">How confident are you about writing analytical paragraphs?</p>
+        <div class="poll-options">
+          <button class="poll-btn">Not confident at all</button>
+          <button class="poll-btn">I know the basics</button>
+          <button class="poll-btn">I can do it but want to improve</button>
+          <button class="poll-btn">Very confident</button>
+        </div>
+      </div>
+
+      <div>
+        <label class="font-sans text-sm font-semibold text-gray-700 block mb-2" for="prior-text">
+          What do you think makes a strong essay paragraph? Jot down any techniques or structures you already know:
+        </label>
+        <textarea id="prior-text" class="w-full border border-black/[0.08] rounded-2xl p-4 text-sm font-sans leading-relaxed resize-y bg-white/60 backdrop-blur min-h-[90px] focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-all"
+                  placeholder="For example: topic sentences, evidence, quotes, linking back to the question..."></textarea>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Activating Prior Knowledge</p>
+        <p>Use <strong>cold call</strong> to ask 3&ndash;4 students what they wrote. Common responses might include &ldquo;topic sentence&rdquo; or &ldquo;use quotes.&rdquo; Validate these and explain that PEEL organises these elements into a reliable structure.</p>
+        <p class="mt-2"><strong>Prior knowledge gauge:</strong> &ldquo;Thumbs up if you&rsquo;ve used PEEL or a similar structure before, sideways if you&rsquo;ve heard of it, down if it&rsquo;s new.&rdquo; This is not a CFU &mdash; it gauges familiarity to help you decide how much scaffolding to provide.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 1: WHY PARAGRAPH STRUCTURE MATTERS
+       ========================================== -->
+  <section id="chunk-1" class="full-section grad-chunk1 relative">
+    <span class="section-number">01</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-burgundy/10 text-burgundy">Chunk 1 of 5</span>
+      <h2 class="section-heading">Why Paragraph Structure Matters in Ancient History</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling (&lsquo;I Do&rsquo;)</p>
+        <p><strong>Start with a concrete example:</strong> &ldquo;Imagine I asked you: &lsquo;Why was Camulodunum attacked first?&rsquo; A descriptive answer tells me <em>what</em> happened. An analytical answer explains <em>why</em> it happened and <em>what it reveals</em>. The second kind is what gets you into Band 5 and 6.&rdquo;</p>
+        <p class="mt-2">Write a one-sentence descriptive answer and a one-sentence analytical answer on the board, side by side.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Ancient History essays at NSW Stage 6 are not tests of how much information you have memorised. They are tests of how
+          well you can <strong>use historical evidence to construct and support an argument</strong>. The most common reason students
+          do not achieve high marks is not that they lack knowledge &mdash; it is that their knowledge is presented as
+          <strong>description rather than analysis</strong>.
+        </p>
+        <p>
+          The difference between description and analysis is simple: <strong>description tells <em>what</em> happened;
+          analysis explains <em>why</em> it happened, what it means, or what it reveals</strong>. A Band 6 essay in Ancient History
+          is one that consistently moves from evidence to analysis &mdash; from &ldquo;what&rdquo; to &ldquo;why&rdquo; and &ldquo;so what.&rdquo;
+        </p>
+        <p>
+          The <strong>PEEL paragraph structure</strong> is a practical tool for building analytical paragraphs.
+          It is not the only way to write well, but it provides a reliable framework that ensures every paragraph contains all the
+          elements of strong historical writing.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="b"
+           data-feedback-correct="Correct! The most common reason students miss high marks is not lack of knowledge but presenting that knowledge as description (what happened) rather than analysis (why it happened, what it means, what it reveals)."
+           data-feedback-incorrect="Not quite. The key issue is that students often describe what happened instead of analysing why it happened and what it means. Knowledge presented as description, not analysis, is the most common barrier to high marks.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p>Use <strong>cold call</strong>. This is a foundational concept &mdash; ensure 80%+ success before moving on. If needed, give another example: &ldquo;Description: Boudicca attacked Camulodunum. Analysis: Boudicca targeted Camulodunum because it symbolised Roman colonial power.&rdquo;</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">According to this lesson, the most common reason students do not achieve high marks in Ancient History essays is:</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q1" class="mt-0.5"><span>They do not know enough historical facts</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q1" class="mt-0.5"><span>They present knowledge as description rather than analysis</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q1" class="mt-0.5"><span>They write too much and exceed the word limit</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q1" class="mt-0.5"><span>They use too many primary sources in their essays</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 2: THE PEEL STRUCTURE
+       ========================================== -->
+  <section id="chunk-2" class="full-section grad-chunk2 relative">
+    <span class="section-number">02</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-purple-100 text-purple-700">Chunk 2 of 5</span>
+      <h2 class="section-heading">The PEEL Structure</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Explicit Instruction</p>
+        <p>Walk through each letter slowly. For each one, ask: <strong>&ldquo;Can someone give me an example of what this would look like in a Boudicca essay?&rdquo;</strong> (cold call). Build understanding from concrete examples, not abstract definitions.</p>
+      </div>
+
+      <!-- PEEL Table -->
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Letter</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Stands For</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">What It Means</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white/70">
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-extrabold text-burgundy text-lg">P</td><td class="px-5 py-3 font-semibold">Point</td><td class="px-5 py-3 text-gray-600">The main argument or claim of your paragraph. This should directly answer the question and be debatable (not just a statement of fact).</td></tr>
+            <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-extrabold text-burgundy text-lg">E</td><td class="px-5 py-3 font-semibold">Evidence</td><td class="px-5 py-3 text-gray-600">The specific historical evidence that supports your point. This includes named primary sources, archaeological evidence, and relevant historical details.</td></tr>
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-extrabold text-burgundy text-lg">E</td><td class="px-5 py-3 font-semibold">Explain</td><td class="px-5 py-3 text-gray-600">Your analysis of the evidence &mdash; explaining what it means, why it matters, and how it supports your point.</td></tr>
+            <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-extrabold text-burgundy text-lg">L</td><td class="px-5 py-3 font-semibold">Link</td><td class="px-5 py-3 text-gray-600">A linking sentence that connects your paragraph back to the overall essay question and/or leads into the next paragraph.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="c"
+           data-feedback-correct="Correct! The 'E' for Explain is where you provide your analysis &mdash; explaining what the evidence means, why it matters, and how it supports your argument. This is the most important part of the paragraph."
+           data-feedback-incorrect="Not quite. In PEEL, the Explain section is specifically for analysis: interpreting the evidence, explaining what it means and why it matters. This is where you move from 'what' to 'so what.'">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">In the PEEL structure, the second &lsquo;E&rsquo; (Explain) is where you:</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q2" class="mt-0.5"><span>Provide additional evidence from a different source</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q2" class="mt-0.5"><span>Describe what happened in chronological order</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q2" class="mt-0.5"><span>Analyse the evidence &mdash; explaining what it means, why it matters, and how it supports your point</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q2" class="mt-0.5"><span>Summarise your paragraph and restate your point</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+
+      <div class="sequence-activity" data-answer="0,1,2,3">
+        <h3>Sequence the PEEL Paragraph</h3>
+        <p class="text-gray-700 font-medium mb-4">Put these parts of a PEEL paragraph in the correct order:</p>
+        <div class="sequence-items">
+          <div class="sequence-item" data-idx="2" draggable="true">Explain &mdash; analyse the evidence and explain what it means</div>
+          <div class="sequence-item" data-idx="0" draggable="true">Point &mdash; state your main argument or claim</div>
+          <div class="sequence-item" data-idx="3" draggable="true">Link &mdash; connect back to the essay question or lead into the next paragraph</div>
+          <div class="sequence-item" data-idx="1" draggable="true">Evidence &mdash; provide specific historical evidence to support your point</div>
+        </div>
+        <button class="check-btn" style="margin-top:1rem">Check Sequence</button>
+        <div class="cfu-feedback" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 3: BUILDING A THESIS STATEMENT
+       ========================================== -->
+  <section id="chunk-3" class="full-section grad-chunk3 relative">
+    <span class="section-number">03</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-amber-100 text-amber-700">Chunk 3 of 5</span>
+      <h2 class="section-heading">Building a Thesis Statement</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling: Compare Weak and Strong</p>
+        <p>Display both thesis statements on the board. Read them aloud and <strong>think aloud</strong> about why the weak one fails and the strong one works:</p>
+        <ul class="list-disc ml-5 mt-1 space-y-1">
+          <li>&ldquo;The weak one just lists factors &mdash; it doesn&rsquo;t take a side.&rdquo;</li>
+          <li>&ldquo;The strong one uses the word &lsquo;fundamentally&rsquo; &mdash; that&rsquo;s a position. It says: this one thing matters more than the others.&rdquo;</li>
+          <li>&ldquo;The strong one also tells me what evidence it will use &mdash; that&rsquo;s a roadmap.&rdquo;</li>
+        </ul>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Before you can write PEEL paragraphs, you need a clear <strong>thesis</strong> &mdash; the central argument of your entire essay.
+          A thesis statement should:
+        </p>
+        <ul class="list-disc ml-5 space-y-2 text-gray-700">
+          <li><strong>Directly answer the question</strong> (not just paraphrase it)</li>
+          <li><strong>Be arguable</strong> &mdash; it must be a position that could be contested, not a simple fact</li>
+          <li><strong>Be specific</strong> &mdash; it should indicate the key reasons or evidence you will use</li>
+          <li><strong>Appear in your introduction</strong> and be reinforced in your conclusion</li>
+        </ul>
+      </div>
+
+      <!-- Weak vs Strong comparison -->
+      <div class="mt-8 mb-6">
+        <p class="font-sans text-sm font-bold text-gray-500 mb-3 uppercase tracking-wider">Sample question:</p>
+        <p class="text-gray-700 text-[1.05rem] italic mb-6">&ldquo;To what extent was Boudicca&rsquo;s revolt a product of Roman misgovernance?&rdquo; (15 marks)</p>
+
+        <div class="key-concept" style="border-left: 4px solid #dc2626;">
+          <p class="font-bold text-red-700 mb-1">Weak thesis:</p>
+          <p class="text-gray-700 italic">&ldquo;The revolt was caused by many factors including Roman misgovernance and Celtic grievances.&rdquo;</p>
+          <p class="text-gray-500 text-sm mt-2"><strong>Why this is weak:</strong> It simply lists factors without arguing a position. It is not debatable.</p>
+        </div>
+
+        <div class="key-concept mt-4" style="border-left: 4px solid #16a34a;">
+          <p class="font-bold text-green-700 mb-1">Strong thesis:</p>
+          <p class="text-gray-700 italic">&ldquo;Although Celtic cultural resistance and tribal alliances were significant factors, the Boudiccan revolt was fundamentally a product of Roman misgovernance &mdash; specifically the systematic violation of the client kingdom arrangement under Prasutagus and the financial exploitation directed by Catus Decianus &mdash; without which the revolt could not have achieved its initial scale or intensity.&rdquo;</p>
+          <p class="text-gray-500 text-sm mt-2"><strong>Why this is strong:</strong> It takes a clear position (&ldquo;fundamentally&rdquo;), acknowledges complexity (&ldquo;although&rdquo;), specifies the evidence it will use, and makes an arguable claim that guides the essay.</p>
+        </div>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="a"
+           data-feedback-correct="Correct! A strong thesis must be arguable &mdash; meaning someone could reasonably disagree with it. If it is just a statement of fact that nobody would dispute, it is not doing the work of a thesis. The thesis should take a clear position."
+           data-feedback-incorrect="Not quite. The most important quality of a strong thesis is that it is arguable &mdash; it takes a position that could be contested. A statement of fact (e.g., 'The revolt happened in AD 60') is not a thesis because nobody would disagree.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p>Use <strong>cold call</strong>. Then ask a follow-up: &ldquo;Give me an example of a statement about Boudicca that is a fact, not a thesis.&rdquo; This checks they understand the distinction between fact and argument.</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">Which of the following is the most important quality of a strong thesis statement?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q3" class="mt-0.5"><span>It is arguable &mdash; someone could reasonably disagree with it</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q3" class="mt-0.5"><span>It is written in one sentence only</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q3" class="mt-0.5"><span>It uses as many historical terms as possible</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q3" class="mt-0.5"><span>It includes a quote from a primary source</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 4: WORKED PEEL PARAGRAPH & COMMON MISTAKES
+       ========================================== -->
+  <section id="chunk-4" class="full-section grad-chunk4 relative">
+    <span class="section-number">04</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-blue-100 text-blue-700">Chunk 4 of 5</span>
+      <h2 class="section-heading">A Worked PEEL Paragraph</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling: Annotated Example (&lsquo;I Do&rsquo;)</p>
+        <p>Display the worked example on the board. <strong>Read it aloud</strong>, pausing after each section to label it: &ldquo;That&rsquo;s the Point &mdash; notice how it directly answers the question.&rdquo; &ldquo;That&rsquo;s the Evidence &mdash; see how the source is named?&rdquo;</p>
+        <p class="mt-2">Use coloured highlighting (or underlining) to make each PEEL element visually distinct.</p>
+      </div>
+
+      <p class="text-gray-600 text-sm mb-4"><strong>Question:</strong> <em>&ldquo;To what extent was Boudicca&rsquo;s revolt a product of Roman misgovernance?&rdquo;</em></p>
+
+      <!-- PEEL worked example with colour-coded sections -->
+      <div class="space-y-4 mb-8">
+        <div class="key-concept" style="border-left: 4px solid #8b2635;">
+          <p class="font-bold text-burgundy mb-1">P &mdash; Point:</p>
+          <p class="text-gray-700">Roman misgovernance was the primary cause of the Boudiccan revolt, as the systematic violation of the client kingdom arrangement created the conditions for mass rebellion.</p>
+        </div>
+        <div class="key-concept" style="border-left: 4px solid #2a4d7a;">
+          <p class="font-bold text-navy-light mb-1">E &mdash; Evidence:</p>
+          <p class="text-gray-700">Following the death of Prasutagus in c. AD 59, Roman officials ignored his will and seized Iceni lands as if they had been conquered territory. Tacitus records in <em>Annals</em> 14.31 that &ldquo;the kingdom was pillaged by centurions, his house by slaves, as if they were the spoils of war.&rdquo; Boudicca herself was flogged and her daughters violated.</p>
+        </div>
+        <div class="key-concept" style="border-left: 4px solid #c9a84c;">
+          <p class="font-bold text-amber-700 mb-1">E &mdash; Explain:</p>
+          <p class="text-gray-700">This evidence demonstrates that it was specifically the violation of a formal political agreement &mdash; the client kingdom arrangement &mdash; that triggered the revolt. The Iceni had cooperated with Rome under Prasutagus for approximately fifteen years; it was the sudden reversal of this arrangement, not merely general Roman oppression, that made revolt both politically justified and broadly supported. The participation of the Trinovantes, also driven by specific grievances over Camulodunum, reinforces the conclusion that Roman misgovernance was the decisive trigger.</p>
+        </div>
+        <div class="key-concept" style="border-left: 4px solid #16a34a;">
+          <p class="font-bold text-green-700 mb-1">L &mdash; Link:</p>
+          <p class="text-gray-700">While other factors &mdash; Celtic warrior tradition, economic grievances, and personal leadership &mdash; contributed to the revolt&rsquo;s scale, the evidence strongly supports the conclusion that without Roman misgovernance of this specific kind, the revolt would not have occurred when and how it did.</p>
+        </div>
+      </div>
+
+      <!-- Common Mistakes -->
+      <h3 class="font-serif text-xl font-bold text-navy mt-10 mb-4">Common Mistakes to Avoid</h3>
+      <div class="space-y-3 text-gray-700 text-[1.02rem] leading-relaxed">
+        <div class="key-concept">
+          <p><strong>Narration without analysis:</strong> Describing what happened in sequence without explaining what it means for the argument.</p>
+        </div>
+        <div class="key-concept">
+          <p><strong>Unsupported claims:</strong> Making arguments without citing specific historical evidence. Every point needs evidence.</p>
+        </div>
+        <div class="key-concept">
+          <p><strong>Burying the analysis:</strong> Spending most of the paragraph on evidence and only one sentence on analysis. The Explain section should be <em>at least as long</em> as the Evidence section.</p>
+        </div>
+        <div class="key-concept">
+          <p><strong>Vague links:</strong> &ldquo;This shows that Boudicca was important.&rdquo; &mdash; Too vague. Link specifically back to the essay question.</p>
+        </div>
+        <div class="key-concept">
+          <p><strong>Describing sources rather than using them:</strong> &ldquo;Tacitus tells us that...&rdquo; is weak. &ldquo;Tacitus&rsquo;s account of the flogging of Boudicca reveals that...&rdquo; uses the source analytically.</p>
+        </div>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="d"
+           data-feedback-correct="Correct! The Explain section should be at least as long as the Evidence section. Many students spend most of their paragraph describing evidence and only one sentence analysing it &mdash; this buries the analysis and is a common weakness."
+           data-feedback-incorrect="Not quite. A common mistake is burying the analysis: spending most of the paragraph on evidence and only a small amount on explanation. The Explain section should be at least as long as the Evidence section.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">Which of the following is a &ldquo;common mistake&rdquo; in PEEL paragraphs?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q4" class="mt-0.5"><span>Writing a thesis statement in the introduction</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q4" class="mt-0.5"><span>Naming the primary source you are using as evidence</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q4" class="mt-0.5"><span>Linking your paragraph back to the essay question</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q4" class="mt-0.5"><span>Spending most of the paragraph on evidence and only one sentence on analysis</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 5: SOURCE ANALYSIS WITHIN ESSAYS
+       ========================================== -->
+  <section id="chunk-5" class="full-section grad-chunk5 relative">
+    <span class="section-number">05</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-rose-100 text-rose-700">Chunk 5 of 5</span>
+      <h2 class="section-heading">Source Analysis Within Essays</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Gradual Release: I Do, We Do, You Do</p>
+        <ol class="list-decimal ml-5 mt-1 space-y-1">
+          <li><strong>I Do:</strong> Read the weak source use aloud and explain why it is weak: &ldquo;It just tells me what Tacitus said. It doesn&rsquo;t analyse the source at all.&rdquo;</li>
+          <li><strong>We Do:</strong> Read the strong source use together and identify what makes it analytical: evaluative language, provenance detail, judgement about the evidence.</li>
+          <li><strong>You Do:</strong> Students rewrite the weak example in their own words, adding source analysis.</li>
+        </ol>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          In Ancient History essays, you are expected not just to cite sources but to <strong>analyse them</strong> &mdash;
+          to comment on their nature, purpose, and reliability. This should be done briefly within the flow of your paragraph,
+          not as a separate interruption.
+        </p>
+      </div>
+
+      <!-- Weak vs Strong source use -->
+      <div class="mt-6 mb-6">
+        <div class="key-concept" style="border-left: 4px solid #dc2626;">
+          <p class="font-bold text-red-700 mb-1">Weak source use:</p>
+          <p class="text-gray-700 italic">&ldquo;Tacitus says in Annals 14.31 that Boudicca was flogged.&rdquo;</p>
+        </div>
+
+        <div class="key-concept mt-4" style="border-left: 4px solid #16a34a;">
+          <p class="font-bold text-green-700 mb-1">Strong source use:</p>
+          <p class="text-gray-700 italic">&ldquo;Tacitus&rsquo;s account in <em>Annals</em> 14.31 &mdash; written approximately 57 years after the revolt and drawing on sources that may have included eyewitness testimony &mdash; records that Boudicca was publicly flogged, a detail whose specificity and placement in the narrative suggests it reflects a genuine historical memory preserved in the Roman administrative record.&rdquo;</p>
+        </div>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="b"
+           data-feedback-correct="Correct! Strong source use integrates analytical comments about the source's nature, origin, and reliability into the flow of the paragraph. It doesn't just cite the source &mdash; it evaluates it as evidence while using it."
+           data-feedback-incorrect="Not quite. What makes the strong example better is that it includes analytical comments about the source: when it was written, what kind of evidence it draws on, and what the detail might reveal. It evaluates the source while using it.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">What makes the &ldquo;strong source use&rdquo; example above better than the &ldquo;weak&rdquo; one?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q5" class="mt-0.5"><span>It is longer and includes more words</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q5" class="mt-0.5"><span>It integrates analytical comments about the source&rsquo;s nature, origin, and reliability into the paragraph</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q5" class="mt-0.5"><span>It uses a direct quotation from the source text</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q5" class="mt-0.5"><span>It names the author and the book title</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       INDEPENDENT PRACTICE: REVIEW QUESTIONS
+       ========================================== -->
+  <section id="practice" class="full-section grad-practice relative">
+    <span class="section-number">Q</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-green-100 text-green-700">Independent Practice</span>
+      <h2 class="section-heading">Review Questions</h2>
+      <p class="text-sm text-gray-500 mb-6">Choose the level that challenges you, or work through all three.</p>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Independent Practice (&lsquo;You Do&rsquo;)</p>
+        <p>Students should attempt these <strong>only after a high success rate</strong> on the CFU questions. Direct all students to Foundation first. The Standard and Extension questions require actual paragraph writing &mdash; allow adequate time.</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> Students write one PEEL Point sentence on a sticky note for the question: &ldquo;Explain why Camulodunum was the first target.&rdquo;</p>
+      </div>
+
+      <div class="tab-group">
+        <button class="tab-btn active" data-tab="foundation">Foundation</button>
+        <button class="tab-btn" data-tab="standard">Standard</button>
+        <button class="tab-btn" data-tab="extension">Extension</button>
+      </div>
+
+      <div class="tab-content active" id="foundation" data-tab="foundation">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Identify and describe</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>What do the letters PEEL stand for?</li>
+          <li>What is the difference between &ldquo;description&rdquo; and &ldquo;analysis&rdquo; in essay writing?</li>
+          <li>Write a one-sentence thesis for the question: &ldquo;How significant was the role of Suetonius Paulinus in defeating the Boudiccan revolt?&rdquo;</li>
+        </ol>
+      </div>
+      <div class="tab-content" id="standard" data-tab="standard">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Analyse and explain</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Using the PEEL structure, write one full paragraph in response to the question: &ldquo;Explain why Camulodunum was the first target of Boudicca&rsquo;s revolt.&rdquo;</li>
+          <li>Identify and explain two weaknesses in the following thesis: &ldquo;The revolt was caused by Roman misgovernance and Boudicca was a strong leader.&rdquo;</li>
+          <li>Rewrite the &ldquo;weak source use&rdquo; example above in your own words, improving it by adding source analysis.</li>
+        </ol>
+      </div>
+      <div class="tab-content" id="extension" data-tab="extension">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Evaluate and debate</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Write two full PEEL paragraphs in response to the question: &ldquo;To what extent was the Boudiccan revolt a product of Roman misgovernance?&rdquo; Your paragraphs should argue competing considerations and use at least two named primary sources.</li>
+          <li>Evaluate the PEEL framework as a tool for essay writing in Ancient History. What are its strengths and what are its limitations? When might a skilled writer deviate from it?</li>
+          <li>Develop your own annotated essay plan for a 600-word response to the question: &ldquo;How useful are the accounts of Tacitus and Cassius Dio for understanding the causes and conduct of the Boudiccan revolt?&rdquo; Your plan should include a thesis, topic sentences for each paragraph, key evidence, and anticipated analytical points.</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="text-sm text-gray-600">By now you should structure responses independently using PEEL. If you need a refresher, revisit <a href="lesson-15.html" class="text-navy font-medium underline">Lesson 15: Essay Skills</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       KEY TERMS: FLASHCARD GLOSSARY
+       ========================================== -->
+  <section id="key-terms" class="full-section grad-terms relative">
+    <span class="section-number">A&ndash;Z</span>
+    <div class="section-inner">
+      <div class="flex items-end justify-between mb-6 reveal">
+        <div>
+          <span class="section-label bg-purple-100 text-purple-700">Key Terms</span>
+          <h2 class="section-heading mb-0">Glossary</h2>
+        </div>
+        <button class="glossary-view-toggle text-sm text-navy font-semibold hover:text-burgundy transition-colors cursor-pointer">
+          Switch to List View
+        </button>
+      </div>
+      <p class="text-sm text-gray-500 mb-6 reveal">Click each card to reveal its definition.</p>
+
+      <!-- Flashcards -->
+      <div class="flashcard-grid reveal-stagger">
+        <div class="flashcard" tabindex="0" role="button" aria-label="Flashcard: PEEL">
+          <div class="flashcard-inner"><div class="flashcard-front">PEEL</div><div class="flashcard-back">Point, Evidence, Explain, Link &mdash; a paragraph structure for building analytical arguments in essay writing.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Thesis Statement</div><div class="flashcard-back">The central argument of an essay. It should be arguable, specific, and directly answer the question.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Analysis</div><div class="flashcard-back">Explaining why something happened, what it means, or what it reveals &mdash; going beyond description to interpretation.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Description</div><div class="flashcard-back">Telling what happened without explaining its meaning or significance &mdash; the opposite of analysis.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Source Integration</div><div class="flashcard-back">The skill of weaving source evidence and source evaluation into the flow of an analytical paragraph.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Topic Sentence</div><div class="flashcard-back">The opening sentence of a paragraph that states the paragraph&rsquo;s main argument or claim (the &lsquo;Point&rsquo; in PEEL).</div></div>
+        </div>
+      </div>
+
+      <!-- List View (hidden) -->
+      <div class="glossary-list hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+            <thead>
+              <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/4">Term</th>
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Definition</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white/70">
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">PEEL</td><td class="px-5 py-3 text-gray-600">Point, Evidence, Explain, Link &mdash; a paragraph structure for building analytical arguments in essay writing.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Thesis statement</td><td class="px-5 py-3 text-gray-600">The central argument of an essay. It should be arguable, specific, and directly answer the question.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Analysis</td><td class="px-5 py-3 text-gray-600">Explaining why something happened, what it means, or what it reveals &mdash; going beyond description to interpretation.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Description</td><td class="px-5 py-3 text-gray-600">Telling what happened without explaining its meaning or significance.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Source integration</td><td class="px-5 py-3 text-gray-600">The skill of weaving source evidence and source evaluation into the flow of an analytical paragraph.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Topic sentence</td><td class="px-5 py-3 text-gray-600">The opening sentence of a paragraph that states the paragraph&rsquo;s main argument (the &lsquo;Point&rsquo; in PEEL).</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       REVIEW OF LEARNING
+       ========================================== -->
+  <section id="review" class="full-section grad-review relative">
+    <div class="section-inner reveal">
+      <span class="section-label bg-gold/20 text-amber-700">Review of Learning</span>
+      <h2 class="section-heading">How Did You Go?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6 text-[1.05rem]">
+        Return to the success criteria from the start of this lesson. Can you now tick off each one?
+        If any remain unticked, scroll back and review the relevant section.
+      </p>
+
+      <div class="space-y-3">
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">1</span>
+          <span class="text-gray-700">Explain the PEEL paragraph structure and apply it to a Boudicca question.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">2</span>
+          <span class="text-gray-700">Construct a clear, arguable thesis statement for an Ancient History essay question.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">3</span>
+          <span class="text-gray-700">Integrate primary source evidence effectively into analytical paragraphs.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">4</span>
+          <span class="text-gray-700">Evaluate the quality of analytical writing using the PEEL framework.</span>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Review of Learning</p>
+        <p><strong>Self-assessment</strong> for each criterion: &ldquo;Thumbs up if confident, sideways if partly there, down if you need more help.&rdquo;</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> &ldquo;On a sticky note, write one PEEL Point sentence for the question: &lsquo;Explain why Camulodunum was the first target of Boudicca&rsquo;s revolt.&rsquo;&rdquo; Collect as students leave.</p>
+      </div>
+
+      <!-- Exit Ticket -->
+      <div class="exit-ticket">
+        <h4>Exit Ticket</h4>
+        <label class="text-sm text-gray-600 block mb-1">One thing I learned today:</label>
+        <textarea placeholder="What was the most important thing you learned in this lesson?"></textarea>
+        <label class="text-sm text-gray-600 block mb-1">One question I still have:</label>
+        <textarea placeholder="What are you still unsure about or want to know more about?"></textarea>
+      </div>
+
+      <!-- Reflection -->
+      <div class="reflection-panel">
+        <h4>Self-Reflection</h4>
+        <p class="text-sm text-gray-600 mb-2">How confident do you feel about this lesson&rsquo;s content?</p>
+        <div class="confidence-scale">
+          <button class="confidence-btn">1<br><span class="text-[0.65rem]">Not yet</span></button>
+          <button class="confidence-btn">2<br><span class="text-[0.65rem]">Getting there</span></button>
+          <button class="confidence-btn">3<br><span class="text-[0.65rem]">Mostly</span></button>
+          <button class="confidence-btn">4<br><span class="text-[0.65rem]">Confident</span></button>
+          <button class="confidence-btn">5<br><span class="text-[0.65rem]">Mastered</span></button>
+        </div>
+        <label class="text-sm text-gray-600 block mt-3 mb-1">What do you want to revisit before the next lesson?</label>
+        <textarea class="reflection-text" placeholder="Any topics, terms, or skills you want to review?"></textarea>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       LESSON NAVIGATION
+       ========================================== -->
+  <section class="py-12 px-6" style="background: #fefcf9;">
+    <div class="max-w-3xl mx-auto lesson-nav-footer flex items-center justify-between">
+      <a href="lesson-14.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        Lesson 14
+      </a>
+      <span class="text-xs text-gray-300 tracking-wider uppercase">Lesson 15 of 16</span>
+      <a href="lesson-16.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        Lesson 16
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 text-center" style="background: linear-gradient(180deg, #fefcf9, #f5f3ed);">
+    <p class="text-sm text-gray-400 font-sans">
+      NSW Ancient History Stage 6 &middot; NESA Syllabus (2017) &middot; Case Study A
+    </p>
+    <p class="text-xs text-gray-300 mt-2 font-sans">Created by Cheryl Cutter</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

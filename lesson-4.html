@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 4: The Iceni and Prasutagus | Boudicca Interactive</title>
+
+  <!-- Meta -->
+  <meta name="description" content="Interactive NSW Ancient History Stage 6 resource — Boudicca case study with explicit teaching, CFU activities, source analysis, and teacher facilitation tools.">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': { DEFAULT: '#1a1a2e', mid: '#16213e', light: '#2a4d7a' },
+            'burgundy': { DEFAULT: '#8b2635', light: '#a83242' },
+            'gold': { DEFAULT: '#c9a84c', light: '#e8d292' },
+          },
+          fontFamily: {
+            'serif': ['Playfair Display', 'Georgia', 'serif'],
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans" style="background: #fefcf9;">
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress"></div>
+
+  <!-- Navigation (Glassmorphism) -->
+  <nav class="site-nav">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-5">
+        <a href="index.html" class="text-white font-serif text-xl font-bold tracking-wide hover:text-gold transition-colors">
+          Boudicca
+        </a>
+        <span class="text-white/20 hidden sm:inline">|</span>
+        <span class="text-white/40 text-xs font-sans tracking-wider hidden sm:inline">Lesson 4 of 16</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <button class="teacher-toggle" aria-label="Toggle teacher facilitation notes">Teacher Mode</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="lesson-hero grad-hero" style="background: linear-gradient(165deg, rgba(26,26,46,0.92) 0%, rgba(22,33,62,0.88) 50%, rgba(26,39,68,0.92) 100%), url('images/tribal-britain-map.jpg') center/cover no-repeat;">
+    <div class="relative z-10 max-w-3xl mx-auto reveal">
+      <span class="chapter-badge">Chapter 1 &middot; Context and Background</span>
+      <p class="text-white/40 font-sans text-sm tracking-wider uppercase mb-3">Lesson 4</p>
+      <h1 class="hero-title font-serif text-white">The Iceni<br>and Prasutagus</h1>
+      <p class="hero-desc">
+        How did the political relationship between the Iceni and Rome unravel &mdash;
+        and how did Roman actions after Prasutagus&rsquo;s death ignite the most devastating
+        revolt in the history of Roman Britain?
+      </p>
+      <p class="reading-time"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> ~32 min</p>
+      <!-- Syllabus Outcomes -->
+      <details class="mt-8">
+        <summary class="text-white/25 text-xs font-sans cursor-pointer hover:text-white/40 transition-colors uppercase tracking-[0.15em]">
+          NESA Syllabus Outcomes
+        </summary>
+        <div class="mt-3 text-white/35 text-xs font-sans space-y-1 leading-relaxed">
+          <p><strong class="text-white/50">AH11-1:</strong> Describes the nature of continuity and change in the ancient world</p>
+          <p><strong class="text-white/50">AH11-2:</strong> Proposes ideas about the varying causes and effects of events and developments</p>
+          <p><strong class="text-white/50">AH11-3:</strong> Analyses the role of historical features, individuals and groups in shaping the past</p>
+        </div>
+      </details>
+    </div>
+    <!-- Decorative number -->
+    <div class="absolute bottom-6 right-8 font-serif text-white/[0.03] font-extrabold pointer-events-none select-none hidden md:block" style="font-size: 14rem; line-height: 1;">04</div>
+  </section>
+
+
+  <!-- ==========================================
+       LEARNING INTENTION & SUCCESS CRITERIA
+       ========================================== -->
+  <section id="lisc" class="full-section grad-lisc">
+    <div class="section-inner reveal">
+      <span class="section-label bg-navy/[0.07] text-navy">Learning Intention</span>
+      <h2 class="section-heading">What You&rsquo;ll Learn</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-8">
+        To understand the political relationship between the Iceni and Rome under King Prasutagus, and to analyse how Roman actions following his death created the immediate conditions for Boudicca&rsquo;s revolt.
+      </p>
+
+      <div>
+        <h3 class="font-sans text-xs font-bold uppercase tracking-[0.12em] text-gray-400 mb-2">Success Criteria</h3>
+        <p class="sc-progress-text text-xs text-gray-400 mb-1">0 of 4 criteria met</p>
+        <div class="sc-progress"><div class="sc-progress-bar"></div></div>
+        <p class="text-sm text-gray-500 mb-4">By the end of this lesson, I can:</p>
+        <div class="space-y-1">
+          <div class="sc-item"><input type="checkbox" id="sc1"><label for="sc1">Explain the client-kingdom system and its terms, benefits, and limitations.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc2"><label for="sc2">Describe the political career and decisions of Prasutagus as client king of the Iceni.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc3"><label for="sc3">Analyse the significance of Prasutagus&rsquo;s will and Rome&rsquo;s decision to ignore it.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc4"><label for="sc4">Evaluate the mistreatment of Boudicca and her daughters as a catalyst for revolt.</label></div>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Sharing LISC</p>
+        <p>Display the learning intention and success criteria on the board. Read them aloud and ask students to identify the <em>key verbs</em> (explain, describe, analyse, evaluate). Check understanding: <strong>&ldquo;Can someone put the learning intention into their own words? What are we actually trying to understand today?&rdquo;</strong> (cold call). This lesson builds directly on Lessons 2 and 3 &mdash; remind students of the key concepts: Celtic society, the Iceni, Romanisation, and the client-kingdom system.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       ACTIVATING PRIOR KNOWLEDGE
+       ========================================== -->
+  <section id="prior-knowledge" class="full-section grad-prior relative">
+    <span class="section-number">?</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-white/50 text-amber-700">Before We Begin</span>
+      <h2 class="section-heading">What Do You Already Know?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        In our last two lessons, we explored Celtic society and the process of Romanisation.
+        Let&rsquo;s recall what we learned before moving forward.
+      </p>
+
+      <div class="mb-6">
+        <p class="font-sans text-sm font-semibold text-gray-700 mb-2">What do you remember about the client-kingdom system from Lesson 3?</p>
+        <div class="poll-options">
+          <button class="poll-btn">Nothing yet</button>
+          <button class="poll-btn">Vaguely familiar</button>
+          <button class="poll-btn">Remember the basics</button>
+          <button class="poll-btn">Remember clearly</button>
+        </div>
+      </div>
+
+      <div>
+        <label class="font-sans text-sm font-semibold text-gray-700 block mb-2" for="prior-text">
+          Jot down what you remember about the Iceni&rsquo;s relationship with Rome:
+        </label>
+        <textarea id="prior-text" class="w-full border border-black/[0.08] rounded-2xl p-4 text-sm font-sans leading-relaxed resize-y bg-white/60 backdrop-blur min-h-[90px] focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-all"
+                  placeholder="For example: Were the Iceni conquered by Rome? Did they have a king? What happened when the Romans asked them to give up their weapons?"></textarea>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Activating Prior Knowledge</p>
+        <p>Use <strong>cold call</strong> to ask 3&ndash;4 students what they recall from previous lessons. Key concepts to draw out: the Iceni were a <em>client kingdom</em> (not directly conquered), they had revolted once before (AD 47), and Romanisation created deep resentment.</p>
+        <p class="mt-2"><strong>Retrieval check:</strong> &ldquo;True or false: A client king had the same legal protections as a Roman citizen. Thumbs up for true, down for false.&rdquo; (Answer: false &mdash; client kingdoms had no reliable legal protection against Roman interference.) If fewer than 80% correct, do a quick 2-minute recap of the client-kingdom system before proceeding.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 1: THE CLIENT-KINGDOM SYSTEM
+       ========================================== -->
+  <section id="chunk-1" class="full-section grad-chunk1 relative">
+    <span class="section-number">01</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-burgundy/10 text-burgundy">Chunk 1 of 5</span>
+      <h2 class="section-heading">The Client-Kingdom System</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling (&lsquo;I Do&rsquo;)</p>
+        <p><strong>Model with a modern analogy:</strong> &ldquo;Think of a client kingdom like a small business that has a deal with a big corporation. The small business keeps running itself, but it has to follow the corporation&rsquo;s rules, pay them a share of profits, and do what they say on big decisions. The problem is &mdash; the corporation can tear up the contract any time it wants.&rdquo;</p>
+        <p class="mt-2"><strong>Read the first two paragraphs aloud</strong>, then pause to check understanding: &ldquo;In your own words, what is the main advantage and the main risk of being a client kingdom?&rdquo; (cold call).</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Not all of the tribes of Roman Britain were conquered by direct military force. Rome frequently preferred to control border regions and recently subdued peoples through the <strong>client-kingdom system</strong> &mdash; an arrangement in which a local ruler was recognised as a king and allowed to maintain internal authority in exchange for loyalty, tribute, military cooperation, and the acceptance of Roman cultural and political influence.
+        </p>
+        <p>
+          The client-kingdom system was <strong>pragmatic</strong>. Direct military occupation was expensive; it required permanent garrisons, administrative infrastructure, and regular military campaigns to suppress revolt. Client kingdoms, by contrast, required relatively few Roman soldiers and could generate tribute income. The client king managed his own people, collected taxes, maintained order, and &mdash; ideally &mdash; gradually Romanised his territory, creating conditions for eventual full integration into the provincial system.
+        </p>
+        <p>
+          However, the system was <strong>fundamentally asymmetric</strong>. Client kings had no reliable legal protection against Roman interference. The treaties were honoured only as long as Rome chose to honour them. A client king who died without an heir acceptable to Rome, or whose kingdom Rome decided was more valuable to control directly, could find himself &mdash; or his family &mdash; subject to the same treatment as any conquered people.
+        </p>
+      </div>
+
+      <!-- Comparison Table: Roman vs Celtic Perspectives -->
+      <div class="overflow-x-auto mt-8 mb-8">
+        <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Roman Perspective</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Celtic Perspective</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white/70">
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 text-gray-600">Client kingdoms reduced administrative costs and military requirements.</td>
+              <td class="px-5 py-3 text-gray-600">Client status preserved internal autonomy, laws, and cultural practices.</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 text-gray-600">Client kings collected tribute and maintained order on Rome&rsquo;s behalf.</td>
+              <td class="px-5 py-3 text-gray-600">The king and his nobles retained their lands, property, and social position.</td>
+            </tr>
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 text-gray-600">Client treaties were revocable at will &mdash; Rome&rsquo;s convenience determined their duration.</td>
+              <td class="px-5 py-3 text-gray-600">Tribes often understood their agreements as binding partnerships with mutual obligations.</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 text-gray-600">The system was designed to gradually Romanise provinces and prepare them for full annexation.</td>
+              <td class="px-5 py-3 text-gray-600">Many client kings hoped to secure their dynasty permanently, as Prasutagus&rsquo;s will reveals.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="c"
+           data-feedback-correct="Correct! The fundamental problem with the client-kingdom system was that it was asymmetric &mdash; Rome could revoke the agreement whenever it suited them, leaving the client king and his people with no legal protection."
+           data-feedback-incorrect="Not quite. The critical weakness was asymmetry &mdash; while Celtic tribes understood the arrangement as a binding partnership, Rome treated it as a temporary convenience that could be revoked at any time.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p>Use <strong>cold call</strong>. If they answer incorrectly, redirect to the comparison table: &ldquo;Look at the third row. How did Rome and the Celts understand the agreement differently?&rdquo;</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">What was the fundamental weakness of the client-kingdom system for Celtic rulers?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q1" class="mt-0.5"><span>Client kings had to pay tribute to Rome, which made their kingdoms poor</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q1" class="mt-0.5"><span>Client kings were not allowed to have their own armies or weapons</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q1" class="mt-0.5"><span>Rome could revoke the agreement whenever it suited them, leaving the client with no legal protection</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q1" class="mt-0.5"><span>Client kingdoms were required to adopt the Latin language and abandon their own culture</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+
+      <div class="sequence-activity" data-correct="3,1,0,4,2">
+        <h3>Put These Events in Order</h3>
+        <p class="text-gray-700 font-medium mb-4">Drag or use the arrows to arrange these events in the timeline of Iceni&ndash;Roman relations:</p>
+        <ul class="sequence-list">
+          <li class="sequence-item" data-idx="0">Prasutagus becomes client king of the Iceni (c. AD 47)</li>
+          <li class="sequence-item" data-idx="1">Claudian invasion of Britain (AD 43)</li>
+          <li class="sequence-item" data-idx="2">Boudicca is flogged and her daughters assaulted (AD 60)</li>
+          <li class="sequence-item" data-idx="3">Iceni submit to Rome as a client kingdom</li>
+          <li class="sequence-item" data-idx="4">Prasutagus dies and Rome seizes the kingdom (c. AD 60)</li>
+        </ul>
+        <button class="check-btn" style="margin-top:1rem">Check Order</button>
+        <div class="cfu-feedback" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 2: PRASUTAGUS
+       ========================================== -->
+  <section id="chunk-2" class="full-section grad-chunk2 relative">
+    <span class="section-number">02</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-purple-100 text-purple-700">Chunk 2 of 5</span>
+      <h2 class="section-heading">Prasutagus: Client King of the Iceni</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Guided Reading (&lsquo;We Do&rsquo;)</p>
+        <p>Read this section together as a class. Pause after the first paragraph and ask: &ldquo;What strategy did Prasutagus use during his reign &mdash; cooperation or confrontation?&rdquo; (cold call). Then ask: &ldquo;Why do you think he chose cooperation rather than fighting Rome?&rdquo; (think-pair-share, 60 seconds).</p>
+        <p class="mt-2"><strong>Key point to highlight:</strong> Boudicca&rsquo;s name means &ldquo;Victory&rdquo; &mdash; this is significant given her later role as a war leader.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Prasutagus became king of the Iceni around <strong>AD 47</strong>, following a period in which the tribe had briefly revolted against Roman authority (when the governor Ostorius Scapula ordered them to surrender their weapons). As client king, Prasutagus accepted Roman suzerainty &mdash; acknowledging Roman authority while maintaining internal rule. He became, in Roman terms, a <em>&ldquo;king renowned for his long prosperity&rdquo;</em> (as Tacitus describes him).
+        </p>
+        <p>
+          Prasutagus&rsquo;s long reign (approximately <strong>AD 47&ndash;60</strong>) was one of <strong>cooperation rather than confrontation</strong>. He maintained his tribe&rsquo;s relative independence, accumulated considerable personal wealth (possibly through royal ownership of agricultural land and from Roman loans extended to him and his nobility), and kept the Iceni largely outside the most turbulent period of conquest and pacification that consumed much of Britain in the AD 50s.
+        </p>
+        <p>
+          He married <strong>Boudicca</strong> &mdash; whose name means <em>&ldquo;Victoria&rdquo;</em> or <em>&ldquo;victory&rdquo;</em> in the Celtic Brittonic language. While Boudicca&rsquo;s precise origins are unknown, her name and subsequent leadership role suggest she came from a noble or royal family. Together, they had at least <strong>two daughters</strong>, whose names are not recorded in any surviving source.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="b"
+           data-feedback-correct="Correct! Prasutagus pursued a strategy of cooperation with Rome. He maintained relative independence, accumulated wealth, and kept his tribe out of the most turbulent period of Roman conquest in Britain."
+           data-feedback-incorrect="Not quite. Prasutagus chose cooperation, not confrontation. He worked within the Roman system as a client king for approximately thirteen years, maintaining his tribe&rsquo;s relative independence.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">How would you best describe Prasutagus&rsquo;s approach to Rome during his reign?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q2" class="mt-0.5"><span>He secretly planned a revolt against Rome throughout his entire reign</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q2" class="mt-0.5"><span>He cooperated with Rome, maintaining independence while accepting Roman authority</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q2" class="mt-0.5"><span>He completely adopted Roman culture and abandoned Celtic traditions</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q2" class="mt-0.5"><span>He fought several wars against Rome but was defeated each time</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 3: THE WILL AND ITS CONSEQUENCES
+       ========================================== -->
+  <section id="chunk-3" class="full-section grad-chunk3 relative">
+    <span class="section-number">03</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-amber-100 text-amber-700">Chunk 3 of 5</span>
+      <h2 class="section-heading">The Will of Prasutagus and Its Fatal Consequences</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling: Source Analysis Think-Aloud</p>
+        <p><strong>I Do:</strong> Model the analysis of Prasutagus&rsquo;s will as a strategic decision: &ldquo;I notice that Prasutagus split his kingdom between his daughters and the emperor. Why would he do that? He&rsquo;s trying to protect his family by showing loyalty to Rome. But the Romans didn&rsquo;t see it that way&hellip;&rdquo;</p>
+        <p class="mt-2"><strong>We Do:</strong> Read the Tacitus source together. Ask students to identify the <em>most powerful phrase</em> in the passage and explain why they chose it. (think-pair-share, 90 seconds).</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          When Prasutagus died around <strong>AD 60</strong>, he left a will that attempted to balance his obligations to Rome with his duties to his family. According to Tacitus, he left <strong>half his kingdom to his daughters</strong> and <strong>half to the Emperor Nero</strong>. This was a careful diplomatic gesture: by including the emperor as a co-heir, Prasutagus hoped to signal loyalty and protect his family&rsquo;s claim to the other half.
+        </p>
+        <p>
+          The strategy <strong>failed catastrophically</strong>. Roman law and practice did not recognise the principle that a client kingdom could be partly inherited by its own ruling family. Roman officials treated the death of a client king as the automatic revocation of his kingdom&rsquo;s special status. The procurator <strong>Catus Decianus</strong> &mdash; a financial official notorious even in Roman accounts for his greed &mdash; moved quickly to claim the <strong>entire estate</strong> for Rome, not merely the half Prasutagus had offered.
+        </p>
+      </div>
+
+      <!-- Primary Source: Tacitus -->
+      <div class="key-concept mt-8">
+        <p class="font-bold text-navy mb-1">Primary Source</p>
+        <p class="text-sm text-gray-500 mb-3"><strong>Provenance:</strong> Tacitus, <em>Annals</em>, Book XIV, Chapter 31. Written c. AD 115&ndash;117. This is the foundational ancient source for the events following Prasutagus&rsquo;s death. Tacitus was writing approximately fifty-seven years after the events, drawing on family accounts (his father-in-law Agricola was involved in British affairs) and official Roman records.</p>
+        <blockquote class="border-l-4 border-burgundy/30 pl-5 italic text-gray-600 my-4 text-[1.02rem] leading-relaxed">
+          &ldquo;His kingdom was plundered by centurions, his house by slaves, as if they were the spoils of war. His wife Boudicca was scourged and his daughters were violated. All the chief men of the Iceni, as if Rome had received the whole country as a gift, were stripped of their ancestral estates, and the king&rsquo;s relatives were treated like slaves. Exasperated by these insults, and dreading still worse, since they were now reduced to the condition of a province, they flew to arms.&rdquo;
+        </blockquote>
+        <p class="text-sm text-gray-500"><strong>Historian&rsquo;s note:</strong> Tacitus uses the phrase &ldquo;as if they were the spoils of war&rdquo; to highlight the illegality and brutality of Roman actions &mdash; the Iceni had not been conquered by force but were a client people who had submitted voluntarily. His use of passive constructions (&ldquo;was scourged,&rdquo; &ldquo;were violated&rdquo;) emphasises the total powerlessness of Boudicca and the Iceni in the face of Roman official violence. The phrase &ldquo;treated like slaves&rdquo; is deeply significant: in Roman society, slaves had no legal personality.</p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="d"
+           data-feedback-correct="Correct! Prasutagus included the emperor in his will as a diplomatic gesture, hoping to protect his daughters&rsquo; claim to the other half of the kingdom. But Rome ignored his wishes entirely and seized everything."
+           data-feedback-incorrect="Not quite. The will was a strategic attempt to protect his family &mdash; by giving half to the emperor, Prasutagus hoped Rome would respect his daughters&rsquo; right to the other half. The strategy failed because Rome took everything.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p><strong>Gesture voting:</strong> &ldquo;Hold up A, B, C, or D with your fingers. On three &mdash; one, two, three &mdash; show me.&rdquo; If fewer than 80% show D, re-read the first paragraph together and ask: &ldquo;What was Prasutagus <em>trying</em> to achieve with his will?&rdquo;</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">Why did Prasutagus leave half his kingdom to the Emperor Nero in his will?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q3" class="mt-0.5"><span>He genuinely admired the emperor and wanted to honour him</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q3" class="mt-0.5"><span>Roman law required all client kings to leave their kingdoms to the emperor</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q3" class="mt-0.5"><span>He had no heirs and the emperor was his closest relative</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q3" class="mt-0.5"><span>He hoped that including the emperor would protect his daughters&rsquo; claim to the other half</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 4: THE HUMILIATION OF BOUDICCA
+       ========================================== -->
+  <section id="chunk-4" class="full-section grad-chunk4 relative">
+    <span class="section-number">04</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-blue-100 text-blue-700">Chunk 4 of 5</span>
+      <h2 class="section-heading">The Humiliation of Boudicca: Catalyst for Revolt</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Sensitive Content</p>
+        <p><strong>Important:</strong> This section describes violence including flogging and sexual assault. Approach with sensitivity. Frame the discussion around the <em>political significance</em> of these acts rather than dwelling on graphic details.</p>
+        <p class="mt-2"><strong>I Do:</strong> Model the analysis: &ldquo;These were not random acts of cruelty. They were <em>calculated political acts</em> designed to destroy the authority of the Iceni ruling family. Flogging a queen publicly said: &lsquo;You have no status. You are nothing.&rsquo;&rdquo;</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          The mistreatment of Boudicca and her daughters was not simply a personal outrage &mdash; it was a <strong>calculated public humiliation</strong> of the entire Iceni leadership, designed to demonstrate that Rome recognised no obligations whatsoever to its former client people.
+        </p>
+        <p>
+          <strong>Flogging (scourging)</strong> was a Roman punishment administered to criminals and slaves. To flog a queen &mdash; a free woman of royal status &mdash; was to publicly deny her humanity and status. The assault on her daughters was an act of sexual violence that, in the <strong>honour-culture of Celtic society</strong>, represented an attack on the entire tribe&rsquo;s dignity and capacity to protect its own. These acts were not merely criminal &mdash; they were precisely calculated to destroy the political and social authority of the Iceni ruling family.
+        </p>
+      </div>
+
+      <!-- Primary Source: Cassius Dio -->
+      <div class="key-concept mt-8">
+        <p class="font-bold text-navy mb-1">Primary Source</p>
+        <p class="text-sm text-gray-500 mb-3"><strong>Provenance:</strong> Cassius Dio, <em>Roman History</em>, Book LXII, Chapter 2. Written c. AD 220, approximately 160 years after the events. Dio was a Greek Roman senator and historian who drew on earlier sources, possibly including Tacitus.</p>
+        <blockquote class="border-l-4 border-burgundy/30 pl-5 italic text-gray-600 my-4 text-[1.02rem] leading-relaxed">
+          &ldquo;While these events were occurring, Boudicca, a Briton woman of the royal family and possessed of greater intelligence than often belongs to women, took on her leadership&hellip; She was very tall in stature, in appearance most terrifying, in the glance of her eye most fierce, and her voice was harsh; a great mass of the tawniest hair fell to her hips; around her neck was a large golden necklace; and she wore a tunic of diverse colours over which a thick mantle was fastened with a brooch.&rdquo;
+        </blockquote>
+        <p class="text-sm text-gray-500"><strong>Historian&rsquo;s note:</strong> Dio&rsquo;s physical description of Boudicca is vivid and dramatic &mdash; but it should be read as a <em>literary construction</em> rather than a factual portrait. His comment that she possessed &ldquo;greater intelligence than often belongs to women&rdquo; reveals Roman gender assumptions: women were generally considered intellectually inferior, so Boudicca must be exceptional to explain her leadership. The description of her size, fierce eyes, harsh voice, and flowing hair conforms to Roman literary stereotypes of &ldquo;barbarian&rdquo; leaders.</p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="a"
+           data-feedback-correct="Correct! The public flogging of Boudicca was a calculated political act &mdash; it was designed to destroy the authority and status of the entire Iceni ruling family, not just punish Boudicca personally."
+           data-feedback-incorrect="Not quite. The key point is that this was a deliberate political act. In both Roman and Celtic culture, publicly flogging a queen was a way of saying: &lsquo;You and your people have no rights, no status, no power.&rsquo;">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">Why was the public flogging of Boudicca significant beyond being an act of personal violence?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q4" class="mt-0.5"><span>It was a calculated political act designed to destroy the authority of the entire Iceni ruling family</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q4" class="mt-0.5"><span>It was a standard Roman punishment for all conquered peoples and had no special significance</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q4" class="mt-0.5"><span>It was carried out by a rogue soldier acting without orders from Roman officials</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q4" class="mt-0.5"><span>It was Boudicca&rsquo;s punishment for refusing to pay Roman taxes</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+
+      <!-- Interactive OVPRL Tool -->
+      <div class="ovprl-tool">
+        <h3 class="font-serif text-xl font-bold text-navy mb-1">Try It: Analyse the Tacitus Source (Annals 14.31)</h3>
+        <p class="text-sm text-gray-500 mb-5">Complete each field using the Tacitus passage about Prasutagus&rsquo;s death and its aftermath. Use the hint button if you need guidance.</p>
+
+        <div class="ovprl-field">
+          <label for="ovprl-4-o"><span class="text-burgundy font-extrabold">O &mdash; Origin:</span> Who created this? When? Where?</label>
+          <textarea id="ovprl-4-o" placeholder="Who wrote this source? When? What type of source is it?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Written by Tacitus, a Roman senator and historian, in his work <em>Annals</em>, Book XIV, Chapter 31, c. AD 115&ndash;117 &mdash; approximately 57 years after the events. Tacitus drew on family connections (his father-in-law Agricola served in Britain) and official Roman records.</div>
+        </div>
+        <div class="ovprl-field">
+          <label for="ovprl-4-v"><span class="text-burgundy font-extrabold">V &mdash; Value:</span> What useful information does it provide?</label>
+          <textarea id="ovprl-4-v" placeholder="What can we learn from this source?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Provides the most detailed ancient account of the events following Prasutagus&rsquo;s death, including the seizure of Iceni lands, the flogging of Boudicca, the assault on her daughters, and the enslavement of Iceni nobles. Valuable for understanding Roman justifications and the sequence of events leading to revolt.</div>
+        </div>
+        <div class="ovprl-field">
+          <label for="ovprl-4-p"><span class="text-burgundy font-extrabold">P &mdash; Purpose:</span> Why was this created?</label>
+          <textarea id="ovprl-4-p" placeholder="Why did the author write this?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Tacitus wrote to record Roman history and to provide moral commentary on Roman governance. His sympathetic portrayal of Boudicca&rsquo;s suffering serves to criticise corrupt Roman officials (like Catus Decianus) and highlight how Roman greed and brutality provoked unnecessary conflict.</div>
+        </div>
+        <div class="ovprl-field">
+          <label for="ovprl-4-r"><span class="text-burgundy font-extrabold">R &mdash; Reliability:</span> How trustworthy is this?</label>
+          <textarea id="ovprl-4-r" placeholder="Can we trust this source?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Partially reliable: Tacitus had access to official records and family connections to Britain, but he was writing 57 years after the events and had a moralising purpose. His account is shaped by Roman literary conventions and his desire to critique imperial governance. He presents only the Roman perspective &mdash; the Iceni voice is absent.</div>
+        </div>
+        <div class="ovprl-field">
+          <label for="ovprl-4-l"><span class="text-burgundy font-extrabold">L &mdash; Limitations:</span> What does it <em>not</em> tell us?</label>
+          <textarea id="ovprl-4-l" placeholder="What is missing from this source?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Does not give us the Iceni or Celtic perspective on these events. Does not tell us exactly what Prasutagus&rsquo;s will said (only Tacitus&rsquo;s summary). Does not explain the full political context within Rome that may have influenced decisions about the Iceni kingdom. The 57-year gap between events and writing means details may have been lost or distorted.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 5: FINANCIAL EXPLOITATION
+       ========================================== -->
+  <section id="chunk-5" class="full-section grad-chunk5 relative">
+    <span class="section-number">05</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-rose-100 text-rose-700">Chunk 5 of 5</span>
+      <h2 class="section-heading">Financial Exploitation and the Road to Revolt</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Independent Reading (&lsquo;You Do&rsquo;)</p>
+        <p>Students read this section independently. After reading, use <strong>think-pair-share</strong>: &ldquo;Turn to your partner and explain how financial exploitation combined with physical humiliation to make revolt inevitable.&rdquo; (90 seconds). Cold call 2&ndash;3 pairs.</p>
+        <p class="mt-2"><strong>Key point:</strong> Even the philosopher Seneca was involved in exploiting British nobles through loans. Ask: &ldquo;What does this tell us about how widespread the exploitation was?&rdquo;</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          One of the less immediately dramatic but structurally important causes of the revolt was the systematic <strong>financial exploitation</strong> of Iceni nobles. Tacitus mentions that the philosopher <strong>Seneca</strong> had extended substantial loans to British nobles &mdash; possibly as much as <strong>40 million sestertii</strong> &mdash; and then suddenly called them in. This sudden demand for repayment, combined with the general pattern of Roman financial exploitation, created economic catastrophe for many noble families who had taken on debt to fund the display of status required under Roman cultural expectations.
+        </p>
+        <p>
+          The procurator <strong>Catus Decianus</strong>, who oversaw Roman financial administration in Britain, pursued these debts aggressively and appears to have treated the death of Prasutagus as an opportunity for personal enrichment. Ancient sources indicate that he <strong>fled to Gaul</strong> when the revolt began &mdash; a telling sign that even he recognised his role in provoking it. He was later replaced by <strong>Gaius Julius Alpinus Classicianus</strong>, whose more conciliatory approach helped restore order after the revolt was suppressed.
+        </p>
+      </div>
+
+      <!-- Timeline: Road to Revolt -->
+      <h3 class="font-serif text-xl font-bold text-navy mt-10 mb-4">Timeline: The Road to Revolt</h3>
+      <div class="timeline reveal-stagger">
+        <div class="timeline-item">
+          <p class="timeline-date">AD 43</p>
+          <p class="timeline-desc">Roman invasion of Britain under Claudius. Iceni tribe initially avoid conquest through diplomatic settlement.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">AD 47</p>
+          <p class="timeline-desc">Prasutagus becomes client king of the Iceni after a brief revolt over weapons confiscation.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">AD 49</p>
+          <p class="timeline-desc">Veteran colony established at Camulodunum on land confiscated from the Trinovantes. Growing resentment.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">AD 60</p>
+          <p class="timeline-desc">Death of Prasutagus. His will is ignored. Roman officials seize Iceni lands and property.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">AD 60</p>
+          <p class="timeline-desc">Catus Decianus sends only 200 troops to Camulodunum. Boudicca is publicly flogged; her daughters are assaulted.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">AD 60/61</p>
+          <p class="timeline-desc">Boudiccan Revolt begins. Iceni joined by Trinovantes and other tribes. Camulodunum, Londinium, and Verulamium destroyed.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">AD 61</p>
+          <p class="timeline-desc">Final battle. Suetonius Paulinus defeats Boudicca. Boudicca dies (cause uncertain &mdash; poison, illness, or grief).</p>
+        </div>
+      </div>
+
+      <!-- Think & Analyse Box -->
+      <div class="key-concept mt-8">
+        <p class="font-bold text-navy mb-1">Think &amp; Analyse: Power, Law, and Betrayal</p>
+        <p class="text-gray-700 leading-relaxed mb-3">
+          Prasutagus attempted to protect his family by including the emperor in his will. Rome ignored this gesture and treated the Iceni as conquered people with no rights. <strong>To what extent does this episode reveal a fundamental dishonesty at the heart of the client-kingdom system?</strong> Could Prasutagus have done anything differently? Write a paragraph arguing whether the revolt was inevitable given Roman policy.
+        </p>
+        <p class="text-sm text-gray-500"><strong>Scaffold:</strong> Consider: What options did Prasutagus have while he was alive? What options did Boudicca have after his death? What does the Roman response tell us about how Rome understood its obligations to client peoples?</p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="b"
+           data-feedback-correct="Correct! Catus Decianus fled to Gaul when the revolt began, which strongly suggests that even he recognised his own role in provoking it through aggressive debt collection and financial exploitation."
+           data-feedback-incorrect="Not quite. The fact that Catus Decianus fled to Gaul is very revealing &mdash; he knew he was partly responsible for provoking the revolt through his greed and aggressive financial policies.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">What does the fact that Catus Decianus fled to Gaul when the revolt began tell us?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q5" class="mt-0.5"><span>He was a coward who always ran from danger</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q5" class="mt-0.5"><span>He recognised his own role in provoking the revolt through financial exploitation</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q5" class="mt-0.5"><span>He was recalled to Rome by the emperor to face punishment</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q5" class="mt-0.5"><span>He went to Gaul to gather reinforcements for the Roman army</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       INDEPENDENT PRACTICE: REVIEW QUESTIONS
+       ========================================== -->
+  <section id="practice" class="full-section grad-practice relative">
+    <span class="section-number">Q</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-green-100 text-green-700">Independent Practice</span>
+      <h2 class="section-heading">Review Questions</h2>
+      <p class="text-sm text-gray-500 mb-6">Choose the level that challenges you, or work through all three.</p>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Independent Practice (&lsquo;You Do&rsquo;)</p>
+        <p>Students should attempt these <strong>only after a high success rate</strong> on the CFU questions. Direct all students to Foundation first.</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> Students answer Foundation Q3 on a sticky note before leaving: &ldquo;Name the Roman official who oversaw the seizure of Iceni lands.&rdquo;</p>
+      </div>
+
+      <div class="tab-group">
+        <button class="tab-btn active" data-tab="foundation">Foundation</button>
+        <button class="tab-btn" data-tab="standard">Standard</button>
+        <button class="tab-btn" data-tab="extension">Extension</button>
+      </div>
+
+      <div class="tab-content active" id="foundation" data-tab="foundation">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Identify and describe</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>What was the name of Boudicca&rsquo;s husband, and what was his political relationship with Rome?</li>
+          <li>What did Prasutagus leave to his daughters and to Emperor Nero in his will?</li>
+          <li>Name the Roman official who oversaw the seizure of Iceni lands after Prasutagus&rsquo;s death.</li>
+        </ol>
+      </div>
+      <div class="tab-content" id="standard" data-tab="standard">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Analyse and explain</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Explain why the client-kingdom system was inherently disadvantageous for Celtic peoples like the Iceni, despite its apparent benefits.</li>
+          <li>Analyse the significance of flogging Boudicca in the context of both Roman and Celtic cultural values.</li>
+          <li>Using Tacitus and Cassius Dio as sources, assess the reliability of ancient accounts of Boudicca&rsquo;s humiliation. What are the key differences between their accounts?</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Sentence starters to help structure your response:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li>One reason this is significant is&hellip;</li>
+            <li>This source/evidence suggests that&hellip;</li>
+            <li>This can be explained by&hellip;</li>
+            <li>A key example of this is&hellip; which demonstrates&hellip;</li>
+          </ul>
+          <p class="mt-3 font-semibold text-sm mb-2">Paragraph frame:</p>
+          <p class="text-gray-600 italic">[Point] One important factor was&hellip; [Evidence] This is supported by&hellip; who states/shows that&hellip; [Explain] This evidence reveals that&hellip; because&hellip; [Link] Therefore, this demonstrates that&hellip;</p>
+        </div>
+      </div>
+      <div class="tab-content" id="extension" data-tab="extension">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Evaluate and debate</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Evaluate the extent to which the mistreatment of Boudicca was the primary cause of the revolt, as opposed to deeper structural grievances arising from Roman provincial policy.</li>
+          <li>Compare the perspectives of Tacitus and Cassius Dio on the events following Prasutagus&rsquo;s death. What do the differences between their accounts reveal about their respective purposes and biases?</li>
+          <li>Critically assess the claim that the Boudiccan revolt was &ldquo;inevitable&rdquo; by AD 60. What combination of factors &mdash; personal, political, economic, and cultural &mdash; made widespread revolt not merely likely but certain?</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Essay structure guide:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li><strong>Introduction:</strong> Define key terms, state your argument clearly</li>
+            <li><strong>Body paragraphs:</strong> Use PEEL &mdash; Point, Evidence, Explain, Link</li>
+            <li><strong>Conclusion:</strong> Restate your argument, synthesise (don&rsquo;t just repeat)</li>
+          </ul>
+          <p class="mt-2 text-gray-600">Evaluative starters: &ldquo;To a significant/limited extent&hellip;&rdquo; &ldquo;While X is important, Y was more significant because&hellip;&rdquo; &ldquo;The evidence suggests that&hellip; however&hellip;&rdquo;</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       KEY TERMS: FLASHCARD GLOSSARY
+       ========================================== -->
+  <section id="key-terms" class="full-section grad-terms relative">
+    <span class="section-number">A&ndash;Z</span>
+    <div class="section-inner">
+      <div class="flex items-end justify-between mb-6 reveal">
+        <div>
+          <span class="section-label bg-purple-100 text-purple-700">Key Terms</span>
+          <h2 class="section-heading mb-0">Glossary</h2>
+        </div>
+        <button class="glossary-view-toggle text-sm text-navy font-semibold hover:text-burgundy transition-colors cursor-pointer">
+          Switch to List View
+        </button>
+      </div>
+      <p class="text-sm text-gray-500 mb-6 reveal">Click each card to reveal its definition.</p>
+
+      <!-- Flashcards -->
+      <div class="flashcard-grid reveal-stagger">
+        <div class="flashcard" tabindex="0" role="button" aria-label="Flashcard: Client king">
+          <div class="flashcard-inner"><div class="flashcard-front">Client King</div><div class="flashcard-back">A local ruler recognised by Rome in exchange for loyalty, tribute, and cooperation. The system offered limited protection.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Procurator</div><div class="flashcard-back">A Roman financial administrator in a province. Catus Decianus was the procurator who mismanaged the Iceni situation.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Annexation</div><div class="flashcard-back">The formal takeover of a territory by a foreign power. Rome annexed Iceni land after Prasutagus&rsquo;s death.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Scourging</div><div class="flashcard-back">Flogging or whipping as a punishment. Applying it to Boudicca was a public act of humiliation and degradation.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Sestertius</div><div class="flashcard-back">A Roman coin; the standard unit of accounting for large sums in the early empire.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Will (Testament)</div><div class="flashcard-back">A legal document stating how a person&rsquo;s property should be distributed after death. Rome refused to honour Prasutagus&rsquo;s will.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Honour Culture</div><div class="flashcard-back">A social system in which status and identity depend significantly on public reputation and the ability to defend one&rsquo;s dignity.</div></div>
+        </div>
+      </div>
+
+      <!-- List View (hidden) -->
+      <div class="glossary-list hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+            <thead>
+              <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/4">Term</th>
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Definition</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white/70">
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Client king</td><td class="px-5 py-3 text-gray-600">A local ruler recognised by Rome in exchange for loyalty, tribute, and cooperation. The system offered limited protection.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Procurator</td><td class="px-5 py-3 text-gray-600">A Roman financial administrator in a province. Catus Decianus was the procurator who mismanaged the Iceni situation.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Annexation</td><td class="px-5 py-3 text-gray-600">The formal takeover of a territory by a foreign power. Rome annexed Iceni land after Prasutagus&rsquo;s death.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Scourging</td><td class="px-5 py-3 text-gray-600">Flogging or whipping as a punishment. Applying it to Boudicca was a public act of humiliation and degradation.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Sestertius</td><td class="px-5 py-3 text-gray-600">A Roman coin; the standard unit of accounting for large sums in the early empire.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Will (testament)</td><td class="px-5 py-3 text-gray-600">A legal document stating how a person&rsquo;s property should be distributed after death. Rome refused to honour Prasutagus&rsquo;s will.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Honour culture</td><td class="px-5 py-3 text-gray-600">A social system in which status and identity depend significantly on public reputation and the ability to defend one&rsquo;s dignity.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       REVIEW OF LEARNING
+       ========================================== -->
+  <section id="review" class="full-section grad-review relative">
+    <div class="section-inner reveal">
+      <span class="section-label bg-gold/20 text-amber-700">Review of Learning</span>
+      <h2 class="section-heading">How Did You Go?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6 text-[1.05rem]">
+        Return to the success criteria from the start of this lesson. Can you now tick off each one?
+        If any remain unticked, scroll back and review the relevant section.
+      </p>
+
+      <div class="space-y-3">
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">1</span>
+          <span class="text-gray-700">Explain the client-kingdom system and its terms, benefits, and limitations.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">2</span>
+          <span class="text-gray-700">Describe the political career and decisions of Prasutagus as client king of the Iceni.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">3</span>
+          <span class="text-gray-700">Analyse the significance of Prasutagus&rsquo;s will and Rome&rsquo;s decision to ignore it.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">4</span>
+          <span class="text-gray-700">Evaluate the mistreatment of Boudicca and her daughters as a catalyst for revolt.</span>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Review of Learning</p>
+        <p><strong>Self-assessment</strong> for each criterion: &ldquo;Thumbs up if confident, sideways if partly there, down if you need more help.&rdquo;</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> &ldquo;On a sticky note, explain in one or two sentences why the Boudiccan revolt happened. What was the single most important cause?&rdquo; Collect as students leave. This makes an excellent formative assessment to check whether students understand the multi-causal nature of the revolt.</p>
+      </div>
+
+      <!-- Exit Ticket -->
+      <div class="exit-ticket">
+        <h4>Exit Ticket</h4>
+        <label class="text-sm text-gray-600 block mb-1">One thing I learned today:</label>
+        <textarea placeholder="What was the most important thing you learned in this lesson?"></textarea>
+        <label class="text-sm text-gray-600 block mb-1">One question I still have:</label>
+        <textarea placeholder="What are you still unsure about or want to know more about?"></textarea>
+      </div>
+
+      <!-- Reflection -->
+      <div class="reflection-panel">
+        <h4>Self-Reflection</h4>
+        <p class="text-sm text-gray-600 mb-2">How confident do you feel about this lesson&rsquo;s content?</p>
+        <div class="confidence-scale">
+          <button class="confidence-btn">1<br><span class="text-[0.65rem]">Not yet</span></button>
+          <button class="confidence-btn">2<br><span class="text-[0.65rem]">Getting there</span></button>
+          <button class="confidence-btn">3<br><span class="text-[0.65rem]">Mostly</span></button>
+          <button class="confidence-btn">4<br><span class="text-[0.65rem]">Confident</span></button>
+          <button class="confidence-btn">5<br><span class="text-[0.65rem]">Mastered</span></button>
+        </div>
+        <label class="text-sm text-gray-600 block mt-3 mb-1">What do you want to revisit before the next lesson?</label>
+        <textarea class="reflection-text" placeholder="Any topics, terms, or skills you want to review?"></textarea>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       LESSON NAVIGATION
+       ========================================== -->
+  <section class="py-12 px-6" style="background: #fefcf9;">
+    <div class="max-w-3xl mx-auto lesson-nav-footer flex items-center justify-between">
+      <a href="lesson-3.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        Lesson 3
+      </a>
+      <span class="text-xs text-gray-300 tracking-wider uppercase">Lesson 4 of 16</span>
+      <span class="flex items-center gap-2 text-sm text-gray-300 font-medium cursor-not-allowed" title="Coming soon">
+        Lesson 5
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </span>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 text-center" style="background: linear-gradient(180deg, #fefcf9, #f5f3ed);">
+    <p class="text-sm text-gray-400 font-sans">
+      NSW Ancient History Stage 6 &middot; NESA Syllabus (2017) &middot; Case Study A
+    </p>
+    <p class="text-xs text-gray-300 mt-2 font-sans">Created by Cheryl Cutter</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

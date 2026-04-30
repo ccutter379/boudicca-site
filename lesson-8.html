@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 8: Celtic and Roman Military Tactics | Boudicca Interactive</title>
+
+  <!-- Meta -->
+  <meta name="description" content="Interactive NSW Ancient History Stage 6 resource — Boudicca case study with explicit teaching, CFU activities, source analysis, and teacher facilitation tools.">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': { DEFAULT: '#1a1a2e', mid: '#16213e', light: '#2a4d7a' },
+            'burgundy': { DEFAULT: '#8b2635', light: '#a83242' },
+            'gold': { DEFAULT: '#c9a84c', light: '#e8d292' },
+          },
+          fontFamily: {
+            'serif': ['Playfair Display', 'Georgia', 'serif'],
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans" style="background: #fefcf9;">
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress"></div>
+
+  <!-- Navigation (Glassmorphism) -->
+  <nav class="site-nav">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-5">
+        <a href="index.html" class="text-white font-serif text-xl font-bold tracking-wide hover:text-gold transition-colors">
+          Boudicca
+        </a>
+        <span class="text-white/20 hidden sm:inline">|</span>
+        <span class="text-white/40 text-xs font-sans tracking-wider hidden sm:inline">Lesson 8 of 16</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <button class="teacher-toggle" aria-label="Toggle teacher facilitation notes">Teacher Mode</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="lesson-hero grad-hero" style="background: linear-gradient(165deg, rgba(26,26,46,0.92) 0%, rgba(22,33,62,0.88) 50%, rgba(26,39,68,0.92) 100%), url('images/celtic-vs-roman-tactics.png') center/cover no-repeat;">
+    <div class="relative z-10 max-w-3xl mx-auto reveal">
+      <span class="chapter-badge">Chapter 2 &middot; Sources and the Revolt</span>
+      <p class="text-white/40 font-sans text-sm tracking-wider uppercase mb-3">Lesson 8</p>
+      <h1 class="hero-title font-serif text-white">Celtic and Roman<br>Military Tactics</h1>
+      <p class="hero-desc">
+        What were the key differences between Celtic and Roman military organisation, tactics, and technology &mdash;
+        and how did these differences shape the course and outcome of the revolt?
+      </p>
+      <p class="reading-time"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> ~27 min</p>
+      <!-- Syllabus Outcomes -->
+      <details class="mt-8">
+        <summary class="text-white/25 text-xs font-sans cursor-pointer hover:text-white/40 transition-colors uppercase tracking-[0.15em]">
+          NESA Syllabus Outcomes
+        </summary>
+        <div class="mt-3 text-white/35 text-xs font-sans space-y-1 leading-relaxed">
+          <p><strong class="text-white/50">AH11-1:</strong> Describes the nature of continuity and change in the ancient world</p>
+          <p><strong class="text-white/50">AH11-2:</strong> Proposes ideas about the varying causes and effects of events and developments</p>
+          <p><strong class="text-white/50">AH11-6:</strong> Analyses and interprets different types of sources for evidence to support an historical account or argument</p>
+        </div>
+      </details>
+    </div>
+    <!-- Decorative number -->
+    <div class="absolute bottom-6 right-8 font-serif text-white/[0.03] font-extrabold pointer-events-none select-none hidden md:block" style="font-size: 14rem; line-height: 1;">08</div>
+  </section>
+
+
+  <!-- ==========================================
+       LEARNING INTENTION & SUCCESS CRITERIA
+       ========================================== -->
+  <section id="lisc" class="full-section grad-lisc">
+    <div class="section-inner reveal">
+      <span class="section-label bg-navy/[0.07] text-navy">Learning Intention</span>
+      <h2 class="section-heading">What You&rsquo;ll Learn</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-8">
+        To understand the key differences between Celtic and Roman military organisation, tactics, and technology &mdash; and to explain how these differences shaped the course and outcome of the revolt.
+      </p>
+
+      <div>
+        <h3 class="font-sans text-xs font-bold uppercase tracking-[0.12em] text-gray-400 mb-2">Success Criteria</h3>
+        <p class="sc-progress-text text-xs text-gray-400 mb-1">0 of 4 criteria met</p>
+        <div class="sc-progress"><div class="sc-progress-bar"></div></div>
+        <p class="text-sm text-gray-500 mb-4">By the end of this lesson, I can:</p>
+        <div class="space-y-1">
+          <div class="sc-item"><input type="checkbox" id="sc1"><label for="sc1">Describe the key features of Celtic warrior culture and tactics.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc2"><label for="sc2">Explain the organisation, training, and equipment of the Roman legion.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc3"><label for="sc3">Analyse how Celtic strengths contributed to early success in the revolt.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc4"><label for="sc4">Evaluate why Roman military advantages ultimately proved decisive.</label></div>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Sharing LISC</p>
+        <p>Display the learning intention and success criteria on the board. Read them aloud and ask students to identify the <em>key verbs</em> (describe, explain, analyse, evaluate). This helps students understand that today&rsquo;s lesson progresses through increasingly complex thinking. Check understanding: <strong>&ldquo;Can someone put the learning intention into their own words?&rdquo;</strong> (cold call).</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       ACTIVATING PRIOR KNOWLEDGE
+       ========================================== -->
+  <section id="prior-knowledge" class="full-section grad-prior relative">
+    <span class="section-number">?</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-white/50 text-amber-700">Before We Begin</span>
+      <h2 class="section-heading">What Do You Already Know?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        In previous lessons, we explored the causes of the Boudiccan revolt, including the treatment of the Iceni and the role of Roman provincial administration. Today we examine the military dimension &mdash; how the two sides actually fought.
+      </p>
+
+      <div class="mb-6">
+        <p class="font-sans text-sm font-semibold text-gray-700 mb-2">How much do you already know about Roman military tactics?</p>
+        <div class="poll-options">
+          <button class="poll-btn">Nothing yet</button>
+          <button class="poll-btn">Heard some terms</button>
+          <button class="poll-btn">Know some details</button>
+          <button class="poll-btn">Know a lot</button>
+        </div>
+      </div>
+
+      <div>
+        <label class="font-sans text-sm font-semibold text-gray-700 block mb-2" for="prior-text">
+          Retrieval practice: Write down two things you remember about the causes of the Boudiccan revolt from our previous lessons.
+        </label>
+        <textarea id="prior-text" class="w-full border border-black/[0.08] rounded-2xl p-4 text-sm font-sans leading-relaxed resize-y bg-white/60 backdrop-blur min-h-[90px] focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-all"
+                  placeholder="For example: What happened to Boudicca and her daughters? Who was Prasutagus? Why were the Trinovantes angry?"></textarea>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Activating Prior Knowledge</p>
+        <p>Use <strong>cold call</strong> to ask 3&ndash;4 students what they wrote. This retrieval practice strengthens memory of previous content and connects it to today&rsquo;s military focus. Accept all responses without correction &mdash; the purpose is retrieval, not assessment.</p>
+        <p class="mt-2"><strong>Retrieval check:</strong> &ldquo;True or false: Boudicca&rsquo;s revolt had only one cause. Thumbs up for true, down for false.&rdquo; (Answer: false &mdash; there were multiple causes, both immediate triggers and underlying structural grievances.) If fewer than 80% correct, briefly distinguish immediate from underlying causes before proceeding.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 1: CELTIC WARRIOR CULTURE
+       ========================================== -->
+  <section id="chunk-1" class="full-section grad-chunk1 relative">
+    <span class="section-number">01</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-burgundy/10 text-burgundy">Chunk 1 of 4</span>
+      <h2 class="section-heading">Celtic Warrior Culture</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling (&lsquo;I Do&rsquo;)</p>
+        <p><strong>Read the first paragraph aloud</strong> and model the thinking: &ldquo;I notice that Celtic warriors fought for personal glory and honour &mdash; this is very different from a modern professional army. This tells me their motivation was individual, not collective.&rdquo;</p>
+        <p class="mt-2">Pause after each key point to check understanding before continuing.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          For Celtic peoples, warfare was not simply a matter of military strategy &mdash; it was a central expression of <strong>identity, honour, and social status</strong>. Celtic warriors fought for personal glory, for their tribe&rsquo;s reputation, and for their chieftain&rsquo;s honour. Individual combat was prized: the practice of challenging an enemy champion to single combat before a battle &mdash; a feature described in Irish epic literature and mentioned in accounts of Celtic warfare &mdash; reflects the centrality of individual honour in the warrior ethos.
+        </p>
+        <p>
+          Celtic armies were not professional standing forces. They were <strong>tribal levies</strong> &mdash; warriors who assembled when called by their chieftain, brought their own weapons and horses, fought under the immediate command of tribal nobles, and dispersed when the campaign ended. This gave Celtic forces great capacity for rapid mobilisation and surprise, but it meant they had no capacity for sustained campaigns with complex logistics.
+        </p>
+      </div>
+
+      <!-- Celtic Strengths and Limitations Table -->
+      <h3 class="font-serif text-xl font-bold text-navy mt-8 mb-4">Celtic Tactical Strengths and Limitations</h3>
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Celtic Strengths</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Celtic Limitations</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white/70">
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 text-gray-600"><strong>Numbers:</strong> could assemble very large forces quickly.</td><td class="px-5 py-3 text-gray-600"><strong>No supply lines:</strong> depended on looting for food and equipment.</td></tr>
+            <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 text-gray-600"><strong>Speed:</strong> chariots and light cavalry allowed rapid movement.</td><td class="px-5 py-3 text-gray-600"><strong>No permanent camps:</strong> could not sustain sieges or long campaigns.</td></tr>
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 text-gray-600"><strong>Psychological warfare:</strong> battle cries, body paint, terrifying appearance designed to demoralise.</td><td class="px-5 py-3 text-gray-600"><strong>Inconsistent command:</strong> multiple tribal leaders without unified command structure.</td></tr>
+            <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 text-gray-600"><strong>Local knowledge:</strong> terrain, forest paths, and river crossings gave advantage in ambush.</td><td class="px-5 py-3 text-gray-600"><strong>Weapons:</strong> iron was available but equipment was less standardised than Roman arms.</td></tr>
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 text-gray-600"><strong>Motivation:</strong> fighting for land, family, and freedom &mdash; high morale.</td><td class="px-5 py-3 text-gray-600"><strong>Tactics:</strong> effective in the charge, but without formations, vulnerable to disciplined counter-attack.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="c"
+           data-feedback-correct="Correct! Celtic armies were tribal levies &mdash; warriors who assembled when called by their chieftain, brought their own weapons, and dispersed when the campaign ended. This is fundamentally different from a professional standing army."
+           data-feedback-incorrect="Not quite. Celtic armies were not permanent or professional forces. They were tribal levies assembled on a temporary basis, which gave them speed but limited their ability to sustain long campaigns.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p>Use <strong>gesture voting</strong>: &ldquo;Hold up A, B, C, or D with your fingers. On three &mdash; one, two, three &mdash; show me.&rdquo; If fewer than 80% show C, re-teach using the table above.</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">How were Celtic armies primarily organised?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q1" class="mt-0.5"><span>As a professional standing army with career soldiers serving for decades</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q1" class="mt-0.5"><span>As mercenary forces recruited from across Europe for specific campaigns</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q1" class="mt-0.5"><span>As tribal levies assembled by chieftains, who dispersed when the campaign ended</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q1" class="mt-0.5"><span>As permanent garrisons stationed in fortified towns across Britain</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 2: THE CELTIC WAR CHARIOT
+       ========================================== -->
+  <section id="chunk-2" class="full-section grad-chunk2 relative">
+    <span class="section-number">02</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-purple-100 text-purple-700">Chunk 2 of 4</span>
+      <h2 class="section-heading">The Celtic War Chariot</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Guided Reading (&lsquo;We Do&rsquo;)</p>
+        <p>Have students read this section silently. Then use <strong>think-pair-share</strong>: &ldquo;Turn to your partner and discuss: What made the chariot effective, and what were its weaknesses?&rdquo; (60 seconds). Cold call 2&ndash;3 pairs to share.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          A distinctive and uniquely British feature of Celtic warfare was the <strong>war chariot</strong>. Julius Caesar was so struck by it during his 55 BC expedition that he devoted considerable space in his account to describing chariot tactics. The Celtic war chariot was a light, two-wheeled vehicle drawn by two ponies, driven by a skilled charioteer who provided the warrior with mobility in battle.
+        </p>
+        <p>
+          The chariot was used to carry warriors rapidly along the battle line, creating confusion and fear in enemy formations. Warriors would drive along the enemy line, hurling javelins, then dismount to fight on foot, with the charioteer withdrawing to wait at the edge of the battle &mdash; ready to rescue the warrior or allow a rapid retreat if needed. Caesar described how British charioteers could run along the chariot pole and stand on the yoke while in full gallop &mdash; a feat requiring extraordinary skill and training.
+        </p>
+        <p>
+          Chariots were effective against unprepared or surprised opponents and in open terrain where their speed could be fully exploited. Against disciplined Roman formations in restricted terrain, however, their advantages were neutralised. At the final battle, where Suetonius selected a narrow defile with forests on either side, Celtic chariots had nowhere to manoeuvre and became a liability rather than an asset.
+        </p>
+      </div>
+
+      <!-- Primary Source: Caesar on Chariot Tactics -->
+      <div class="source-box">
+        <p class="provenance">
+          <strong>Primary Source:</strong> Julius Caesar, <em>De Bello Gallico</em>, Book IV, Chapter 33. Written c. 52 BC. Caesar describes Celtic chariot tactics during his 55 BC expedition, the earliest detailed account of this distinctively British form of warfare.
+        </p>
+        <blockquote>
+          &ldquo;In chariot fighting the Britons begin by driving all over the field hurling javelins, and generally the terror inspired by the horses and the noise of the wheels is sufficient to throw their opponents&rsquo; ranks into disorder. Then, after making their way between the squadrons of their own cavalry, they jump down from the chariots and engage on foot. In the meantime their charioteers retire a short distance from the battle and place the chariots in such a position that their masters, if hard pressed by numbers, have an easy means of retreat to their own lines. Thus they combine the mobility of cavalry with the staying-power of infantry.&rdquo;
+        </blockquote>
+        <div class="historian-note">
+          <strong>Historian&rsquo;s note:</strong> Caesar&rsquo;s account is remarkably objective for a Roman general describing an enemy. He clearly admired the skill involved and understood the tactical logic. However, he notes that chariots require space and open terrain to be effective &mdash; a tactical limitation that Suetonius exploited in the final battle of AD 61 by selecting terrain that denied Boudicca&rsquo;s forces room to manoeuvre.
+        </div>
+      </div>
+
+      <!-- Featured image: Tactical formations -->
+      <figure class="featured-image">
+        <img src="images/celtic-vs-roman-tactics.png" alt="Diagram comparing Celtic and Roman tactical formations, showing the contrast between the Celtic charge and Roman disciplined formations." loading="lazy">
+        <figcaption class="caption"><strong>Celtic vs Roman Tactics:</strong> A comparison of Celtic warrior charge tactics and Roman disciplined formations. The differences in organisation and discipline shaped the outcome of every engagement during the revolt.</figcaption>
+      </figure>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="b"
+           data-feedback-correct="Correct! Caesar describes a sophisticated two-phase tactic: chariots create confusion with speed and javelins, then warriors dismount to fight on foot while charioteers stand ready for extraction. This combined the mobility of cavalry with the staying power of infantry."
+           data-feedback-incorrect="Not quite. Look again at Caesar's description. The chariot was used in two phases &mdash; first to create disorder by driving along the line throwing javelins, then the warrior would dismount to fight on foot while the charioteer waited nearby for extraction.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">According to Caesar&rsquo;s account, how did Celtic warriors use their chariots in battle?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q2" class="mt-0.5"><span>They charged directly into enemy lines and fought from the chariot throughout the battle</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q2" class="mt-0.5"><span>They drove along the line hurling javelins, then dismounted to fight on foot while charioteers waited for extraction</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q2" class="mt-0.5"><span>They used chariots only for transporting warriors to and from the battlefield</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q2" class="mt-0.5"><span>They equipped chariots with scythed blades on the wheels to cut through infantry formations</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 3: ROMAN MILITARY ORGANISATION
+       ========================================== -->
+  <section id="chunk-3" class="full-section grad-chunk3 relative">
+    <span class="section-number">03</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-amber-100 text-amber-700">Chunk 3 of 4</span>
+      <h2 class="section-heading">Roman Military Organisation</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling (&lsquo;I Do&rsquo;)</p>
+        <p><strong>Model a comparison</strong> using the previous section: &ldquo;Notice how different the Roman approach is from the Celtic one we just studied. Celtic warriors fight for personal glory &mdash; Roman soldiers fight as part of a disciplined machine. Celtic armies assemble and disperse &mdash; Roman soldiers serve for twenty-five years.&rdquo;</p>
+        <p class="mt-2">Have students follow along in the text as you read the first two paragraphs aloud.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          By contrast, the Roman army was one of the most professionally organised military forces in the ancient world. The basic unit was the <strong>legion</strong> &mdash; a combined-arms force of approximately 5,000 heavily armed infantry (legionaries), organised into ten cohorts of six centuries each. Each century (roughly 80 men) was led by a <strong>centurion</strong> &mdash; an experienced professional soldier who was the backbone of Roman military effectiveness.
+        </p>
+        <p>
+          Legionaries were career soldiers who served for <strong>twenty-five years</strong>. They drilled constantly, maintained their equipment to strict standards, and were trained to operate in coordinated formations under the direction of officers. Unlike Celtic warriors, who fought for personal glory and tribal honour, Roman soldiers were bound by oath to the emperor, subject to strict military discipline, and motivated by pay, career progression, and the promise of land on retirement.
+        </p>
+      </div>
+
+      <!-- Roman Formations and Tactics Table -->
+      <h3 class="font-serif text-xl font-bold text-navy mt-8 mb-4">Roman Formations and Tactics</h3>
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/4">Formation</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Description</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white/70">
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Testudo (Tortoise)</td><td class="px-5 py-3 text-gray-600">Legionaries locked shields above and around them to form a protective shell against missile fire. Used primarily for approaching fortifications under arrow or javelin fire.</td></tr>
+            <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Triplex Acies</td><td class="px-5 py-3 text-gray-600">Three cohort lines &mdash; the standard Imperial formation for absorbing a charge before a disciplined counterattack.</td></tr>
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Wedge (Cuneus)</td><td class="px-5 py-3 text-gray-600">A spearhead formation used to pierce enemy lines at a chosen point, creating a breach through which cavalry or reserves could be committed.</td></tr>
+            <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Pilum Volley</td><td class="px-5 py-3 text-gray-600">Roman legionaries were trained to throw two heavy javelins (pila) simultaneously as the enemy closed within twenty metres. The pilum was designed to penetrate shields and then bend, making it impossible to throw back and dragging down the enemy&rsquo;s shield arm.</td></tr>
+            <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Gladius Combat</td><td class="px-5 py-3 text-gray-600">After the volley, legionaries drew their short swords (gladii) and fought in close formation. The shield boss was used to punch the opponent off balance before delivering a short thrust &mdash; maximising effectiveness in tight formation fighting.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Featured image: Testudo on Trajan's Column -->
+      <figure class="featured-image">
+        <img src="images/testudo-trajans-column.png" alt="Annotated relief from Trajan's Column showing the testudo (tortoise) formation, with legionaries interlocking their shields to form a protective shell." loading="lazy">
+        <figcaption class="caption"><strong>The Testudo Formation on Trajan&rsquo;s Column:</strong> An annotated relief showing Roman legionaries interlocking their shields to create a protective &ldquo;tortoise&rdquo; formation. This disciplined, coordinated tactic is a powerful example of how Roman military training translated into battlefield effectiveness.</figcaption>
+      </figure>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="d"
+           data-feedback-correct="Correct! The pilum was ingeniously designed to penetrate an enemy shield and then bend on impact. This meant the enemy could not throw it back, and the bent javelin dragging on the shield forced the warrior to discard it, leaving them exposed."
+           data-feedback-incorrect="Not quite. The key design feature of the pilum was that it would bend after impact. This meant it could not be thrown back at the Romans, and the bent javelin stuck in a shield would drag it down, forcing the enemy to abandon their shield.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p>Use <strong>cold call</strong>. If they answer incorrectly, ask: &ldquo;Who can explain why the Romans designed their javelins to bend?&rdquo; Aim for 80%+ success before moving on.</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">What was the tactical purpose of the pilum&rsquo;s design to bend on impact?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q3" class="mt-0.5"><span>It made the pilum lighter and easier to throw over longer distances</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q3" class="mt-0.5"><span>It allowed the pilum to curve around shields and strike the warrior behind</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q3" class="mt-0.5"><span>It made the pilum more aerodynamic and accurate in flight</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q3" class="mt-0.5"><span>It prevented the enemy from throwing it back and forced them to discard their weighed-down shields</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+
+      <div class="sequence-activity" data-correct="pilum,gladius,wedge,pursuit">
+        <h3>Put the Steps in Order</h3>
+        <p class="text-gray-700 font-medium mb-4">Drag (or click) to arrange the steps of a Roman battle engagement in the correct order:</p>
+        <div class="sequence-items">
+          <div class="sequence-item" data-id="wedge">Wedge formation to break enemy line</div>
+          <div class="sequence-item" data-id="pursuit">Pursuit of fleeing enemy</div>
+          <div class="sequence-item" data-id="pilum">Pilum volley at close range</div>
+          <div class="sequence-item" data-id="gladius">Gladius combat in close quarters</div>
+        </div>
+        <button class="check-btn" style="margin-top:1rem">Check Order</button>
+        <div class="cfu-feedback" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 4: ROMAN LOGISTICAL SUPERIORITY
+       ========================================== -->
+  <section id="chunk-4" class="full-section grad-chunk4 relative">
+    <span class="section-number">04</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-blue-100 text-blue-700">Chunk 4 of 4</span>
+      <h2 class="section-heading">Roman Logistical Superiority</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Scaffolding (&lsquo;We Do&rsquo;)</p>
+        <p>This is the most analytical section. Use <strong>think-pair-share</strong>: Read the section together, then ask pairs to discuss: &ldquo;Why might logistics matter more than bravery in a long military campaign?&rdquo; (90 seconds). Cold call 2&ndash;3 pairs.</p>
+        <p class="mt-2">Draw a simple comparison on the board: <strong>Roman = fed, equipped, rested</strong> vs <strong>Celtic = looting, carrying, running out</strong>.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Perhaps more than any tactical advantage, the Romans&rsquo; most decisive military edge lay in <strong>logistics</strong>. A Roman army on campaign built a fortified camp (<em>castra</em>) every night &mdash; a rectangular fortification with ditches, ramparts, and gated towers that could be constructed in a few hours. Every camp followed a standard plan, so soldiers knew exactly where to go and what to do regardless of where they were. Supply wagons, medical facilities, engineers, and support staff accompanied every legion. Communication via a network of roads, messenger systems, and signal fires kept commanders informed across vast distances.
+        </p>
+        <p>
+          Boudicca&rsquo;s forces, by contrast, had <strong>no supply infrastructure at all</strong>. They carried what they could loot and ate what they could seize in conquered towns. When the revolt progressed from the initial successful attacks on undefended cities to a final confrontation with a prepared Roman military force, this logistical asymmetry became decisive. An army that is fed, equipped, and in good health will always outlast one that depends on momentum and looting to survive.
+        </p>
+      </div>
+
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Key Concept</p>
+        <p class="text-gray-700">
+          The contrast between Celtic and Roman approaches to logistics reflects a deeper difference between the two societies. Rome&rsquo;s capacity to sustain armies across vast distances was a product of its centralised state, taxation system, road network, and bureaucratic administration. Celtic Britain had none of these structures &mdash; not because it was inferior, but because it was organised on fundamentally different principles.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="a"
+           data-feedback-correct="Correct! Boudicca's forces had no supply lines or logistical infrastructure. They depended entirely on looting conquered towns for food and equipment. When they moved from attacking undefended towns to facing a prepared Roman force, this lack of sustained supply became the critical weakness."
+           data-feedback-incorrect="Not quite. While the Celtic warriors were brave and numerous, the decisive factor was logistics. Boudicca's army had no supply system &mdash; they depended on looting. When they faced a prepared Roman army, they could not sustain themselves.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">What was the most significant logistical weakness of Boudicca&rsquo;s forces?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q4" class="mt-0.5"><span>They had no supply lines and depended entirely on looting for food and equipment</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q4" class="mt-0.5"><span>They had too many soldiers and could not coordinate such a large force</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q4" class="mt-0.5"><span>They lacked iron weapons and had to fight with wooden tools</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q4" class="mt-0.5"><span>They had no horses and had to march everywhere on foot</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       INDEPENDENT PRACTICE: REVIEW QUESTIONS
+       ========================================== -->
+  <section id="practice" class="full-section grad-practice relative">
+    <span class="section-number">Q</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-green-100 text-green-700">Independent Practice</span>
+      <h2 class="section-heading">Review Questions</h2>
+      <p class="text-sm text-gray-500 mb-6">Choose the level that challenges you, or work through all three.</p>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Independent Practice (&lsquo;You Do&rsquo;)</p>
+        <p>Students should attempt these <strong>only after a high success rate</strong> on the CFU questions. Direct all students to Foundation first.</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> Students answer Foundation Q1 on a sticky note before leaving.</p>
+      </div>
+
+      <div class="tab-group">
+        <button class="tab-btn active" data-tab="foundation">Foundation</button>
+        <button class="tab-btn" data-tab="standard">Standard</button>
+        <button class="tab-btn" data-tab="extension">Extension</button>
+      </div>
+
+      <div class="tab-content active" id="foundation" data-tab="foundation">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Identify and describe</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Describe two key features of the Roman legion that made it an effective military force.</li>
+          <li>What was the testudo formation and when was it used?</li>
+          <li>Give two reasons why Celtic armies had difficulties sustaining long military campaigns.</li>
+        </ol>
+      </div>
+      <div class="tab-content" id="standard" data-tab="standard">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Analyse and explain</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Explain how the Celtic war chariot worked as a tactical weapon, and identify the conditions under which it was most and least effective.</li>
+          <li>Analyse why the differences in logistics between the Roman army and Boudicca&rsquo;s forces were ultimately decisive in the revolt.</li>
+          <li>Using Caesar&rsquo;s account of Celtic chariot tactics, assess its value as a source for understanding Boudicca&rsquo;s revolt.</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Sentence starters:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li>This source is valuable because&hellip;</li>
+            <li>However, a key limitation is&hellip;</li>
+            <li>The evidence suggests that&hellip;</li>
+            <li>This can be compared with&hellip; which shows&hellip;</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-content" id="extension" data-tab="extension">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Evaluate and debate</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Evaluate the claim that Roman military victory over Boudicca was inevitable due to the structural military advantages of Rome&rsquo;s professional army. What factors might have allowed Boudicca a different outcome?</li>
+          <li>Compare the military cultures of Rome and Celtic Britain. To what extent do these differences reflect deeper differences in the political organisation and social values of the two societies?</li>
+          <li>How does the contrast between Celtic and Roman approaches to warfare reflect broader differences in their respective societies&rsquo; approaches to power, authority, and collective organisation?</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Evaluative language:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li>&ldquo;To a significant/limited extent&hellip;&rdquo;</li>
+            <li>&ldquo;While X is important, Y was more significant because&hellip;&rdquo;</li>
+            <li>&ldquo;The most convincing interpretation is&hellip; because&hellip;&rdquo;</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       KEY TERMS: FLASHCARD GLOSSARY
+       ========================================== -->
+  <section id="key-terms" class="full-section grad-terms relative">
+    <span class="section-number">A&ndash;Z</span>
+    <div class="section-inner">
+      <div class="flex items-end justify-between mb-6 reveal">
+        <div>
+          <span class="section-label bg-purple-100 text-purple-700">Key Terms</span>
+          <h2 class="section-heading mb-0">Glossary</h2>
+        </div>
+        <button class="glossary-view-toggle text-sm text-navy font-semibold hover:text-burgundy transition-colors cursor-pointer">
+          Switch to List View
+        </button>
+      </div>
+      <p class="text-sm text-gray-500 mb-6 reveal">Click each card to reveal its definition.</p>
+
+      <!-- Flashcards -->
+      <div class="flashcard-grid reveal-stagger">
+        <div class="flashcard" tabindex="0" role="button" aria-label="Flashcard: Legion">
+          <div class="flashcard-inner"><div class="flashcard-front">Legion</div><div class="flashcard-back">The basic large unit of the Roman army, approximately 5,000 heavy infantry organised into ten cohorts.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Centurion</div><div class="flashcard-back">A professional officer commanding a century (80 men) within a Roman legion &mdash; the backbone of Roman military effectiveness.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Testudo</div><div class="flashcard-back">The &ldquo;tortoise&rdquo; formation: interlocked shields providing protection from missile fire.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Pilum</div><div class="flashcard-back">The Roman legionary&rsquo;s heavy javelin, designed to penetrate shields and then bend to prevent reuse.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Gladius</div><div class="flashcard-back">The Roman legionary&rsquo;s short sword, designed for close-quarters stabbing in tight formation.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Castra</div><div class="flashcard-back">A Roman military camp, built to a standard plan each night on campaign, providing security and logistical support.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">War Chariot</div><div class="flashcard-back">A light, two-wheeled vehicle used by Celtic warriors in Britain for rapid movement and psychological impact in battle.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Logistics</div><div class="flashcard-back">The organisation of military supply, including food, equipment, communication, and transport &mdash; the Romans&rsquo; crucial advantage.</div></div>
+        </div>
+      </div>
+
+      <!-- List View (hidden) -->
+      <div class="glossary-list hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+            <thead>
+              <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/4">Term</th>
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Definition</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white/70">
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Legion</td><td class="px-5 py-3 text-gray-600">The basic large unit of the Roman army, approximately 5,000 heavy infantry organised into ten cohorts.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Centurion</td><td class="px-5 py-3 text-gray-600">A professional officer commanding a century (80 men) within a Roman legion &mdash; the backbone of Roman military effectiveness.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Testudo</td><td class="px-5 py-3 text-gray-600">The &ldquo;tortoise&rdquo; formation: interlocked shields providing protection from missile fire.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Pilum</td><td class="px-5 py-3 text-gray-600">The Roman legionary&rsquo;s heavy javelin, designed to penetrate shields and then bend to prevent reuse.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Gladius</td><td class="px-5 py-3 text-gray-600">The Roman legionary&rsquo;s short sword, designed for close-quarters stabbing in tight formation.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Castra</td><td class="px-5 py-3 text-gray-600">A Roman military camp, built to a standard plan each night on campaign, providing security and logistical support.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">War chariot</td><td class="px-5 py-3 text-gray-600">A light, two-wheeled vehicle used by Celtic warriors in Britain for rapid movement and psychological impact in battle.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Logistics</td><td class="px-5 py-3 text-gray-600">The organisation of military supply, including food, equipment, communication, and transport &mdash; the Romans&rsquo; crucial advantage.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       REVIEW OF LEARNING
+       ========================================== -->
+  <section id="review" class="full-section grad-review relative">
+    <div class="section-inner reveal">
+      <span class="section-label bg-gold/20 text-amber-700">Review of Learning</span>
+      <h2 class="section-heading">How Did You Go?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6 text-[1.05rem]">
+        Return to the success criteria from the start of this lesson. Can you now tick off each one?
+        If any remain unticked, scroll back and review the relevant section.
+      </p>
+
+      <div class="space-y-3">
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">1</span>
+          <span class="text-gray-700">Describe the key features of Celtic warrior culture and tactics.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">2</span>
+          <span class="text-gray-700">Explain the organisation, training, and equipment of the Roman legion.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">3</span>
+          <span class="text-gray-700">Analyse how Celtic strengths contributed to early success in the revolt.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">4</span>
+          <span class="text-gray-700">Evaluate why Roman military advantages ultimately proved decisive.</span>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Review of Learning</p>
+        <p><strong>Self-assessment</strong> for each criterion: &ldquo;Thumbs up if confident, sideways if partly there, down if you need more help.&rdquo;</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> &ldquo;On a sticky note, write one reason why Roman logistics were more important than Roman bravery in defeating Boudicca.&rdquo; Collect as students leave.</p>
+      </div>
+
+      <!-- Exit Ticket -->
+      <div class="exit-ticket">
+        <h4>Exit Ticket</h4>
+        <label class="text-sm text-gray-600 block mb-1">One thing I learned today:</label>
+        <textarea placeholder="What was the most important thing you learned in this lesson?"></textarea>
+        <label class="text-sm text-gray-600 block mb-1">One question I still have:</label>
+        <textarea placeholder="What are you still unsure about or want to know more about?"></textarea>
+      </div>
+
+      <!-- Reflection -->
+      <div class="reflection-panel">
+        <h4>Self-Reflection</h4>
+        <p class="text-sm text-gray-600 mb-2">How confident do you feel about this lesson&rsquo;s content?</p>
+        <div class="confidence-scale">
+          <button class="confidence-btn">1<br><span class="text-[0.65rem]">Not yet</span></button>
+          <button class="confidence-btn">2<br><span class="text-[0.65rem]">Getting there</span></button>
+          <button class="confidence-btn">3<br><span class="text-[0.65rem]">Mostly</span></button>
+          <button class="confidence-btn">4<br><span class="text-[0.65rem]">Confident</span></button>
+          <button class="confidence-btn">5<br><span class="text-[0.65rem]">Mastered</span></button>
+        </div>
+        <label class="text-sm text-gray-600 block mt-3 mb-1">What do you want to revisit before the next lesson?</label>
+        <textarea class="reflection-text" placeholder="Any topics, terms, or skills you want to review?"></textarea>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       LESSON NAVIGATION
+       ========================================== -->
+  <section class="py-12 px-6" style="background: #fefcf9;">
+    <div class="max-w-3xl mx-auto lesson-nav-footer flex items-center justify-between">
+      <a href="lesson-7.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        Lesson 7
+      </a>
+      <span class="text-xs text-gray-300 tracking-wider uppercase">Lesson 8 of 16</span>
+      <a href="lesson-9.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        Lesson 9
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 text-center" style="background: linear-gradient(180deg, #fefcf9, #f5f3ed);">
+    <p class="text-sm text-gray-400 font-sans">
+      NSW Ancient History Stage 6 &middot; NESA Syllabus (2017) &middot; Case Study A
+    </p>
+    <p class="text-xs text-gray-300 mt-2 font-sans">Created by Cheryl Cutter</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

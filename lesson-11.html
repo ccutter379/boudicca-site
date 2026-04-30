@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 11: The Final Battle | Boudicca Interactive</title>
+
+  <!-- Meta -->
+  <meta name="description" content="Interactive NSW Ancient History Stage 6 resource — Boudicca case study with explicit teaching, CFU activities, source analysis, and teacher facilitation tools.">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': { DEFAULT: '#1a1a2e', mid: '#16213e', light: '#2a4d7a' },
+            'burgundy': { DEFAULT: '#8b2635', light: '#a83242' },
+            'gold': { DEFAULT: '#c9a84c', light: '#e8d292' },
+          },
+          fontFamily: {
+            'serif': ['Playfair Display', 'Georgia', 'serif'],
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans" style="background: #fefcf9;">
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress"></div>
+
+  <!-- Navigation (Glassmorphism) -->
+  <nav class="site-nav">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-5">
+        <a href="index.html" class="text-white font-serif text-xl font-bold tracking-wide hover:text-gold transition-colors">
+          Boudicca
+        </a>
+        <span class="text-white/20 hidden sm:inline">|</span>
+        <span class="text-white/40 text-xs font-sans tracking-wider hidden sm:inline">Lesson 11 of 16</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <button class="teacher-toggle" aria-label="Toggle teacher facilitation notes">Teacher Mode</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="lesson-hero grad-hero" style="background: linear-gradient(165deg, rgba(26,26,46,0.92) 0%, rgba(22,33,62,0.88) 50%, rgba(26,39,68,0.92) 100%), url('images/battle-watling-street.png') center/cover no-repeat;">
+    <div class="relative z-10 max-w-3xl mx-auto reveal">
+      <span class="chapter-badge">Chapter 3 &middot; The Revolt and Aftermath</span>
+      <p class="text-white/40 font-sans text-sm tracking-wider uppercase mb-3">Lesson 11</p>
+      <h1 class="hero-title font-serif text-white">The Final<br>Battle</h1>
+      <p class="hero-desc">
+        How did ten thousand Roman soldiers defeat an army many times their number &mdash;
+        and what happened to Boudicca when the battle was lost?
+      </p>
+      <p class="reading-time"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> ~30 min</p>
+      <!-- Syllabus Outcomes -->
+      <details class="mt-8">
+        <summary class="text-white/25 text-xs font-sans cursor-pointer hover:text-white/40 transition-colors uppercase tracking-[0.15em]">
+          NESA Syllabus Outcomes
+        </summary>
+        <div class="mt-3 text-white/35 text-xs font-sans space-y-1 leading-relaxed">
+          <p><strong class="text-white/50">AH11-1:</strong> Describes the nature of continuity and change in the ancient world</p>
+          <p><strong class="text-white/50">AH11-3:</strong> Analyses the role of historical features, individuals and groups in shaping the past</p>
+          <p><strong class="text-white/50">AH11-6:</strong> Analyses and interprets different types of sources for evidence to support an historical account or argument</p>
+          <p><strong class="text-white/50">AH11-9:</strong> Communicates historical understanding, using historical knowledge, concepts and terms, in appropriate and well-structured forms</p>
+        </div>
+      </details>
+    </div>
+    <!-- Decorative number -->
+    <div class="absolute bottom-6 right-8 font-serif text-white/[0.03] font-extrabold pointer-events-none select-none hidden md:block" style="font-size: 14rem; line-height: 1;">11</div>
+  </section>
+
+
+  <!-- ==========================================
+       LEARNING INTENTION & SUCCESS CRITERIA
+       ========================================== -->
+  <section id="lisc" class="full-section grad-lisc">
+    <div class="section-inner reveal">
+      <span class="section-label bg-navy/[0.07] text-navy">Learning Intention</span>
+      <h2 class="section-heading">What You&rsquo;ll Learn</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-8">
+        To understand the circumstances, tactics, and outcome of the final battle between Boudicca&rsquo;s forces and the Roman army under Suetonius Paulinus, and to evaluate the evidence for the battle&rsquo;s location and Boudicca&rsquo;s fate.
+      </p>
+
+      <div>
+        <h3 class="font-sans text-xs font-bold uppercase tracking-[0.12em] text-gray-400 mb-2">Success Criteria</h3>
+        <p class="sc-progress-text text-xs text-gray-400 mb-1">0 of 4 criteria met</p>
+        <div class="sc-progress"><div class="sc-progress-bar"></div></div>
+        <p class="text-sm text-gray-500 mb-4">By the end of this lesson, I can:</p>
+        <div class="space-y-1">
+          <div class="sc-item"><input type="checkbox" id="sc1"><label for="sc1">Describe the tactical situation facing both sides before the final battle.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc2"><label for="sc2">Explain the military tactics used by Suetonius Paulinus and their effectiveness.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc3"><label for="sc3">Analyse the reasons for the Celtic defeat despite their numerical superiority.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc4"><label for="sc4">Evaluate the conflicting accounts of Boudicca&rsquo;s death.</label></div>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Sharing LISC</p>
+        <p>Display the learning intention and success criteria on the board. Read them aloud and ask students to identify the <em>key verbs</em> (describe, explain, analyse, evaluate). This helps students understand what level of thinking is expected. Check understanding: <strong>&ldquo;Can someone put the learning intention into their own words?&rdquo;</strong> (cold call).</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       ACTIVATING PRIOR KNOWLEDGE
+       ========================================== -->
+  <section id="prior-knowledge" class="full-section grad-prior relative">
+    <span class="section-number">?</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-white/50 text-amber-700">Before We Begin</span>
+      <h2 class="section-heading">What Do You Already Know?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        Before we study the final battle, let&rsquo;s recall what you already know about the revolt so far. Think back to the previous lessons on the campaign of destruction.
+      </p>
+
+      <div class="mb-6">
+        <p class="font-sans text-sm font-semibold text-gray-700 mb-2">How confident are you about the events leading up to the final battle?</p>
+        <div class="poll-options">
+          <button class="poll-btn">Not confident</button>
+          <button class="poll-btn">Somewhat confident</button>
+          <button class="poll-btn">Fairly confident</button>
+          <button class="poll-btn">Very confident</button>
+        </div>
+      </div>
+
+      <div>
+        <label class="font-sans text-sm font-semibold text-gray-700 block mb-2" for="prior-text">
+          Retrieval practice &mdash; answer these from memory before we begin:
+        </label>
+        <textarea id="prior-text" class="w-full border border-black/[0.08] rounded-2xl p-4 text-sm font-sans leading-relaxed resize-y bg-white/60 backdrop-blur min-h-[90px] focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-all"
+                  placeholder="1. Which three towns did Boudicca's forces destroy? 2. What happened to Legio IX? 3. Why did Suetonius abandon Londinium?"></textarea>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Activating Prior Knowledge</p>
+        <p>Use <strong>cold call</strong> to ask 3&ndash;4 students for their answers to the retrieval questions. These are designed to activate knowledge from previous lessons (Lessons 7&ndash;10). The correct answers are: (1) Camulodunum, Londinium, Verulamium; (2) ambushed and infantry destroyed; (3) he could not defend it with available forces.</p>
+        <p class="mt-2"><strong>Retrieval check:</strong> &ldquo;True or false: Boudicca&rsquo;s forces destroyed four Roman towns during the revolt. Thumbs up for true, down for false.&rdquo; (Answer: false &mdash; three towns: Camulodunum, Londinium, and Verulamium.) If fewer than 80% correct, recap the three towns before proceeding.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 1: THE ROMAN SITUATION BEFORE THE BATTLE
+       ========================================== -->
+  <section id="chunk-1" class="full-section grad-chunk1 relative">
+    <span class="section-number">01</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-burgundy/10 text-burgundy">Chunk 1 of 5</span>
+      <h2 class="section-heading">The Roman Situation Before the Battle</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling (&lsquo;I Do&rsquo;)</p>
+        <p><strong>Read the first paragraph aloud</strong> and model strategic thinking: &ldquo;Notice how Suetonius had roughly ten thousand men. That sounds like a lot, but Boudicca&rsquo;s army was many times larger. So Suetonius had to find a way to make the terrain work in his favour. Let&rsquo;s see how he did that.&rdquo;</p>
+        <p class="mt-2">Draw a simple diagram on the board showing the narrow defile with forest behind and open ground in front.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Suetonius Paulinus had retreated north and west with his available forces &mdash; approximately ten thousand men drawn from <strong>Legio XIV Gemina</strong>, <strong>Legio XX Valeria Victrix</strong>, and auxiliary units. He faced a critical shortage: <strong>Legio II Augusta</strong>, based at Exeter under the acting commander <strong>Poenius Postumus</strong>, refused to march to his support, a decision Postumus would later pay for with his own life by falling on his sword in shame. Legio IX was shattered. The governor had to fight with what he had.
+        </p>
+        <p>
+          Tacitus records that Suetonius carefully chose his battlefield. He selected a position in a narrow <strong>defile</strong> &mdash; a valley or pass &mdash; that had forest behind it and open ground in front, preventing any possibility of a flanking attack from the rear. This terrain choice was deliberate: it negated Boudicca&rsquo;s overwhelming numerical advantage by funnelling the Celtic charge into a narrow front where numbers could not be brought to bear.
+        </p>
+        <p>
+          Modern historians and archaeologists have long debated the location of this final battle. The most widely accepted candidate is <strong>Mancetter</strong> (Manduessedum) in Warwickshire, near the modern town of Atherstone, which lies on Watling Street &mdash; the main Roman military road that would have been Suetonius&rsquo;s line of march. Other proposed sites include the Midlands near Paulerspury and, more controversially, a site in north London. None has been definitively confirmed by archaeological evidence.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="c"
+           data-feedback-correct="Correct! Suetonius deliberately chose a narrow defile &mdash; a restricted pass with forest behind &mdash; to prevent Boudicca's larger army from using their numerical advantage. Numbers were useless if the Celts could only attack on a narrow front."
+           data-feedback-incorrect="Not quite. Suetonius chose a narrow defile (valley or pass) specifically because it funnelled the Celtic charge into a restricted front, meaning Boudicca's superior numbers could not be brought to bear all at once.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p>Use <strong>cold call</strong>. If they answer incorrectly, ask: &ldquo;Who can help?&rdquo; Aim for 80%+ success before moving on.</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">Why did Suetonius choose to fight in a narrow defile?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q1" class="mt-0.5"><span>He wanted to retreat quickly if the battle went badly</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q1" class="mt-0.5"><span>The defile provided water and food supplies for his troops</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q1" class="mt-0.5"><span>It negated Boudicca&rsquo;s numerical advantage by restricting the front of attack</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q1" class="mt-0.5"><span>He was forced there by Boudicca&rsquo;s pursuit and had no other option</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 2: THE CELTIC ARMY
+       ========================================== -->
+  <section id="chunk-2" class="full-section grad-chunk2 relative">
+    <span class="section-number">02</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-purple-100 text-purple-700">Chunk 2 of 5</span>
+      <h2 class="section-heading">The Celtic Army: Numbers and Confidence</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Guided Reading (&lsquo;We Do&rsquo;)</p>
+        <p>Have students read this section silently. Then use <strong>think-pair-share</strong>: &ldquo;Turn to your partner and discuss: What mistake did Boudicca&rsquo;s warriors make by bringing their families to watch the battle?&rdquo; (60 seconds). Cold call 2&ndash;3 pairs to share.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          By the time of the final confrontation, Boudicca&rsquo;s army had swelled to enormous proportions, flush with the confidence of three complete victories and the plunder of three prosperous Roman towns. Tacitus gives an estimate of <strong>230,000 warriors</strong> &mdash; a figure almost certainly exaggerated, as such an army would have been logistically impossible to supply and manoeuvre in ancient conditions. Even so, the Celtic force clearly vastly outnumbered the Roman army.
+        </p>
+        <p>
+          A detail recorded by both Tacitus and Cassius Dio that would prove fatal: Boudicca&rsquo;s warriors had brought their <strong>families to watch</strong> the expected victory. Tacitus describes women and children positioned in <strong>wagons</strong> arranged along the edge of the plain at the open end of the defile &mdash; a measure intended to allow them to observe the Roman rout. These wagons, loaded with noncombatants and supplies, would block the Celtic line of retreat when the battle turned.
+        </p>
+        <p>
+          Boudicca herself, according to Tacitus, rode in a chariot from tribe to tribe before the battle, her daughters beside her, delivering a speech designed to rouse her warriors. Tacitus gives us a version of this speech &mdash; but we must remember that <strong>no Roman was present to record it</strong>. The speech is a literary construction, following the conventions of ancient historiography in which generals and commanders give speeches that reflect the author&rsquo;s themes rather than actual words delivered.
+        </p>
+      </div>
+
+      <!-- Primary Source Box -->
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Secondary Source</p>
+        <p class="text-xs text-gray-500 mb-3"><strong>Provenance:</strong> Tacitus, <em>Annals</em> 14.35&ndash;36 (c. AD 98). Note that this speech was composed by Tacitus &mdash; it represents his literary reconstruction of what Boudicca might have said, not a verbatim record. Translation: A.J. Woodman (Penguin, 2004).</p>
+        <blockquote class="border-l-4 border-burgundy/30 pl-4 italic text-gray-600 leading-relaxed">
+          &ldquo;Boudicca, riding in a chariot with her daughters in front of her, approached each tribe in turn. This was no time for the niceties of Roman warfare. She had good reason to avenge her kingdom&rsquo;s seizure and her own flogging, but she was fighting for freedom and for justice for all Britons. She said that the gods favoured the just cause: one legion had already been routed; the rest were cowering in their camps. They would never stand the din and roar of so many thousands &mdash; not to mention her own war-cry. She urged them to think of how many of them there were, and why they were fighting.&rdquo;
+        </blockquote>
+        <p class="text-sm text-gray-600 mt-3">
+          <strong>Historian&rsquo;s note:</strong> This passage is one of the most debated in the entire Boudiccan tradition. Tacitus presents Boudicca addressing her troops before the final battle &mdash; but the speech is an <em>inventio</em>, a literary construction, not a transcript. Ancient historians regularly composed speeches they believed were plausible given the speaker&rsquo;s character and circumstances. What makes this passage historically valuable is not what Boudicca said, but what Tacitus <em>chose</em> to put in her mouth: a leader framing the conflict as a defence of freedom, justice, and divine favour.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="d"
+           data-feedback-correct="Correct! The wagons brought to watch the victory blocked the Celtic warriors' line of retreat when the battle turned against them, transforming a defeat into a massacre."
+           data-feedback-incorrect="Not quite. The wagons containing families and supplies were positioned at the open end of the defile. When the Celts tried to flee, the wagons blocked their escape, trapping them against the advancing Romans.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">Why did the wagons at the back of the Celtic army prove so disastrous?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q2" class="mt-0.5"><span>The Romans captured them and used them as weapons</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q2" class="mt-0.5"><span>They contained weapons that the Celts could not reach in time</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q2" class="mt-0.5"><span>They were set on fire by the Romans, creating chaos</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q2" class="mt-0.5"><span>They blocked the Celtic line of retreat, turning a defeat into a massacre</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 3: THE BATTLE
+       ========================================== -->
+  <section id="chunk-3" class="full-section grad-chunk3 relative">
+    <span class="section-number">03</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-amber-100 text-amber-700">Chunk 3 of 5</span>
+      <h2 class="section-heading">The Battle: Roman Tactics and Celtic Collapse</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling: Tactical Reconstruction</p>
+        <p>Use the infographic below to walk through the battle step by step. Point to each phase as you explain it: (1) Romans hold position, (2) Celtic charge, (3) pilum volley, (4) wedge advance, (5) collapse into wagons. Ask students to narrate one step each using <strong>cold call</strong>.</p>
+      </div>
+
+      <!-- Featured image: Battle of Watling Street infographic -->
+      <figure class="featured-image">
+        <img src="images/battle-watling-street.png" alt="Infographic of the Battle of Watling Street showing Roman formations in a narrow defile, the Celtic charge, the pilum volley, the wedge advance, and the wagon trap at the rear." loading="lazy">
+        <figcaption class="caption"><strong>The Battle of Watling Street</strong> &mdash; An infographic showing Roman formations, Celtic positions, terrain advantage, and the decisive phases of the battle.</figcaption>
+      </figure>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Suetonius deployed his legionaries in a tight <strong>wedge formation</strong> in the mouth of the defile, with cavalry on the flanks. The Roman plan was simple but tactically brilliant: hold ground, absorb the Celtic charge, then advance in disciplined formation.
+        </p>
+        <p>
+          When Boudicca&rsquo;s warriors charged, Suetonius ordered his men to stand still until the enemy was within range, then launch a volley of <strong>pila</strong> (heavy throwing spears). The pilum was designed with a soft iron shank that bent on impact, making shields impossible to use after the spear struck them. With their shields useless and the Roman wedge advancing into them in close formation, the Celtic warriors &mdash; accustomed to individual displays of bravery in open combat &mdash; could not operate effectively.
+        </p>
+        <p>
+          The Romans advanced in tight formation, shields locked, stabbing with their short <strong>gladii</strong> (swords) into the packed Celtic mass. As the Celtic front ranks buckled, those behind them pushed forward &mdash; not into victory, but into the crush. And then, catastrophically, those fleeing the Roman advance ran into their own wagons. The ring of wagons that had been positioned to give families a viewing platform now became a <strong>death trap</strong>. Hemmed in on all sides, the Celtic force was slaughtered with no means of escape.
+        </p>
+        <p>
+          Tacitus records <strong>80,000 Celtic dead</strong> &mdash; again, an exaggerated figure serving rhetorical purposes &mdash; compared to roughly 400 Roman dead. The actual numbers cannot be verified, but the scale of the Roman victory was clearly decisive and comprehensive. The revolt was over.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="b"
+           data-feedback-correct="Correct! The pilum was designed with a soft iron shank that bent on impact, making the enemy's shield too heavy and awkward to use. This left the Celtic warriors unprotected against the Roman advance."
+           data-feedback-incorrect="Not quite. The pilum's key design feature was its soft iron shank that bent when it hit a shield, making the shield impossible to use. This was critical because it stripped away the Celts' protection before close combat began.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p><strong>Gesture voting:</strong> &ldquo;Hold up A, B, C, or D with your fingers. On three &mdash; one, two, three &mdash; show me.&rdquo; If fewer than 80% show B, re-teach using the pilum diagram.</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">What made the Roman pilum so effective against the Celtic warriors?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q3" class="mt-0.5"><span>It was poisoned, causing slow death even from minor wounds</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q3" class="mt-0.5"><span>Its soft iron shank bent on impact, making shields unusable</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q3" class="mt-0.5"><span>It could be thrown further than any Celtic weapon</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q3" class="mt-0.5"><span>It was made of iron while the Celts only had bronze weapons</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+
+      <div class="sequence-activity" data-correct="2,0,3,1,4">
+        <h3>Put the Phases of the Final Battle in Order</h3>
+        <p class="text-gray-700 font-medium mb-4">Arrange these phases in the order they occurred:</p>
+        <ul class="sequence-list">
+          <li class="sequence-item" data-idx="0">Romans launch a volley of pila into the Celtic charge</li>
+          <li class="sequence-item" data-idx="1">Fleeing Celts are trapped by their own wagons</li>
+          <li class="sequence-item" data-idx="2">Suetonius positions his forces in a narrow defile</li>
+          <li class="sequence-item" data-idx="3">Roman infantry advances in wedge formation</li>
+          <li class="sequence-item" data-idx="4">Boudicca&rsquo;s army is routed and massacred</li>
+        </ul>
+        <button class="check-btn" style="margin-top:1rem">Check Order</button>
+        <div class="cfu-feedback" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 4: THE DEATH OF BOUDICCA
+       ========================================== -->
+  <section id="chunk-4" class="full-section grad-chunk4 relative">
+    <span class="section-number">04</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-blue-100 text-blue-700">Chunk 4 of 5</span>
+      <h2 class="section-heading">The Death of Boudicca: A Historical Puzzle</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Scaffolding: Comparative Table</p>
+        <p>Walk through the comparison table below row by row. For each row, ask: &ldquo;Which version do you find more convincing, and why?&rdquo; Use <strong>think-pair-share</strong> (90 seconds) then cold call 3 pairs. Emphasise that historians cannot resolve this &mdash; neither account can be verified.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          The fate of Boudicca is one of the small mysteries of ancient history. The two main sources disagree on how she died, and no archaeological evidence has been found to resolve the question.
+        </p>
+      </div>
+
+      <!-- Comparison Table: Tacitus vs Dio -->
+      <div class="overflow-x-auto my-8">
+        <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/6"></th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Tacitus</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Cassius Dio</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white/70">
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">How she died</td>
+              <td class="px-5 py-3 text-gray-600">Took poison to avoid capture (<em>Annals</em> XIV.37)</td>
+              <td class="px-5 py-3 text-gray-600">Fell ill and died &mdash; no mention of poison (<em>Roman History</em> LXII.12)</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 font-semibold text-navy">Tone</td>
+              <td class="px-5 py-3 text-gray-600">Dramatic but restrained; emphasises Boudicca&rsquo;s personal agency and dignified resistance to the last</td>
+              <td class="px-5 py-3 text-gray-600">More sensationalised; greater emphasis on spectacle, elaborate funeral rites, and Roman triumph</td>
+            </tr>
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">Reliability</td>
+              <td class="px-5 py-3 text-gray-600">Writing ~50&ndash;55 years after the revolt; closer in time with access to official records and family accounts through Agricola</td>
+              <td class="px-5 py-3 text-gray-600">Writing ~160 years after the revolt; likely dependent on Tacitus and earlier sources now lost; mediated through Xiphilinus&rsquo;s 11th-century epitome</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 font-semibold text-navy">Purpose</td>
+              <td class="px-5 py-3 text-gray-600">Portrays Boudicca as a tragic, dignified figure whose defeat reflects Roman misgovernance rather than Celtic inferiority; used to critique corrupt officials</td>
+              <td class="px-5 py-3 text-gray-600">Uses her death to reinforce Rome&rsquo;s inevitable dominance; the elaborate burial underscores the spectacle of defeated barbarian power</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          <strong>Note:</strong> Neither account can be verified independently. The absence of archaeological evidence for Boudicca&rsquo;s burial site means the written sources remain the only evidence for the circumstances of her death.
+        </p>
+        <p>
+          Tacitus&rsquo;s version &mdash; that Boudicca took poison rather than submit to Roman capture &mdash; has a literary parallel in the death of Cleopatra, another powerful woman who chose death over subjugation. Whether this reflects historical reality or literary convention is impossible to determine. Dio&rsquo;s version is less dramatic but potentially more plausible: a military defeat of this scale, following weeks of intense campaigning, could easily lead to illness and death from exhaustion and exposure.
+        </p>
+        <p>
+          The location of Boudicca&rsquo;s burial &mdash; if she received one &mdash; is entirely unknown. Various Victorian and modern claims of burial sites, including Hampstead Heath, and beneath Platform 8 at King&rsquo;s Cross station, are folklore with no archaeological foundation. Her burial remains one of the most tantalising unsolved questions of Roman British archaeology.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="a"
+           data-feedback-correct="Correct! Tacitus wrote approximately 50&ndash;55 years after the revolt with access to official records and family connections through his father-in-law Agricola, who served in Britain. Dio wrote around 160 years later and relied on earlier sources."
+           data-feedback-incorrect="Not quite. Tacitus is generally considered the more reliable source on this topic because he wrote closer to the events (~50&ndash;55 years) and had access to first-hand accounts through his father-in-law Agricola, who was governor of Britain.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">Which historian&rsquo;s account of Boudicca&rsquo;s death is generally considered more reliable, and why?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q4" class="mt-0.5"><span>Tacitus, because he wrote closer to the events and had access to official records</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q4" class="mt-0.5"><span>Cassius Dio, because he was more objective and had no personal connection to Britain</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q4" class="mt-0.5"><span>Neither &mdash; both are equally unreliable because they are Roman</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q4" class="mt-0.5"><span>Cassius Dio, because he had access to Celtic oral traditions</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 5: WHY DID BOUDICCA LOSE?
+       ========================================== -->
+  <section id="chunk-5" class="full-section grad-chunk5 relative">
+    <span class="section-number">05</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-rose-100 text-rose-700">Chunk 5 of 5</span>
+      <h2 class="section-heading">Why Did Boudicca Lose?</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Gradual Release: I Do, We Do, You Do</p>
+        <ol class="list-decimal ml-5 mt-1 space-y-1">
+          <li><strong>I Do:</strong> Model the first factor (terrain) yourself, explaining why it was decisive.</li>
+          <li><strong>We Do:</strong> Work through the second and third factors together as a class, taking suggestions from students.</li>
+          <li><strong>You Do:</strong> Students explain the fourth factor (army size as a problem) independently in their notes.</li>
+        </ol>
+        <p class="mt-2">Check understanding after each step. Use <strong>cold call</strong> to share responses.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          The military defeat of a numerically superior force by Roman discipline raises important questions about the nature of ancient warfare and the limits of Celtic military power. Several key factors contributed to the Celtic defeat:
+        </p>
+        <p>
+          <strong>1. Terrain advantage:</strong> Suetonius chose terrain that neutralised his numerical disadvantage, forcing Boudicca&rsquo;s warriors into a frontal assault on a narrow front.
+        </p>
+        <p>
+          <strong>2. Roman tactical discipline:</strong> The ability to stand firm under a charge, execute a coordinated volley, and advance in close formation proved decisive against a Celtic style of fighting that relied on individual warrior courage and the shock of the initial charge.
+        </p>
+        <p>
+          <strong>3. The wagon trap:</strong> The wagons blocking Celtic retreat transformed a defeat into a massacre.
+        </p>
+        <p>
+          <strong>4. Logistical problems:</strong> The size of the Celtic army &mdash; while impressive &mdash; created difficulties: a huge force is difficult to feed, to manoeuvre, and to maintain in cohesion over time.
+        </p>
+      </div>
+
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Historical Thinking</p>
+        <p class="text-gray-700">
+          The Boudiccan revolt illustrates a pattern seen repeatedly in encounters between Rome and Celtic warriors: spectacular early success followed by decisive defeat when the Romans chose their ground and their moment carefully. Tactical superiority, not simply numerical advantage, determined outcomes in ancient warfare.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="b"
+           data-feedback-correct="Correct! Celtic warfare relied on the shock of an initial charge and individual displays of bravery in open combat. In the narrow defile with packed ranks, this style of fighting was completely ineffective against disciplined Roman formations."
+           data-feedback-incorrect="Not quite. The key difference was that Celtic warriors fought as individuals showing personal courage, while the Romans fought in tight, disciplined formations. In the cramped conditions of the defile, individual bravery could not overcome organised teamwork.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p><strong>Gesture voting:</strong> &ldquo;Show me your answer with fingers. On three &mdash; one, two, three &mdash; show me.&rdquo;</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">Why was the Celtic style of fighting ineffective against Roman formations in this battle?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q5" class="mt-0.5"><span>Celtic weapons were inferior to Roman weapons in every way</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q5" class="mt-0.5"><span>Celtic warfare relied on individual bravery and the shock of a charge, which failed against disciplined formation fighting in a narrow space</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q5" class="mt-0.5"><span>The Celtic warriors were exhausted from their long march and could not fight effectively</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q5" class="mt-0.5"><span>The Celts had never fought against Roman soldiers before and did not know their tactics</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       INDEPENDENT PRACTICE: REVIEW QUESTIONS
+       ========================================== -->
+  <section id="practice" class="full-section grad-practice relative">
+    <span class="section-number">Q</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-green-100 text-green-700">Independent Practice</span>
+      <h2 class="section-heading">Review Questions</h2>
+      <p class="text-sm text-gray-500 mb-6">Choose the level that challenges you, or work through all three.</p>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Independent Practice (&lsquo;You Do&rsquo;)</p>
+        <p>Students should attempt these <strong>only after a high success rate</strong> on the CFU questions. Direct all students to Foundation first.</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> Students answer Foundation Q1 on a sticky note before leaving.</p>
+      </div>
+
+      <div class="tab-group">
+        <button class="tab-btn active" data-tab="foundation">Foundation</button>
+        <button class="tab-btn" data-tab="standard">Standard</button>
+        <button class="tab-btn" data-tab="extension">Extension</button>
+      </div>
+
+      <div class="tab-content active" id="foundation" data-tab="foundation">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Identify and describe</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>What type of terrain did Suetonius choose for the final battle, and why was this important?</li>
+          <li>What was a pilum and how was it used in the battle?</li>
+          <li>Give one reason why the wagons at the back of the Celtic army contributed to their defeat.</li>
+        </ol>
+      </div>
+      <div class="tab-content" id="standard" data-tab="standard">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Analyse and explain</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Explain how Suetonius Paulinus&rsquo;s choice of battlefield terrain was a decisive factor in the Roman victory.</li>
+          <li>Compare the accounts of Boudicca&rsquo;s death given by Tacitus and Cassius Dio. Which do you find more convincing and why?</li>
+          <li>Analyse at least three factors that contributed to the defeat of Boudicca&rsquo;s forces despite their numerical superiority.</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Topic sentence starters:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li>A key factor in this was&hellip;</li>
+            <li>The evidence from [source] demonstrates&hellip;</li>
+            <li>This is significant because&hellip;</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-content" id="extension" data-tab="extension">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Evaluate and debate</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Evaluate the claim that the Boudiccan revolt was &ldquo;doomed from the moment it became a war of open battle rather than a war of ambush and destruction.&rdquo; Argue a position with specific historical evidence.</li>
+          <li>Critically analyse how Tacitus&rsquo;s speech for Boudicca functions as a literary construction. What does it reveal about Tacitus&rsquo;s purposes and how should it be used as historical evidence?</li>
+          <li>To what extent can we trust the casualty figures provided by Tacitus for the final battle? Discuss the role of numbers in ancient historical writing more broadly.</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Evaluative transitions:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li>&ldquo;To a significant/limited extent&hellip;&rdquo;</li>
+            <li>&ldquo;The most compelling evidence for this is&hellip;&rdquo;</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       KEY TERMS: FLASHCARD GLOSSARY
+       ========================================== -->
+  <section id="key-terms" class="full-section grad-terms relative">
+    <span class="section-number">A&ndash;Z</span>
+    <div class="section-inner">
+      <div class="flex items-end justify-between mb-6 reveal">
+        <div>
+          <span class="section-label bg-purple-100 text-purple-700">Key Terms</span>
+          <h2 class="section-heading mb-0">Glossary</h2>
+        </div>
+        <button class="glossary-view-toggle text-sm text-navy font-semibold hover:text-burgundy transition-colors cursor-pointer">
+          Switch to List View
+        </button>
+      </div>
+      <p class="text-sm text-gray-500 mb-6 reveal">Click each card to reveal its definition.</p>
+
+      <!-- Flashcards -->
+      <div class="flashcard-grid reveal-stagger">
+        <div class="flashcard" tabindex="0" role="button" aria-label="Flashcard: Defile">
+          <div class="flashcard-inner"><div class="flashcard-front">Defile</div><div class="flashcard-back">A narrow pass or valley that limits the width of a military advance, forcing troops into a restricted front.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Pilum</div><div class="flashcard-back">The Roman heavy throwing spear, designed with a soft iron shank that bent on impact to prevent reuse and to weigh down the enemy&rsquo;s shield.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Gladius</div><div class="flashcard-back">The Roman short sword, approximately 50&ndash;60 cm in length, used for close-quarters thrusting in tight formation.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Mancetter</div><div class="flashcard-back">Modern Warwickshire town (Roman: Manduessedum) and the most widely accepted candidate for the site of Boudicca&rsquo;s final battle.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Poenius Postumus</div><div class="flashcard-back">Acting commander of Legio II Augusta who refused to march to Suetonius&rsquo;s support and later committed suicide in shame.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Formation</div><div class="flashcard-back">The arrangement of soldiers in battle; Roman legions used tight, disciplined formations that maximised the effectiveness of the gladius and shield.</div></div>
+        </div>
+      </div>
+
+      <!-- List View (hidden) -->
+      <div class="glossary-list hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+            <thead>
+              <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/4">Term</th>
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Definition</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white/70">
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Defile</td><td class="px-5 py-3 text-gray-600">A narrow pass or valley that limits the width of a military advance, forcing troops into a restricted front.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Pilum</td><td class="px-5 py-3 text-gray-600">The Roman heavy throwing spear, designed with a soft iron shank that bent on impact to prevent reuse and to weigh down the enemy&rsquo;s shield.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Gladius</td><td class="px-5 py-3 text-gray-600">The Roman short sword, approximately 50&ndash;60 cm in length, used for close-quarters thrusting in tight formation.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Mancetter</td><td class="px-5 py-3 text-gray-600">Modern Warwickshire town (Roman: Manduessedum) and the most widely accepted candidate for the site of Boudicca&rsquo;s final battle.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Poenius Postumus</td><td class="px-5 py-3 text-gray-600">Acting commander of Legio II Augusta who refused to march to Suetonius&rsquo;s support and later committed suicide in shame.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Formation</td><td class="px-5 py-3 text-gray-600">The arrangement of soldiers in battle; Roman legions used tight, disciplined formations that maximised the effectiveness of the gladius and shield.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       REVIEW OF LEARNING
+       ========================================== -->
+  <section id="review" class="full-section grad-review relative">
+    <div class="section-inner reveal">
+      <span class="section-label bg-gold/20 text-amber-700">Review of Learning</span>
+      <h2 class="section-heading">How Did You Go?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6 text-[1.05rem]">
+        Return to the success criteria from the start of this lesson. Can you now tick off each one?
+        If any remain unticked, scroll back and review the relevant section.
+      </p>
+
+      <div class="space-y-3">
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">1</span>
+          <span class="text-gray-700">Describe the tactical situation facing both sides before the final battle.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">2</span>
+          <span class="text-gray-700">Explain the military tactics used by Suetonius Paulinus and their effectiveness.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">3</span>
+          <span class="text-gray-700">Analyse the reasons for the Celtic defeat despite their numerical superiority.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">4</span>
+          <span class="text-gray-700">Evaluate the conflicting accounts of Boudicca&rsquo;s death.</span>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Review of Learning</p>
+        <p><strong>Self-assessment</strong> for each criterion: &ldquo;Thumbs up if confident, sideways if partly there, down if you need more help.&rdquo;</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> &ldquo;On a sticky note, write one reason why Boudicca lost the final battle.&rdquo; Collect as students leave.</p>
+      </div>
+
+      <!-- Exit Ticket -->
+      <div class="exit-ticket">
+        <h4>Exit Ticket</h4>
+        <label class="text-sm text-gray-600 block mb-1">One thing I learned today:</label>
+        <textarea placeholder="What was the most important thing you learned in this lesson?"></textarea>
+        <label class="text-sm text-gray-600 block mb-1">One question I still have:</label>
+        <textarea placeholder="What are you still unsure about or want to know more about?"></textarea>
+      </div>
+
+      <!-- Reflection -->
+      <div class="reflection-panel">
+        <h4>Self-Reflection</h4>
+        <p class="text-sm text-gray-600 mb-2">How confident do you feel about this lesson&rsquo;s content?</p>
+        <div class="confidence-scale">
+          <button class="confidence-btn">1<br><span class="text-[0.65rem]">Not yet</span></button>
+          <button class="confidence-btn">2<br><span class="text-[0.65rem]">Getting there</span></button>
+          <button class="confidence-btn">3<br><span class="text-[0.65rem]">Mostly</span></button>
+          <button class="confidence-btn">4<br><span class="text-[0.65rem]">Confident</span></button>
+          <button class="confidence-btn">5<br><span class="text-[0.65rem]">Mastered</span></button>
+        </div>
+        <label class="text-sm text-gray-600 block mt-3 mb-1">What do you want to revisit before the next lesson?</label>
+        <textarea class="reflection-text" placeholder="Any topics, terms, or skills you want to review?"></textarea>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       LESSON NAVIGATION
+       ========================================== -->
+  <section class="py-12 px-6" style="background: #fefcf9;">
+    <div class="max-w-3xl mx-auto lesson-nav-footer flex items-center justify-between">
+      <a href="lesson-10.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        Lesson 10
+      </a>
+      <span class="text-xs text-gray-300 tracking-wider uppercase">Lesson 11 of 16</span>
+      <a href="lesson-12.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        Lesson 12
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 text-center" style="background: linear-gradient(180deg, #fefcf9, #f5f3ed);">
+    <p class="text-sm text-gray-400 font-sans">
+      NSW Ancient History Stage 6 &middot; NESA Syllabus (2017) &middot; Case Study A
+    </p>
+    <p class="text-xs text-gray-300 mt-2 font-sans">Created by Cheryl Cutter</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

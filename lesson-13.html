@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 13: Archaeological Evidence of Boudicca's Revolt | Boudicca Interactive</title>
+
+  <!-- Meta -->
+  <meta name="description" content="Interactive NSW Ancient History Stage 6 resource — Boudicca case study with explicit teaching, CFU activities, source analysis, and teacher facilitation tools.">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': { DEFAULT: '#1a1a2e', mid: '#16213e', light: '#2a4d7a' },
+            'burgundy': { DEFAULT: '#8b2635', light: '#a83242' },
+            'gold': { DEFAULT: '#c9a84c', light: '#e8d292' },
+          },
+          fontFamily: {
+            'serif': ['Playfair Display', 'Georgia', 'serif'],
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans" style="background: #fefcf9;">
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress"></div>
+
+  <!-- Navigation (Glassmorphism) -->
+  <nav class="site-nav">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-5">
+        <a href="index.html" class="text-white font-serif text-xl font-bold tracking-wide hover:text-gold transition-colors">
+          Boudicca
+        </a>
+        <span class="text-white/20 hidden sm:inline">|</span>
+        <span class="text-white/40 text-xs font-sans tracking-wider hidden sm:inline">Lesson 13 of 16</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <button class="teacher-toggle" aria-label="Toggle teacher facilitation notes">Teacher Mode</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="lesson-hero grad-hero" style="background: linear-gradient(165deg, rgba(26,26,46,0.92) 0%, rgba(22,33,62,0.88) 50%, rgba(26,39,68,0.92) 100%), url('images/destruction-horizon.png') center/cover no-repeat;">
+    <div class="relative z-10 max-w-3xl mx-auto reveal">
+      <span class="chapter-badge">Chapter 4 &middot; Evidence, Legacy and Skills</span>
+      <p class="text-white/40 font-sans text-sm tracking-wider uppercase mb-3">Lesson 13</p>
+      <h1 class="hero-title font-serif text-white">Archaeological<br>Evidence</h1>
+      <p class="hero-desc">
+        What does the soil itself tell us about Boudicca&rsquo;s revolt &mdash;
+        and how does physical evidence corroborate, challenge, and extend the written record?
+      </p>
+      <p class="reading-time"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> ~35 min</p>
+      <!-- Syllabus Outcomes -->
+      <details class="mt-8">
+        <summary class="text-white/25 text-xs font-sans cursor-pointer hover:text-white/40 transition-colors uppercase tracking-[0.15em]">
+          NESA Syllabus Outcomes
+        </summary>
+        <div class="mt-3 text-white/35 text-xs font-sans space-y-1 leading-relaxed">
+          <p><strong class="text-white/50">AH11-5:</strong> Examines the significance of historical features, people, places, events and developments of the ancient world</p>
+          <p><strong class="text-white/50">AH11-6:</strong> Analyses and interprets different types of sources for evidence to support an historical account or argument</p>
+          <p><strong class="text-white/50">AH11-8:</strong> Plans and conducts historical investigations and presents reasoned conclusions, using relevant evidence from a range of sources</p>
+          <p><strong class="text-white/50">AH11-9:</strong> Communicates historical understanding, using historical knowledge, concepts and terms, in appropriate and well-structured forms</p>
+          <p><strong class="text-white/50">AH11-10:</strong> Discusses contemporary methods and issues involved in the investigation of ancient history</p>
+        </div>
+      </details>
+    </div>
+    <!-- Decorative number -->
+    <div class="absolute bottom-6 right-8 font-serif text-white/[0.03] font-extrabold pointer-events-none select-none hidden md:block" style="font-size: 14rem; line-height: 1;">13</div>
+  </section>
+
+
+  <!-- ==========================================
+       LEARNING INTENTION & SUCCESS CRITERIA
+       ========================================== -->
+  <section id="lisc" class="full-section grad-lisc">
+    <div class="section-inner reveal">
+      <span class="section-label bg-navy/[0.07] text-navy">Learning Intention</span>
+      <h2 class="section-heading">What You&rsquo;ll Learn</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-8">
+        To understand how archaeological evidence corroborates, challenges, and extends our understanding of the Boudiccan revolt beyond what is available in the written sources.
+      </p>
+
+      <div>
+        <h3 class="font-sans text-xs font-bold uppercase tracking-[0.12em] text-gray-400 mb-2">Success Criteria</h3>
+        <p class="sc-progress-text text-xs text-gray-400 mb-1">0 of 4 criteria met</p>
+        <div class="sc-progress"><div class="sc-progress-bar"></div></div>
+        <p class="text-sm text-gray-500 mb-4">By the end of this lesson, I can:</p>
+        <div class="space-y-1">
+          <div class="sc-item"><input type="checkbox" id="sc1"><label for="sc1">Describe the main types of archaeological evidence associated with the Boudiccan revolt.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc2"><label for="sc2">Explain how the Boudiccan destruction horizon is identified and dated.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc3"><label for="sc3">Analyse the relationship between archaeological and written evidence for the revolt.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc4"><label for="sc4">Evaluate the strengths and limitations of archaeological evidence as a historical source.</label></div>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Sharing LISC</p>
+        <p>Display the learning intention and success criteria on the board. Read them aloud and ask students to identify the <em>key verbs</em> (describe, explain, analyse, evaluate). This lesson is methodological &mdash; it is about <em>how we know</em> rather than <em>what happened</em>. Check understanding: <strong>&ldquo;Can someone explain the difference between archaeological evidence and written evidence in their own words?&rdquo;</strong> (cold call).</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       ACTIVATING PRIOR KNOWLEDGE
+       ========================================== -->
+  <section id="prior-knowledge" class="full-section grad-prior relative">
+    <span class="section-number">?</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-white/50 text-amber-700">Before We Begin</span>
+      <h2 class="section-heading">What Do You Already Know?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        This lesson shifts our focus from written sources to physical evidence. Think back to what you&rsquo;ve learned about the destruction of the three towns and the revolt&rsquo;s aftermath.
+      </p>
+
+      <div class="mb-6">
+        <p class="font-sans text-sm font-semibold text-gray-700 mb-2">How confident are you about the difference between written and archaeological evidence?</p>
+        <div class="poll-options">
+          <button class="poll-btn">Not confident</button>
+          <button class="poll-btn">Somewhat confident</button>
+          <button class="poll-btn">Fairly confident</button>
+          <button class="poll-btn">Very confident</button>
+        </div>
+      </div>
+
+      <div>
+        <label class="font-sans text-sm font-semibold text-gray-700 block mb-2" for="prior-text">
+          Retrieval practice &mdash; answer these from memory before we begin:
+        </label>
+        <textarea id="prior-text" class="w-full border border-black/[0.08] rounded-2xl p-4 text-sm font-sans leading-relaxed resize-y bg-white/60 backdrop-blur min-h-[90px] focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-all"
+                  placeholder="1. Which three towns were destroyed during the revolt? 2. Name one limitation of Tacitus as a source. 3. What is one advantage physical evidence has over written accounts?"></textarea>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Activating Prior Knowledge</p>
+        <p>Use <strong>cold call</strong> to ask 3&ndash;4 students for their answers. Correct answers: (1) Camulodunum, Londinium, Verulamium; (2) Any valid limitation (Roman bias, writing decades later, no Celtic perspective, etc.); (3) Any valid advantage (not shaped by authorial intent, direct physical trace, etc.).</p>
+        <p class="mt-2"><strong>CFU strategy:</strong> Retrieval gesture vote &mdash; &ldquo;True or false: Archaeological evidence can tell us the names of specific people involved in the revolt. Thumbs up for true, down for false.&rdquo; (Answer: false &mdash; archaeology reveals material culture, not names or motivations.) If fewer than 80% correct, briefly distinguish the two types of evidence before proceeding.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 1: WHY ARCHAEOLOGY MATTERS
+       ========================================== -->
+  <section id="chunk-1" class="full-section grad-chunk1 relative">
+    <span class="section-number">01</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-burgundy/10 text-burgundy">Chunk 1 of 5</span>
+      <h2 class="section-heading">Why Archaeology Matters for Boudicca&rsquo;s Story</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling (&lsquo;I Do&rsquo;)</p>
+        <p><strong>Begin with an analogy:</strong> &ldquo;Imagine a house fire. The fire brigade report tells you who called it in, what time they arrived, and what they think caused it. But the burnt remains of the house tell you something different &mdash; where the fire started, how hot it was, what was inside. The report has a perspective; the ashes are just evidence. That&rsquo;s the difference between written sources and archaeology.&rdquo;</p>
+        <p class="mt-2"><strong>Read the first paragraph aloud</strong>, then pause to check understanding.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          The written record of the Boudiccan revolt is limited: two Roman historians, writing decades after the events, from a Roman perspective, drawing on sources we no longer have. Archaeological evidence offers something qualitatively different &mdash; the <strong>direct, physical traces</strong> left by the events themselves, unmediated by any author&rsquo;s rhetorical purposes. When a layer of burnt debris in the soil of the City of London dates to the mid-first century AD, that soil is not trying to persuade anyone of anything. It is evidence.
+        </p>
+        <p>
+          The <strong>convergence</strong> of archaeological and written evidence is one of the great strengths of the Boudiccan historical record. Unlike many events in ancient history where archaeology and texts refer to entirely different dimensions of the past, the Boudiccan revolt has left traces in the soil that directly correspond to specific events described by Tacitus. This is historically unusual and intellectually significant.
+        </p>
+        <p>
+          However, archaeology also has <strong>limitations</strong>. Physical evidence can tell us <em>where</em> and <em>how</em> things were destroyed; it cannot always tell us <em>who</em> destroyed them, or <em>why</em>, or with what feelings. The interpretation of archaeological evidence always requires <strong>inference</strong> &mdash; moving from physical facts to historical conclusions &mdash; and those inferences can be wrong.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="b"
+           data-feedback-correct="Correct! Archaeological evidence provides direct physical traces unmediated by authorial purpose &mdash; a burnt layer in the soil is not trying to persuade anyone of anything. However, it still requires inference to interpret, and it cannot tell us motivations or feelings."
+           data-feedback-incorrect="Not quite. The key advantage of archaeological evidence is that it provides direct physical traces not shaped by any author's purposes or biases. A destruction layer is evidence that something was destroyed, regardless of who is telling the story.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p>Use <strong>cold call</strong>. If they answer incorrectly, return to the fire analogy and ask: &ldquo;What can the ashes tell us that the fire brigade report cannot?&rdquo;</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">What is the main advantage of archaeological evidence over written sources?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q1" class="mt-0.5"><span>Archaeological evidence always provides exact dates for events</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q1" class="mt-0.5"><span>Physical traces are not shaped by an author&rsquo;s perspective or purpose</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q1" class="mt-0.5"><span>Archaeology can tell us the motivations behind historical events</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q1" class="mt-0.5"><span>Archaeological evidence is always more reliable than written accounts</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 2: THE BOUDICCAN DESTRUCTION HORIZON
+       ========================================== -->
+  <section id="chunk-2" class="full-section grad-chunk2 relative">
+    <span class="section-number">02</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-purple-100 text-purple-700">Chunk 2 of 5</span>
+      <h2 class="section-heading">The Boudiccan Destruction Horizon</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Guided Reading (&lsquo;We Do&rsquo;)</p>
+        <p>Display the stratigraphy image below. Before students read, ask: &ldquo;What can you see in this photograph?&rdquo; (cold call 2&ndash;3 students). Then read the first paragraph aloud together. Pause after each town to check understanding: &ldquo;What was found at Camulodunum? What about Londinium?&rdquo;</p>
+      </div>
+
+      <!-- Featured image: destruction horizon stratigraphy -->
+      <figure class="featured-image">
+        <img src="images/destruction-horizon.png" alt="Stratigraphy photograph showing the Boudiccan destruction horizon &mdash; a distinctive reddish-orange layer of burnt debris found beneath the modern ground surface at sites in London." loading="lazy">
+        <figcaption class="caption"><strong>The Boudiccan destruction horizon</strong> &mdash; A distinctive layer of burnt debris, typically reddish-orange in colour, found at multiple excavation sites across London, Colchester, and St Albans. This layer dates to AD 60/61.</figcaption>
+      </figure>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          The most dramatic and consistently identified piece of archaeological evidence for the revolt is the <strong>&ldquo;Boudiccan destruction horizon&rdquo;</strong> &mdash; a distinctive layer of burnt debris found beneath the modern ground surface at Camulodunum, Londinium, and Verulamium.
+        </p>
+        <p>
+          At <strong>Camulodunum</strong>, this layer has been identified in multiple excavations across the town centre, containing burnt daub, charred timbers, melted glass, scorched pottery, and burnt grain. The grain is particularly significant: it suggests the destruction occurred during or after harvest, consistent with a revolt in AD 60/61. Beneath the Norman castle, the original podium of the Temple of Claudius survives, surrounded by destruction debris.
+        </p>
+        <p>
+          At <strong>Londinium</strong>, the destruction horizon is typically found between 1 and 2 metres below modern street level, reflecting the depth of Roman and later medieval deposits above it. It is a reddish-orange layer approximately 30 centimetres thick, composed of burnt clay, charcoal, smashed pottery, and melted structural materials. It has been found at numerous sites across the City of London, including Gracechurch Street, Fenchurch Street, the Bloomberg site on Walbrook, and under Leadenhall Market. Its consistent depth and composition across widely separated sites confirms a <strong>single rapid destruction event</strong>.
+        </p>
+        <p>
+          At <strong>Verulamium</strong>, similar burnt layers have been found, though the town&rsquo;s later reconstruction means the evidence is more disturbed. The key excavations at Verulamium, conducted by Mortimer Wheeler in the 1930s and Sheppard Frere in the 1950s&ndash;70s, established the sequence of pre-Boudiccan, Boudiccan destruction, and post-Boudiccan rebuilding clearly.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="c"
+           data-feedback-correct="Correct! The consistent depth and composition of the burnt layer across widely separated sites within each city confirms that all the destruction happened at the same time &mdash; a single rapid event, not gradual damage over many years."
+           data-feedback-incorrect="Not quite. The key evidence is consistency: the same type of burnt layer, at the same depth, across many different excavation sites in the same city. This pattern rules out gradual damage and confirms a single rapid destruction event.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">How do archaeologists know the destruction at Londinium was a single event rather than gradual damage?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q2" class="mt-0.5"><span>Tacitus says it happened in one day, so the archaeology must confirm it</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q2" class="mt-0.5"><span>Only one building was destroyed, which proves it was a targeted attack</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q2" class="mt-0.5"><span>The same burnt layer at consistent depth and composition appears across widely separated sites</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q2" class="mt-0.5"><span>Roman coins found in the layer are all dated to the same year</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 3: ICENI ARTEFACTS
+       ========================================== -->
+  <section id="chunk-3" class="full-section grad-chunk3 relative">
+    <span class="section-number">03</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-amber-100 text-amber-700">Chunk 3 of 5</span>
+      <h2 class="section-heading">Iceni Artefacts and Material Culture</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Scaffolding</p>
+        <p>This section provides context about the Iceni as a wealthy, sophisticated culture. Use <strong>think-pair-share</strong>: &ldquo;After reading, discuss with your partner: How does the Snettisham Treasure change your understanding of the Iceni? Were they the &lsquo;barbarians&rsquo; the Romans described?&rdquo; (90 seconds). Cold call 2&ndash;3 pairs.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Beyond the destruction layers, archaeological evidence of the Iceni themselves provides important context for understanding Boudicca&rsquo;s revolt. The Iceni territory (roughly modern Norfolk and Suffolk) is rich in Iron Age material reflecting their status as <strong>one of the wealthiest tribes</strong> in pre-conquest Britain.
+        </p>
+        <p>
+          The most characteristic Iceni artefacts are their distinctive <strong>coins</strong>. The Iceni were prolific coin producers, minting their own silver and gold coins with characteristic designs including patterns derived from a horse, a sun symbol, and abstract geometric forms. These coins have been found in large numbers across East Anglia and provide a material record of Iceni cultural and economic activity up to the time of the revolt.
+        </p>
+        <p>
+          <strong>La T&egrave;ne style metalwork</strong> &mdash; including <strong>torcs</strong> (twisted neck rings of gold or bronze), chariot fittings, and weapons &mdash; found in East Anglia reflects the wider Celtic artistic tradition shared by the Iceni with other British tribes. The <strong>Snettisham Treasure</strong>, discovered in Norfolk in 1948 and subsequently expanded by later finds, is the most spectacular collection of Iron Age gold torcs ever found in Britain, and while it predates the revolt by about a century, it provides vivid evidence of the wealth and craftsmanship of the Iceni society from which Boudicca emerged.
+        </p>
+      </div>
+
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Case Study: The Snettisham Treasure</p>
+        <p class="text-gray-700">
+          The Snettisham Treasure (discovered 1948&ndash;1990, Norfolk) consists of over 170 gold and electrum torcs, representing an enormous concentration of wealth buried during the Late Iron Age. While not directly connected to the revolt, it illustrates the extraordinary material wealth of the Iceni nobility &mdash; the very wealth that Roman financial exploitation targeted. The treasure is held at the British Museum.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="d"
+           data-feedback-correct="Correct! The Snettisham Treasure demonstrates that the Iceni were extraordinarily wealthy and skilled in metalwork. This is significant because it was precisely this kind of wealth that Roman financial exploitation targeted &mdash; providing context for why the Iceni rebelled."
+           data-feedback-incorrect="Not quite. The Snettisham Treasure is historically significant because it demonstrates the extraordinary wealth of the Iceni nobility. This wealth was exactly what Roman financial exploitation targeted, providing important context for understanding why the Iceni revolted.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p><strong>Gesture voting:</strong> &ldquo;Hold up A, B, C, or D with your fingers. On three &mdash; one, two, three &mdash; show me.&rdquo;</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">Why is the Snettisham Treasure historically significant for understanding Boudicca&rsquo;s revolt?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q3" class="mt-0.5"><span>It was buried by Boudicca herself before the final battle</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q3" class="mt-0.5"><span>It proves that the Romans destroyed all Iceni wealth during the revolt</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q3" class="mt-0.5"><span>It contains weapons used by Boudicca&rsquo;s warriors</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q3" class="mt-0.5"><span>It demonstrates the extraordinary wealth of the Iceni &mdash; the very wealth Roman exploitation targeted</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 4: THE WALBROOK SKULLS CASE STUDY
+       ========================================== -->
+  <section id="chunk-4" class="full-section grad-chunk4 relative">
+    <span class="section-number">04</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-blue-100 text-blue-700">Chunk 4 of 5</span>
+      <h2 class="section-heading">The Walbrook Skulls: When Evidence Challenges the Story</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling: A Lesson in Method</p>
+        <p>This is the most important methodological section of the unit. <strong>Frame it carefully:</strong> &ldquo;This case study is not really about skulls. It&rsquo;s about how historians and archaeologists think. It&rsquo;s about what happens when a dramatic discovery is matched to a dramatic story &mdash; and then modern science shows the match was wrong.&rdquo;</p>
+        <p class="mt-2">Walk through each section step by step. After each, pause and check understanding with cold call before proceeding.</p>
+      </div>
+
+      <!-- Featured image: Walbrook skulls -->
+      <figure class="featured-image">
+        <img src="images/walbrook-skulls.jpg" alt="Photograph of human skulls discovered in the Roman deposits of the Walbrook stream in the City of London, initially linked to Boudicca's sack of Londinium but now reinterpreted by modern archaeological analysis." loading="lazy">
+        <figcaption class="caption"><strong>The Walbrook Skulls</strong> &mdash; Approximately one hundred human skulls discovered in the Roman deposits of the Walbrook stream, City of London. Once linked to Boudicca&rsquo;s revolt, modern analysis has challenged this interpretation.</figcaption>
+      </figure>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          The Walbrook skulls are a collection of approximately <strong>one hundred human skulls</strong> discovered in the Roman deposits of the Walbrook stream in the City of London. They represent one of the most significant and debated finds in the archaeology of Roman Britain &mdash; not because they confirm the written record, but because modern analysis has <strong>challenged</strong> the dramatic story that was initially built around them.
+        </p>
+      </div>
+
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Cross-Reference</p>
+        <p class="text-gray-700">
+          This case study connects directly to Lesson 7 (The Campaign of Destruction). Having studied the burnt destruction layer at Londinium, you can now evaluate a second category of physical evidence from the same city &mdash; and ask why the two types of evidence point to very different conclusions.
+        </p>
+      </div>
+
+      <!-- Section 1: Initial Interpretation -->
+      <h3 class="font-serif text-xl font-bold text-navy mt-10 mb-4">1. Initial Interpretation: Victims of the Revolt</h3>
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          For many decades after their discovery, the Walbrook skulls were linked to Boudicca&rsquo;s sack of Londinium in AD 60/61. Under this interpretation, the skulls were the remains of Roman inhabitants who had been <strong>decapitated</strong> by rebel forces, with their severed heads cast into the stream &mdash; perhaps as a ritual or symbolic act of victory.
+        </p>
+        <p>
+          This reading seemed to fit neatly with the ancient literary accounts. Cassius Dio (<em>Roman History</em> LXII.7) described what he called &ldquo;bestial atrocities&rdquo; committed against the population of Londinium, including acts of extreme violence against women. The skulls appeared to offer <strong>physical confirmation</strong> of Dio&rsquo;s graphic narrative.
+        </p>
+      </div>
+
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Key Observation</p>
+        <p class="text-gray-700">
+          Notice how the initial interpretation was shaped by the written sources &mdash; scholars already knew what Tacitus and Dio said happened at Londinium, and the skulls were interpreted to fit that existing narrative. This is a pattern that archaeologists now actively work to resist.
+        </p>
+      </div>
+
+      <!-- Section 2: Archaeological Challenges -->
+      <h3 class="font-serif text-xl font-bold text-navy mt-10 mb-4">2. Archaeological Challenges: What the Evidence Actually Shows</h3>
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Modern forensic and archaeological analysis has largely <strong>undermined</strong> the Boudiccan revolt theory. Several independent lines of evidence point away from the AD 60/61 connection:
+        </p>
+      </div>
+
+      <!-- Evidence table -->
+      <div class="overflow-x-auto my-8">
+        <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/4">Finding</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Significance</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white/70">
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">Lack of perimortem trauma</td>
+              <td class="px-5 py-3 text-gray-600">The skulls generally show no signs of injuries occurring at the time of death. If the individuals had been killed in a violent massacre or decapitation, we would expect to see cut marks on bone. Their absence is significant.</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 font-semibold text-navy">Demographics of the remains</td>
+              <td class="px-5 py-3 text-gray-600">Most skulls belong to young men &mdash; the demographic most likely to have fled Londinium before Boudicca&rsquo;s army arrived. If the victims were those who could not escape, we would expect a different demographic profile.</td>
+            </tr>
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">Missing jawbones</td>
+              <td class="px-5 py-3 text-gray-600">The absence of jawbones indicates that the heads decomposed in an open environment for several months before entering the water &mdash; the jawbone naturally detaches as soft tissue breaks down. This is inconsistent with a single violent event followed by rapid deposition.</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 font-semibold text-navy">Radiocarbon dating</td>
+              <td class="px-5 py-3 text-gray-600">Scientific dating has placed the skulls across a broad range spanning the 1st to 3rd centuries AD. A connection to a single event in AD 60/61 cannot be sustained when the remains were deposited over approximately 200 years.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Section 3: Alternative Theories -->
+      <h3 class="font-serif text-xl font-bold text-navy mt-10 mb-4">3. Alternative Theories</h3>
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Because the Boudiccan connection is now considered unlikely by most archaeologists, scholars have proposed several alternative explanations:
+        </p>
+      </div>
+
+      <div class="overflow-x-auto my-8">
+        <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/4">Theory</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Explanation</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white/70">
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">Ritual deposition</td>
+              <td class="px-5 py-3 text-gray-600">The skulls may represent a long-standing Celtic or Romano-British religious practice of offering human heads to water spirits. Head cults were documented across the ancient Celtic world.</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 font-semibold text-navy">Periodic urban violence</td>
+              <td class="px-5 py-3 text-gray-600">The remains could be victims of scattered incidents of urban violence, judicial execution, or inter-personal conflict spread across two centuries of Roman occupation.</td>
+            </tr>
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">Natural accumulation</td>
+              <td class="px-5 py-3 text-gray-600">The heads may have been washed down from nearby cemeteries through natural erosion, flooding, or the gradual disturbance of burial sites by building activity in Roman Londinium.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Section 4: Methodological Principles -->
+      <h3 class="font-serif text-xl font-bold text-navy mt-10 mb-4">4. What This Teaches Us About Method</h3>
+
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Methodology Note</p>
+        <p class="text-gray-700">
+          <strong>The &lsquo;evocative potential&rsquo; problem:</strong> A dramatic physical discovery &mdash; a collection of human skulls in a Roman stream &mdash; immediately invites a dramatic story. Without the written accounts of Tacitus and Cassius Dio, these skulls might never have been linked to Boudicca at all. This demonstrates how texts can shape &mdash; and sometimes distort &mdash; the interpretation of the archaeological record.
+        </p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          <strong>Principle 1 &mdash; Evidence must be evaluated independently.</strong> Archaeologists now resist the temptation to fit physical evidence to an existing written narrative. Each line of evidence &mdash; the bones, the radiocarbon dates, the stratigraphic context &mdash; must be assessed on its own terms before being compared with written sources.
+        </p>
+        <p>
+          <strong>Principle 2 &mdash; Absence of evidence matters.</strong> The absence of cut marks on the skulls is evidence in itself. When we expect to find something and do not, that absence must be accounted for. Silence in the archaeological record can be just as significant as presence.
+        </p>
+        <p>
+          <strong>Principle 3 &mdash; Dating precision has limits.</strong> Radiocarbon dating is a powerful tool, but its margins of error mean that placing remains within a 200-year window does not confirm a connection to a specific year. Students must understand what scientific techniques can and cannot establish.
+        </p>
+        <p>
+          <strong>Principle 4 &mdash; Interpretations change.</strong> The Walbrook skulls were confidently linked to Boudicca&rsquo;s revolt for generations. Modern analysis overturned that consensus. This is how historical knowledge works &mdash; it is provisional, and must be revised when new evidence or methods demand it.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="a"
+           data-feedback-correct="Correct! The radiocarbon dating placed the skulls across a 200-year range (1st&ndash;3rd centuries AD), meaning they could not all be from a single event in AD 60/61. This was one of the strongest pieces of evidence against the Boudiccan connection."
+           data-feedback-incorrect="Not quite. The radiocarbon dating showed the skulls were deposited over approximately 200 years (1st&ndash;3rd centuries AD), not during a single event. This made it impossible to link them all to Boudicca's attack on Londinium in AD 60/61.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">What did radiocarbon dating reveal about the Walbrook skulls?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q4" class="mt-0.5"><span>The skulls date from across a 200-year period, ruling out a single event</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q4" class="mt-0.5"><span>All the skulls date precisely to AD 60/61, confirming the Boudiccan link</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q4" class="mt-0.5"><span>The skulls are from the medieval period, not the Roman period at all</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q4" class="mt-0.5"><span>The dating was inconclusive and could not establish any time period</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+
+<div class="match-activity" data-answer="0-1,1-3,2-0,3-2">
+  <h3>Match the Methodological Principle</h3>
+  <p class="text-gray-700 font-medium mb-4">Match each archaeological principle to its meaning:</p>
+  <div class="match-pairs">
+    <div>
+      <div class="match-prompt" data-idx="0">Evidence must be evaluated independently</div>
+      <div class="match-slot" data-idx="0">Click an answer</div>
+      <div class="match-prompt" data-idx="1" style="margin-top:0.75rem">Absence of evidence matters</div>
+      <div class="match-slot" data-idx="1">Click an answer</div>
+      <div class="match-prompt" data-idx="2" style="margin-top:0.75rem">Dating precision has limits</div>
+      <div class="match-slot" data-idx="2">Click an answer</div>
+      <div class="match-prompt" data-idx="3" style="margin-top:0.75rem">Interpretations change</div>
+      <div class="match-slot" data-idx="3">Click an answer</div>
+    </div>
+    <div>
+      <div class="match-answer match-item" data-idx="0">Radiocarbon dating cannot pinpoint a specific year within a 200-year range</div>
+      <div class="match-answer match-item" data-idx="1">Don&rsquo;t fit physical finds to an existing written narrative</div>
+      <div class="match-answer match-item" data-idx="2">Historical knowledge is provisional and must be revised with new evidence</div>
+      <div class="match-answer match-item" data-idx="3">When we expect to find something and don&rsquo;t, that absence is significant</div>
+    </div>
+  </div>
+  <button class="check-btn" style="margin-top:1rem">Check Matches</button>
+  <div class="cfu-feedback" aria-live="polite"></div>
+</div>
+
+<details class="mt-4">
+  <summary class="text-sm font-semibold text-navy cursor-pointer hover:text-burgundy transition-colors">Need help? Open the OVPRL analysis scaffold</summary>
+  <div class="ovprl-tool mt-3" style="border-width:1px;">
+    <p class="text-sm text-gray-500 mb-4">Use this scaffold if you need guidance analysing the Walbrook skulls as a source.</p>
+    <div class="ovprl-field">
+      <label for="ovprl-13-r"><span class="text-burgundy font-extrabold">R &mdash; Reliability:</span> How reliable are the skulls as evidence for the Boudiccan revolt?</label>
+      <textarea id="ovprl-13-r" placeholder="Consider the radiocarbon dating range and the absence of trauma marks..."></textarea>
+      <button class="hint-toggle">Show example answer</button>
+      <div class="hint-content">The skulls are NOT reliable as evidence for the Boudiccan revolt specifically. Radiocarbon dating places them across 200 years (1st&ndash;3rd centuries AD), not a single event. The absence of perimortem trauma and missing jawbones suggest gradual deposition, not massacre.</div>
+    </div>
+    <div class="ovprl-field">
+      <label for="ovprl-13-l"><span class="text-burgundy font-extrabold">L &mdash; Limitations:</span> What can these skulls NOT tell us?</label>
+      <textarea id="ovprl-13-l" placeholder="What is missing from this evidence?"></textarea>
+      <button class="hint-toggle">Show example answer</button>
+      <div class="hint-content">The skulls cannot tell us who these people were, how they died, or why their heads ended up in the Walbrook. They cannot confirm or deny a connection to Boudicca. The initial interpretation was shaped by the written sources &mdash; scholars fitted the physical evidence to an existing narrative rather than evaluating it independently.</div>
+    </div>
+  </div>
+</details>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 5: COMPARING WRITTEN AND ARCHAEOLOGICAL EVIDENCE
+       ========================================== -->
+  <section id="chunk-5" class="full-section grad-chunk5 relative">
+    <span class="section-number">05</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-rose-100 text-rose-700">Chunk 5 of 5</span>
+      <h2 class="section-heading">Comparing Written and Archaeological Evidence</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Gradual Release: I Do, We Do, You Do</p>
+        <ol class="list-decimal ml-5 mt-1 space-y-1">
+          <li><strong>I Do:</strong> Model reading the first row of the comparison table, explaining what &lsquo;strengths&rsquo; means for each type of evidence.</li>
+          <li><strong>We Do:</strong> Work through &lsquo;Limitations&rsquo; and &lsquo;Bias&rsquo; together as a class.</li>
+          <li><strong>You Do:</strong> Students independently answer the Think &amp; Analyse questions below.</li>
+        </ol>
+        <p class="mt-2">Check understanding after each step. Use <strong>cold call</strong> to share responses.</p>
+      </div>
+
+      <!-- Comparison Table -->
+      <div class="overflow-x-auto my-8">
+        <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/6"></th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Written Evidence</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Archaeological Evidence</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white/70">
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">Strengths</td>
+              <td class="px-5 py-3 text-gray-600">Provides narrative context, motivation, names, and dates; records individual perspectives and speeches; identifies key figures</td>
+              <td class="px-5 py-3 text-gray-600">Physical remains are not shaped by authorial intent; provides evidence of scale, material culture, and everyday life</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 font-semibold text-navy">Limitations</td>
+              <td class="px-5 py-3 text-gray-600">Written by Romans with political purposes; no Celtic voice survives; written 35&ndash;160 years after events; casualty figures likely exaggerated</td>
+              <td class="px-5 py-3 text-gray-600">Cannot provide names, motivations, or narrative context; radiocarbon dating has margins of error; subject to excavator interpretation</td>
+            </tr>
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">Bias</td>
+              <td class="px-5 py-3 text-gray-600">Systematic pro-Roman cultural bias; individual authorial perspectives shaped by senatorial values</td>
+              <td class="px-5 py-3 text-gray-600">Interpretation shaped by excavator&rsquo;s theoretical framework; early discoveries often interpreted through existing written narratives</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 font-semibold text-navy">Corroboration</td>
+              <td class="px-5 py-3 text-gray-600">Tacitus and Dio broadly agree on major events but differ on details such as casualty figures and Boudicca&rsquo;s death</td>
+              <td class="px-5 py-3 text-gray-600">Destruction layers confirmed at all three cities; broadly supports the written chronology of AD 60&ndash;61</td>
+            </tr>
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">Uniqueness</td>
+              <td class="px-5 py-3 text-gray-600">Only sources for narrative sequence, individual personalities, speeches, and political context</td>
+              <td class="px-5 py-3 text-gray-600">Only source for material culture, demographic patterns, settlement rebuilding, and the lives of ordinary people</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Think & Analyse -->
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-3">Think &amp; Analyse: Written vs. Archaeological Evidence</p>
+        <p class="text-gray-700 mb-3">
+          A historian studying Boudicca&rsquo;s revolt has access to both written accounts (Tacitus and Cassius Dio) and archaeological evidence (burn layers, artefacts, coin hoards). Consider how these two types of evidence work together &mdash; and where they conflict.
+        </p>
+        <ul class="list-disc ml-5 space-y-2 text-gray-700">
+          <li>Tacitus tells us that Londinium was abandoned by Suetonius and then destroyed by Boudicca&rsquo;s forces. How does the archaeological evidence from the City of London support or challenge this account?</li>
+          <li>Archaeology can confirm that the three cities were destroyed, but not <em>why</em>. What can written sources tell us that archaeology cannot? What can archaeology tell us that written sources cannot?</li>
+          <li>A critic argues: &ldquo;Without Tacitus and Cassius Dio, the burn layers in London would be meaningless &mdash; we would not even know to connect them to Boudicca.&rdquo; Do you agree? What does this suggest about the relationship between written and physical evidence in ancient history?</li>
+        </ul>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="c"
+           data-feedback-correct="Correct! Without the written sources, we could confirm that three towns were burned &mdash; but we would not know who burned them, why, or that it was a deliberate revolt. Written sources provide the narrative context that gives archaeological evidence its historical meaning."
+           data-feedback-incorrect="Not quite. This is about what each type of evidence provides. Archaeology confirms destruction happened, but cannot tell us it was Boudicca who caused it, or why. Written sources provide the narrative &mdash; the who, why, and context &mdash; that gives the physical evidence its historical meaning.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p><strong>Think-pair-share:</strong> Give students 60 seconds to discuss with a partner, then cold call 2&ndash;3 pairs.</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">What would we <em>not</em> know about the destruction of Londinium without the written sources?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q5" class="mt-0.5"><span>That the city was destroyed &mdash; the archaeological evidence would also disappear</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q5" class="mt-0.5"><span>How deep the destruction layer is beneath the modern surface</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q5" class="mt-0.5"><span>Who destroyed it, why, and that it was part of a deliberate revolt</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q5" class="mt-0.5"><span>What materials were used to build the original Roman structures</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       INDEPENDENT PRACTICE: REVIEW QUESTIONS
+       ========================================== -->
+  <section id="practice" class="full-section grad-practice relative">
+    <span class="section-number">Q</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-green-100 text-green-700">Independent Practice</span>
+      <h2 class="section-heading">Review Questions</h2>
+      <p class="text-sm text-gray-500 mb-6">Choose the level that challenges you, or work through all three.</p>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Independent Practice (&lsquo;You Do&rsquo;)</p>
+        <p>Students should attempt these <strong>only after a high success rate</strong> on the CFU questions. Direct all students to Foundation first. The Walbrook Skulls questions below are additional practice specifically on the case study.</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> Students write one strength and one limitation of archaeological evidence on a sticky note before leaving.</p>
+      </div>
+
+      <div class="tab-group">
+        <button class="tab-btn active" data-tab="foundation">Foundation</button>
+        <button class="tab-btn" data-tab="standard">Standard</button>
+        <button class="tab-btn" data-tab="extension">Extension</button>
+      </div>
+
+      <div class="tab-content active" id="foundation" data-tab="foundation">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Identify and describe</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>What is the &ldquo;Boudiccan destruction horizon&rdquo; and in which three cities has it been found?</li>
+          <li>Name one type of artefact associated with the Iceni tribe.</li>
+          <li>Give one strength and one limitation of archaeological evidence as a historical source.</li>
+          <li>What was the initial interpretation of the Walbrook skulls, and which ancient historian&rsquo;s account seemed to support this theory?</li>
+          <li>Identify two physical characteristics of the skulls that modern archaeologists have used to challenge the Boudiccan revolt theory.</li>
+        </ol>
+      </div>
+      <div class="tab-content" id="standard" data-tab="standard">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Analyse and explain</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Explain how the Boudiccan destruction horizon at Londinium corroborates the written account of Tacitus.</li>
+          <li>Analyse the significance of the Snettisham Treasure as evidence for Iceni society before the revolt.</li>
+          <li>Compare the value of written and archaeological evidence for understanding the Boudiccan revolt. Which type of evidence do you find more useful, and why?</li>
+          <li>Explain why the absence of perimortem trauma challenges the theory that the skulls are victims of Boudicca&rsquo;s sack of Londinium.</li>
+          <li>Analyse what the missing jawbones and the broad radiocarbon dating range (1st&ndash;3rd centuries AD) together suggest about how and when the skulls entered the Walbrook stream.</li>
+        </ol>
+      </div>
+      <div class="tab-content" id="extension" data-tab="extension">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Evaluate and debate</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Evaluate the claim that archaeological evidence, despite its limitations, provides a more reliable foundation for historical understanding of the Boudiccan revolt than the written sources of Tacitus and Cassius Dio.</li>
+          <li>Critically analyse the problems of interpreting the Walbrook skulls as evidence of the Boudiccan attack on Londinium. What methodological principles should govern the use of ambiguous physical evidence?</li>
+          <li>To what extent has modern archaeological investigation transformed our understanding of the Boudiccan revolt? Argue a position with specific examples.</li>
+          <li>Evaluate the claim that the Walbrook skulls demonstrate the &lsquo;evocative potential&rsquo; of archaeological evidence &mdash; that dramatic physical discoveries invite dramatic stories. To what extent is this a problem specific to archaeology, or does the same issue affect written sources?</li>
+          <li>Critically assess the methodological principles illustrated by the Walbrook skulls case study. Which principle do you consider most important for a historian working with ancient evidence, and why?</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="text-sm text-gray-600">By now you should structure responses independently using PEEL. If you need a refresher, revisit <a href="lesson-15.html" class="text-navy font-medium underline">Lesson 15: Essay Skills</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       KEY TERMS: FLASHCARD GLOSSARY
+       ========================================== -->
+  <section id="key-terms" class="full-section grad-terms relative">
+    <span class="section-number">A&ndash;Z</span>
+    <div class="section-inner">
+      <div class="flex items-end justify-between mb-6 reveal">
+        <div>
+          <span class="section-label bg-purple-100 text-purple-700">Key Terms</span>
+          <h2 class="section-heading mb-0">Glossary</h2>
+        </div>
+        <button class="glossary-view-toggle text-sm text-navy font-semibold hover:text-burgundy transition-colors cursor-pointer">
+          Switch to List View
+        </button>
+      </div>
+      <p class="text-sm text-gray-500 mb-6 reveal">Click each card to reveal its definition.</p>
+
+      <!-- Flashcards -->
+      <div class="flashcard-grid reveal-stagger">
+        <div class="flashcard" tabindex="0" role="button" aria-label="Flashcard: Destruction horizon">
+          <div class="flashcard-inner"><div class="flashcard-front">Destruction Horizon</div><div class="flashcard-back">A layer in the soil, typically of burnt material, that archaeologists identify as evidence of a specific violent destruction event.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Radiocarbon Dating</div><div class="flashcard-back">A scientific dating method that measures the decay of radioactive carbon-14 in organic material to determine its age.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">La T&egrave;ne</div><div class="flashcard-back">A Celtic cultural phase (c. 500 BC&ndash;AD 100) characterised by distinctive curvilinear art; also the style of metalwork produced in this period.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Torc</div><div class="flashcard-back">A twisted ring of metal, typically gold or silver, worn around the neck as a high-status adornment in Celtic cultures.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Stratigraphy</div><div class="flashcard-back">The study of archaeological layers (strata) to establish the chronological sequence of deposits and events at a site.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Snettisham Treasure</div><div class="flashcard-back">A hoard of over 170 gold and electrum torcs found in Norfolk, the most spectacular Iron Age gold find in Britain, held in the British Museum.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Inference</div><div class="flashcard-back">In historical and archaeological method, the process of drawing conclusions that go beyond directly observable evidence.</div></div>
+        </div>
+      </div>
+
+      <!-- List View (hidden) -->
+      <div class="glossary-list hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+            <thead>
+              <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/4">Term</th>
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Definition</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white/70">
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Destruction horizon</td><td class="px-5 py-3 text-gray-600">A layer in the soil, typically of burnt material, that archaeologists identify as evidence of a specific violent destruction event.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Radiocarbon dating</td><td class="px-5 py-3 text-gray-600">A scientific dating method that measures the decay of radioactive carbon-14 in organic material to determine its age.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">La T&egrave;ne</td><td class="px-5 py-3 text-gray-600">A Celtic cultural phase (c. 500 BC&ndash;AD 100) characterised by distinctive curvilinear art; also the style of metalwork produced in this period.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Torc</td><td class="px-5 py-3 text-gray-600">A twisted ring of metal, typically gold or silver, worn around the neck as a high-status adornment in Celtic cultures.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Stratigraphy</td><td class="px-5 py-3 text-gray-600">The study of archaeological layers (strata) to establish the chronological sequence of deposits and events at a site.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Snettisham Treasure</td><td class="px-5 py-3 text-gray-600">A hoard of over 170 gold and electrum torcs found in Norfolk, the most spectacular Iron Age gold find in Britain, held in the British Museum.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Inference</td><td class="px-5 py-3 text-gray-600">In historical and archaeological method, the process of drawing conclusions that go beyond directly observable evidence.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       REVIEW OF LEARNING
+       ========================================== -->
+  <section id="review" class="full-section grad-review relative">
+    <div class="section-inner reveal">
+      <span class="section-label bg-gold/20 text-amber-700">Review of Learning</span>
+      <h2 class="section-heading">How Did You Go?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6 text-[1.05rem]">
+        Return to the success criteria from the start of this lesson. Can you now tick off each one?
+        If any remain unticked, scroll back and review the relevant section.
+      </p>
+
+      <div class="space-y-3">
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">1</span>
+          <span class="text-gray-700">Describe the main types of archaeological evidence associated with the Boudiccan revolt.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">2</span>
+          <span class="text-gray-700">Explain how the Boudiccan destruction horizon is identified and dated.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">3</span>
+          <span class="text-gray-700">Analyse the relationship between archaeological and written evidence for the revolt.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">4</span>
+          <span class="text-gray-700">Evaluate the strengths and limitations of archaeological evidence as a historical source.</span>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Review of Learning</p>
+        <p><strong>Self-assessment</strong> for each criterion: &ldquo;Thumbs up if confident, sideways if partly there, down if you need more help.&rdquo;</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> &ldquo;On a sticky note, write one strength and one limitation of archaeological evidence for understanding Boudicca&rsquo;s revolt.&rdquo; Collect as students leave.</p>
+      </div>
+
+      <!-- Exit Ticket -->
+      <div class="exit-ticket">
+        <h4>Exit Ticket</h4>
+        <label class="text-sm text-gray-600 block mb-1">One thing I learned today:</label>
+        <textarea placeholder="What was the most important thing you learned in this lesson?"></textarea>
+        <label class="text-sm text-gray-600 block mb-1">One question I still have:</label>
+        <textarea placeholder="What are you still unsure about or want to know more about?"></textarea>
+      </div>
+
+      <!-- Reflection -->
+      <div class="reflection-panel">
+        <h4>Self-Reflection</h4>
+        <p class="text-sm text-gray-600 mb-2">How confident do you feel about this lesson&rsquo;s content?</p>
+        <div class="confidence-scale">
+          <button class="confidence-btn">1<br><span class="text-[0.65rem]">Not yet</span></button>
+          <button class="confidence-btn">2<br><span class="text-[0.65rem]">Getting there</span></button>
+          <button class="confidence-btn">3<br><span class="text-[0.65rem]">Mostly</span></button>
+          <button class="confidence-btn">4<br><span class="text-[0.65rem]">Confident</span></button>
+          <button class="confidence-btn">5<br><span class="text-[0.65rem]">Mastered</span></button>
+        </div>
+        <label class="text-sm text-gray-600 block mt-3 mb-1">What do you want to revisit before the next lesson?</label>
+        <textarea class="reflection-text" placeholder="Any topics, terms, or skills you want to review?"></textarea>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       LESSON NAVIGATION
+       ========================================== -->
+  <section class="py-12 px-6" style="background: #fefcf9;">
+    <div class="max-w-3xl mx-auto lesson-nav-footer flex items-center justify-between">
+      <a href="lesson-12.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        Lesson 12
+      </a>
+      <span class="text-xs text-gray-300 tracking-wider uppercase">Lesson 13 of 16</span>
+      <a href="lesson-14.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        Lesson 14
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 text-center" style="background: linear-gradient(180deg, #fefcf9, #f5f3ed);">
+    <p class="text-sm text-gray-400 font-sans">
+      NSW Ancient History Stage 6 &middot; NESA Syllabus (2017) &middot; Case Study A
+    </p>
+    <p class="text-xs text-gray-300 mt-2 font-sans">Created by Cheryl Cutter</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

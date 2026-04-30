@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 9: The Uprising Begins | Boudicca Interactive</title>
+
+  <!-- Meta -->
+  <meta name="description" content="Interactive NSW Ancient History Stage 6 resource — Boudicca case study with explicit teaching, CFU activities, source analysis, and teacher facilitation tools.">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': { DEFAULT: '#1a1a2e', mid: '#16213e', light: '#2a4d7a' },
+            'burgundy': { DEFAULT: '#8b2635', light: '#a83242' },
+            'gold': { DEFAULT: '#c9a84c', light: '#e8d292' },
+          },
+          fontFamily: {
+            'serif': ['Playfair Display', 'Georgia', 'serif'],
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans" style="background: #fefcf9;">
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress"></div>
+
+  <!-- Navigation (Glassmorphism) -->
+  <nav class="site-nav">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-5">
+        <a href="index.html" class="text-white font-serif text-xl font-bold tracking-wide hover:text-gold transition-colors">
+          Boudicca
+        </a>
+        <span class="text-white/20 hidden sm:inline">|</span>
+        <span class="text-white/40 text-xs font-sans tracking-wider hidden sm:inline">Lesson 9 of 16</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <button class="teacher-toggle" aria-label="Toggle teacher facilitation notes">Teacher Mode</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="lesson-hero grad-hero" style="background: linear-gradient(165deg, rgba(26,26,46,0.92) 0%, rgba(22,33,62,0.88) 50%, rgba(26,39,68,0.92) 100%), url('images/revolt-map-movements.png') center/cover no-repeat;">
+    <div class="relative z-10 max-w-3xl mx-auto reveal">
+      <span class="chapter-badge">Chapter 3 &middot; The Revolt and Aftermath</span>
+      <p class="text-white/40 font-sans text-sm tracking-wider uppercase mb-3">Lesson 9</p>
+      <h1 class="hero-title font-serif text-white">The Uprising<br>Begins</h1>
+      <p class="hero-desc">
+        How and why did the Boudiccan revolt erupt in AD 60/61 &mdash; and what happened when
+        Boudicca&rsquo;s forces turned their fury on the Roman city of Camulodunum?
+      </p>
+      <p class="reading-time"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> ~28 min</p>
+      <!-- Syllabus Outcomes -->
+      <details class="mt-8">
+        <summary class="text-white/25 text-xs font-sans cursor-pointer hover:text-white/40 transition-colors uppercase tracking-[0.15em]">
+          NESA Syllabus Outcomes
+        </summary>
+        <div class="mt-3 text-white/35 text-xs font-sans space-y-1 leading-relaxed">
+          <p><strong class="text-white/50">AH11-1:</strong> Describes the nature of continuity and change in the ancient world</p>
+          <p><strong class="text-white/50">AH11-3:</strong> Analyses the role of historical features, individuals and groups in shaping the past</p>
+          <p><strong class="text-white/50">AH11-6:</strong> Analyses and interprets different types of sources for evidence to support an historical account or argument</p>
+          <p><strong class="text-white/50">AH11-10:</strong> Discusses contemporary methods and issues involved in the investigation of ancient history</p>
+        </div>
+      </details>
+    </div>
+    <!-- Decorative number -->
+    <div class="absolute bottom-6 right-8 font-serif text-white/[0.03] font-extrabold pointer-events-none select-none hidden md:block" style="font-size: 14rem; line-height: 1;">09</div>
+  </section>
+
+
+  <!-- ==========================================
+       LEARNING INTENTION & SUCCESS CRITERIA
+       ========================================== -->
+  <section id="lisc" class="full-section grad-lisc">
+    <div class="section-inner reveal">
+      <span class="section-label bg-navy/[0.07] text-navy">Learning Intention</span>
+      <h2 class="section-heading">What You&rsquo;ll Learn</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-8">
+        To understand how and why the Boudiccan revolt erupted in AD 60/61, examining the attack on Camulodunum, the fate of the Ninth Legion, and the collapse of Roman authority in the province.
+      </p>
+
+      <div>
+        <h3 class="font-sans text-xs font-bold uppercase tracking-[0.12em] text-gray-400 mb-2">Success Criteria</h3>
+        <p class="sc-progress-text text-xs text-gray-400 mb-1">0 of 4 criteria met</p>
+        <div class="sc-progress"><div class="sc-progress-bar"></div></div>
+        <p class="text-sm text-gray-500 mb-4">By the end of this lesson, I can:</p>
+        <div class="space-y-1">
+          <div class="sc-item"><input type="checkbox" id="sc1"><label for="sc1">Describe the events at Camulodunum that marked the beginning of the revolt.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc2"><label for="sc2">Explain the strategic and symbolic significance of the Temple of Claudius.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc3"><label for="sc3">Analyse the military defeat of Legio IX Hispana and its implications for Rome.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc4"><label for="sc4">Assess the role of Catus Decianus in triggering and responding to the revolt.</label></div>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Sharing LISC</p>
+        <p>Display the learning intention and success criteria on the board. Read them aloud and ask students to identify the <em>key verbs</em> (describe, explain, analyse, assess). Note that today&rsquo;s lesson covers the dramatic opening of the revolt &mdash; students will be engaging with narrative history. Check understanding: <strong>&ldquo;Can someone tell me what &lsquo;assess&rsquo; means in history?&rdquo;</strong> (cold call).</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       ACTIVATING PRIOR KNOWLEDGE
+       ========================================== -->
+  <section id="prior-knowledge" class="full-section grad-prior relative">
+    <span class="section-number">?</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-white/50 text-amber-700">Before We Begin</span>
+      <h2 class="section-heading">What Do You Already Know?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        In Lesson 8 we examined the military differences between Celtic and Roman forces. Today we see those forces clash as the revolt begins. Let&rsquo;s retrieve what we learned.
+      </p>
+
+      <div class="mb-6">
+        <p class="font-sans text-sm font-semibold text-gray-700 mb-2">Quick retrieval: Which of these was a key Celtic military weakness?</p>
+        <div class="poll-options">
+          <button class="poll-btn">No supply lines</button>
+          <button class="poll-btn">No cavalry</button>
+          <button class="poll-btn">No iron weapons</button>
+          <button class="poll-btn">No shields</button>
+        </div>
+      </div>
+
+      <div>
+        <label class="font-sans text-sm font-semibold text-gray-700 block mb-2" for="prior-text">
+          Retrieval practice: Write down one strength and one weakness of Celtic forces from Lesson 8.
+        </label>
+        <textarea id="prior-text" class="w-full border border-black/[0.08] rounded-2xl p-4 text-sm font-sans leading-relaxed resize-y bg-white/60 backdrop-blur min-h-[90px] focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-all"
+                  placeholder="For example: A Celtic strength was... A Celtic limitation was..."></textarea>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Activating Prior Knowledge</p>
+        <p>Use <strong>cold call</strong> to ask 3&ndash;4 students what they wrote. This connects Lesson 8 (military tactics) to today&rsquo;s narrative of the revolt beginning. The correct answer for the poll is &ldquo;No supply lines&rdquo; &mdash; use this to bridge into the lesson.</p>
+        <p class="mt-2"><strong>CFU strategy:</strong> Think-pair-share &mdash; &ldquo;With your partner, discuss: Based on what you know about Celtic and Roman military differences, what advantages would Boudicca have had when attacking an undefended Roman town?&rdquo; (60 seconds).</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 1: THE SPARK — GRIEVANCES BECOME WAR
+       ========================================== -->
+  <section id="chunk-1" class="full-section grad-chunk1 relative">
+    <span class="section-number">01</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-burgundy/10 text-burgundy">Chunk 1 of 4</span>
+      <h2 class="section-heading">The Spark: Grievances Become War</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling (&lsquo;I Do&rsquo;)</p>
+        <p><strong>Read the first paragraph aloud</strong> and model the thinking: &ldquo;Notice that Tacitus records omens &mdash; supernatural signs. As historians, we don&rsquo;t take these literally, but they tell us something important: the Roman settlers were deeply anxious. They sensed that something terrible was coming.&rdquo;</p>
+        <p class="mt-2">Pause to check understanding: &ldquo;Why might Tacitus include omens in a historical account?&rdquo;</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          The revolt did not begin without warning. Tacitus records a series of <strong>omens</strong> that the Roman settlers at Camulodunum interpreted as portents of disaster: the statue of Victory was said to have fallen from its pedestal and turned as if fleeing the enemy; women reported hearing sounds of screaming from the senate house; the theatre rang with howling; and the Thames estuary, at low tide, was said to resemble the ruin of a colony. Whether or not these omens were real, they reflected a community that was deeply anxious about its security &mdash; and rightly so.
+        </p>
+        <p>
+          The immediate human trigger was the treatment of Boudicca and the Iceni following the death of Prasutagus. Roman officials seized the Iceni kingdom, flogged Boudicca, and assaulted her daughters. Simultaneously, Roman moneylenders &mdash; most notoriously the philosopher <strong>Seneca</strong>, who had reportedly lent forty million sesterces to prominent Britons &mdash; called in their loans abruptly, creating financial devastation among the native nobility. The procurator <strong>Catus Decianus</strong>, responsible for financial administration of the province, oversaw these abuses and would later be held personally responsible for provoking the revolt.
+        </p>
+        <p>
+          The neighbouring <strong>Trinovantes</strong> tribe, still nursing deep grievances over the founding of Camulodunum on their ancestral land, joined the Iceni. Other unnamed tribes also allied themselves with Boudicca. By the time the revolt erupted, Boudicca commanded what Tacitus described as an army of enormous size.
+        </p>
+      </div>
+
+      <!-- Featured image: Map of revolt movements -->
+      <figure class="featured-image">
+        <img src="images/revolt-map-movements.png" alt="Map showing the locations of the revolt and troop movements during the Boudiccan uprising of AD 60/61, including Camulodunum, Londinium, Verulamium, and the positions of the Roman legions." loading="lazy">
+        <figcaption class="caption"><strong>The Boudiccan Revolt: Locations and Movements.</strong> This map shows the key locations of the revolt &mdash; Camulodunum, Londinium, and Verulamium &mdash; along with the movements of Boudicca&rsquo;s forces and the positions of the Roman legions across the province.</figcaption>
+      </figure>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="b"
+           data-feedback-correct="Correct! While the treatment of Boudicca and her daughters was the immediate trigger, the revolt drew its strength from multiple grievances: land seizures from the Trinovantes, the calling in of loans by Seneca and other moneylenders, and the broader oppression overseen by Catus Decianus. The Trinovantes joining the Iceni shows how widespread the anger was."
+           data-feedback-incorrect="Not quite. While the flogging of Boudicca was the immediate trigger, the revolt was fuelled by a combination of grievances: the Trinovantes' anger over land seizures, the calling in of loans, and broader Roman administrative abuses. It was not caused by any single event alone.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p>Use <strong>cold call</strong>. If they answer incorrectly, ask: &ldquo;Can someone identify the different groups who had reasons to revolt?&rdquo; Aim for 80%+ success before moving on.</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">What best explains why the revolt gained such widespread support?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q1" class="mt-0.5"><span>Boudicca was a powerful warrior who personally recruited thousands of fighters</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q1" class="mt-0.5"><span>Multiple tribes shared grievances including land seizures, financial exploitation, and personal abuse by Roman officials</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q1" class="mt-0.5"><span>The Roman army had been completely withdrawn from Britain, leaving no defenders</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q1" class="mt-0.5"><span>Celtic religious leaders ordered all tribes to unite against Rome for spiritual reasons</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+
+      <div class="sequence-activity" data-correct="3,0,2,1,4">
+        <h3>Put the Opening Events in Order</h3>
+        <p class="text-gray-700 font-medium mb-4">Arrange these events in the order they occurred:</p>
+        <ul class="sequence-list">
+          <li class="sequence-item" data-idx="0">Boudicca&rsquo;s forces attack Camulodunum</li>
+          <li class="sequence-item" data-idx="1">Petilius Cerialis and the Ninth Legion are ambushed</li>
+          <li class="sequence-item" data-idx="2">Settlers retreat to the Temple of Claudius</li>
+          <li class="sequence-item" data-idx="3">Catus Decianus sends only 200 troops</li>
+          <li class="sequence-item" data-idx="4">Catus Decianus flees to Gaul</li>
+        </ul>
+        <button class="check-btn" style="margin-top:1rem">Check Order</button>
+        <div class="cfu-feedback" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 2: CAMULODUNUM — THE FIRST TARGET
+       ========================================== -->
+  <section id="chunk-2" class="full-section grad-chunk2 relative">
+    <span class="section-number">02</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-purple-100 text-purple-700">Chunk 2 of 4</span>
+      <h2 class="section-heading">Camulodunum: The First Target</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Guided Reading (&lsquo;We Do&rsquo;)</p>
+        <p>Have students read this section silently. Then use <strong>think-pair-share</strong>: &ldquo;Why was Camulodunum such a powerful symbolic target? Discuss with your partner.&rdquo; (60 seconds). Cold call 2&ndash;3 pairs to share.</p>
+        <p class="mt-2">Draw attention to the phrase &ldquo;blatant stronghold of alien rule&rdquo; &mdash; ask students what Tacitus is conveying with this language.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Camulodunum (modern Colchester) was the most symbolically loaded target the rebels could have chosen. It was the oldest Roman city in Britain, the first <strong>colonia</strong> (a settlement of Roman citizens, typically retired veterans), and the site of a massive temple dedicated to the deified Emperor Claudius. To the Britons, the temple was, as Tacitus writes, <em>&ldquo;a blatant stronghold of alien rule&rdquo;</em> &mdash; a permanent monument to their conquest and subjugation, built on seized land, and maintained at local expense through compulsory levies.
+        </p>
+        <p>
+          The veterans settled at Camulodunum had compounded these grievances by appropriating additional land from the Trinovantes, treating British landowners with contempt, and generally behaving as if the entire surrounding region was their personal property. Tacitus notes that the Britons drove out the Roman settlers from their farms and harassed them continuously.
+        </p>
+        <p>
+          When Boudicca&rsquo;s forces advanced on Camulodunum, the town had <strong>no walls and no garrison</strong>. The procurator Catus Decianus, when appealed to for help, sent only two hundred soldiers &mdash; and even these were poorly equipped. The settlers sent to Londinium for additional assistance but received none in time. Suetonius Paulinus, the provincial governor, was at the time engaged in a military campaign against the Druids on the island of Mona (Anglesey) in north-west Wales &mdash; far from the revolt.
+        </p>
+      </div>
+
+      <!-- The Temple of Claudius -->
+      <h3 class="font-serif text-xl font-bold text-navy mt-8 mb-4">The Temple of Claudius: Last Refuge</h3>
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          The attack on Camulodunum was ferocious. Tacitus records that the town was taken and plundered with no mercy being shown to old or young, or even to women. The Roman settlers and their allies retreated to the <strong>Temple of Claudius</strong> as a last stronghold. The temple, a large stone building on a raised platform, offered some defensive potential, and the survivors held out there for two days before the doors were broken down and all inside were killed.
+        </p>
+        <p>
+          Archaeological excavation at modern Colchester has confirmed these events in extraordinary detail. Below the foundation platform of the present Norman castle (which was built reusing Roman materials on the same site), archaeologists have found the podium of the original temple &mdash; one of the largest Roman buildings in Britain. A thick destruction layer associated with the Boudiccan revolt has been identified across the site, containing burnt material, collapsed structures, and artefacts consistent with a violent destruction in the mid-first century AD.
+        </p>
+      </div>
+
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Archaeological Connection</p>
+        <p class="text-gray-700">
+          The Boudiccan destruction layer at Camulodunum typically appears as a reddish-orange layer of burnt debris, charred wood, melted glass, and broken pottery. This physical record in the soil directly corroborates Tacitus&rsquo;s written account of the town&rsquo;s destruction &mdash; a rare and powerful convergence of literary and archaeological evidence.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="c"
+           data-feedback-correct="Correct! The Temple of Claudius was the hated symbol of Roman religious and political domination, built on seized Trinovantes land, maintained at local expense, and dedicated to the emperor who had conquered Britain. Destroying it was an act of enormous symbolic significance."
+           data-feedback-incorrect="Not quite. The Temple of Claudius was far more than just a building &mdash; it was the most visible symbol of Roman conquest. It was built on land seized from the Trinovantes, funded by local taxes, and dedicated to the emperor who had invaded Britain. Its destruction was a deliberate symbolic act.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">Why was the Temple of Claudius at Camulodunum such a significant target for the rebels?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q2" class="mt-0.5"><span>It contained a large treasury of gold and silver that the rebels needed to fund their campaign</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q2" class="mt-0.5"><span>It was the main Roman military headquarters where battle plans were stored</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q2" class="mt-0.5"><span>It was a hated symbol of Roman conquest, built on seized land and maintained at local expense</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q2" class="mt-0.5"><span>It was where Boudicca had been personally flogged by Roman officials</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 3: THE DEFEAT OF LEGIO IX HISPANA
+       ========================================== -->
+  <section id="chunk-3" class="full-section grad-chunk3 relative">
+    <span class="section-number">03</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-amber-100 text-amber-700">Chunk 3 of 4</span>
+      <h2 class="section-heading">The Defeat of Legio IX Hispana</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Scaffolding (&lsquo;We Do&rsquo;)</p>
+        <p>This is a pivotal moment in the narrative. <strong>Read the section aloud</strong> with appropriate gravity. After reading, ask: &ldquo;Why was the destruction of a Roman legion&rsquo;s infantry such a shocking event?&rdquo; Connect back to Lesson 8&rsquo;s content on Roman military professionalism.</p>
+        <p class="mt-2"><strong>Think-pair-share:</strong> &ldquo;What does the defeat of the Ninth Legion tell us about Boudicca&rsquo;s forces?&rdquo; (60 seconds).</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          News of the fall of Camulodunum reached <strong>Quintus Petilius Cerialis</strong>, commander of Legio IX Hispana (the Ninth Legion), stationed at Lindum (Lincoln). Cerialis immediately led his infantry south towards the rebels &mdash; a bold but ultimately catastrophic decision. The Roman cavalry managed to escape, but Boudicca&rsquo;s forces ambushed and annihilated the infantry in a pitched engagement. Tacitus does not give us the exact number of Roman dead, but the scale of the defeat was clearly catastrophic.
+        </p>
+        <p>
+          The destruction of a Roman legion&rsquo;s infantry in open battle was an <strong>extraordinary event</strong>. Rome had not suffered such a defeat in Britain since the initial invasion, and the news sent shockwaves through the province. Cerialis himself fled to safety with the surviving cavalry &mdash; an act that later generations of Roman historians found deeply embarrassing, though Cerialis would eventually redeem his reputation through later service.
+        </p>
+        <p>
+          The defeat of the Ninth Legion demonstrated that Boudicca&rsquo;s forces were <strong>not simply a mob of angry provincials</strong>. They were a coordinated military force capable of tactical planning, able to set an ambush, and large enough to overwhelm professional Roman soldiers in the field.
+        </p>
+      </div>
+
+      <!-- Primary Source: Tacitus on the Ninth Legion -->
+      <div class="source-box">
+        <p class="provenance">
+          <strong>Primary Source:</strong> Tacitus, <em>Annals</em> 14.32 (c. AD 98). Tacitus was a Roman senator and historian writing approximately fifty-seven years after the revolt. His father-in-law Agricola served as governor of Britain, giving him access to firsthand accounts of British affairs. Translation: A.J. Woodman (Penguin, 2004).
+        </p>
+        <blockquote>
+          &ldquo;Petilius Cerialis, the legate of the Ninth Legion, came to the rescue but was defeated: his infantry was cut down and Cerialis himself, escaping with the cavalry, took refuge in his camp. Frightened by this disaster and by the hatred of the province whose treatment he had provoked by his greed, the procurator Catus Decianus crossed over to Gaul.&rdquo;
+        </blockquote>
+        <div class="historian-note">
+          <strong>Historian&rsquo;s note:</strong> This passage is significant for two reasons. First, it records the catastrophic defeat of the Ninth Legion&rsquo;s infantry &mdash; one of the most serious military reverses in the history of the province. Second, Tacitus&rsquo;s language is explicitly condemnatory: the phrase &ldquo;whose treatment he had provoked by his greed&rdquo; places direct personal blame on Decianus for causing the revolt. This is unusually pointed for Roman historical writing, and reflects Tacitus&rsquo;s broader theme that corrupt provincial administration, not Celtic aggression, was the root cause of the uprising.
+        </div>
+      </div>
+
+      <!-- OVPRL Tool (Reduced: R and L only) -->
+      <div class="ovprl-tool">
+        <h3 class="font-serif text-xl font-bold text-navy mb-1">Try It: Analyse Tacitus, <em>Annals</em> 14.32</h3>
+        <p class="text-sm text-gray-500 mb-5">Complete each field. Use the hint button if you need guidance.</p>
+
+        <div class="ovprl-field">
+          <label for="ovprl-9-r"><span class="text-burgundy font-extrabold">R &mdash; Reliability:</span> How trustworthy is this?</label>
+          <textarea id="ovprl-9-r" placeholder="Can we trust this source?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Tacitus wrote approximately 57 years after the revolt, but had access to official records and family connections through his father-in-law Agricola. His condemnatory tone toward Decianus suggests a moral agenda, but his proximity to events and senatorial sources make him the most reliable written source for the revolt.</div>
+        </div>
+        <div class="ovprl-field">
+          <label for="ovprl-9-l"><span class="text-burgundy font-extrabold">L &mdash; Limitations:</span> What does it <em>not</em> tell us?</label>
+          <textarea id="ovprl-9-l" placeholder="What is missing?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Tacitus does not give us the Celtic perspective on the battle. We have no account from Boudicca&rsquo;s side. The casualty figures are not independently verified. Tacitus&rsquo;s focus on Roman officials and commanders means ordinary soldiers, civilians, and the British warriors remain largely invisible.</div>
+        </div>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="a"
+           data-feedback-correct="Correct! The destruction of a Roman legion's infantry was an extraordinary event. It demonstrated that Boudicca's forces were not a disorganised mob but a coordinated military force capable of tactical ambush and of overwhelming professional Roman soldiers. This sent shockwaves through the province."
+           data-feedback-incorrect="Not quite. The key significance was that the destruction of professional Roman infantry in battle was extremely rare. It proved Boudicca's forces were an organised, coordinated fighting force &mdash; not the rabble the Romans might have expected.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p>Use <strong>gesture voting</strong>: &ldquo;Hold up A, B, C, or D with your fingers. On three &mdash; one, two, three &mdash; show me.&rdquo;</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">What was the primary significance of the defeat of Legio IX Hispana?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q3" class="mt-0.5"><span>It proved Boudicca commanded a coordinated military force capable of defeating professional Roman soldiers</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q3" class="mt-0.5"><span>It resulted in the complete withdrawal of all Roman forces from Britain</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q3" class="mt-0.5"><span>It led to an immediate peace treaty between Boudicca and Rome</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q3" class="mt-0.5"><span>It was only a minor skirmish that Tacitus exaggerated for dramatic effect</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 4: CATUS DECIANUS — THE MAN WHO FLED
+       ========================================== -->
+  <section id="chunk-4" class="full-section grad-chunk4 relative">
+    <span class="section-number">04</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-blue-100 text-blue-700">Chunk 4 of 4</span>
+      <h2 class="section-heading">Catus Decianus: The Man Who Fled</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Independent Reading (&lsquo;You Do&rsquo;)</p>
+        <p>Students read this section independently. After reading, use <strong>cold call</strong>: &ldquo;What does Decianus&rsquo;s flight tell us about the state of Roman authority in Britain?&rdquo;</p>
+        <p class="mt-2">Guide students to see that with the governor absent, the procurator fled, and a legion shattered, there was effectively <strong>no Roman authority left</strong> in the province. This is a crisis point.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          The flight of Catus Decianus to Gaul is one of the most revealing details in Tacitus&rsquo;s account. As <strong>procurator</strong> (the imperial financial officer responsible for the province), Decianus had been responsible for implementing the policies that sparked the revolt &mdash; the seizure of the Iceni kingdom, the stripping of grants made by Claudius, and the calling in of loans. Tacitus&rsquo;s reference to <em>&ldquo;the hatred of the province whose treatment he had provoked by his greed&rdquo;</em> is a direct and damning condemnation.
+        </p>
+        <p>
+          Decianus&rsquo;s flight meant that Roman civil authority in Britain had <strong>effectively collapsed</strong>. With the governor absent fighting Druids, the procurator in flight, the Ninth Legion shattered, and Camulodunum destroyed, the province of Britannia was in the gravest crisis since the Claudian invasion of AD 43. Everything now depended on Suetonius Paulinus.
+        </p>
+      </div>
+
+      <!-- Timeline of Events -->
+      <h3 class="font-serif text-xl font-bold text-navy mt-8 mb-4">Timeline: The Opening of the Revolt</h3>
+      <div class="timeline reveal-stagger">
+        <div class="timeline-item">
+          <p class="timeline-date">AD 43</p>
+          <p class="timeline-desc">Roman invasion of Britain under Emperor Claudius. Foundation of Camulodunum as first colonia.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">c. AD 47</p>
+          <p class="timeline-desc">Prasutagus becomes client king of the Iceni under Rome.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">c. AD 59</p>
+          <p class="timeline-desc">Suetonius Paulinus becomes governor of Britain.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">AD 60/61</p>
+          <p class="timeline-desc">Death of Prasutagus. Roman abuses trigger revolt. Boudicca allies with Trinovantes.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">AD 60/61</p>
+          <p class="timeline-desc">Camulodunum destroyed. Temple of Claudius sacked. Legio IX defeated by Boudicca.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">AD 60/61</p>
+          <p class="timeline-desc">Catus Decianus flees to Gaul. Suetonius Paulinus rides to Londinium.</p>
+        </div>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="d"
+           data-feedback-correct="Correct! By the time Decianus fled, Roman authority in Britain had completely collapsed: the governor was away in Wales, the procurator had abandoned the province, the Ninth Legion's infantry was destroyed, and the first Roman city had been sacked. Britannia faced its gravest crisis since the invasion of AD 43."
+           data-feedback-incorrect="Not quite. The key point is that by the time Decianus fled, every element of Roman authority had either been destroyed or was absent &mdash; the governor, the procurator, and the Ninth Legion were all out of the picture. This was a complete collapse of authority.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">Why was the flight of Catus Decianus so significant?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q4" class="mt-0.5"><span>He was the only person who knew how to negotiate with Boudicca</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q4" class="mt-0.5"><span>He took the provincial treasury with him, leaving the army unpaid</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q4" class="mt-0.5"><span>He was a popular leader whose departure demoralised the Roman settlers</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q4" class="mt-0.5"><span>It meant Roman civil authority had collapsed, with the governor absent, the legion shattered, and the chief administrator fled</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       INDEPENDENT PRACTICE: REVIEW QUESTIONS
+       ========================================== -->
+  <section id="practice" class="full-section grad-practice relative">
+    <span class="section-number">Q</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-green-100 text-green-700">Independent Practice</span>
+      <h2 class="section-heading">Review Questions</h2>
+      <p class="text-sm text-gray-500 mb-6">Choose the level that challenges you, or work through all three.</p>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Independent Practice (&lsquo;You Do&rsquo;)</p>
+        <p>Students should attempt these <strong>only after a high success rate</strong> on the CFU questions. Direct all students to Foundation first.</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> Students answer Foundation Q1 on a sticky note before leaving.</p>
+      </div>
+
+      <div class="tab-group">
+        <button class="tab-btn active" data-tab="foundation">Foundation</button>
+        <button class="tab-btn" data-tab="standard">Standard</button>
+        <button class="tab-btn" data-tab="extension">Extension</button>
+      </div>
+
+      <div class="tab-content active" id="foundation" data-tab="foundation">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Identify and describe</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>What was the name of the Roman city attacked first by Boudicca&rsquo;s forces?</li>
+          <li>Why was the Temple of Claudius significant to the British tribes?</li>
+          <li>What happened to the infantry of Legio IX Hispana?</li>
+        </ol>
+      </div>
+      <div class="tab-content" id="standard" data-tab="standard">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Analyse and explain</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Explain why Camulodunum was a particularly symbolic target for Boudicca&rsquo;s revolt.</li>
+          <li>Analyse the role of Catus Decianus in both triggering the revolt and failing to respond to it effectively.</li>
+          <li>Using the source from Tacitus above, assess what this extract reveals about Roman attitudes to provincial governance.</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Topic sentence starters:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li>A key factor in this was&hellip;</li>
+            <li>The evidence from [source] demonstrates&hellip;</li>
+            <li>This is significant because&hellip;</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-content" id="extension" data-tab="extension">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Evaluate and debate</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Evaluate the claim that the destruction of Legio IX Hispana was the decisive moment that turned a provincial uprising into a genuine threat to Roman rule in Britain.</li>
+          <li>To what extent were the failures of Catus Decianus and Cerialis of equal significance in the early stages of the revolt? Argue a position with specific evidence.</li>
+          <li>Critically assess the usefulness of Tacitus&rsquo;s <em>Annals</em> as a source for the opening stages of the Boudiccan revolt. Consider his purpose, position, and the sources available to him.</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Evaluative transitions:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li>&ldquo;To a significant/limited extent&hellip;&rdquo;</li>
+            <li>&ldquo;The most compelling evidence for this is&hellip;&rdquo;</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       KEY TERMS: FLASHCARD GLOSSARY
+       ========================================== -->
+  <section id="key-terms" class="full-section grad-terms relative">
+    <span class="section-number">A&ndash;Z</span>
+    <div class="section-inner">
+      <div class="flex items-end justify-between mb-6 reveal">
+        <div>
+          <span class="section-label bg-purple-100 text-purple-700">Key Terms</span>
+          <h2 class="section-heading mb-0">Glossary</h2>
+        </div>
+        <button class="glossary-view-toggle text-sm text-navy font-semibold hover:text-burgundy transition-colors cursor-pointer">
+          Switch to List View
+        </button>
+      </div>
+      <p class="text-sm text-gray-500 mb-6 reveal">Click each card to reveal its definition.</p>
+
+      <!-- Flashcards -->
+      <div class="flashcard-grid reveal-stagger">
+        <div class="flashcard" tabindex="0" role="button" aria-label="Flashcard: Colonia">
+          <div class="flashcard-inner"><div class="flashcard-front">Colonia</div><div class="flashcard-back">A Roman city settled by retired legionary veterans and full Roman citizens, with the highest legal status in the provincial urban hierarchy.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Procurator</div><div class="flashcard-back">The emperor&rsquo;s financial officer in a Roman province, responsible for taxation, imperial estates, and financial administration.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Legate</div><div class="flashcard-back">A senior Roman officer commanding a legion, typically of senatorial rank.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Legio IX Hispana</div><div class="flashcard-back">The Ninth Legion, one of four legions stationed in Roman Britain, based at Lindum (Lincoln).</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Municipium</div><div class="flashcard-back">A Roman city whose inhabitants held Latin rights (lesser than full Roman citizenship), with elected local magistrates.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Camulodunum</div><div class="flashcard-back">The Roman name for modern Colchester, Essex &mdash; the first Roman colonia in Britain and primary administrative centre before Londinium.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Mona</div><div class="flashcard-back">The Roman name for Anglesey, an island off north-west Wales, the last major stronghold of the Druids in Britain.</div></div>
+        </div>
+      </div>
+
+      <!-- List View (hidden) -->
+      <div class="glossary-list hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+            <thead>
+              <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/4">Term</th>
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Definition</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white/70">
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Colonia</td><td class="px-5 py-3 text-gray-600">A Roman city settled by retired legionary veterans and full Roman citizens, with the highest legal status in the provincial urban hierarchy.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Procurator</td><td class="px-5 py-3 text-gray-600">The emperor&rsquo;s financial officer in a Roman province, responsible for taxation, imperial estates, and financial administration.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Legate</td><td class="px-5 py-3 text-gray-600">A senior Roman officer commanding a legion, typically of senatorial rank.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Legio IX Hispana</td><td class="px-5 py-3 text-gray-600">The Ninth Legion, one of four legions stationed in Roman Britain, based at Lindum (Lincoln).</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Municipium</td><td class="px-5 py-3 text-gray-600">A Roman city whose inhabitants held Latin rights (lesser than full Roman citizenship), with elected local magistrates.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Camulodunum</td><td class="px-5 py-3 text-gray-600">The Roman name for modern Colchester, Essex &mdash; the first Roman colonia in Britain and primary administrative centre before Londinium.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Mona</td><td class="px-5 py-3 text-gray-600">The Roman name for Anglesey, an island off north-west Wales, the last major stronghold of the Druids in Britain.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       REVIEW OF LEARNING
+       ========================================== -->
+  <section id="review" class="full-section grad-review relative">
+    <div class="section-inner reveal">
+      <span class="section-label bg-gold/20 text-amber-700">Review of Learning</span>
+      <h2 class="section-heading">How Did You Go?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6 text-[1.05rem]">
+        Return to the success criteria from the start of this lesson. Can you now tick off each one?
+        If any remain unticked, scroll back and review the relevant section.
+      </p>
+
+      <div class="space-y-3">
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">1</span>
+          <span class="text-gray-700">Describe the events at Camulodunum that marked the beginning of the revolt.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">2</span>
+          <span class="text-gray-700">Explain the strategic and symbolic significance of the Temple of Claudius.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">3</span>
+          <span class="text-gray-700">Analyse the military defeat of Legio IX Hispana and its implications for Rome.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">4</span>
+          <span class="text-gray-700">Assess the role of Catus Decianus in triggering and responding to the revolt.</span>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Review of Learning</p>
+        <p><strong>Self-assessment</strong> for each criterion: &ldquo;Thumbs up if confident, sideways if partly there, down if you need more help.&rdquo;</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> &ldquo;On a sticky note, write one sentence explaining why the fall of Camulodunum was both a military and symbolic disaster for Rome.&rdquo; Collect as students leave.</p>
+      </div>
+
+      <!-- Exit Ticket -->
+      <div class="exit-ticket">
+        <h4>Exit Ticket</h4>
+        <label class="text-sm text-gray-600 block mb-1">One thing I learned today:</label>
+        <textarea placeholder="What was the most important thing you learned in this lesson?"></textarea>
+        <label class="text-sm text-gray-600 block mb-1">One question I still have:</label>
+        <textarea placeholder="What are you still unsure about or want to know more about?"></textarea>
+      </div>
+
+      <!-- Reflection -->
+      <div class="reflection-panel">
+        <h4>Self-Reflection</h4>
+        <p class="text-sm text-gray-600 mb-2">How confident do you feel about this lesson&rsquo;s content?</p>
+        <div class="confidence-scale">
+          <button class="confidence-btn">1<br><span class="text-[0.65rem]">Not yet</span></button>
+          <button class="confidence-btn">2<br><span class="text-[0.65rem]">Getting there</span></button>
+          <button class="confidence-btn">3<br><span class="text-[0.65rem]">Mostly</span></button>
+          <button class="confidence-btn">4<br><span class="text-[0.65rem]">Confident</span></button>
+          <button class="confidence-btn">5<br><span class="text-[0.65rem]">Mastered</span></button>
+        </div>
+        <label class="text-sm text-gray-600 block mt-3 mb-1">What do you want to revisit before the next lesson?</label>
+        <textarea class="reflection-text" placeholder="Any topics, terms, or skills you want to review?"></textarea>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       LESSON NAVIGATION
+       ========================================== -->
+  <section class="py-12 px-6" style="background: #fefcf9;">
+    <div class="max-w-3xl mx-auto lesson-nav-footer flex items-center justify-between">
+      <a href="lesson-8.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        Lesson 8
+      </a>
+      <span class="text-xs text-gray-300 tracking-wider uppercase">Lesson 9 of 16</span>
+      <a href="lesson-10.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        Lesson 10
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 text-center" style="background: linear-gradient(180deg, #fefcf9, #f5f3ed);">
+    <p class="text-sm text-gray-400 font-sans">
+      NSW Ancient History Stage 6 &middot; NESA Syllabus (2017) &middot; Case Study A
+    </p>
+    <p class="text-xs text-gray-300 mt-2 font-sans">Created by Cheryl Cutter</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

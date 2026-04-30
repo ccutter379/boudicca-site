@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 2: The Celts and the Iceni | Boudicca Interactive</title>
+
+  <!-- Meta -->
+  <meta name="description" content="Interactive NSW Ancient History Stage 6 resource — Boudicca case study with explicit teaching, CFU activities, source analysis, and teacher facilitation tools.">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': { DEFAULT: '#1a1a2e', mid: '#16213e', light: '#2a4d7a' },
+            'burgundy': { DEFAULT: '#8b2635', light: '#a83242' },
+            'gold': { DEFAULT: '#c9a84c', light: '#e8d292' },
+          },
+          fontFamily: {
+            'serif': ['Playfair Display', 'Georgia', 'serif'],
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans" style="background: #fefcf9;">
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress"></div>
+
+  <!-- Navigation (Glassmorphism) -->
+  <nav class="site-nav">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-5">
+        <a href="index.html" class="text-white font-serif text-xl font-bold tracking-wide hover:text-gold transition-colors">
+          Boudicca
+        </a>
+        <span class="text-white/20 hidden sm:inline">|</span>
+        <span class="text-white/40 text-xs font-sans tracking-wider hidden sm:inline">Lesson 2 of 16</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <button class="teacher-toggle" aria-label="Toggle teacher facilitation notes">Teacher Mode</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="lesson-hero grad-hero" style="background: linear-gradient(165deg, rgba(26,26,46,0.92) 0%, rgba(22,33,62,0.88) 50%, rgba(26,39,68,0.92) 100%), url('images/tribal-britain-map.jpg') center/cover no-repeat;">
+    <div class="relative z-10 max-w-3xl mx-auto reveal">
+      <span class="chapter-badge">Chapter 1 &middot; Context and Background</span>
+      <p class="text-white/40 font-sans text-sm tracking-wider uppercase mb-3">Lesson 2</p>
+      <h1 class="hero-title font-serif text-white">The Celts<br>and the Iceni</h1>
+      <p class="hero-desc">
+        Who were the Celtic peoples of Iron Age Britain, how was their society organised,
+        and what made the Iceni tribe of East Anglia distinctive?
+      </p>
+      <p class="reading-time"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> ~28 min</p>
+      <!-- Syllabus Outcomes -->
+      <details class="mt-8">
+        <summary class="text-white/25 text-xs font-sans cursor-pointer hover:text-white/40 transition-colors uppercase tracking-[0.15em]">
+          NESA Syllabus Outcomes
+        </summary>
+        <div class="mt-3 text-white/35 text-xs font-sans space-y-1 leading-relaxed">
+          <p><strong class="text-white/50">AH11-1:</strong> Describes the nature of continuity and change in the ancient world</p>
+          <p><strong class="text-white/50">AH11-4:</strong> Accounts for the different perspectives of individuals and groups</p>
+          <p><strong class="text-white/50">AH11-6:</strong> Analyses and interprets different types of sources for evidence to support an historical account or argument</p>
+        </div>
+      </details>
+    </div>
+    <!-- Decorative number -->
+    <div class="absolute bottom-6 right-8 font-serif text-white/[0.03] font-extrabold pointer-events-none select-none hidden md:block" style="font-size: 14rem; line-height: 1;">02</div>
+  </section>
+
+
+  <!-- ==========================================
+       LEARNING INTENTION & SUCCESS CRITERIA
+       ========================================== -->
+  <section id="lisc" class="full-section grad-lisc">
+    <div class="section-inner reveal">
+      <span class="section-label bg-navy/[0.07] text-navy">Learning Intention</span>
+      <h2 class="section-heading">What You&rsquo;ll Learn</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-8">
+        To understand the origins, culture, and society of the Celtic peoples, with a focus on the Iceni tribe of East Anglia and the role of Druids in Celtic life.
+      </p>
+
+      <div>
+        <h3 class="font-sans text-xs font-bold uppercase tracking-[0.12em] text-gray-400 mb-2">Success Criteria</h3>
+        <p class="sc-progress-text text-xs text-gray-400 mb-1">0 of 4 criteria met</p>
+        <div class="sc-progress"><div class="sc-progress-bar"></div></div>
+        <p class="text-sm text-gray-500 mb-4">By the end of this lesson, I can:</p>
+        <div class="space-y-1">
+          <div class="sc-item"><input type="checkbox" id="sc1"><label for="sc1">Describe the origins and cultural phases of the Celtic peoples in Iron Age Europe.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc2"><label for="sc2">Explain how the Celts were organised in Britain, focusing on the Iceni tribe.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc3"><label for="sc3">Analyse the role of Druids and key cultural practices of the Celts.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc4"><label for="sc4">Evaluate the reliability of Roman sources when describing Celtic society.</label></div>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Sharing LISC</p>
+        <p>Display the learning intention and success criteria on the board. Read them aloud and ask students to identify the <em>key verbs</em> (describe, explain, analyse, evaluate). This helps students understand the levels of thinking expected. Check understanding: <strong>&ldquo;Can someone put the learning intention into their own words?&rdquo;</strong> (cold call).</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       ACTIVATING PRIOR KNOWLEDGE
+       ========================================== -->
+  <section id="prior-knowledge" class="full-section grad-prior relative">
+    <span class="section-number">?</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-white/50 text-amber-700">Before We Begin</span>
+      <h2 class="section-heading">What Do You Already Know?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        Before we begin, take a moment to think about what you already know &mdash; or think you know &mdash; about the Celts and Iron Age Britain.
+        There are no wrong answers here.
+      </p>
+
+      <div class="mb-6">
+        <p class="font-sans text-sm font-semibold text-gray-700 mb-2">How much do you already know about the Celts?</p>
+        <div class="poll-options">
+          <button class="poll-btn">Nothing yet</button>
+          <button class="poll-btn">Heard the name</button>
+          <button class="poll-btn">Know some details</button>
+          <button class="poll-btn">Know a lot</button>
+        </div>
+      </div>
+
+      <div>
+        <label class="font-sans text-sm font-semibold text-gray-700 block mb-2" for="prior-text">
+          Jot down anything you know or think you know about the Celts:
+        </label>
+        <textarea id="prior-text" class="w-full border border-black/[0.08] rounded-2xl p-4 text-sm font-sans leading-relaxed resize-y bg-white/60 backdrop-blur min-h-[90px] focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-all"
+                  placeholder="For example: Where did the Celts live? What language did they speak? What do you associate with the word 'Celtic'?"></textarea>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Activating Prior Knowledge</p>
+        <p>Use <strong>think-pair-share</strong>: &ldquo;Discuss with your partner what comes to mind when you hear the word &lsquo;Celtic.&rsquo;&rdquo; (60 seconds). Then cold call 3&ndash;4 pairs. Accept all responses without correction &mdash; the purpose is retrieval, not assessment. Note any misconceptions (e.g., &ldquo;the Celts were one country&rdquo;) to return to later.</p>
+        <p class="mt-2"><strong>Prior knowledge gauge:</strong> &ldquo;Thumbs up if you&rsquo;ve heard the word &lsquo;Celtic&rsquo; before today, thumbs down if it&rsquo;s completely new.&rdquo; This is not a CFU &mdash; it gauges the class baseline to help you pitch the lesson.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 1: WHO WERE THE CELTS?
+       ========================================== -->
+  <section id="chunk-1" class="full-section grad-chunk1 relative">
+    <span class="section-number">01</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-burgundy/10 text-burgundy">Chunk 1 of 4</span>
+      <h2 class="section-heading">Who Were the Celts?</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling (&lsquo;I Do&rsquo;)</p>
+        <p><strong>Model with a key misconception</strong> before reading the text: &ldquo;A common mistake is to think the Celts were one country or one people, like the Romans were one empire. In fact, the Celts were hundreds of separate tribes spread across Europe who happened to share similar languages, art, and religious practices &mdash; a bit like how many different countries today speak English but are not one nation.&rdquo;</p>
+        <p class="mt-2"><strong>Read the first paragraph aloud</strong>, then pause to check understanding before continuing.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          The Celts were not a single nation or unified empire. They were a diverse collection of tribal peoples who shared common linguistic, artistic, and religious traditions, spreading across much of Iron Age Europe from approximately <strong>1200 BC</strong>. At their greatest extent, Celtic cultures stretched from the Iberian Peninsula in the west to modern Turkey (ancient Galatia) in the east, and from the British Isles and Ireland in the north to northern Italy in the south.
+        </p>
+        <p>
+          The Celts are defined primarily by their <strong>languages</strong> (a family of languages that includes Welsh, Irish, Scottish Gaelic, Breton, and Cornish), their distinctive <strong>artistic styles</strong>, and their shared <strong>religious practices</strong>. They were not, however, a politically unified group &mdash; Celtic-speaking peoples were organised into hundreds of individual tribes, each with its own king or chieftain, laws, and identity.
+        </p>
+        <p>
+          Much of what we know about the Celts comes from two problematic sources: <strong>Roman and Greek writing</strong>, which portrayed them through the lens of cultural bias, and <strong>archaeology</strong>, which can tell us about material culture but not thoughts, beliefs, or political organisation. There are no surviving Celtic written records from this period, which means our picture is always partial.
+        </p>
+      </div>
+
+      <!-- Featured image: Map of Celtic tribes -->
+      <figure class="featured-image mt-8">
+        <img src="images/tribal-britain-map.jpg" alt="Map showing the major Celtic tribes of Iron Age Britain, including the Iceni in East Anglia, the Trinovantes in south-eastern Britain, and many others across the island." loading="lazy">
+        <figcaption class="caption"><strong>Celtic Tribes of Iron Age Britain.</strong> The Celts were not one people but many tribes, each with its own territory, laws, and identity. The Iceni occupied modern Norfolk, Suffolk, and parts of Cambridgeshire.</figcaption>
+      </figure>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="c"
+           data-feedback-correct="Correct! The Celts were not one nation but many separate tribes who shared common languages, art styles, and religious practices across Europe."
+           data-feedback-incorrect="Not quite. The key point is that the Celts were many separate tribes linked by shared culture &mdash; not a single unified empire, army, or religion.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p>Use <strong>cold call</strong>. If they answer incorrectly, redirect: &ldquo;Who can help? What does the text say the Celts shared in common?&rdquo; Aim for 80%+ success before moving on.</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">Which statement best describes the Celtic peoples?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q1" class="mt-0.5"><span>They were a single empire ruled by one king, similar to Rome</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q1" class="mt-0.5"><span>They were a unified army that fought together against all enemies</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q1" class="mt-0.5"><span>They were many separate tribes who shared common languages, art, and religious traditions</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q1" class="mt-0.5"><span>They were a religious group united under the leadership of the Druids</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 2: CULTURAL PHASES
+       ========================================== -->
+  <section id="chunk-2" class="full-section grad-chunk2 relative">
+    <span class="section-number">02</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-purple-100 text-purple-700">Chunk 2 of 4</span>
+      <h2 class="section-heading">Cultural Phases: Urnfield, Hallstatt, and La T&egrave;ne</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Guided Reading (&lsquo;We Do&rsquo;)</p>
+        <p>Display the table below on the board. Walk through each phase together, asking students to identify one <strong>key feature</strong> for each. Use <strong>think-pair-share</strong> after reading: &ldquo;Turn to your partner and identify the most significant change between these three phases.&rdquo; (60 seconds). Cold call 2&ndash;3 pairs.</p>
+      </div>
+
+      <p class="text-gray-700 leading-relaxed text-[1.05rem] mb-6">
+        Archaeologists divide Celtic cultural development into three major phases, each named after key archaeological sites:
+      </p>
+
+      <!-- Cultural Phases Table -->
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Phase</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Date</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Key Features</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white/70">
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">Urnfield</td>
+              <td class="px-5 py-3 text-gray-600">c. 1200&ndash;700 BC</td>
+              <td class="px-5 py-3 text-gray-600">Cremation burials in urns placed in large cemeteries. Emerging social hierarchies with richer burials containing weapons and ornaments. Spread across central Europe.</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 font-semibold text-navy">Hallstatt</td>
+              <td class="px-5 py-3 text-gray-600">c. 700&ndash;500 BC</td>
+              <td class="px-5 py-3 text-gray-600">Named after a salt-mining town in modern Austria. Advanced ironworking. Wealthy chieftains buried with chariots, gold jewellery, and imported Mediterranean luxury items. Strong trade with Greek and Etruscan cities.</td>
+            </tr>
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">La T&egrave;ne</td>
+              <td class="px-5 py-3 text-gray-600">c. 500 BC&ndash;AD 100</td>
+              <td class="px-5 py-3 text-gray-600">Peak of Celtic culture, named after a site in modern Switzerland. Highly distinctive curvilinear art featuring spirals, interlocking patterns, and stylised animal forms. Found on swords, shields, torcs, brooches, and pottery across the Celtic world.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="d"
+           data-feedback-correct="Correct! La T&egrave;ne was the peak of Celtic culture and is characterised by its highly distinctive curvilinear art featuring spirals and interlocking patterns."
+           data-feedback-incorrect="Not quite. La T&egrave;ne (c. 500 BC&ndash;AD 100) is considered the peak of Celtic culture and is best known for its distinctive art style with spirals and interlocking patterns.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">Which phase of Celtic culture is characterised by distinctive curvilinear art featuring spirals and interlocking patterns?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q2" class="mt-0.5"><span>The Roman phase</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q2" class="mt-0.5"><span>The Urnfield phase</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q2" class="mt-0.5"><span>The Hallstatt phase</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q2" class="mt-0.5"><span>The La T&egrave;ne phase</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+
+      <div class="match-activity" data-answer="0-1,1-2,2-0">
+        <h3>Match the Cultural Phase</h3>
+        <p class="text-gray-700 font-medium mb-4">Match each Celtic cultural phase to its key feature:</p>
+        <div class="match-pairs">
+          <div>
+            <div class="match-prompt" data-idx="0">Urnfield (c.1200&ndash;700 BC)</div>
+            <div class="match-slot" data-idx="0">Click an answer below</div>
+            <div class="match-prompt" data-idx="1" style="margin-top:0.75rem">Hallstatt (c.700&ndash;500 BC)</div>
+            <div class="match-slot" data-idx="1">Click an answer below</div>
+            <div class="match-prompt" data-idx="2" style="margin-top:0.75rem">La T&egrave;ne (c.500 BC&ndash;AD 100)</div>
+            <div class="match-slot" data-idx="2">Click an answer below</div>
+          </div>
+          <div>
+            <div class="match-answer match-item" data-idx="0">Distinctive curvilinear art with spirals and stylised animals</div>
+            <div class="match-answer match-item" data-idx="1">Cremation burials in urns; emerging social hierarchies</div>
+            <div class="match-answer match-item" data-idx="2">Advanced ironworking; wealthy chieftains with imported luxury goods</div>
+          </div>
+        </div>
+        <button class="check-btn" style="margin-top:1rem">Check Matches</button>
+        <div class="cfu-feedback" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 3: CELTIC SOCIETY AND DRUIDS
+       ========================================== -->
+  <section id="chunk-3" class="full-section grad-chunk3 relative">
+    <span class="section-number">03</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-amber-100 text-amber-700">Chunk 3 of 4</span>
+      <h2 class="section-heading">Celtic Society: Tribe, Chieftain, and Druid</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling: I Do, We Do, You Do</p>
+        <p><strong>I Do:</strong> Read the first paragraph aloud and model annotation &mdash; &ldquo;I&rsquo;m going to underline the key features of Celtic society: tribal, hierarchical, warrior aristocracy at the top.&rdquo;</p>
+        <p class="mt-2"><strong>We Do:</strong> Read the Druids section together and ask: &ldquo;What three roles did Druids perform?&rdquo; (cold call)</p>
+        <p class="mt-2"><strong>You Do:</strong> Students read the primary source independently and identify one thing it reveals about Celtic society and one thing it reveals about Roman attitudes.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Celtic society was organised around the <strong>tribe</strong> (a kinship group bound by loyalty to a shared ancestor and a common territory) rather than cities or nation-states. Tribes ranged in size from a few thousand to tens of thousands of people and were led by a chieftain or king chosen &mdash; at least theoretically &mdash; for personal qualities including bravery, wisdom, and generosity.
+        </p>
+        <p>
+          Celtic society was <strong>hierarchical</strong>. At the top were the <strong>warrior aristocracy</strong>: nobles who owned land, horses, and weapons and who demonstrated their status through feasting, gift-giving, and prowess in battle. Below them were farmers and craftspeople, and at the bottom were slaves (often prisoners of war or debtors). Women occupied a complex position in Celtic society: they could own property, enter contracts, and &mdash; in exceptional cases &mdash; lead their tribes in warfare.
+        </p>
+        <p>
+          The three most important social roles beyond the warrior elite were the <strong>Druids</strong> (religious leaders and judges), the <strong>Bards</strong> (poets and musicians who preserved oral tradition), and the <strong>Vates</strong> (seers and ritual specialists). These roles were separate from political authority but could exercise enormous influence over it.
+        </p>
+      </div>
+
+      <!-- Social hierarchy image -->
+      <figure class="featured-image mt-8">
+        <img src="images/celtic-social-hierarchy.png" alt="Pyramid diagram showing Celtic social hierarchy: warrior aristocracy (kings and nobles) at the top, then Druids, Bards and Vates, then farmers and craftspeople, then slaves at the bottom." loading="lazy">
+        <figcaption class="caption"><strong>Celtic Social Hierarchy.</strong> Celtic society was rigidly structured, with the warrior aristocracy at the top and slaves at the bottom. Druids, Bards, and Vates held special roles outside political authority but wielded great influence.</figcaption>
+      </figure>
+
+      <h3 class="font-serif text-xl font-bold text-navy mt-10 mb-4">The Druids: Priests, Judges, and Guardians of Knowledge</h3>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          The Druids were the intellectual and spiritual elite of Celtic society. They served simultaneously as <strong>priests</strong> conducting religious rituals, <strong>judges</strong> interpreting customary law, <strong>educators</strong> training the next generation of nobles, and <strong>advisors</strong> to kings. Their authority transcended tribal boundaries: a Druid could mediate between hostile tribes and had the power to stop battles by walking between the lines of warriors.
+        </p>
+        <p>
+          Druidic training was extraordinarily demanding. Caesar reported that students spent up to <strong>twenty years</strong> memorising the knowledge required &mdash; because the Druids deliberately refused to commit their teaching to writing. This choice was not a sign of backwardness but of philosophy: the Druids believed that committing sacred knowledge to writing would make it accessible to the unworthy and reduce the discipline required to truly understand it. All of their laws, religious teachings, cosmological beliefs, and historical knowledge were transmitted <strong>orally</strong>, from teacher to student, in verse form to aid memorisation.
+        </p>
+        <p>
+          Roman accounts describe Druidic rituals involving human sacrifice, sacred groves, and animal sacrifices. Modern scholars treat these accounts with caution &mdash; Romans had strong political motivations to portray the Druids as barbaric, since destroying Druidic authority was a key component of their strategy to suppress Celtic resistance. The Romans systematically targeted Druidic centres, most famously attacking the sacred island of <strong>Mona</strong> (modern Anglesey, Wales) in <strong>AD 60</strong> &mdash; the very campaign that drew Suetonius Paulinus away from eastern Britain when Boudicca&rsquo;s revolt began.
+        </p>
+      </div>
+
+      <!-- Primary Source -->
+      <div class="key-concept mt-8">
+        <p class="font-bold text-navy mb-1">Primary Source</p>
+        <p class="text-sm text-gray-500 mb-3"><strong>Provenance:</strong> Julius Caesar, <em>De Bello Gallico</em> (The Gallic Wars), Book VI, Chapters 13&ndash;14. Written c. 52&ndash;51 BC. Caesar was a Roman general and politician who conquered Gaul (modern France). His account of the Druids is the most detailed ancient description we possess, though it reflects his perspective as a conqueror seeking to justify Roman expansion.</p>
+        <blockquote class="border-l-4 border-burgundy/30 pl-5 italic text-gray-600 my-4 text-[1.02rem] leading-relaxed">
+          &ldquo;The Druids are concerned with divine worship, the due performance of sacrifices, private or public, and the interpretation of ritual questions&hellip; They do not think it proper to commit these utterances to writing&hellip; They are said to commit to memory immense amounts of poetry, and so some of them continue their studies for twenty years. They teach that souls do not die, but after death pass from one body to another; and this they regard as the strongest incentive to valour, since the fear of death is thereby removed.&rdquo;
+        </blockquote>
+        <p class="text-sm text-gray-500"><strong>Historian&rsquo;s note:</strong> Caesar&rsquo;s account is valuable as one of the earliest and most detailed descriptions of Druidic practice. However, his purpose was to portray the Celts as both impressive and in need of Roman &ldquo;civilisation.&rdquo; His claim that Druids performed human sacrifice should be treated cautiously, as this was a common Roman accusation used to justify military campaigns against non-Roman peoples.</p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="b"
+           data-feedback-correct="Correct! The Druids deliberately chose not to write down their knowledge. They believed that sacred knowledge should be memorised, not written, to preserve its sacredness and the discipline required to master it."
+           data-feedback-incorrect="Not quite. The Druids made a deliberate choice to transmit knowledge orally. It was a philosophical decision &mdash; they believed writing would make sacred knowledge too easily accessible to the unworthy.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p><strong>Gesture voting:</strong> &ldquo;Hold up A, B, C, or D with your fingers. On three &mdash; one, two, three &mdash; show me.&rdquo; If fewer than 80% show B, re-teach using Caesar&rsquo;s account as evidence.</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">Why did the Druids refuse to write down their knowledge?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q3" class="mt-0.5"><span>They did not have a writing system and were unable to record information</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q3" class="mt-0.5"><span>They believed sacred knowledge should be memorised to preserve its sacredness and ensure discipline</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q3" class="mt-0.5"><span>The Romans destroyed all their written records during the conquest</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q3" class="mt-0.5"><span>Writing materials like papyrus were not available in Iron Age Britain</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 4: THE ICENI OF EAST ANGLIA
+       ========================================== -->
+  <section id="chunk-4" class="full-section grad-chunk4 relative">
+    <span class="section-number">04</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-blue-100 text-blue-700">Chunk 4 of 4</span>
+      <h2 class="section-heading">The Iceni of East Anglia</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Independent Reading (&lsquo;You Do&rsquo;)</p>
+        <p>Students read this section independently. After reading, use <strong>think-pair-share</strong>: &ldquo;Turn to your partner and explain two things that made the Iceni distinctive compared to other Celtic tribes.&rdquo; (90 seconds). Cold call 2&ndash;3 pairs to share.</p>
+        <p class="mt-2"><strong>Key misconception to address:</strong> Students may assume &ldquo;voluntarily joined our alliance&rdquo; means the Iceni were happy to be allied with Rome. Emphasise that &ldquo;voluntary&rdquo; in a context of Roman military dominance is a relative term.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          The Iceni were a Celtic tribe who inhabited what is now <strong>Norfolk, Suffolk, and parts of Cambridgeshire</strong> in eastern Britain. Archaeological evidence, including distinctive coinage featuring horses and boar symbols, confirms a strong cultural identity and relatively prosperous economy based on agriculture, animal husbandry, and trade.
+        </p>
+        <p>
+          Their probable capital, or at least a major settlement, was <strong>Venta Icenorum</strong> (modern Caistor St Edmund, near Norwich). Archaeological excavations there have revealed evidence of pre-Roman occupation, though the site was substantially developed in the Roman period. Significant hoards of Iceni coins have been found across Norfolk, suggesting a well-organised tribal economy.
+        </p>
+        <p>
+          The Iceni were known for their <strong>fierce independence</strong>. Unlike many tribes in south-eastern Britain who had close trading relationships with Rome before the conquest, the Iceni maintained greater cultural separation. This independence would later make the Roman decision to annexe their territory &mdash; and the way in which it was done &mdash; all the more catastrophic.
+        </p>
+      </div>
+
+      <!-- Primary Source -->
+      <div class="key-concept mt-8">
+        <p class="font-bold text-navy mb-1">Primary Source</p>
+        <p class="text-sm text-gray-500 mb-3"><strong>Provenance:</strong> Tacitus, <em>Annals</em>, Book XII, Chapter 31. Written c. AD 98. Tacitus was a Roman senator and historian. His father-in-law Agricola served as governor of Britain, giving Tacitus access to personal accounts of British affairs.</p>
+        <blockquote class="border-l-4 border-burgundy/30 pl-5 italic text-gray-600 my-4 text-[1.02rem] leading-relaxed">
+          &ldquo;In the same year [AD 47], the Iceni&hellip; took up arms. The Iceni had not been conquered by force of arms, but had voluntarily joined our alliance, and accordingly had been left in possession of their territory. On the order of Ostorius [the Roman governor] that they should surrender their arms, the Iceni refused to comply, and called to their aid other tribes not yet broken in by subjugation.&rdquo;
+        </blockquote>
+        <p class="text-sm text-gray-500"><strong>Historian&rsquo;s note:</strong> This passage is significant because it shows that the Iceni had a prior history of resisting Roman authority even before Boudicca&rsquo;s revolt. It also reveals that Rome expected client tribes to surrender their weapons &mdash; a significant violation of the client-kingdom agreement. Tacitus&rsquo;s use of the phrase &ldquo;not yet broken in by subjugation&rdquo; reveals the Roman attitude toward Celtic peoples.</p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="a"
+           data-feedback-correct="Correct! Tacitus records that the Iceni revolted in AD 47 when the Roman governor Ostorius ordered them to surrender their weapons &mdash; a demand they saw as a violation of their agreement with Rome."
+           data-feedback-incorrect="Not quite. The key event was the Roman governor ordering the Iceni to give up their weapons in AD 47. Since the Iceni had voluntarily allied with Rome and had not been conquered, they saw this as an unacceptable breach of their agreement.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">According to Tacitus, why did the Iceni revolt in AD 47?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q4" class="mt-0.5"><span>The Roman governor ordered them to surrender their weapons, which they saw as a violation of their agreement</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q4" class="mt-0.5"><span>The Romans attacked their capital at Venta Icenorum without warning</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q4" class="mt-0.5"><span>Boudicca led them in a revolt after her husband was killed by the Romans</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q4" class="mt-0.5"><span>The Druids ordered all Celtic tribes to rise up against Rome simultaneously</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       INDEPENDENT PRACTICE: REVIEW QUESTIONS
+       ========================================== -->
+  <section id="practice" class="full-section grad-practice relative">
+    <span class="section-number">Q</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-green-100 text-green-700">Independent Practice</span>
+      <h2 class="section-heading">Review Questions</h2>
+      <p class="text-sm text-gray-500 mb-6">Choose the level that challenges you, or work through all three.</p>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Independent Practice (&lsquo;You Do&rsquo;)</p>
+        <p>Students should attempt these <strong>only after a high success rate</strong> on the CFU questions. Direct all students to Foundation first.</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> Students answer Foundation Q2 on a sticky note before leaving: &ldquo;Name two modern counties that correspond to Iceni territory.&rdquo;</p>
+      </div>
+
+      <div class="tab-group">
+        <button class="tab-btn active" data-tab="foundation">Foundation</button>
+        <button class="tab-btn" data-tab="standard">Standard</button>
+        <button class="tab-btn" data-tab="extension">Extension</button>
+      </div>
+
+      <div class="tab-content active" id="foundation" data-tab="foundation">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Identify and describe</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Name the three cultural phases of Celtic development and give one defining feature of each.</li>
+          <li>Where did the Iceni tribe live? Name two modern counties that correspond to their territory.</li>
+          <li>What were the three main roles performed by Druids in Celtic society?</li>
+        </ol>
+      </div>
+      <div class="tab-content" id="standard" data-tab="standard">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Analyse and explain</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Explain why the absence of Celtic written records makes it difficult to study Celtic society from a Celtic perspective.</li>
+          <li>Analyse why the Romans considered the Druids such a significant threat that they specifically targeted Druidic centres during their conquest of Britain.</li>
+          <li>Using Caesar&rsquo;s account of the Druids as evidence, explain what this source reveals about both Celtic society and Roman attitudes toward the Celts.</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Sentence starters to help structure your response:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li>One reason this is significant is&hellip;</li>
+            <li>This source/evidence suggests that&hellip;</li>
+            <li>This can be explained by&hellip;</li>
+            <li>A key example of this is&hellip; which demonstrates&hellip;</li>
+          </ul>
+          <p class="mt-3 font-semibold text-sm mb-2">Paragraph frame:</p>
+          <p class="text-gray-600 italic">[Point] One important factor was&hellip; [Evidence] This is supported by&hellip; who states/shows that&hellip; [Explain] This evidence reveals that&hellip; because&hellip; [Link] Therefore, this demonstrates that&hellip;</p>
+        </div>
+      </div>
+      <div class="tab-content" id="extension" data-tab="extension">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Evaluate and debate</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>To what extent is it possible to reconstruct an accurate picture of Celtic society given that our primary written sources are Roman? Use Caesar&rsquo;s account of the Druids as a case study.</li>
+          <li>Evaluate the claim that the Celtic peoples of Britain had a sophisticated and highly organised society despite the absence of a written tradition. What evidence supports or challenges this view?</li>
+          <li>How does the concept of cultural bias affect the way we must approach all Roman descriptions of Celtic peoples, including the Iceni? What strategies can historians use to compensate for this bias?</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Essay structure guide:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li><strong>Introduction:</strong> Define key terms, state your argument clearly</li>
+            <li><strong>Body paragraphs:</strong> Use PEEL &mdash; Point, Evidence, Explain, Link</li>
+            <li><strong>Conclusion:</strong> Restate your argument, synthesise (don&rsquo;t just repeat)</li>
+          </ul>
+          <p class="mt-2 text-gray-600">Evaluative starters: &ldquo;To a significant/limited extent&hellip;&rdquo; &ldquo;While X is important, Y was more significant because&hellip;&rdquo; &ldquo;The evidence suggests that&hellip; however&hellip;&rdquo;</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       KEY TERMS: FLASHCARD GLOSSARY
+       ========================================== -->
+  <section id="key-terms" class="full-section grad-terms relative">
+    <span class="section-number">A&ndash;Z</span>
+    <div class="section-inner">
+      <div class="flex items-end justify-between mb-6 reveal">
+        <div>
+          <span class="section-label bg-purple-100 text-purple-700">Key Terms</span>
+          <h2 class="section-heading mb-0">Glossary</h2>
+        </div>
+        <button class="glossary-view-toggle text-sm text-navy font-semibold hover:text-burgundy transition-colors cursor-pointer">
+          Switch to List View
+        </button>
+      </div>
+      <p class="text-sm text-gray-500 mb-6 reveal">Click each card to reveal its definition.</p>
+
+      <!-- Flashcards -->
+      <div class="flashcard-grid reveal-stagger">
+        <div class="flashcard" tabindex="0" role="button" aria-label="Flashcard: Celtic">
+          <div class="flashcard-inner"><div class="flashcard-front">Celtic</div><div class="flashcard-back">Relating to a group of peoples sharing common linguistic, artistic, and religious traditions spread across Iron Age Europe.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Tribe</div><div class="flashcard-back">A social and political group organised around kinship, shared territory, and loyalty to a common leader.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">La T&egrave;ne</div><div class="flashcard-back">The third and most sophisticated phase of Celtic culture, c. 500 BC&ndash;AD 100, characterised by distinctive curvilinear art.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Druid</div><div class="flashcard-back">A Celtic religious leader, judge, and educator who transmitted knowledge through oral tradition.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Oral Tradition</div><div class="flashcard-back">The preservation and transmission of knowledge, history, law, and religion through spoken word rather than writing.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Iceni</div><div class="flashcard-back">A Celtic tribe of eastern Britain (modern Norfolk, Suffolk, and parts of Cambridgeshire) and the people led by Boudicca.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Torc</div><div class="flashcard-back">A twisted metal neck-ring made of gold, silver, or bronze, worn by Celtic elites as a symbol of status.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Client Kingdom</div><div class="flashcard-back">A state that retains internal self-rule in exchange for loyalty, tribute, and military support to a more powerful overlord.</div></div>
+        </div>
+      </div>
+
+      <!-- List View (hidden) -->
+      <div class="glossary-list hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+            <thead>
+              <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/4">Term</th>
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Definition</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white/70">
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Celtic</td><td class="px-5 py-3 text-gray-600">Relating to a group of peoples sharing common linguistic, artistic, and religious traditions spread across Iron Age Europe.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Tribe</td><td class="px-5 py-3 text-gray-600">A social and political group organised around kinship, shared territory, and loyalty to a common leader.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">La T&egrave;ne</td><td class="px-5 py-3 text-gray-600">The third and most sophisticated phase of Celtic culture, c. 500 BC&ndash;AD 100, characterised by distinctive curvilinear art.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Druid</td><td class="px-5 py-3 text-gray-600">A Celtic religious leader, judge, and educator who transmitted knowledge through oral tradition.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Oral tradition</td><td class="px-5 py-3 text-gray-600">The preservation and transmission of knowledge, history, law, and religion through spoken word rather than writing.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Iceni</td><td class="px-5 py-3 text-gray-600">A Celtic tribe of eastern Britain (modern Norfolk, Suffolk, and parts of Cambridgeshire) and the people led by Boudicca.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Torc</td><td class="px-5 py-3 text-gray-600">A twisted metal neck-ring made of gold, silver, or bronze, worn by Celtic elites as a symbol of status.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Client kingdom</td><td class="px-5 py-3 text-gray-600">A state that retains internal self-rule in exchange for loyalty, tribute, and military support to a more powerful overlord.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       REVIEW OF LEARNING
+       ========================================== -->
+  <section id="review" class="full-section grad-review relative">
+    <div class="section-inner reveal">
+      <span class="section-label bg-gold/20 text-amber-700">Review of Learning</span>
+      <h2 class="section-heading">How Did You Go?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6 text-[1.05rem]">
+        Return to the success criteria from the start of this lesson. Can you now tick off each one?
+        If any remain unticked, scroll back and review the relevant section.
+      </p>
+
+      <div class="space-y-3">
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">1</span>
+          <span class="text-gray-700">Describe the origins and cultural phases of the Celtic peoples in Iron Age Europe.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">2</span>
+          <span class="text-gray-700">Explain how the Celts were organised in Britain, focusing on the Iceni tribe.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">3</span>
+          <span class="text-gray-700">Analyse the role of Druids and key cultural practices of the Celts.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">4</span>
+          <span class="text-gray-700">Evaluate the reliability of Roman sources when describing Celtic society.</span>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Review of Learning</p>
+        <p><strong>Self-assessment</strong> for each criterion: &ldquo;Thumbs up if confident, sideways if partly there, down if you need more help.&rdquo;</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> &ldquo;On a sticky note, write one reason why we need to be careful when using Roman sources to learn about the Celts.&rdquo; Collect as students leave.</p>
+      </div>
+
+      <!-- Exit Ticket -->
+      <div class="exit-ticket">
+        <h4>Exit Ticket</h4>
+        <label class="text-sm text-gray-600 block mb-1">One thing I learned today:</label>
+        <textarea placeholder="What was the most important thing you learned in this lesson?"></textarea>
+        <label class="text-sm text-gray-600 block mb-1">One question I still have:</label>
+        <textarea placeholder="What are you still unsure about or want to know more about?"></textarea>
+      </div>
+
+      <!-- Reflection -->
+      <div class="reflection-panel">
+        <h4>Self-Reflection</h4>
+        <p class="text-sm text-gray-600 mb-2">How confident do you feel about this lesson&rsquo;s content?</p>
+        <div class="confidence-scale">
+          <button class="confidence-btn">1<br><span class="text-[0.65rem]">Not yet</span></button>
+          <button class="confidence-btn">2<br><span class="text-[0.65rem]">Getting there</span></button>
+          <button class="confidence-btn">3<br><span class="text-[0.65rem]">Mostly</span></button>
+          <button class="confidence-btn">4<br><span class="text-[0.65rem]">Confident</span></button>
+          <button class="confidence-btn">5<br><span class="text-[0.65rem]">Mastered</span></button>
+        </div>
+        <label class="text-sm text-gray-600 block mt-3 mb-1">What do you want to revisit before the next lesson?</label>
+        <textarea class="reflection-text" placeholder="Any topics, terms, or skills you want to review?"></textarea>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       LESSON NAVIGATION
+       ========================================== -->
+  <section class="py-12 px-6" style="background: #fefcf9;">
+    <div class="max-w-3xl mx-auto lesson-nav-footer flex items-center justify-between">
+      <a href="lesson-1.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        Lesson 1
+      </a>
+      <span class="text-xs text-gray-300 tracking-wider uppercase">Lesson 2 of 16</span>
+      <a href="lesson-3.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        Lesson 3
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 text-center" style="background: linear-gradient(180deg, #fefcf9, #f5f3ed);">
+    <p class="text-sm text-gray-400 font-sans">
+      NSW Ancient History Stage 6 &middot; NESA Syllabus (2017) &middot; Case Study A
+    </p>
+    <p class="text-xs text-gray-300 mt-2 font-sans">Created by Cheryl Cutter</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

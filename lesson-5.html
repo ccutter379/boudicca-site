@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 5: Tacitus &mdash; Our Most Important Source | Boudicca Interactive</title>
+
+  <!-- Meta -->
+  <meta name="description" content="Interactive NSW Ancient History Stage 6 resource — Boudicca case study with explicit teaching, CFU activities, source analysis, and teacher facilitation tools.">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': { DEFAULT: '#1a1a2e', mid: '#16213e', light: '#2a4d7a' },
+            'burgundy': { DEFAULT: '#8b2635', light: '#a83242' },
+            'gold': { DEFAULT: '#c9a84c', light: '#e8d292' },
+          },
+          fontFamily: {
+            'serif': ['Playfair Display', 'Georgia', 'serif'],
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans" style="background: #fefcf9;">
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress"></div>
+
+  <!-- Navigation (Glassmorphism) -->
+  <nav class="site-nav">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-5">
+        <a href="index.html" class="text-white font-serif text-xl font-bold tracking-wide hover:text-gold transition-colors">
+          Boudicca
+        </a>
+        <span class="text-white/20 hidden sm:inline">|</span>
+        <span class="text-white/40 text-xs font-sans tracking-wider hidden sm:inline">Lesson 5 of 16</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <button class="teacher-toggle" aria-label="Toggle teacher facilitation notes">Teacher Mode</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="lesson-hero grad-hero" style="background: linear-gradient(165deg, rgba(26,26,46,0.92) 0%, rgba(22,33,62,0.88) 50%, rgba(26,39,68,0.92) 100%), url('images/tacitus-statue.png') center/cover no-repeat;">
+    <div class="relative z-10 max-w-3xl mx-auto reveal">
+      <span class="chapter-badge">Chapter 2 &middot; Sources and the Revolt</span>
+      <p class="text-white/40 font-sans text-sm tracking-wider uppercase mb-3">Lesson 5</p>
+      <h1 class="hero-title font-serif text-white">Tacitus: Our Most<br>Important Source</h1>
+      <p class="hero-desc">
+        Who was the Roman historian who wrote the fullest surviving account of Boudicca&rsquo;s revolt &mdash;
+        and how far can we trust what he tells us?
+      </p>
+      <p class="reading-time"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> ~34 min</p>
+      <!-- Syllabus Outcomes -->
+      <details class="mt-8">
+        <summary class="text-white/25 text-xs font-sans cursor-pointer hover:text-white/40 transition-colors uppercase tracking-[0.15em]">
+          NESA Syllabus Outcomes
+        </summary>
+        <div class="mt-3 text-white/35 text-xs font-sans space-y-1 leading-relaxed">
+          <p><strong class="text-white/50">AH11-6:</strong> Analyses and interprets different types of sources for evidence to support an historical account or argument</p>
+          <p><strong class="text-white/50">AH11-7:</strong> Discusses and evaluates differing interpretations and representations of the past</p>
+          <p><strong class="text-white/50">AH11-4:</strong> Accounts for the different perspectives of individuals and groups</p>
+          <p><strong class="text-white/50">AH11-10:</strong> Discusses contemporary methods and issues involved in the investigation of ancient history</p>
+        </div>
+      </details>
+    </div>
+    <!-- Decorative number -->
+    <div class="absolute bottom-6 right-8 font-serif text-white/[0.03] font-extrabold pointer-events-none select-none hidden md:block" style="font-size: 14rem; line-height: 1;">05</div>
+  </section>
+
+
+  <!-- ==========================================
+       LEARNING INTENTION & SUCCESS CRITERIA
+       ========================================== -->
+  <section id="lisc" class="full-section grad-lisc">
+    <div class="section-inner reveal">
+      <span class="section-label bg-navy/[0.07] text-navy">Learning Intention</span>
+      <h2 class="section-heading">What You&rsquo;ll Learn</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-8">
+        To understand who Tacitus was, what he wrote, and why he wrote it &mdash; and to evaluate his account of Boudicca&rsquo;s revolt as a historical source.
+      </p>
+
+      <div>
+        <h3 class="font-sans text-xs font-bold uppercase tracking-[0.12em] text-gray-400 mb-2">Success Criteria</h3>
+        <p class="sc-progress-text text-xs text-gray-400 mb-1">0 of 4 criteria met</p>
+        <div class="sc-progress"><div class="sc-progress-bar"></div></div>
+        <p class="text-sm text-gray-500 mb-4">By the end of this lesson, I can:</p>
+        <div class="space-y-1">
+          <div class="sc-item"><input type="checkbox" id="sc1"><label for="sc1">Explain the background, career, and purpose of Tacitus as a historian.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc2"><label for="sc2">Identify the key features of Tacitus&rsquo;s account of Boudicca&rsquo;s revolt in the Annals.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc3"><label for="sc3">Analyse the rhetorical techniques Tacitus uses in his account of Boudicca.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc4"><label for="sc4">Evaluate the value and limitations of Tacitus as a primary source for the revolt.</label></div>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Sharing LISC</p>
+        <p>Display the learning intention and success criteria on the board. Read them aloud and ask students to identify the <em>key verbs</em> (explain, identify, analyse, evaluate). This helps students understand what level of thinking is expected. Check understanding: <strong>&ldquo;Can someone put the learning intention into their own words?&rdquo;</strong> (cold call).</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       ACTIVATING PRIOR KNOWLEDGE
+       ========================================== -->
+  <section id="prior-knowledge" class="full-section grad-prior relative">
+    <span class="section-number">?</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-white/50 text-amber-700">Before We Begin</span>
+      <h2 class="section-heading">What Do You Already Know?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        In earlier lessons, we discussed how the only written sources about Boudicca come from Roman historians.
+        Today we meet the most important of those historians. Before we begin, let&rsquo;s see what you remember.
+      </p>
+
+      <div class="mb-6">
+        <p class="font-sans text-sm font-semibold text-gray-700 mb-2">What do you remember about the challenges of studying Boudicca from Lessons 1&ndash;4?</p>
+        <div class="poll-options">
+          <button class="poll-btn">Not much yet</button>
+          <button class="poll-btn">The sources are Roman</button>
+          <button class="poll-btn">No Celtic written records</button>
+          <button class="poll-btn">Remember it clearly</button>
+        </div>
+      </div>
+
+      <div>
+        <label class="font-sans text-sm font-semibold text-gray-700 block mb-2" for="prior-text">
+          What do you already know about Tacitus? Have you encountered his name in any earlier lessons?
+        </label>
+        <textarea id="prior-text" class="w-full border border-black/[0.08] rounded-2xl p-4 text-sm font-sans leading-relaxed resize-y bg-white/60 backdrop-blur min-h-[90px] focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-all"
+                  placeholder="For example: Was he Roman? When did he live? What did he write about Boudicca?"></textarea>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Retrieval Practice</p>
+        <p>Use <strong>cold call</strong> to ask 3&ndash;4 students what they recall about why studying Boudicca is difficult (Lesson 1 content). Accept all responses. Then ask: <strong>&ldquo;Who can tell me the names of the two Roman historians who wrote about Boudicca?&rdquo;</strong></p>
+        <p class="mt-2"><strong>Retrieval check:</strong> &ldquo;True or false: There are three main ancient written sources for Boudicca&rsquo;s revolt. Thumbs up for true, down for false.&rdquo; (Answer: false &mdash; there are only two: Tacitus and Cassius Dio.) If fewer than 80% correct, briefly recap who wrote about Boudicca before proceeding.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 1: WHO WAS TACITUS?
+       ========================================== -->
+  <section id="chunk-1" class="full-section grad-chunk1 relative">
+    <span class="section-number">01</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-burgundy/10 text-burgundy">Chunk 1 of 4</span>
+      <h2 class="section-heading">Who Was Tacitus?</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling (&lsquo;I Do&rsquo;)</p>
+        <p><strong>Think-aloud as you introduce Tacitus:</strong> &ldquo;When I read that Tacitus was a Roman senator, I immediately wonder &mdash; whose side is he on? If he&rsquo;s part of Rome&rsquo;s ruling class, how might that shape the way he tells Boudicca&rsquo;s story?&rdquo;</p>
+        <p class="mt-2"><strong>Read the first two paragraphs aloud</strong>, then pause to check understanding before continuing.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Publius Cornelius Tacitus (c. AD 56 &ndash; c. AD 120) was a Roman senator, lawyer, and historian who is widely regarded as the greatest of all Roman historians. He was born in the reign of Nero and lived through the turbulent period of the Year of the Four Emperors (AD 69) before achieving his literary maturity under the relative stability of Trajan&rsquo;s reign (AD 98&ndash;117).
+        </p>
+        <p>
+          Tacitus had a distinguished public career, serving as consul (the highest regular magistracy in Rome) and as governor of the province of Asia. He was deeply embedded in the senatorial class &mdash; the small elite that governed the Roman Empire &mdash; and his writing reflects the perspective of an educated Roman who had witnessed both the grandeur and the corruption of imperial rule at close range.
+        </p>
+        <p>
+          His most important historical works are the <strong>Histories</strong> (covering AD 69&ndash;96, the period from the Year of the Four Emperors to the death of Domitian) and the <strong>Annals</strong> (covering AD 14&ndash;68, from the death of Augustus to the death of Nero). Boudicca&rsquo;s revolt falls within the <em>Annals</em>, which was written in the early second century AD, approximately fifty-seven years after the events it describes.
+        </p>
+      </div>
+
+      <!-- Featured image: Tacitus statue -->
+      <figure class="featured-image">
+        <img src="images/tacitus-statue.png" alt="Marble statue of Tacitus from the Austrian Parliament Building, Vienna. He is depicted in Roman senatorial robes, holding a scroll." loading="lazy">
+        <figcaption class="caption"><strong>Marble statue of Tacitus</strong>, Austrian Parliament Building, Vienna. Tacitus is depicted as a Roman senator and scholar &mdash; the public role that shaped his historical perspective.</figcaption>
+      </figure>
+
+      <h3 class="font-serif text-xl font-bold text-navy mt-8 mb-3">Tacitus&rsquo;s Connection to Britain</h3>
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Tacitus had a personal connection to Britain that distinguished him from most Roman writers who discussed the province. His father-in-law was <strong>Gnaeus Julius Agricola</strong> &mdash; one of the most celebrated governors of Roman Britain (AD 77&ndash;83/84) and the man who pushed Roman control to its greatest northern extent. Tacitus wrote a biography of Agricola (the <em>Agricola</em>) that includes valuable information about Roman Britain and suggests that he had direct access to eyewitness accounts of British affairs through his family connection.
+        </p>
+        <p>
+          This personal connection does not make Tacitus free of bias &mdash; if anything, his loyalty to Agricola&rsquo;s memory and his critique of the emperors under whom Agricola served shaped his narrative. But it does mean that his information about British affairs was likely more detailed and accurate than what was available to most Roman writers.
+        </p>
+      </div>
+
+      <!-- Historian Profile Card -->
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Historian Profile: Tacitus</p>
+        <div class="space-y-2 text-gray-700 text-sm">
+          <p><strong>Full name:</strong> Publius Cornelius Tacitus</p>
+          <p><strong>Born:</strong> c. AD 56&ndash;57, Gallia Narbonensis (southern France)</p>
+          <p><strong>Died:</strong> c. AD 120</p>
+          <p><strong>Role:</strong> Roman Senator &middot; Lawyer &middot; Consul (AD 97)</p>
+          <p><strong>Language:</strong> Latin</p>
+          <p><strong>Writing style:</strong> Compressed, moralising, ironic &mdash; literary history</p>
+          <p class="mt-3"><strong>Principal Works:</strong></p>
+          <ul class="list-disc ml-5 space-y-1">
+            <li><strong>Annals</strong> (c. AD 117) &mdash; Covers the reigns of Tiberius, Claudius and Nero (AD 14&ndash;68). Books XIII&ndash;XIV contain the primary account of Boudicca&rsquo;s revolt.</li>
+            <li><strong>Histories</strong> (c. AD 100) &mdash; Covers the Year of the Four Emperors (AD 69) through the reign of Domitian.</li>
+            <li><strong>Agricola</strong> (c. AD 98) &mdash; A biography of his father-in-law, Governor of Britain. Essential for understanding Tacitus&rsquo;s direct access to eyewitness testimony.</li>
+            <li><strong>Germania</strong> (c. AD 98) &mdash; An ethnographic study of Germanic tribes, used partly to contrast &lsquo;barbarian&rsquo; virtues with Roman moral decline.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- The Agricola Connection -->
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">The Agricola Connection: Why Tacitus Matters for Boudicca</p>
+        <p class="text-gray-700 text-sm leading-relaxed">
+          Tacitus was the son-in-law of Gnaeus Julius Agricola, who served as Governor of Britain (AD 77&ndash;84). As a young officer, Agricola served under Suetonius Paulinus during the Boudiccan revolt itself. This means Tacitus had access to a <strong>direct eyewitness</strong> of the revolt &mdash; giving his account in the <em>Annals</em> a level of proximity unavailable to later historians.
+        </p>
+        <p class="text-gray-600 text-sm mt-3 leading-relaxed">
+          <strong>Boudiccan Revolt</strong> (c. AD 60&ndash;61) &rarr; <strong>Agricola</strong> serves under Paulinus as a junior officer, later Governor of Britain AD 77&ndash;84 &rarr; <strong>Tacitus</strong>, son-in-law of Agricola, writes the <em>Annals</em> c. AD 117, approximately 57 years after the revolt.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="c"
+           data-feedback-correct="Correct! Tacitus&rsquo;s father-in-law Agricola served as a junior officer during the revolt itself, giving Tacitus access to an eyewitness account &mdash; a significant advantage over other ancient historians."
+           data-feedback-incorrect="Not quite. The key connection is through Agricola, Tacitus&rsquo;s father-in-law, who actually served as a young officer during Boudicca&rsquo;s revolt &mdash; making him an eyewitness.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p>Use <strong>cold call</strong>. If fewer than 80% answer correctly, re-teach by drawing the connection chain on the board: Revolt &rarr; Agricola &rarr; Tacitus.</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">Why is Tacitus considered to have had better access to information about the revolt than most other Roman historians?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q1" class="mt-0.5"><span>He personally fought in the revolt against Boudicca</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q1" class="mt-0.5"><span>He lived in Britain for most of his life</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q1" class="mt-0.5"><span>His father-in-law Agricola served as an officer during the revolt and later governed Britain</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q1" class="mt-0.5"><span>He translated Celtic oral histories into Latin</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 2: TACITUS ON THE REVOLT
+       ========================================== -->
+  <section id="chunk-2" class="full-section grad-chunk2 relative">
+    <span class="section-number">02</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-purple-100 text-purple-700">Chunk 2 of 4</span>
+      <h2 class="section-heading">Tacitus on the Revolt: The Primary Sources</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Guided Reading (&lsquo;We Do&rsquo;)</p>
+        <p>Read each source extract aloud to the class. After each one, pause and use <strong>think-pair-share</strong>: &ldquo;Turn to your partner and identify one specific word or phrase that reveals Tacitus&rsquo;s perspective.&rdquo; (60 seconds). Cold call 2&ndash;3 pairs to share.</p>
+      </div>
+
+      <p class="text-gray-700 leading-relaxed text-[1.05rem] mb-6">
+        The following passages from Book XIV of Tacitus&rsquo;s <em>Annals</em> cover the causes of the revolt, the attack on the three cities, and the final battle. Read them carefully, noting both <strong>what</strong> Tacitus tells us and <strong>how</strong> he tells it.
+      </p>
+
+      <!-- Source 1: Causes of the revolt -->
+      <div class="source-box">
+        <p class="provenance"><strong>PRIMARY SOURCE</strong> &mdash; Tacitus, <em>Annals</em>, Book XIV, Chapters 29&ndash;37. Written c. AD 98. Translation by Alfred John Church and William Jackson Brodribb, 1876 (public domain). These chapters form the core ancient narrative of Boudicca&rsquo;s revolt.</p>
+        <blockquote>
+          &ldquo;In the consulship of Caesennius Paetus and Petronius Turpilianus [AD 61]&hellip; while Suetonius was thus employed, he received tidings of a sudden revolt in the province. Prasutagus, king of the Iceni, famed for his long prosperity, had made the emperor co-heir with his two daughters, under the impression that this token of submission, combined with his great wealth, would put his kingdom and household out of the reach of wrong. But the reverse was the result; so much so that his kingdom was plundered by centurions, his house by slaves, as if they were the spoils of war. First, his wife Boudicca was scourged and his daughters outraged. All the chief men of the Iceni, as if Rome had received the whole country as a gift, were stripped of their ancestral estates, and the king&rsquo;s relatives were treated like slaves. Exasperated by these insults, and dreading still worse, since they were now reduced to the condition of a province, they flew to arms, and drew into the rebellion the Trinobantes [Trinovantes] and others who, not yet broken in to subjection, had agreed by secret conspiracies to reassert their freedom.&rdquo;
+        </blockquote>
+        <div class="historian-note">
+          <strong>Historian&rsquo;s note:</strong> Note Tacitus&rsquo;s key choices: he presents Prasutagus&rsquo;s will as a &ldquo;token of submission&rdquo; (highlighting Iceni good faith), uses the verb &ldquo;scourged&rdquo; (a word used for criminal punishment, highlighting the dishonour), and describes the behaviour of Roman officials as treating the kingdom &ldquo;as if it were the spoils of war&rdquo; &mdash; i.e., as conquered enemies rather than voluntary allies. The phrase &ldquo;drawn into the rebellion&hellip; who had agreed by secret conspiracies&rdquo; suggests pre-planning, contradicting narratives of spontaneous revolt.
+        </div>
+      </div>
+
+      <!-- Source 2: Abandonment of Londinium -->
+      <div class="source-box">
+        <p class="provenance"><strong>PRIMARY SOURCE</strong> &mdash; Tacitus, <em>Annals</em>, Book XIV, Chapter 33. Written c. AD 98. This passage describes the Roman civilian massacre during the sack of Londinium.</p>
+        <blockquote>
+          &ldquo;Suetonius, however, with wonderful resolution, marched amidst a hostile population to Londinium, which, though undistinguished by the name of a colony, was much frequented by a number of merchants and trading vessels. Uncertain whether he should choose it as a seat of war, as he looked round on his scanty force of soldiers, and remembered with what a serious warning the rashness of Petilius had been punished, he resolved to save the province at the cost of a single town. Nor did the tears and weeping of the people, as they implored his aid, move him from giving the signal of departure and receiving into his army all who would go with him. Those who were chained to the spot by the weakness of their sex, or the infirmity of age, or the attachment to the place, were cut off by the enemy.&rdquo;
+        </blockquote>
+        <div class="historian-note">
+          <strong>Historian&rsquo;s note:</strong> Tacitus presents Suetonius&rsquo;s abandonment of Londinium as a rational military decision rather than a moral failure &mdash; &ldquo;wonderful resolution&rdquo; is the phrase he uses. This represents the Roman military perspective: the goal is to save the province (Roman control), not to protect individual civilians. The phrase &ldquo;chained to the spot by the weakness of their sex&rdquo; reflects Roman gender assumptions &mdash; Tacitus implies women stayed because they were physically or emotionally incapable of the rational choice of retreat.
+        </div>
+      </div>
+
+      <!-- Source 3: Boudicca's speech -->
+      <div class="source-box">
+        <p class="provenance"><strong>PRIMARY SOURCE</strong> &mdash; Tacitus, <em>Annals</em>, Book XIV, Chapter 34. Written c. AD 98. This is Tacitus&rsquo;s account of Boudicca&rsquo;s speech to her forces before the final battle. Like all ancient battle speeches, it is a rhetorical construction by the historian, not a verbatim record.</p>
+        <blockquote>
+          &ldquo;Boudicca, with her daughters before her in a chariot, went up to tribe after tribe, protesting that it was indeed usual for Britons to fight under the leadership of women. But now she was not fighting to recover her kingdom and plunder, but like one of the people, to avenge lost freedom, her scourged body, the outraged chastity of her daughters. Roman lust had gone so far that not even their persons, age or virginity, were left unpolluted. But heaven was on the side of a righteous vengeance; a legion which dared to face the armed host had been destroyed; the rest were skulking in their camps, or anxiously seeking a way of escape. They would not sustain even the din and the shout of so many thousands, much less their onslaught and their blows. If they would but consider the forces under arms, and the causes of the war, they would see that in that battle they must conquer or die. This was a woman&rsquo;s resolve; as for the men, they might live and be slaves.&rdquo;
+        </blockquote>
+        <div class="historian-note">
+          <strong>Historian&rsquo;s note:</strong> This speech is one of the most famous passages in ancient history. Tacitus constructs it to serve multiple purposes: it establishes Boudicca&rsquo;s moral authority (she fights for justice, not plunder), acknowledges the &ldquo;unusual&rdquo; nature of female leadership in Roman eyes, and ends with a stinging rebuke aimed at Roman men hiding in their camps. The final line &mdash; &ldquo;This was a woman&rsquo;s resolve; as for the men, they might live and be slaves&rdquo; &mdash; is a masterpiece of rhetorical inversion: a woman is more courageous than Rome&rsquo;s professional soldiers. Whether Boudicca actually said anything like this is impossible to know.
+        </div>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="d"
+           data-feedback-correct="Correct! Ancient historians, including Tacitus, composed speeches they believed a historical figure would or should have said &mdash; a recognised literary convention. We cannot know what Boudicca actually said."
+           data-feedback-incorrect="Not quite. In ancient historical writing, speeches were a recognised literary device. Historians composed speeches to make moral and political points &mdash; they were not recordings of real words.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p><strong>Gesture voting:</strong> &ldquo;Hold up A, B, C, or D with your fingers. On three &mdash; one, two, three &mdash; show me.&rdquo; If fewer than 80% show D, re-teach the concept of invented speeches in ancient historiography.</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">Why should we <strong>not</strong> treat Boudicca&rsquo;s speech in the <em>Annals</em> as a verbatim record of what she actually said?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q2" class="mt-0.5"><span>Tacitus did not speak Celtic and could not have understood her</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q2" class="mt-0.5"><span>Boudicca was illiterate and could not have given a speech</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q2" class="mt-0.5"><span>The original text of the <em>Annals</em> has been lost</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q2" class="mt-0.5"><span>Ancient historians composed speeches as a literary device to make moral and political points</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 3: KEY BIASES & ANALYTICAL PERSPECTIVES
+       ========================================== -->
+  <section id="chunk-3" class="full-section grad-chunk3 relative">
+    <span class="section-number">03</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-amber-100 text-amber-700">Chunk 3 of 4</span>
+      <h2 class="section-heading">Key Biases &amp; Analytical Perspectives</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Scaffolding (&lsquo;We Do&rsquo;)</p>
+        <p>Work through each bias category together. For each, ask students: <strong>&ldquo;Can you find a specific example of this bias in the source extracts we just read?&rdquo;</strong></p>
+        <p class="mt-2"><strong>Think-pair-share</strong> for each category (30 seconds thinking, 30 seconds sharing with partner). Cold call pairs to report back.</p>
+      </div>
+
+      <p class="text-gray-700 leading-relaxed text-[1.05rem] mb-6">
+        Tacitus was a brilliant historian &mdash; but he was not neutral. His account of Boudicca&rsquo;s revolt is shaped by several identifiable biases and literary conventions that students must recognise and analyse.
+      </p>
+
+      <h3 class="font-serif text-xl font-bold text-navy mt-8 mb-3">Tacitus&rsquo;s Purpose: The Moral Historian</h3>
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Tacitus wrote history with a clear moral and political purpose. He believed that historians had a duty to record the deeds of great men so they could be remembered for praise or blame &mdash; and to expose the moral decay that he saw as threatening the Roman state. His target was not merely individual corrupt emperors but the entire system of imperial rule, which he believed had corrupted Roman virtues by replacing republican competition and senatorial responsibility with autocratic power.
+        </p>
+        <p>
+          Boudicca&rsquo;s revolt served Tacitus&rsquo;s purpose perfectly. The revolt was caused by Roman injustice &mdash; the greed and brutality of Roman officials &mdash; and nearly destroyed Rome&rsquo;s most prestigious recent conquest. By presenting Celtic leaders (and Boudicca in particular) as noble figures driven to revolt by Roman excess, Tacitus could shame Roman readers without directly attacking Rome itself. Boudicca becomes a mirror: her courage highlights Roman cowardice; her justice highlights Roman corruption; her freedom highlights Roman servitude.
+        </p>
+        <p>
+          This technique &mdash; using &ldquo;barbarian&rdquo; virtue to criticise Roman vice &mdash; was a recognised literary tradition. Tacitus also used it in his ethnographic essay <em>Germania</em>, where the moral simplicity of the Germanic peoples is used to critique Roman luxury and decadence. It does not mean Tacitus actually respected Celtic peoples as equals, but it does mean that his positive portrayals of Boudicca serve his own rhetorical agenda, not historical objectivity.
+        </p>
+      </div>
+
+      <!-- Bias boxes -->
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Senatorial Bias</p>
+        <p class="text-gray-700 text-sm leading-relaxed">
+          As a Roman senator, Tacitus was deeply hostile to autocratic emperors &mdash; particularly Nero and Domitian &mdash; who undermined Senate authority. His account of the revolt is partly a critique of Neronian misgovernance in Britain. Students should ask: <em>is Tacitus blaming the Romans as a moral argument about bad emperors, rather than simply recording events?</em>
+        </p>
+      </div>
+
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">The &lsquo;Noble Barbarian&rsquo; Trope</p>
+        <p class="text-gray-700 text-sm leading-relaxed">
+          Tacitus frequently portrays non-Romans &mdash; Britons, Germans, Celts &mdash; as more virtuous, courageous and morally pure than Romans. This is a rhetorical device to shame Rome&rsquo;s own moral decline. Boudicca&rsquo;s eloquent speech before battle (<em>Annals</em> 14.35) is almost certainly composed by Tacitus, not a verbatim record. Her &lsquo;noble&rsquo; qualities serve his argument, not historical accuracy.
+        </p>
+      </div>
+
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Moralising History</p>
+        <p class="text-gray-700 text-sm leading-relaxed">
+          Tacitus explicitly states that history&rsquo;s purpose is to record virtuous acts and warn against evil. He is not simply a neutral recorder of facts &mdash; he selects, shapes and moralises. Every detail in his Boudicca narrative serves a larger argument about Roman governance, military virtue, and the consequences of greed and cruelty.
+        </p>
+      </div>
+
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Cultural Superiority</p>
+        <p class="text-gray-700 text-sm leading-relaxed">
+          Despite his sympathy for Boudicca&rsquo;s cause, Tacitus maintains a Roman lens throughout. He views Britons as civilisationally inferior &mdash; people who need Roman <em>humanitas</em> (culture/civilisation). Famously in <em>Agricola</em> 21, he notes that Britons adopted Roman dress, baths and banquets &mdash; then adds, with biting irony, that they called this &lsquo;civilisation&rsquo; when it was really &lsquo;enslavement&rsquo;.
+        </p>
+      </div>
+
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">Gender Assumptions</p>
+        <p class="text-gray-700 text-sm leading-relaxed">
+          Tacitus&rsquo;s portrayal of Boudicca is shaped by Roman assumptions about female leadership: her rule is presented as unusual, requiring explanation. He emphasises her physical appearance and her role as an outraged mother rather than a military commander in her own right. Modern historians (e.g. Hingley &amp; Unwin, 2005) argue his portrayal tells us more about Roman gender ideology than about Boudicca herself.
+        </p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="b"
+           data-feedback-correct="Correct! The &lsquo;noble barbarian&rsquo; trope uses positive portrayals of non-Roman peoples to criticise Roman moral decline. Boudicca&rsquo;s virtue shames Roman vice &mdash; but it serves Tacitus&rsquo;s agenda, not historical accuracy."
+           data-feedback-incorrect="Not quite. The &lsquo;noble barbarian&rsquo; is a literary device where non-Roman peoples are portrayed positively in order to criticise Roman society. It does not mean Tacitus genuinely believed Celts were superior.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">What is the purpose of the &lsquo;noble barbarian&rsquo; trope in Tacitus&rsquo;s writing?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q3" class="mt-0.5"><span>To accurately record Celtic customs and achievements</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q3" class="mt-0.5"><span>To use the moral virtue of non-Romans to criticise Roman moral decline</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q3" class="mt-0.5"><span>To encourage Romans to adopt Celtic customs</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q3" class="mt-0.5"><span>To demonstrate that Celtic civilisation was more advanced than Rome</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+
+      <div class="match-activity" data-answer="0-2,1-0,2-3,3-1">
+        <h3>Match the Bias to Its Description</h3>
+        <p class="text-gray-700 font-medium mb-4">Match each of Tacitus&rsquo;s biases to what it means:</p>
+        <div class="match-pairs">
+          <div>
+            <div class="match-prompt" data-idx="0">Senatorial bias</div>
+            <div class="match-slot" data-idx="0">Click an answer</div>
+            <div class="match-prompt" data-idx="1" style="margin-top:0.75rem">Noble barbarian trope</div>
+            <div class="match-slot" data-idx="1">Click an answer</div>
+            <div class="match-prompt" data-idx="2" style="margin-top:0.75rem">Moralising history</div>
+            <div class="match-slot" data-idx="2">Click an answer</div>
+            <div class="match-prompt" data-idx="3" style="margin-top:0.75rem">Gender assumptions</div>
+            <div class="match-slot" data-idx="3">Click an answer</div>
+          </div>
+          <div>
+            <div class="match-answer match-item" data-idx="0">Portraying non-Romans as more virtuous to shame Roman decadence</div>
+            <div class="match-answer match-item" data-idx="1">Presenting female leadership as unusual and needing explanation</div>
+            <div class="match-answer match-item" data-idx="2">Hostile to emperors who undermined Senate authority</div>
+            <div class="match-answer match-item" data-idx="3">Selecting and shaping events to teach moral lessons</div>
+          </div>
+        </div>
+        <button class="check-btn" style="margin-top:1rem">Check Matches</button>
+        <div class="cfu-feedback" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 4: RELIABILITY & OVPRL
+       ========================================== -->
+  <section id="chunk-4" class="full-section grad-chunk4 relative">
+    <span class="section-number">04</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-blue-100 text-blue-700">Chunk 4 of 4</span>
+      <h2 class="section-heading">Evaluating Tacitus: OVPRL Analysis</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Gradual Release: I Do, We Do, You Do</p>
+        <ol class="list-decimal ml-5 mt-1 space-y-1">
+          <li><strong>I Do:</strong> Model the O (Origin) field yourself, thinking aloud: &ldquo;I know Tacitus was a Roman senator writing in Latin around AD 117&hellip;&rdquo;</li>
+          <li><strong>We Do:</strong> Complete V and P together as a class, taking suggestions.</li>
+          <li><strong>You Do:</strong> Students complete R and L independently.</li>
+        </ol>
+        <p class="mt-2">Check understanding after each step. Use <strong>cold call</strong> to share responses.</p>
+      </div>
+
+      <!-- Reliability Assessment -->
+      <h3 class="font-serif text-xl font-bold text-navy mb-3">Reliability Assessment</h3>
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/2">Strengths</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/2">Limitations</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white/70">
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 text-gray-600">Written within living memory (~40&ndash;60 years after the revolt)</td>
+              <td class="px-5 py-3 text-gray-600">Written decades after the events &mdash; memory and tradition, not direct observation</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 text-gray-600">Access to eyewitness accounts through Agricola</td>
+              <td class="px-5 py-3 text-gray-600"><em>Annals</em> survive only partially &mdash; gaps exist in Books V, VI and XI</td>
+            </tr>
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 text-gray-600">Detailed &mdash; provides names, places, speeches and tactical descriptions</td>
+              <td class="px-5 py-3 text-gray-600">Accounts of speeches (especially Boudicca&rsquo;s) are literary inventions in the classical tradition</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 text-gray-600">Both <em>Annals</em> and <em>Agricola</em> provide accounts, allowing cross-referencing</td>
+              <td class="px-5 py-3 text-gray-600">Strongly shaped by political, moral and rhetorical purposes; no Celtic voice represented</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="key-concept">
+        <p class="font-bold text-navy mb-1">For Assessment</p>
+        <p class="text-gray-700 text-sm leading-relaxed">
+          Always acknowledge both the value AND the limitations. Sentence starter: <em>&lsquo;While Tacitus&rsquo;s account of the revolt in Annals 14.31&ndash;37 is valuable because&hellip; it is limited by&hellip;&rsquo;</em> Avoid treating his account as objective fact.
+        </p>
+      </div>
+
+      <!-- OVPRL Scaffold -->
+      <h3 class="font-serif text-xl font-bold text-navy mt-8 mb-3">OVPRL Source Analysis Scaffold &mdash; Tacitus, <em>Annals</em> 14.31</h3>
+
+      <div class="ovprl-tool">
+        <p class="text-sm text-gray-500 mb-5">Complete each field. Use the hint button if you need guidance.</p>
+
+        <div class="ovprl-field">
+          <label for="ovprl-5-o"><span class="text-burgundy font-extrabold">O &mdash; Origin:</span> Who created this source? When? Where?</label>
+          <textarea id="ovprl-5-o" placeholder="Who wrote it? When? In what language? For what audience?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Roman historian Tacitus, Annals Book XIV, c. AD 117. Written in Latin for a Roman senatorial audience approximately 57 years after the revolt.</div>
+        </div>
+        <div class="ovprl-field">
+          <label for="ovprl-5-v"><span class="text-burgundy font-extrabold">V &mdash; Value:</span> What useful information does this source provide?</label>
+          <textarea id="ovprl-5-v" placeholder="What can we learn from this source?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Provides detailed narrative of the revolt&rsquo;s causes, course and outcome. Written within living memory; Tacitus had access to Agricola, an eyewitness. Detailed enough to allow cross-referencing with archaeology.</div>
+        </div>
+        <div class="ovprl-field">
+          <label for="ovprl-5-p"><span class="text-burgundy font-extrabold">P &mdash; Purpose:</span> Why was this source created?</label>
+          <textarea id="ovprl-5-p" placeholder="Why did the author write this?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Primarily historical record, but also moral argument. Tacitus uses Boudicca to critique Neronian misgovernance and Roman moral decline &mdash; her virtue shames Rome&rsquo;s greed and cruelty.</div>
+        </div>
+        <div class="ovprl-field">
+          <label for="ovprl-5-r"><span class="text-burgundy font-extrabold">R &mdash; Reliability:</span> How trustworthy is this source?</label>
+          <textarea id="ovprl-5-r" placeholder="Can we trust this source? Why or why not?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">Reasonably reliable for the broad outline of events. Less reliable for specific speeches, numbers and motivations, which are shaped by Tacitus&rsquo;s rhetorical and moral agenda.</div>
+        </div>
+        <div class="ovprl-field">
+          <label for="ovprl-5-l"><span class="text-burgundy font-extrabold">L &mdash; Limitations:</span> What does this source <em>not</em> tell us?</label>
+          <textarea id="ovprl-5-l" placeholder="What is missing from this source?"></textarea>
+          <button class="hint-toggle">Show example answer</button>
+          <div class="hint-content">One-sided &mdash; Roman perspective only, no Celtic voice. Written decades after events &mdash; relies partly on tradition and earlier accounts. Speeches are literary compositions, not verbatim records. Partial survival of the Annals means some context is lost.</div>
+        </div>
+      </div>
+
+      <!-- Extended response prompt -->
+      <div class="source-box">
+        <p class="provenance"><strong>EXTENDED RESPONSE PROMPT</strong></p>
+        <blockquote>
+          &ldquo;It is the duty of history to ensure that virtue is placed on record, and to confront evil words and deeds with the fear of posterity&rsquo;s judgement.&rdquo;<br>
+          &mdash; Tacitus, <em>Annals</em> III.65
+        </blockquote>
+        <div class="historian-note">
+          Using this statement as your starting point, evaluate the extent to which Tacitus&rsquo;s account of the Boudiccan revolt in <em>Annals</em> XIV is &lsquo;history&rsquo; or &lsquo;moral argument&rsquo;. In your response, consider: what specific evidence from the text suggests a moralising purpose? Does this invalidate the account as historical evidence, or can both purposes coexist?
+        </div>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="c"
+           data-feedback-correct="Correct! The best approach in Stage 6 Ancient History is to acknowledge both the value and the limitations of a source. Tacitus is valuable for the broad outline of events but limited by his rhetorical and moral agenda."
+           data-feedback-incorrect="Not quite. A balanced evaluation is always required &mdash; acknowledge what the source tells us (value) while recognising the biases and gaps (limitations).">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">When evaluating Tacitus as a source for Boudicca&rsquo;s revolt, the best approach is to:</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q4" class="mt-0.5"><span>Accept his account as entirely reliable because he had eyewitness access</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q4" class="mt-0.5"><span>Reject his account entirely because he was biased</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q4" class="mt-0.5"><span>Acknowledge both his value (proximity, detail) and his limitations (bias, rhetoric, no Celtic voice)</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q4" class="mt-0.5"><span>Compare his account only with modern historians, not other ancient sources</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       INDEPENDENT PRACTICE: REVIEW QUESTIONS
+       ========================================== -->
+  <section id="practice" class="full-section grad-practice relative">
+    <span class="section-number">Q</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-green-100 text-green-700">Independent Practice</span>
+      <h2 class="section-heading">Review Questions</h2>
+      <p class="text-sm text-gray-500 mb-6">Choose the level that challenges you, or work through all three.</p>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Independent Practice (&lsquo;You Do&rsquo;)</p>
+        <p>Students should attempt these <strong>only after a high success rate</strong> on the CFU questions. Direct all students to Foundation first.</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> Students answer Foundation Q2 on a sticky note before leaving.</p>
+      </div>
+
+      <div class="tab-group">
+        <button class="tab-btn active" data-tab="foundation">Foundation</button>
+        <button class="tab-btn" data-tab="standard">Standard</button>
+        <button class="tab-btn" data-tab="extension">Extension</button>
+      </div>
+
+      <div class="tab-content active" id="foundation" data-tab="foundation">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Identify and describe</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>What were the two main historical works written by Tacitus, and which one covers Boudicca&rsquo;s revolt?</li>
+          <li>Who was Agricola, and why does his relationship to Tacitus matter when we evaluate Tacitus as a source?</li>
+          <li>Give one example of how Tacitus portrays Boudicca positively in his account.</li>
+        </ol>
+      </div>
+      <div class="tab-content" id="standard" data-tab="standard">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Analyse and explain</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Explain Tacitus&rsquo;s concept of &ldquo;moral history&rdquo; and how it shapes his account of Boudicca&rsquo;s revolt.</li>
+          <li>Analyse the speech Tacitus gives Boudicca before the final battle. What rhetorical purposes does this speech serve?</li>
+          <li>Assess the reliability of Tacitus as a source for Boudicca&rsquo;s revolt, considering both his value and limitations.</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Sentence starters:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li>This source is valuable because&hellip;</li>
+            <li>However, a key limitation is&hellip;</li>
+            <li>The evidence suggests that&hellip;</li>
+            <li>This can be compared with&hellip; which shows&hellip;</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-content" id="extension" data-tab="extension">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Evaluate and debate</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Evaluate the argument that Tacitus&rsquo;s sympathetic portrayal of Boudicca was motivated entirely by his own political agenda rather than historical accuracy. How should historians handle sources with such clear rhetorical purposes?</li>
+          <li>Compare Tacitus&rsquo;s portrayal of Suetonius Paulinus with his portrayal of Boudicca. What does the contrast reveal about Tacitus&rsquo;s understanding of Roman virtue and Roman failure?</li>
+          <li>To what extent can Tacitus&rsquo;s <em>Annals</em> be considered a reliable historical account of Boudicca&rsquo;s revolt? Construct a detailed argument that acknowledges both the source&rsquo;s significant value and its fundamental limitations.</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Evaluative language:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li>&ldquo;To a significant/limited extent&hellip;&rdquo;</li>
+            <li>&ldquo;While X is important, Y was more significant because&hellip;&rdquo;</li>
+            <li>&ldquo;The most convincing interpretation is&hellip; because&hellip;&rdquo;</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       KEY TERMS: FLASHCARD GLOSSARY
+       ========================================== -->
+  <section id="key-terms" class="full-section grad-terms relative">
+    <span class="section-number">A&ndash;Z</span>
+    <div class="section-inner">
+      <div class="flex items-end justify-between mb-6 reveal">
+        <div>
+          <span class="section-label bg-purple-100 text-purple-700">Key Terms</span>
+          <h2 class="section-heading mb-0">Glossary</h2>
+        </div>
+        <button class="glossary-view-toggle text-sm text-navy font-semibold hover:text-burgundy transition-colors cursor-pointer">
+          Switch to List View
+        </button>
+      </div>
+      <p class="text-sm text-gray-500 mb-6 reveal">Click each card to reveal its definition.</p>
+
+      <!-- Flashcards -->
+      <div class="flashcard-grid reveal-stagger">
+        <div class="flashcard" tabindex="0" role="button" aria-label="Flashcard: Annals">
+          <div class="flashcard-inner"><div class="flashcard-front">Annals</div><div class="flashcard-back">Tacitus&rsquo;s major historical work covering AD 14&ndash;68. Boudicca&rsquo;s revolt appears in Book XIV.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Rhetoric</div><div class="flashcard-back">The art of persuasive speaking or writing. Ancient historians used rhetorical techniques including invented speeches.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Senatorial Bias</div><div class="flashcard-back">The tendency of Roman senators to criticise emperors who reduced senatorial authority. Tacitus was a senator.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Noble Barbarian</div><div class="flashcard-back">A literary tradition in which non-Roman peoples are portrayed as morally superior to Romans, used to criticise Roman decadence.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Contemporaneous</div><div class="flashcard-back">Occurring at approximately the same time as the events described. Tacitus wrote c. 40 years after Boudicca&rsquo;s revolt.</div></div>
+        </div>
+      </div>
+
+      <!-- List View (hidden) -->
+      <div class="glossary-list hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+            <thead>
+              <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/4">Term</th>
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Definition</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white/70">
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Annals</td><td class="px-5 py-3 text-gray-600">Tacitus&rsquo;s major historical work covering AD 14&ndash;68. Boudicca&rsquo;s revolt appears in Book XIV.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Rhetoric</td><td class="px-5 py-3 text-gray-600">The art of persuasive speaking or writing. Ancient historians used rhetorical techniques including invented speeches.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Senatorial bias</td><td class="px-5 py-3 text-gray-600">The tendency of Roman senators to criticise emperors who reduced senatorial authority. Tacitus was a senator.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Noble barbarian</td><td class="px-5 py-3 text-gray-600">A literary tradition in which non-Roman peoples are portrayed as morally superior to Romans, used to criticise Roman decadence.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Contemporaneous</td><td class="px-5 py-3 text-gray-600">Occurring at approximately the same time as the events described. Tacitus wrote c. 40 years after Boudicca&rsquo;s revolt.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       REVIEW OF LEARNING
+       ========================================== -->
+  <section id="review" class="full-section grad-review relative">
+    <div class="section-inner reveal">
+      <span class="section-label bg-gold/20 text-amber-700">Review of Learning</span>
+      <h2 class="section-heading">How Did You Go?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6 text-[1.05rem]">
+        Return to the success criteria from the start of this lesson. Can you now tick off each one?
+        If any remain unticked, scroll back and review the relevant section.
+      </p>
+
+      <div class="space-y-3">
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">1</span>
+          <span class="text-gray-700">Explain the background, career, and purpose of Tacitus as a historian.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">2</span>
+          <span class="text-gray-700">Identify the key features of Tacitus&rsquo;s account of Boudicca&rsquo;s revolt in the Annals.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">3</span>
+          <span class="text-gray-700">Analyse the rhetorical techniques Tacitus uses in his account of Boudicca.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">4</span>
+          <span class="text-gray-700">Evaluate the value and limitations of Tacitus as a primary source for the revolt.</span>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Review of Learning</p>
+        <p><strong>Self-assessment</strong> for each criterion: &ldquo;Thumbs up if confident, sideways if partly there, down if you need more help.&rdquo;</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> &ldquo;On a sticky note, write one reason why Tacitus is valuable as a source and one reason why he is limited.&rdquo; Collect as students leave.</p>
+      </div>
+
+      <!-- Exit Ticket -->
+      <div class="exit-ticket">
+        <h4>Exit Ticket</h4>
+        <label class="text-sm text-gray-600 block mb-1">One thing I learned today:</label>
+        <textarea placeholder="What was the most important thing you learned in this lesson?"></textarea>
+        <label class="text-sm text-gray-600 block mb-1">One question I still have:</label>
+        <textarea placeholder="What are you still unsure about or want to know more about?"></textarea>
+      </div>
+
+      <!-- Reflection -->
+      <div class="reflection-panel">
+        <h4>Self-Reflection</h4>
+        <p class="text-sm text-gray-600 mb-2">How confident do you feel about this lesson&rsquo;s content?</p>
+        <div class="confidence-scale">
+          <button class="confidence-btn">1<br><span class="text-[0.65rem]">Not yet</span></button>
+          <button class="confidence-btn">2<br><span class="text-[0.65rem]">Getting there</span></button>
+          <button class="confidence-btn">3<br><span class="text-[0.65rem]">Mostly</span></button>
+          <button class="confidence-btn">4<br><span class="text-[0.65rem]">Confident</span></button>
+          <button class="confidence-btn">5<br><span class="text-[0.65rem]">Mastered</span></button>
+        </div>
+        <label class="text-sm text-gray-600 block mt-3 mb-1">What do you want to revisit before the next lesson?</label>
+        <textarea class="reflection-text" placeholder="Any topics, terms, or skills you want to review?"></textarea>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       LESSON NAVIGATION
+       ========================================== -->
+  <section class="py-12 px-6" style="background: #fefcf9;">
+    <div class="max-w-3xl mx-auto lesson-nav-footer flex items-center justify-between">
+      <a href="lesson-4.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        Lesson 4
+      </a>
+      <span class="text-xs text-gray-300 tracking-wider uppercase">Lesson 5 of 16</span>
+      <a href="lesson-6.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        Lesson 6
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 text-center" style="background: linear-gradient(180deg, #fefcf9, #f5f3ed);">
+    <p class="text-sm text-gray-400 font-sans">
+      NSW Ancient History Stage 6 &middot; NESA Syllabus (2017) &middot; Case Study A
+    </p>
+    <p class="text-xs text-gray-300 mt-2 font-sans">Created by Cheryl Cutter</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

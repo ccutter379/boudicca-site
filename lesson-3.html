@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 3: Roman Conquest and Romanisation | Boudicca Interactive</title>
+
+  <!-- Meta -->
+  <meta name="description" content="Interactive NSW Ancient History Stage 6 resource — Boudicca case study with explicit teaching, CFU activities, source analysis, and teacher facilitation tools.">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': { DEFAULT: '#1a1a2e', mid: '#16213e', light: '#2a4d7a' },
+            'burgundy': { DEFAULT: '#8b2635', light: '#a83242' },
+            'gold': { DEFAULT: '#c9a84c', light: '#e8d292' },
+          },
+          fontFamily: {
+            'serif': ['Playfair Display', 'Georgia', 'serif'],
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans" style="background: #fefcf9;">
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress"></div>
+
+  <!-- Navigation (Glassmorphism) -->
+  <nav class="site-nav">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-5">
+        <a href="index.html" class="text-white font-serif text-xl font-bold tracking-wide hover:text-gold transition-colors">
+          Boudicca
+        </a>
+        <span class="text-white/20 hidden sm:inline">|</span>
+        <span class="text-white/40 text-xs font-sans tracking-wider hidden sm:inline">Lesson 3 of 16</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <button class="teacher-toggle" aria-label="Toggle teacher facilitation notes">Teacher Mode</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="lesson-hero grad-hero" style="background: linear-gradient(165deg, rgba(26,26,46,0.92) 0%, rgba(22,33,62,0.88) 50%, rgba(26,39,68,0.92) 100%), url('images/celtic-vs-roman-settlement.png') center/cover no-repeat;">
+    <div class="relative z-10 max-w-3xl mx-auto reveal">
+      <span class="chapter-badge">Chapter 1 &middot; Context and Background</span>
+      <p class="text-white/40 font-sans text-sm tracking-wider uppercase mb-3">Lesson 3</p>
+      <h1 class="hero-title font-serif text-white">Roman Conquest<br>and Romanisation</h1>
+      <p class="hero-desc">
+        How did Rome conquer and transform Britain &mdash; and how did Roman policies
+        create the conditions that would eventually ignite Boudicca&rsquo;s revolt?
+      </p>
+      <p class="reading-time"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> ~30 min</p>
+      <!-- Syllabus Outcomes -->
+      <details class="mt-8">
+        <summary class="text-white/25 text-xs font-sans cursor-pointer hover:text-white/40 transition-colors uppercase tracking-[0.15em]">
+          NESA Syllabus Outcomes
+        </summary>
+        <div class="mt-3 text-white/35 text-xs font-sans space-y-1 leading-relaxed">
+          <p><strong class="text-white/50">AH11-1:</strong> Describes the nature of continuity and change in the ancient world</p>
+          <p><strong class="text-white/50">AH11-2:</strong> Proposes ideas about the varying causes and effects of events and developments</p>
+          <p><strong class="text-white/50">AH11-4:</strong> Accounts for the different perspectives of individuals and groups</p>
+        </div>
+      </details>
+    </div>
+    <!-- Decorative number -->
+    <div class="absolute bottom-6 right-8 font-serif text-white/[0.03] font-extrabold pointer-events-none select-none hidden md:block" style="font-size: 14rem; line-height: 1;">03</div>
+  </section>
+
+
+  <!-- ==========================================
+       LEARNING INTENTION & SUCCESS CRITERIA
+       ========================================== -->
+  <section id="lisc" class="full-section grad-lisc">
+    <div class="section-inner reveal">
+      <span class="section-label bg-navy/[0.07] text-navy">Learning Intention</span>
+      <h2 class="section-heading">What You&rsquo;ll Learn</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-8">
+        To understand the process and impact of Roman conquest and Romanisation in Britain, and to evaluate how Roman policies created the conditions for Boudicca&rsquo;s revolt.
+      </p>
+
+      <div>
+        <h3 class="font-sans text-xs font-bold uppercase tracking-[0.12em] text-gray-400 mb-2">Success Criteria</h3>
+        <p class="sc-progress-text text-xs text-gray-400 mb-1">0 of 4 criteria met</p>
+        <div class="sc-progress"><div class="sc-progress-bar"></div></div>
+        <p class="text-sm text-gray-500 mb-4">By the end of this lesson, I can:</p>
+        <div class="space-y-1">
+          <div class="sc-item"><input type="checkbox" id="sc1"><label for="sc1">Describe the key events of the Roman invasion of Britain in AD 43.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc2"><label for="sc2">Explain what Romanisation meant and identify its key methods.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc3"><label for="sc3">Analyse how Roman policies &mdash; particularly veteran colonies and the Imperial Cult &mdash; affected tribal peoples.</label></div>
+          <div class="sc-item"><input type="checkbox" id="sc4"><label for="sc4">Evaluate how Romanisation contributed to growing resentment and eventual revolt.</label></div>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Sharing LISC</p>
+        <p>Display the learning intention and success criteria on the board. Read them aloud and ask students to identify the <em>key verbs</em> (describe, explain, analyse, evaluate). This helps students understand the levels of thinking expected. Check understanding: <strong>&ldquo;Can someone explain in their own words what &lsquo;Romanisation&rsquo; might mean, just from reading the learning intention?&rdquo;</strong> (cold call). Accept all responses &mdash; we&rsquo;ll define it precisely later.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       ACTIVATING PRIOR KNOWLEDGE
+       ========================================== -->
+  <section id="prior-knowledge" class="full-section grad-prior relative">
+    <span class="section-number">?</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-white/50 text-amber-700">Before We Begin</span>
+      <h2 class="section-heading">What Do You Already Know?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        In our last lesson, we explored the Celts and the Iceni. Now let&rsquo;s think about what you already know &mdash; or think you know &mdash; about the Romans in Britain.
+      </p>
+
+      <div class="mb-6">
+        <p class="font-sans text-sm font-semibold text-gray-700 mb-2">How much do you already know about the Roman conquest of Britain?</p>
+        <div class="poll-options">
+          <button class="poll-btn">Nothing yet</button>
+          <button class="poll-btn">Heard of it</button>
+          <button class="poll-btn">Know some details</button>
+          <button class="poll-btn">Know a lot</button>
+        </div>
+      </div>
+
+      <div>
+        <label class="font-sans text-sm font-semibold text-gray-700 block mb-2" for="prior-text">
+          Jot down anything you know about how the Romans changed the places they conquered:
+        </label>
+        <textarea id="prior-text" class="w-full border border-black/[0.08] rounded-2xl p-4 text-sm font-sans leading-relaxed resize-y bg-white/60 backdrop-blur min-h-[90px] focus:outline-none focus:ring-2 focus:ring-gold/40 focus:border-gold transition-all"
+                  placeholder="For example: Did the Romans build roads? Did they force people to speak Latin? How did conquered peoples feel about Roman rule?"></textarea>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Activating Prior Knowledge</p>
+        <p>Use <strong>cold call</strong> to ask 3&ndash;4 students what they wrote. Connect their responses to last lesson&rsquo;s content about the Celts: &ldquo;We learned the Iceni were fiercely independent &mdash; how do you think they would have reacted to Roman rule?&rdquo;</p>
+        <p class="mt-2"><strong>CFU strategy:</strong> Retrieval gesture vote &mdash; &ldquo;True or false: Julius Caesar conquered and permanently settled Britain during his expeditions. Thumbs up for true, down for false.&rdquo; (Answer: false &mdash; he withdrew both times.) If fewer than 80% correct, briefly recap Caesar&rsquo;s two expeditions before proceeding.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 1: CAESAR'S EXPEDITIONS
+       ========================================== -->
+  <section id="chunk-1" class="full-section grad-chunk1 relative">
+    <span class="section-number">01</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-burgundy/10 text-burgundy">Chunk 1 of 5</span>
+      <h2 class="section-heading">Caesar&rsquo;s Expeditions to Britain (55&ndash;54 BC)</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling (&lsquo;I Do&rsquo;)</p>
+        <p><strong>Set the scene</strong> before reading: &ldquo;Almost a hundred years before the actual invasion, Julius Caesar came to Britain twice. He didn&rsquo;t conquer it &mdash; but he opened the door. Think of it like a scout checking out the territory before the army arrives.&rdquo;</p>
+        <p class="mt-2"><strong>Read the first paragraph aloud</strong>, then pause to check understanding before continuing.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Julius Caesar mounted two expeditions to Britain &mdash; in <strong>55 BC</strong> with two legions and in <strong>54 BC</strong> with five legions. He did not conquer Britain; on both occasions he withdrew after establishing diplomatic relationships and extracting promises of tribute from some tribes. Caesar&rsquo;s motivations were partly strategic (punishing tribes that were assisting Gaulish resistance), partly political (demonstrating to the Roman Senate that he was expanding Rome&rsquo;s reach to the very edges of the known world), and partly economic (Britain was rumoured to have deposits of gold, pearls, and valuable slaves).
+        </p>
+        <p>
+          Caesar&rsquo;s expeditions established the template for Roman engagement with Britain. They demonstrated that Britain was militarily accessible and economically exploitable, and they created a network of diplomatic relationships between Rome and certain British tribes &mdash; particularly those in south-eastern Britain who benefited from trade with the Roman world.
+        </p>
+      </div>
+
+      <!-- Primary Source -->
+      <div class="key-concept mt-8">
+        <p class="font-bold text-navy mb-1">Primary Source</p>
+        <p class="text-sm text-gray-500 mb-3"><strong>Provenance:</strong> Julius Caesar, <em>De Bello Gallico</em> (The Gallic Wars), Book IV, Chapter 20. Written c. 52&ndash;51 BC. Caesar&rsquo;s account of his first expedition to Britain.</p>
+        <blockquote class="border-l-4 border-burgundy/30 pl-5 italic text-gray-600 my-4 text-[1.02rem] leading-relaxed">
+          &ldquo;The interior of Britain is inhabited by those who themselves say that, according to tradition, they were born in the island itself; the maritime part is inhabited by those who had passed over from the country of the Belgae for the purpose of plunder and making war&hellip; The most civilised of all these nations are they who inhabit Kent, which is entirely a maritime district, nor do they differ much from the Gallic customs.&rdquo;
+        </blockquote>
+        <p class="text-sm text-gray-500"><strong>Historian&rsquo;s note:</strong> Caesar&rsquo;s language is revealing. He defines &ldquo;civilised&rdquo; by proximity to Mediterranean (Roman/Gallic) customs &mdash; those who trade with Rome are &ldquo;civilised&rdquo;; those inland are not. This reveals how Romans used the concept of civilisation as a justification for conquest and intervention.</p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="c"
+           data-feedback-correct="Correct! Caesar did not conquer Britain. He withdrew both times after establishing diplomatic relationships and extracting promises of tribute from some tribes."
+           data-feedback-incorrect="Not quite. Caesar came to Britain twice but withdrew both times. He established diplomatic relationships, not permanent control &mdash; the actual conquest came almost 100 years later under Claudius.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p>Use <strong>cold call</strong>. This is a common misconception &mdash; many students assume Caesar conquered Britain. If they get it wrong, redirect: &ldquo;Look at the first sentence again. What does it say he did on both occasions?&rdquo;</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">What was the outcome of Caesar&rsquo;s expeditions to Britain?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q1" class="mt-0.5"><span>He conquered Britain and established it as a Roman province</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q1" class="mt-0.5"><span>He was defeated by the Celtic tribes and forced to retreat</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q1" class="mt-0.5"><span>He withdrew both times after establishing diplomatic relationships and extracting promises of tribute</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q1" class="mt-0.5"><span>He destroyed all the Celtic tribes and enslaved their leaders</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 2: THE CLAUDIAN INVASION
+       ========================================== -->
+  <section id="chunk-2" class="full-section grad-chunk2 relative">
+    <span class="section-number">02</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-purple-100 text-purple-700">Chunk 2 of 5</span>
+      <h2 class="section-heading">The Claudian Invasion (AD 43)</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Guided Reading (&lsquo;We Do&rsquo;)</p>
+        <p>Read this section together as a class. Pause after the first paragraph and ask: &ldquo;Why did Claudius <em>personally</em> need a military triumph?&rdquo; (cold call). This connects to understanding how Roman <em>politics</em> drove military decisions.</p>
+        <p class="mt-2"><strong>Think-pair-share</strong> after reading the Battle of the Medway: &ldquo;Why do you think the Romans targeted the Britons&rsquo; horses and chariot ponies first?&rdquo; (60 seconds).</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Almost a century after Caesar, the Emperor <strong>Claudius</strong> launched a full-scale invasion of Britain in <strong>AD 43</strong>. His motivations included a desire for military prestige to strengthen his political position in Rome (Claudius had come to power in unusual circumstances and needed a military triumph), the economic attractions of Britain&rsquo;s mineral resources and slaves, and the request for intervention by Verica, a pro-Roman British king who had been expelled by the Catuvellaunian ruler Caratacus.
+        </p>
+        <p>
+          The invasion force comprised four legions (approximately 20,000 legionary troops) plus auxiliary units &mdash; a total force of around <strong>40,000 soldiers</strong> under the command of <strong>Aulus Plautius</strong>. Landing in what is now Kent, the Romans faced resistance from a confederation of British tribes led by Caratacus and his brother Togodumnus.
+        </p>
+      </div>
+
+      <h3 class="font-serif text-xl font-bold text-navy mt-10 mb-4">Battle of the Medway (AD 43)</h3>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          At the River Medway (modern Kent/Essex), the Romans faced a large British force holding the opposite bank. The battle lasted <strong>two days</strong> &mdash; an unusually long engagement that suggests fierce resistance. Roman commander Aulus Plautius used <strong>Batavian auxiliaries</strong> (soldiers from the Rhine delta, skilled at swimming in full armour) to cross the river first, targeting the Britons&rsquo; horses and chariot ponies. Regular infantry then crossed on temporary bridges. The victory opened the road to <strong>Camulodunum</strong> (modern Colchester), the most important political centre in south-eastern Britain.
+        </p>
+        <p>
+          Emperor Claudius himself travelled to Britain to be present for the fall of Camulodunum &mdash; a politically calculated act. He spent only sixteen days in Britain but was able to claim the prestige of a triumph over the island at the edge of the world. By the end of AD 43, Rome controlled most of south-eastern Britain, and the process of transforming the conquered territory into a Roman province had begun.
+        </p>
+      </div>
+
+      <!-- Celtic vs Roman settlement image -->
+      <figure class="featured-image mt-8">
+        <img src="images/celtic-vs-roman-settlement.png" alt="Comparison diagram showing the differences between a Celtic settlement (roundhouses, organic layout, communal spaces) and a Roman settlement (grid streets, forum, basilica, baths, amphitheatre)." loading="lazy">
+        <figcaption class="caption"><strong>Celtic vs Roman Settlement.</strong> Compare the organic layout of a Celtic settlement with the ordered grid pattern of a Roman town &mdash; a visual representation of how Roman conquest transformed the British landscape.</figcaption>
+      </figure>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="b"
+           data-feedback-correct="Correct! Claudius needed a military triumph to strengthen his political position in Rome. He had come to power in unusual circumstances and needed to prove his credentials as emperor."
+           data-feedback-incorrect="Not quite. Claudius&rsquo;s primary motivation for the invasion was political &mdash; he needed a military triumph to strengthen his shaky hold on power in Rome.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">Why did Emperor Claudius personally travel to Britain during the invasion?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q2" class="mt-0.5"><span>He wanted to negotiate a peace treaty with the Celtic tribes</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q2" class="mt-0.5"><span>He needed to claim the prestige of a military triumph to strengthen his political position</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q2" class="mt-0.5"><span>He wanted to personally lead the Roman legions into battle</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q2" class="mt-0.5"><span>He was fleeing political enemies in Rome and needed a safe place to hide</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+
+      <div class="sequence-activity" data-correct="2,0,3,1,4">
+        <h3>Put These Events in Order</h3>
+        <p class="text-gray-700 font-medium mb-4">Drag or use the arrows to arrange these events chronologically:</p>
+        <ul class="sequence-list">
+          <li class="sequence-item" data-idx="0">Claudian invasion of Britain (AD 43)</li>
+          <li class="sequence-item" data-idx="1">Veteran colony established at Camulodunum (AD 49)</li>
+          <li class="sequence-item" data-idx="2">Caesar&rsquo;s expeditions to Britain (55&ndash;54 BC)</li>
+          <li class="sequence-item" data-idx="3">Battle of the Medway</li>
+          <li class="sequence-item" data-idx="4">Temple of Claudius built</li>
+        </ul>
+        <button class="check-btn" style="margin-top:1rem">Check Order</button>
+        <div class="cfu-feedback" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 3: WHAT WAS ROMANISATION?
+       ========================================== -->
+  <section id="chunk-3" class="full-section grad-chunk3 relative">
+    <span class="section-number">03</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-amber-100 text-amber-700">Chunk 3 of 5</span>
+      <h2 class="section-heading">What Was Romanisation?</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Modelling: I Do, We Do, You Do</p>
+        <p><strong>I Do:</strong> Model with a modern analogy: &ldquo;Imagine a powerful country conquered Australia and said: you must speak their language, follow their laws, worship their leaders, and rebuild your towns to look like theirs. That&rsquo;s essentially what Romanisation was.&rdquo;</p>
+        <p class="mt-2"><strong>We Do:</strong> Read the table together. <strong>Think-pair-share:</strong> &ldquo;Turn to your partner &mdash; which method of Romanisation do you think would cause the most resentment, and why?&rdquo; (90 seconds, then cold call 2&ndash;3 pairs.) Follow up with a <strong>retrieval gesture vote:</strong> &ldquo;True or false: Romanisation was always forced on local peoples. Thumbs up for true, down for false.&rdquo; (Answer: false &mdash; some local elites actively adopted Roman culture.) If fewer than 80% correct, revisit the accommodation vs resistance table.</p>
+        <p class="mt-2"><strong>You Do:</strong> Students read the text and identify one example of Romanisation that was voluntary and one that was imposed.</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          <strong>Romanisation</strong> was the process by which conquered peoples adopted Roman cultural practices, language, institutions, and ways of life. It was not always coerced &mdash; many local elites actively embraced Roman culture because it offered access to power, wealth, and status within the new imperial system. However, Romanisation was also imposed, particularly in areas like religion, law, and urban planning, and it often came at the cost of traditional practices and identities.
+        </p>
+      </div>
+
+      <!-- Romanisation stages image -->
+      <figure class="featured-image mt-8 mb-8">
+        <img src="images/romanisation-stages.png" alt="Infographic showing the 5 key methods of Romanisation: Latin language, urban planning, Roman law, the Imperial Cult, and veteran colonies." loading="lazy">
+        <figcaption class="caption"><strong>The Five Key Methods of Romanisation.</strong> Rome used a combination of cultural, religious, legal, and military strategies to transform conquered territories into Roman provinces.</figcaption>
+      </figure>
+
+      <!-- Romanisation Methods Table -->
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Method</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">How It Worked</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white/70">
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">Latin language</td>
+              <td class="px-5 py-3 text-gray-600">Latin became the language of administration, law, commerce, and elite culture. Local leaders were expected to conduct official business in Latin.</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 font-semibold text-navy">Urban planning</td>
+              <td class="px-5 py-3 text-gray-600">The Romans built or expanded towns with a forum (civic centre), basilica (law courts), public baths, amphitheatre, and a grid-pattern street plan.</td>
+            </tr>
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">Roman law</td>
+              <td class="px-5 py-3 text-gray-600">Roman legal codes replaced tribal customary law. Property rights, inheritance, contracts, and taxation were restructured according to Roman principles.</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 font-semibold text-navy">The Imperial Cult</td>
+              <td class="px-5 py-3 text-gray-600">Worship of the emperor as a divine figure. Temples were built and participation in rituals was expected. This directly challenged Celtic religious beliefs.</td>
+            </tr>
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 font-semibold text-navy">Veteran colonies</td>
+              <td class="px-5 py-3 text-gray-600">Retired legionaries were settled on land confiscated from local peoples. Colonies served as models of Roman life and permanent military garrisons.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="d"
+           data-feedback-correct="Correct! Romanisation involved both voluntary adoption by local elites (who sought power and wealth within the Roman system) and forced imposition (such as the Imperial Cult and legal changes)."
+           data-feedback-incorrect="Not quite. The key insight is that Romanisation was a mix of both &mdash; some elites chose to adopt Roman ways for personal advantage, while other aspects were forcibly imposed on the population.">
+        <h3>Check Your Understanding</h3>
+        <div class="teacher-note" style="margin-top:-0.5rem;margin-bottom:0.75rem">
+          <p class="note-label">Teacher &mdash; CFU</p>
+          <p><strong>Gesture voting:</strong> &ldquo;Hold up A, B, C, or D with your fingers. On three &mdash; one, two, three &mdash; show me.&rdquo; If fewer than 80% show D, revisit the table and ask: &ldquo;Which methods were voluntary? Which were forced?&rdquo;</p>
+        </div>
+        <p class="text-gray-700 font-medium mb-4">Which statement best describes the process of Romanisation?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q3" class="mt-0.5"><span>It was entirely forced &mdash; all conquered peoples were compelled to adopt Roman culture against their will</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q3" class="mt-0.5"><span>It was entirely voluntary &mdash; conquered peoples freely chose to adopt Roman customs</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q3" class="mt-0.5"><span>It only affected the military &mdash; civilians were left to live as they wished</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q3" class="mt-0.5"><span>It combined voluntary adoption by some elites with forced imposition in areas like religion, law, and land use</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 4: TEMPLE OF CLAUDIUS & VETERAN COLONIES
+       ========================================== -->
+  <section id="chunk-4" class="full-section grad-chunk4 relative">
+    <span class="section-number">04</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-blue-100 text-blue-700">Chunk 4 of 5</span>
+      <h2 class="section-heading">The Temple of Claudius and Veteran Colonies</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Scaffolding</p>
+        <p>This section covers two of the most significant causes of Boudicca&rsquo;s revolt. Ask students to read the section and <strong>underline or highlight</strong> any phrase that shows how the Romans mistreated local peoples. Then cold call 3&ndash;4 students to share what they underlined.</p>
+        <p class="mt-2"><strong>Think-pair-share:</strong> &ldquo;Imagine you are a Trinovantes farmer whose land has just been taken by a retired Roman soldier. How would you feel? What would you do?&rdquo; (90 seconds).</p>
+      </div>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          Nowhere was Roman cultural imposition more viscerally felt than at <strong>Camulodunum</strong>. The <strong>Temple of the Deified Claudius</strong> &mdash; a massive structure on an elevated podium, dominating the new Roman colony &mdash; demanded that local peoples worship a Roman emperor as a god. For Celtic peoples whose religious practices were deeply rooted in nature, tribal ancestors, and the authority of Druids, this was not merely politically offensive &mdash; it was a profound sacrilege.
+        </p>
+        <p>
+          Tacitus records that local peoples were forced to <strong>fund the temple</strong> and to <strong>provide priests</strong> for its rituals, creating an ongoing economic drain on the community. When Boudicca&rsquo;s forces attacked Camulodunum, the Temple of Claudius was their primary target &mdash; and the last defenders barricaded themselves inside it for two days before being overwhelmed.
+        </p>
+      </div>
+
+      <h3 class="font-serif text-xl font-bold text-navy mt-10 mb-4">Veteran Colonies: Flashpoints of Resentment</h3>
+
+      <div class="space-y-5 text-gray-700 leading-relaxed text-[1.05rem]">
+        <p>
+          The establishment of veteran colonies like Camulodunum (<strong>AD 49</strong>) was one of the most significant causes of provincial discontent. The colonists &mdash; retired soldiers who had completed twenty-five years of military service &mdash; were granted land <strong>confiscated from local peoples</strong>, including the Trinovantes tribe who had long inhabited the area. The veterans treated the local population with open contempt, evicting people from their homes, seizing additional lands, and using the authority of Roman citizenship to act with impunity.
+        </p>
+        <p>
+          Tacitus writes that the veterans <em>&ldquo;drove people from their homes, ejected them from their lands, called them captives and slaves.&rdquo;</em> The Trinovantes, who had initially submitted peacefully to Roman rule, found themselves dispossessed and humiliated. Their burning grievance against the Camulodunum colony would make them Boudicca&rsquo;s most willing allies when revolt began.
+        </p>
+      </div>
+
+      <div class="key-concept mt-8">
+        <p class="font-bold text-navy mb-1">Key Cause</p>
+        <p class="text-gray-700">
+          The combination of <strong>land theft</strong> by veterans, <strong>forced funding</strong> of the Temple of Claudius, <strong>economic exploitation</strong> through loans and taxation, and the complete <strong>disregard for local customs and rights</strong> created a &ldquo;powder keg&rdquo; of resentment that Boudicca&rsquo;s personal humiliation would ignite.
+        </p>
+      </div>
+
+      <!-- Primary Source -->
+      <div class="key-concept mt-8">
+        <p class="font-bold text-navy mb-1">Primary Source</p>
+        <p class="text-sm text-gray-500 mb-3"><strong>Provenance:</strong> Tacitus, <em>Annals</em>, Book XIV, Chapter 31. Written c. AD 98. This passage describes the grievances that fuelled Boudicca&rsquo;s revolt, written from the perspective of a Roman senator critical of imperial excess.</p>
+        <blockquote class="border-l-4 border-burgundy/30 pl-5 italic text-gray-600 my-4 text-[1.02rem] leading-relaxed">
+          &ldquo;The kingdom of Prasutagus, who had long been a king celebrated for his wealth&hellip; was plundered by centurions, his house by slaves, as if they were the spoils of war. His wife Boudicca was scourged, his daughters ravished. All the chief men of the Iceni, as if Rome had received the whole country as a gift, were stripped of their ancestral estates, and the king&rsquo;s relatives were treated like slaves. Exasperated by these insults, and dreading still worse, since they were now reduced to the condition of a province, they flew to arms.&rdquo;
+        </blockquote>
+        <p class="text-sm text-gray-500"><strong>Historian&rsquo;s note:</strong> This passage is the most important literary source for the causes of Boudicca&rsquo;s revolt. Note that Tacitus presents Roman officials as acting unjustly &mdash; his purpose is partly to critique Roman governance.</p>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="a"
+           data-feedback-correct="Correct! The Trinovantes were displaced by the veteran colony at Camulodunum. Retired Roman soldiers seized their lands, evicted them from their homes, and treated them with open contempt."
+           data-feedback-incorrect="Not quite. The key grievance was land confiscation &mdash; the Trinovantes had their land taken and given to retired Roman soldiers who treated the local population as inferiors.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">Why did the Trinovantes become Boudicca&rsquo;s most willing allies?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q4" class="mt-0.5"><span>Roman veterans had seized their lands, evicted them from their homes, and treated them with contempt</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q4" class="mt-0.5"><span>The Romans had killed their king and enslaved their entire population</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q4" class="mt-0.5"><span>They had always been enemies of Rome and had never accepted Roman rule</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q4" class="mt-0.5"><span>Boudicca was originally from the Trinovantes tribe and they followed her out of loyalty</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CHUNK 5: CELTIC RESPONSES TO ROMANISATION
+       ========================================== -->
+  <section id="chunk-5" class="full-section grad-chunk5 relative">
+    <span class="section-number">05</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-rose-100 text-rose-700">Chunk 5 of 5</span>
+      <h2 class="section-heading">Celtic Responses to Romanisation</h2>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Independent Reading (&lsquo;You Do&rsquo;)</p>
+        <p>Students read the comparison table independently. After reading, use <strong>think-pair-share</strong>: &ldquo;Turn to your partner and identify one advantage and one disadvantage of accommodating Roman rule.&rdquo; (60 seconds). Cold call 2&ndash;3 pairs.</p>
+        <p class="mt-2"><strong>Key question to pose:</strong> &ldquo;What does the last row of the table tell us about how much protection accommodation actually offered?&rdquo;</p>
+      </div>
+
+      <p class="text-gray-700 leading-relaxed text-[1.05rem] mb-6">
+        Celtic peoples responded to Romanisation in different ways. Some chose accommodation; others chose resistance. The table below compares these two responses.
+      </p>
+
+      <!-- Accommodation vs Resistance Table -->
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+          <thead>
+            <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Accommodation</th>
+              <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Resistance</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white/70">
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 text-gray-600">Some Celtic elites accepted Roman citizenship and adopted Latin, Roman dress, and Roman administrative roles.</td>
+              <td class="px-5 py-3 text-gray-600">Others, particularly in rural areas and among those dispossessed by colonisation, maintained traditional practices and resisted assimilation.</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 text-gray-600">Roman culture brought real advantages: access to trade networks, protection under Roman law, and social status.</td>
+              <td class="px-5 py-3 text-gray-600">Resistance was sometimes practical (maintaining Druidic traditions in secret) and sometimes violent (Boudicca&rsquo;s revolt of AD 60/61).</td>
+            </tr>
+            <tr class="border-t border-black/[0.04]">
+              <td class="px-5 py-3 text-gray-600">Some tribal leaders became Roman magistrates (<em>decuriones</em>), managing local affairs under Roman oversight.</td>
+              <td class="px-5 py-3 text-gray-600">Tribal leaders who resisted were stripped of authority and property, their lands confiscated, their customs suppressed.</td>
+            </tr>
+            <tr class="border-t border-black/[0.04] bg-white/40">
+              <td class="px-5 py-3 text-gray-600">Cultural accommodation was encouraged by Roman policy, which preferred indirect control through compliant local elites.</td>
+              <td class="px-5 py-3 text-gray-600">The fate of the Iceni and Trinovantes showed that even accommodation offered no real protection when Roman officials chose to ignore their own laws.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- CFU -->
+      <div class="cfu-card" data-answer="c"
+           data-feedback-correct="Correct! The fate of the Iceni and Trinovantes demonstrated that even cooperating with Rome offered no real protection. When Roman officials decided to seize their lands and property, the client-kingdom agreement was simply ignored."
+           data-feedback-incorrect="Not quite. The key lesson from the Iceni and Trinovantes is that accommodation offered no guaranteed protection &mdash; Rome could ignore its own agreements whenever it suited them.">
+        <h3>Check Your Understanding</h3>
+        <p class="text-gray-700 font-medium mb-4">What does the fate of the Iceni and Trinovantes reveal about the limits of accommodation with Rome?</p>
+        <div class="space-y-2">
+          <label class="mc-option" data-value="a"><input type="radio" name="q5" class="mt-0.5"><span>Accommodation always led to full equality with Roman citizens</span></label>
+          <label class="mc-option" data-value="b"><input type="radio" name="q5" class="mt-0.5"><span>Only violent resistance could protect Celtic rights under Roman rule</span></label>
+          <label class="mc-option" data-value="c"><input type="radio" name="q5" class="mt-0.5"><span>Even cooperation and accommodation offered no real protection when Roman officials chose to ignore their own laws</span></label>
+          <label class="mc-option" data-value="d"><input type="radio" name="q5" class="mt-0.5"><span>The Romans always honoured their agreements with cooperative tribes</span></label>
+        </div>
+        <button class="check-btn">Check Answer</button>
+        <div class="cfu-feedback"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       INDEPENDENT PRACTICE: REVIEW QUESTIONS
+       ========================================== -->
+  <section id="practice" class="full-section grad-practice relative">
+    <span class="section-number">Q</span>
+    <div class="section-inner reveal">
+      <span class="section-label bg-green-100 text-green-700">Independent Practice</span>
+      <h2 class="section-heading">Review Questions</h2>
+      <p class="text-sm text-gray-500 mb-6">Choose the level that challenges you, or work through all three.</p>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Independent Practice (&lsquo;You Do&rsquo;)</p>
+        <p>Students should attempt these <strong>only after a high success rate</strong> on the CFU questions. Direct all students to Foundation first.</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> Students answer Foundation Q3 on a sticky note before leaving: &ldquo;Why was the Temple of Claudius particularly hated by local peoples?&rdquo;</p>
+      </div>
+
+      <div class="tab-group">
+        <button class="tab-btn active" data-tab="foundation">Foundation</button>
+        <button class="tab-btn" data-tab="standard">Standard</button>
+        <button class="tab-btn" data-tab="extension">Extension</button>
+      </div>
+
+      <div class="tab-content active" id="foundation" data-tab="foundation">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Identify and describe</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>In what year did Emperor Claudius invade Britain, and who commanded the Roman forces?</li>
+          <li>Name two methods Romans used to Romanise conquered peoples.</li>
+          <li>Why was the Temple of Claudius in Camulodunum particularly hated by local peoples?</li>
+        </ol>
+      </div>
+      <div class="tab-content" id="standard" data-tab="standard">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Analyse and explain</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Explain why the establishment of veteran colonies at Camulodunum created resentment among the Trinovantes tribe.</li>
+          <li>Analyse how the Imperial Cult conflicted with Celtic religious practices and why this conflict mattered politically.</li>
+          <li>Using Tacitus&rsquo;s account of Boudicca&rsquo;s treatment as evidence, assess the extent to which Roman officials were responsible for provoking the revolt.</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Sentence starters to help structure your response:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li>One reason this is significant is&hellip;</li>
+            <li>This source/evidence suggests that&hellip;</li>
+            <li>This can be explained by&hellip;</li>
+            <li>A key example of this is&hellip; which demonstrates&hellip;</li>
+          </ul>
+          <p class="mt-3 font-semibold text-sm mb-2">Paragraph frame:</p>
+          <p class="text-gray-600 italic">[Point] One important factor was&hellip; [Evidence] This is supported by&hellip; who states/shows that&hellip; [Explain] This evidence reveals that&hellip; because&hellip; [Link] Therefore, this demonstrates that&hellip;</p>
+        </div>
+      </div>
+      <div class="tab-content" id="extension" data-tab="extension">
+        <p class="text-xs uppercase tracking-[0.12em] text-gray-400 font-bold mb-4">Evaluate and debate</p>
+        <ol class="list-decimal ml-5 space-y-4 text-gray-700 text-[1.02rem] leading-relaxed">
+          <li>Evaluate the extent to which Romanisation was a policy of &ldquo;civilisation&rdquo; or a policy of cultural imperialism. Use specific examples from Roman Britain to support your argument.</li>
+          <li>How far did Roman policies in Britain reflect a fundamental contradiction between Roman claims to bring law and order and the actual treatment of client peoples? Discuss with reference to the evidence.</li>
+          <li>To what extent was Boudicca&rsquo;s revolt the inevitable consequence of Roman provincial policy, rather than the result of individual decisions by particular Roman officials?</li>
+        </ol>
+        <button class="scaffold-toggle">Show writing scaffold</button>
+        <div class="writing-scaffold hidden">
+          <p class="font-semibold text-sm mb-2">Essay structure guide:</p>
+          <ul class="list-disc ml-5 space-y-1 text-gray-600">
+            <li><strong>Introduction:</strong> Define key terms, state your argument clearly</li>
+            <li><strong>Body paragraphs:</strong> Use PEEL &mdash; Point, Evidence, Explain, Link</li>
+            <li><strong>Conclusion:</strong> Restate your argument, synthesise (don&rsquo;t just repeat)</li>
+          </ul>
+          <p class="mt-2 text-gray-600">Evaluative starters: &ldquo;To a significant/limited extent&hellip;&rdquo; &ldquo;While X is important, Y was more significant because&hellip;&rdquo; &ldquo;The evidence suggests that&hellip; however&hellip;&rdquo;</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       KEY TERMS: FLASHCARD GLOSSARY
+       ========================================== -->
+  <section id="key-terms" class="full-section grad-terms relative">
+    <span class="section-number">A&ndash;Z</span>
+    <div class="section-inner">
+      <div class="flex items-end justify-between mb-6 reveal">
+        <div>
+          <span class="section-label bg-purple-100 text-purple-700">Key Terms</span>
+          <h2 class="section-heading mb-0">Glossary</h2>
+        </div>
+        <button class="glossary-view-toggle text-sm text-navy font-semibold hover:text-burgundy transition-colors cursor-pointer">
+          Switch to List View
+        </button>
+      </div>
+      <p class="text-sm text-gray-500 mb-6 reveal">Click each card to reveal its definition.</p>
+
+      <!-- Flashcards -->
+      <div class="flashcard-grid reveal-stagger">
+        <div class="flashcard" tabindex="0" role="button" aria-label="Flashcard: Romanisation">
+          <div class="flashcard-inner"><div class="flashcard-front">Romanisation</div><div class="flashcard-back">The process by which conquered peoples adopted Roman language, culture, law, and institutions.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Colonia</div><div class="flashcard-back">A Roman colony, often settled by retired soldiers, designed to spread Roman culture and maintain control.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Imperial Cult</div><div class="flashcard-back">The worship of the Roman emperor as a divine figure, a key mechanism of political loyalty in the provinces.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Veteran Colony</div><div class="flashcard-back">A settlement established for retired Roman soldiers (veterans), usually on confiscated provincial land.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Procurator</div><div class="flashcard-back">A senior Roman official responsible for financial administration in a province.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Trinovantes</div><div class="flashcard-back">A Celtic tribe of south-eastern Britain who were displaced by the veteran colony at Camulodunum and became key allies of Boudicca.</div></div>
+        </div>
+        <div class="flashcard" tabindex="0" role="button">
+          <div class="flashcard-inner"><div class="flashcard-front">Resistance</div><div class="flashcard-back">Active opposition to Roman rule, ranging from maintaining traditional customs to armed revolt.</div></div>
+        </div>
+      </div>
+
+      <!-- List View (hidden) -->
+      <div class="glossary-list hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm rounded-2xl overflow-hidden" style="border: 1px solid rgba(0,0,0,0.06);">
+            <thead>
+              <tr style="background: linear-gradient(135deg, #1a1a2e, #16213e);" class="text-white">
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase w-1/4">Term</th>
+                <th class="px-5 py-3 text-left font-sans font-bold text-xs tracking-wider uppercase">Definition</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white/70">
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Romanisation</td><td class="px-5 py-3 text-gray-600">The process by which conquered peoples adopted Roman language, culture, law, and institutions.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Colonia</td><td class="px-5 py-3 text-gray-600">A Roman colony, often settled by retired soldiers, designed to spread Roman culture and maintain control.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Imperial Cult</td><td class="px-5 py-3 text-gray-600">The worship of the Roman emperor as a divine figure, a key mechanism of political loyalty in the provinces.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Veteran colony</td><td class="px-5 py-3 text-gray-600">A settlement established for retired Roman soldiers (veterans), usually on confiscated provincial land.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Procurator</td><td class="px-5 py-3 text-gray-600">A senior Roman official responsible for financial administration in a province.</td></tr>
+              <tr class="border-t border-black/[0.04] bg-white/40"><td class="px-5 py-3 font-semibold text-navy">Trinovantes</td><td class="px-5 py-3 text-gray-600">A Celtic tribe of south-eastern Britain displaced by the veteran colony at Camulodunum, becoming key allies of Boudicca.</td></tr>
+              <tr class="border-t border-black/[0.04]"><td class="px-5 py-3 font-semibold text-navy">Resistance</td><td class="px-5 py-3 text-gray-600">Active opposition to Roman rule, ranging from maintaining traditional customs to armed revolt.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       REVIEW OF LEARNING
+       ========================================== -->
+  <section id="review" class="full-section grad-review relative">
+    <div class="section-inner reveal">
+      <span class="section-label bg-gold/20 text-amber-700">Review of Learning</span>
+      <h2 class="section-heading">How Did You Go?</h2>
+      <p class="text-gray-600 leading-relaxed mb-6 text-[1.05rem]">
+        Return to the success criteria from the start of this lesson. Can you now tick off each one?
+        If any remain unticked, scroll back and review the relevant section.
+      </p>
+
+      <div class="space-y-3">
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">1</span>
+          <span class="text-gray-700">Describe the key events of the Roman invasion of Britain in AD 43.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">2</span>
+          <span class="text-gray-700">Explain what Romanisation meant and identify its key methods.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">3</span>
+          <span class="text-gray-700">Analyse how Roman policies &mdash; particularly veteran colonies and the Imperial Cult &mdash; affected tribal peoples.</span>
+        </div>
+        <div class="review-sc-item flex items-start gap-4 p-4 rounded-2xl">
+          <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/60 text-gray-400 text-xs font-bold flex items-center justify-center mt-0.5">4</span>
+          <span class="text-gray-700">Evaluate how Romanisation contributed to growing resentment and eventual revolt.</span>
+        </div>
+      </div>
+
+      <div class="teacher-note">
+        <p class="note-label">Teacher &mdash; Review of Learning</p>
+        <p><strong>Self-assessment</strong> for each criterion: &ldquo;Thumbs up if confident, sideways if partly there, down if you need more help.&rdquo;</p>
+        <p class="mt-2"><strong>Exit ticket:</strong> &ldquo;On a sticky note, name one Roman policy that contributed to resentment among Celtic peoples in Britain and explain why it caused anger.&rdquo; Collect as students leave.</p>
+      </div>
+
+      <!-- Exit Ticket -->
+      <div class="exit-ticket">
+        <h4>Exit Ticket</h4>
+        <label class="text-sm text-gray-600 block mb-1">One thing I learned today:</label>
+        <textarea placeholder="What was the most important thing you learned in this lesson?"></textarea>
+        <label class="text-sm text-gray-600 block mb-1">One question I still have:</label>
+        <textarea placeholder="What are you still unsure about or want to know more about?"></textarea>
+      </div>
+
+      <!-- Reflection -->
+      <div class="reflection-panel">
+        <h4>Self-Reflection</h4>
+        <p class="text-sm text-gray-600 mb-2">How confident do you feel about this lesson&rsquo;s content?</p>
+        <div class="confidence-scale">
+          <button class="confidence-btn">1<br><span class="text-[0.65rem]">Not yet</span></button>
+          <button class="confidence-btn">2<br><span class="text-[0.65rem]">Getting there</span></button>
+          <button class="confidence-btn">3<br><span class="text-[0.65rem]">Mostly</span></button>
+          <button class="confidence-btn">4<br><span class="text-[0.65rem]">Confident</span></button>
+          <button class="confidence-btn">5<br><span class="text-[0.65rem]">Mastered</span></button>
+        </div>
+        <label class="text-sm text-gray-600 block mt-3 mb-1">What do you want to revisit before the next lesson?</label>
+        <textarea class="reflection-text" placeholder="Any topics, terms, or skills you want to review?"></textarea>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       LESSON NAVIGATION
+       ========================================== -->
+  <section class="py-12 px-6" style="background: #fefcf9;">
+    <div class="max-w-3xl mx-auto lesson-nav-footer flex items-center justify-between">
+      <a href="lesson-2.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        Lesson 2
+      </a>
+      <span class="text-xs text-gray-300 tracking-wider uppercase">Lesson 3 of 16</span>
+      <a href="lesson-4.html" class="flex items-center gap-2 text-sm text-gray-400 hover:text-navy transition-colors font-medium">
+        Lesson 4
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 text-center" style="background: linear-gradient(180deg, #fefcf9, #f5f3ed);">
+    <p class="text-sm text-gray-400 font-sans">
+      NSW Ancient History Stage 6 &middot; NESA Syllabus (2017) &middot; Case Study A
+    </p>
+    <p class="text-xs text-gray-300 mt-2 font-sans">Created by Cheryl Cutter</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
