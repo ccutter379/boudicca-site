@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boudica — Causes of the Revolt | Interactive Activity</title>
+<style>
+  :root {
+    --navy: #1F3864;
+    --navy-light: #2E4A82;
+    --grey-bg: #F5F5F5;
+    --grey-border: #BFBFBF;
+    --grey-text: #555;
+    --success: #2E7D32;
+    --error: #C62828;
+    --feat-rv: #FFF2CC;
+    --feat-cd: #DEEBF7;
+    --feat-nm: #E2EFDA;
+    --feat-ev: #FCE4D6;
+    --feat-ss: #FFD9B3;
+    --feat-struct: #FFE0F0;
+    --peel-p: #5B9BD5;
+    --peel-e: #ED7D31;
+    --peel-x: #70AD47;
+    --peel-l: #C00000;
+    --type-point: #DEEBF7;
+    --type-evidence: #FFF2CC;
+    --type-explanation: #E2EFDA;
+    --type-link: #FCE4D6;
+    --type-intro: #F2F2F2;
+    --type-concl: #F2F2F2;
+  }
+
+  * { box-sizing: border-box; }
+  html { font-size: 16px; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #222;
+    background: #FAFAFA;
+    line-height: 1.5;
+  }
+
+  /* HEADER */
+  .site-header {
+    background: var(--navy);
+    color: white;
+    padding: 1.2rem 1.5rem;
+    text-align: center;
+  }
+  .site-header .meta {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+  .site-header h1 {
+    margin: 0.3rem 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  .site-header .question {
+    font-size: 1rem;
+    background: rgba(255,255,255,0.12);
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    border-radius: 4px;
+    margin-top: 0.4rem;
+  }
+
+  /* TAB NAV */
+  .tab-nav {
+    display: flex;
+    background: white;
+    border-bottom: 2px solid var(--navy);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+  }
+  .tab-nav button {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--grey-text);
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.15s;
+  }
+  .tab-nav button:hover {
+    background: var(--grey-bg);
+    color: var(--navy);
+  }
+  .tab-nav button.active {
+    color: var(--navy);
+    border-bottom-color: var(--navy);
+    background: var(--grey-bg);
+  }
+
+  /* MAIN */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+  .panel { display: none; }
+  .panel.active { display: block; }
+  h2 {
+    color: var(--navy);
+    margin: 0 0 0.5rem;
+    font-size: 1.35rem;
+  }
+  .lead {
+    color: var(--grey-text);
+    margin: 0 0 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  /* DROP ZONES */
+  .zones {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  @media (min-width: 700px) {
+    .zones { grid-template-columns: 1fr 1fr; }
+  }
+  @media (min-width: 1100px) {
+    .zones { grid-template-columns: 1fr 1fr 1fr; }
+  }
+  .zone {
+    background: white;
+    border: 2px dashed var(--navy);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .zone-header {
+    background: var(--navy);
+    color: white;
+    padding: 0.6rem 0.8rem;
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+  .zone-subtitle {
+    background: #F2F2F2;
+    color: var(--grey-text);
+    padding: 0.3rem 0.8rem;
+    font-size: 0.78rem;
+    font-style: italic;
+    border-bottom: 1px solid var(--grey-border);
+  }
+  .zone-list {
+    flex: 1;
+    min-height: 80px;
+    padding: 0.5rem;
+    list-style: none;
+    margin: 0;
+  }
+  .zone-list:empty::after {
+    content: "Drop cards here";
+    color: #BBB;
+    font-style: italic;
+    text-align: center;
+    display: block;
+    padding: 1.5rem 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  /* CARD POOL */
+  .pool-section {
+    background: white;
+    border: 1px solid var(--grey-border);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .pool-section h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    color: var(--navy);
+  }
+  .pool-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-height: 80px;
+  }
+  @media (min-width: 700px) {
+    .pool-list { grid-template-columns: 1fr 1fr; }
+  }
+
+  /* CARDS */
+  .card {
+    background: white;
+    border: 1px solid var(--grey-border);
+    border-radius: 6px;
+    padding: 0.5rem 0.7rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    cursor: grab;
+    transition: all 0.15s;
+    position: relative;
+  }
+  .card:hover { box-shadow: 0 2px 6px rgba(0,0,0,0.12); }
+  .card:active { cursor: grabbing; }
+  .card.sortable-ghost { opacity: 0.4; }
+  .card.sortable-chosen { box-shadow: 0 0 0 2px var(--navy); }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+  .card-type {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--navy);
+    background: var(--grey-bg);
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+  }
+  .card-id {
+    font-size: 0.7rem;
+    color: var(--grey-text);
+    font-weight: 600;
+  }
+  .card-text {
+    font-size: 0.88rem;
+    line-height: 1.4;
+    color: #333;
+  }
+
+  /* type colour bars */
+  .card[data-type^="POINT"]       { border-left: 4px solid #5B9BD5; }
+  .card[data-type^="EVIDENCE"]    { border-left: 4px solid #ED7D31; }
+  .card[data-type^="EXPLANATION"] { border-left: 4px solid #70AD47; }
+  .card[data-type^="LINK"]        { border-left: 4px solid #C00000; }
+  .card[data-type^="INTRO"]       { border-left: 4px solid #7030A0; }
+  .card[data-type^="CONCLUSION"]  { border-left: 4px solid #404040; }
+
+  /* feedback */
+  .card.correct {
+    background: #E8F5E9;
+    border-color: var(--success);
+    border-left-width: 4px;
+    border-left-color: var(--success) !important;
+  }
+  .card.correct::after {
+    content: "✓";
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    color: var(--success);
+    font-weight: 800;
+  }
+  .card.wrong {
+    background: #FFEBEE;
+    border-color: var(--error);
+    border-left-color: var(--error) !important;
+  }
+  .card.wrong::after {
+    content: "✗";
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    color: var(--error);
+    font-weight: 800;
+  }
+
+  /* ACTIONS */
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 1rem 0;
+  }
+  .btn {
+    padding: 0.6rem 1.1rem;
+    border-radius: 6px;
+    border: 1px solid var(--grey-border);
+    background: white;
+    color: #333;
+    font-size: 0.92rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.12s;
+  }
+  .btn:hover { background: var(--grey-bg); }
+  .btn.primary {
+    background: var(--navy);
+    color: white;
+    border-color: var(--navy);
+  }
+  .btn.primary:hover { background: var(--navy-light); }
+  .btn.success {
+    background: var(--success);
+    color: white;
+    border-color: var(--success);
+  }
+  .btn.success:disabled {
+    background: #BDBDBD;
+    border-color: #BDBDBD;
+    cursor: not-allowed;
+  }
+
+  /* feedback area */
+  .feedback {
+    margin: 1rem 0;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    display: none;
+  }
+  .feedback.show { display: block; }
+  .feedback.partial { background: #FFF8E1; border-left: 4px solid #F9A825; }
+  .feedback.complete { background: #E8F5E9; border-left: 4px solid var(--success); }
+
+  /* ACTIVITY 2 — Glossary panel */
+  .glossary {
+    background: white;
+    border: 1px solid var(--grey-border);
+    border-radius: 8px;
+    padding: 0.9rem 1rem;
+    margin-bottom: 1rem;
+  }
+  .glossary summary {
+    cursor: pointer;
+    color: var(--navy);
+    font-size: 1rem;
+    font-weight: 600;
+    user-select: none;
+    list-style: none;
+    padding: 0.2rem 0;
+  }
+  .glossary summary::-webkit-details-marker { display: none; }
+  .glossary summary::before {
+    content: '▸';
+    display: inline-block;
+    margin-right: 0.5rem;
+    transition: transform 0.15s;
+    color: var(--grey-text);
+  }
+  .glossary[open] summary::before { transform: rotate(90deg); }
+  .glossary-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+    margin-top: 0.9rem;
+  }
+  @media (min-width: 720px) {
+    .glossary-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (min-width: 1100px) {
+    .glossary-grid { grid-template-columns: 1fr 1fr 1fr; }
+  }
+  .gloss-item {
+    display: flex;
+    gap: 0.7rem;
+    padding: 0.65rem 0.75rem;
+    background: var(--grey-bg);
+    border-radius: 6px;
+    align-items: flex-start;
+  }
+  .gloss-swatch {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.15);
+    margin-top: 3px;
+  }
+  .gloss-swatch.struct-swatch {
+    border: none;
+    background: transparent;
+    border-bottom: 3px solid var(--navy);
+    height: 4px;
+    width: 22px;
+    border-radius: 0;
+    margin-top: 10px;
+  }
+  .gloss-swatch.rv-swatch { background: var(--feat-rv); }
+  .gloss-swatch.cd-swatch { background: var(--feat-cd); }
+  .gloss-swatch.nm-swatch { background: var(--feat-nm); }
+  .gloss-swatch.ev-swatch { background: var(--feat-ev); }
+  .gloss-swatch.ss-swatch { background: var(--feat-ss); }
+  .gloss-swatch.peel-swatch {
+    background: linear-gradient(to right,
+      var(--peel-p) 0 25%, var(--peel-e) 25% 50%,
+      var(--peel-x) 50% 75%, var(--peel-l) 75% 100%);
+    border: none;
+    height: 10px;
+    border-radius: 2px;
+    margin-top: 6px;
+  }
+  .gloss-body { flex: 1; font-size: 0.88rem; line-height: 1.45; }
+  .gloss-body > strong { color: var(--navy); display: block; margin-bottom: 0.15rem; font-size: 0.92rem; }
+  .gloss-body p { margin: 0; color: #444; }
+
+  /* ACTIVITY 2 — Features */
+  .feature-controls {
+    background: white;
+    border: 1px solid var(--grey-border);
+    border-radius: 8px;
+    padding: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  .feature-controls h3 {
+    margin: 0 0 0.5rem;
+    font-size: 0.95rem;
+    color: var(--navy);
+  }
+  .feature-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.6rem;
+  }
+  .feat-btn {
+    padding: 0.45rem 0.75rem;
+    border: 2px solid var(--grey-border);
+    background: white;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .feat-btn .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.2);
+  }
+  .feat-btn[data-feat="struct"] .dot { background: white; border-bottom: 2px solid var(--navy); border-radius: 0; height: 4px; width: 18px; }
+  .feat-btn[data-feat="rv"] .dot { background: var(--feat-rv); }
+  .feat-btn[data-feat="cd"] .dot { background: var(--feat-cd); }
+  .feat-btn[data-feat="nm"] .dot { background: var(--feat-nm); }
+  .feat-btn[data-feat="ev"] .dot { background: var(--feat-ev); }
+  .feat-btn[data-feat="ss"] .dot { background: var(--feat-ss); }
+  /* PEEL button uses a 4-stripe gradient swatch */
+  .feat-btn[data-feat="peel"] .dot {
+    background: linear-gradient(to right,
+      var(--peel-p) 0 25%, var(--peel-e) 25% 50%,
+      var(--peel-x) 50% 75%, var(--peel-l) 75% 100%);
+    border: none;
+    width: 26px;
+    height: 8px;
+    border-radius: 2px;
+  }
+  .feat-btn:hover { border-color: var(--navy); }
+  .feat-btn.active {
+    border-color: var(--navy);
+    background: var(--navy);
+    color: white;
+  }
+  .feat-btn.active .dot { border-color: white; }
+
+  .tour-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    border-top: 1px solid var(--grey-border);
+    padding-top: 0.7rem;
+  }
+
+  .step-info {
+    background: #FFF8E1;
+    border-left: 4px solid #F9A825;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    font-size: 0.92rem;
+    min-height: 56px;
+    transition: all 0.2s;
+  }
+  .step-info strong { color: var(--navy); }
+
+  /* ESSAY display */
+  .essay {
+    background: white;
+    border: 1px solid var(--grey-border);
+    border-radius: 8px;
+    padding: 1.5rem 1.8rem;
+    font-size: 1.02rem;
+    line-height: 1.75;
+  }
+  .essay h3 {
+    color: var(--navy);
+    margin: 1.2rem 0 0.4rem;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+  }
+  .essay h3:first-child { margin-top: 0; }
+  .essay p { margin: 0 0 0.9rem; }
+  .essay .sn {
+    color: var(--grey-text);
+    font-size: 0.78rem;
+    font-weight: 700;
+    vertical-align: super;
+    margin-right: 2px;
+  }
+
+  /* feature spans — hidden styling by default */
+  .essay .rv, .essay .cd, .essay .nm,
+  .essay .ev, .essay .ss, .essay .struct {
+    padding: 0;
+    border-radius: 3px;
+    transition: background 0.25s, text-decoration 0.25s;
+  }
+  /* Activated states */
+  .essay.show-rv .rv { background: var(--feat-rv); padding: 0 3px; }
+  .essay.show-cd .cd { background: var(--feat-cd); padding: 0 3px; }
+  .essay.show-nm .nm { background: var(--feat-nm); padding: 0 3px; }
+  .essay.show-ev .ev { background: var(--feat-ev); padding: 0 3px; }
+  .essay.show-ss .ss { background: var(--feat-ss); padding: 0 3px; }
+  .essay.show-struct .struct {
+    text-decoration: underline;
+    text-decoration-color: var(--navy);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+  .essay.show-struct .struct::after {
+    content: attr(data-label);
+    display: inline-block;
+    margin-left: 0.4rem;
+    padding: 1px 6px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    background: var(--navy);
+    color: white;
+    border-radius: 3px;
+    vertical-align: middle;
+  }
+
+  /* PEEL badges — Point / Evidence / Explanation / Link */
+  .essay .sn[data-peel] { position: relative; }
+  .essay.show-peel .sn[data-peel]::after {
+    content: attr(data-peel);
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 2px;
+    padding: 1px 5px;
+    font-size: 0.66rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    color: white;
+    border-radius: 3px;
+    vertical-align: super;
+    line-height: 1.2;
+  }
+  .essay.show-peel .sn.peel-p::after { background: var(--peel-p); }
+  .essay.show-peel .sn.peel-e::after { background: var(--peel-e); }
+  .essay.show-peel .sn.peel-x::after { background: var(--peel-x); }
+  .essay.show-peel .sn.peel-l::after { background: var(--peel-l); }
+  /* Slight tint of the matching sentence number when PEEL is on */
+  .essay.show-peel .sn.peel-p { color: var(--peel-p); font-weight: 700; }
+  .essay.show-peel .sn.peel-e { color: var(--peel-e); font-weight: 700; }
+  .essay.show-peel .sn.peel-x { color: var(--peel-x); font-weight: 700; }
+  .essay.show-peel .sn.peel-l { color: var(--peel-l); font-weight: 700; }
+
+  /* footer */
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.82rem;
+    color: var(--grey-text);
+  }
+
+  /* small responsive tweaks */
+  @media (max-width: 600px) {
+    main { padding: 1rem; }
+    .site-header h1 { font-size: 1.3rem; }
+    .essay { padding: 1.1rem 1.2rem; font-size: 0.95rem; }
+    .tab-nav button { font-size: 0.88rem; padding: 0.7rem 0.5rem; }
+  }
+
+  /* Print stylesheet — show all features when printing */
+  @media print {
+    .tab-nav, .actions, .feature-controls, .tour-controls, .step-info, footer { display: none !important; }
+    .panel { display: block !important; }
+    .essay {
+      border: none;
+      padding: 0;
+    }
+    .essay .rv { background: var(--feat-rv) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .essay .cd { background: var(--feat-cd) !important; -webkit-print-color-adjust: exact; }
+    .essay .nm { background: var(--feat-nm) !important; -webkit-print-color-adjust: exact; }
+    .essay .ev { background: var(--feat-ev) !important; -webkit-print-color-adjust: exact; }
+    .essay .ss { background: var(--feat-ss) !important; -webkit-print-color-adjust: exact; }
+    .essay .struct { text-decoration: underline; }
+    /* Print PEEL badges too */
+    .essay .sn[data-peel]::after {
+      content: attr(data-peel);
+      display: inline-block;
+      margin-left: 3px;
+      padding: 0 4px;
+      font-size: 0.65rem;
+      font-weight: 800;
+      color: white !important;
+      border-radius: 3px;
+      vertical-align: super;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .essay .sn.peel-p::after { background: var(--peel-p) !important; }
+    .essay .sn.peel-e::after { background: var(--peel-e) !important; }
+    .essay .sn.peel-x::after { background: var(--peel-x) !important; }
+    .essay .sn.peel-l::after { background: var(--peel-l) !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="meta">Ancient History · Stage 6 · Year 11 · Boudica</div>
+  <h1>Causes of the Boudican Revolt</h1>
+  <div class="question"><strong>Essay question:</strong> Assess the causes of the Boudican revolt.</div>
+</header>
+
+<nav class="tab-nav" role="tablist">
+  <button class="tab active" data-tab="sort" role="tab">1 · Sort the Cards</button>
+  <button class="tab" data-tab="features" role="tab">2 · Language Features Tour</button>
+</nav>
+
+<main>
+
+<!-- ============== ACTIVITY 1: CARD SORT ============== -->
+<section id="sort" class="panel active" role="tabpanel">
+  <h2>Drag the 21 cards into the correct paragraphs</h2>
+  <p class="lead">
+    Each card is one Point, Evidence, Explanation, Link, Introduction or Conclusion sentence from the same essay.
+    Drag cards from the pool below into the matching paragraph zone above.
+    Within each Body zone, order them <strong>POINT → EVIDENCE → EXPLANATION → LINK</strong>.
+  </p>
+
+  <div class="zones" id="zones">
+    <div class="zone" data-zone="intro">
+      <div class="zone-header">Introduction</div>
+      <div class="zone-subtitle">3 cards · Context → Thesis → Signpost</div>
+      <ul class="zone-list" data-zone="intro"></ul>
+    </div>
+    <div class="zone" data-zone="body1">
+      <div class="zone-header">Body 1 — Political</div>
+      <div class="zone-subtitle">4 cards · Point → Evidence → Explanation → Link</div>
+      <ul class="zone-list" data-zone="body1"></ul>
+    </div>
+    <div class="zone" data-zone="body2">
+      <div class="zone-header">Body 2 — Economic</div>
+      <div class="zone-subtitle">4 cards · Point → Evidence → Explanation → Link</div>
+      <ul class="zone-list" data-zone="body2"></ul>
+    </div>
+    <div class="zone" data-zone="body3">
+      <div class="zone-header">Body 3 — Cultural / Religious</div>
+      <div class="zone-subtitle">4 cards · Point → Evidence → Explanation → Link</div>
+      <ul class="zone-list" data-zone="body3"></ul>
+    </div>
+    <div class="zone" data-zone="body4">
+      <div class="zone-header">Body 4 — Personal</div>
+      <div class="zone-subtitle">4 cards · Point → Evidence → Explanation → Link</div>
+      <ul class="zone-list" data-zone="body4"></ul>
+    </div>
+    <div class="zone" data-zone="conclusion">
+      <div class="zone-header">Conclusion</div>
+      <div class="zone-subtitle">2 cards · Judgement → Final assessment</div>
+      <ul class="zone-list" data-zone="conclusion"></ul>
+    </div>
+  </div>
+
+  <div class="pool-section">
+    <h3>Card pool — drag from here into the zones above</h3>
+    <ul class="pool-list" id="pool"></ul>
+  </div>
+
+  <div class="actions">
+    <button id="check-btn" class="btn primary">Check Order</button>
+    <button id="show-solution-btn" class="btn">Show Solution</button>
+    <button id="reshuffle-btn" class="btn">Reshuffle</button>
+    <button id="goto-features-btn" class="btn success" disabled>Continue to Language Features →</button>
+  </div>
+
+  <div id="feedback" class="feedback" aria-live="polite"></div>
+</section>
+
+<!-- ============== ACTIVITY 2: LANGUAGE FEATURES ============== -->
+<section id="features" class="panel" role="tabpanel">
+  <h2>The completed response — reveal each language feature in turn</h2>
+  <p class="lead">
+    Below is the full essay in its correct order. Click a feature button to highlight its instances — or click <strong>Step Through</strong> to reveal one feature at a time. Each feature has its own colour.
+  </p>
+
+  <details class="glossary" open>
+    <summary><strong>Feature definitions</strong> — what each one means (click to collapse)</summary>
+    <div class="glossary-grid">
+      <div class="gloss-item">
+        <div class="gloss-swatch struct-swatch" aria-hidden="true"></div>
+        <div class="gloss-body">
+          <strong>Structure</strong>
+          <p>The thesis, topic sentences, and judgement — the sentences that <em>frame the argument</em>. Shown as underlined text with a navy label.</p>
+        </div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-swatch rv-swatch" aria-hidden="true"></div>
+        <div class="gloss-body">
+          <strong>Reporting verbs</strong>
+          <p>Verbs that <em>introduce a source</em> — e.g. <em>records, reports, describes</em>. The verb signals how confident the writer is in the source.</p>
+        </div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-swatch cd-swatch" aria-hidden="true"></div>
+        <div class="gloss-body">
+          <strong>Cohesive devices</strong>
+          <p>Connectives that <em>link sentences and paragraphs</em> — contrastive (<em>While</em>), additive (<em>Equally</em>), counterfactual (<em>Without</em>), and so on.</p>
+        </div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-swatch nm-swatch" aria-hidden="true"></div>
+        <div class="gloss-body">
+          <strong>Nominalisation</strong>
+          <p>A <em>verb or adjective turned into a noun</em> — <em>humiliate → humiliation</em>; <em>annex → annexation</em>. Endings to look for: <em>-tion, -ment, -ity, -ance</em>.</p>
+        </div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-swatch ev-swatch" aria-hidden="true"></div>
+        <div class="gloss-body">
+          <strong>Evaluative language</strong>
+          <p>Words or phrases that express <em>judgement, ranking, or significance</em> — <em>fundamentally, ultimately decisive, most significant</em>.</p>
+        </div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-swatch ss-swatch" aria-hidden="true"></div>
+        <div class="gloss-body">
+          <strong>Subject-specific terminology</strong>
+          <p>Period or discipline vocabulary — <em>client kingdom, procurator, imperial cult, stuprum, Druid groves</em>. Shows command of the field.</p>
+        </div>
+      </div>
+      <div class="gloss-item">
+        <div class="gloss-swatch peel-swatch" aria-hidden="true"></div>
+        <div class="gloss-body">
+          <strong>PEEL paragraph structure</strong>
+          <p>The four-part shape of every Body paragraph: <strong style="color:var(--peel-p)">P</strong>oint · <strong style="color:var(--peel-e)">E</strong>vidence · e<strong style="color:var(--peel-x)">X</strong>planation · <strong style="color:var(--peel-l)">L</strong>ink. Coloured badges appear next to each body sentence.</p>
+        </div>
+      </div>
+    </div>
+  </details>
+
+  <div class="feature-controls">
+    <h3>Toggle features individually</h3>
+    <div class="feature-buttons" id="feature-buttons">
+      <button class="feat-btn" data-feat="struct" data-label="Structural elements (topic sentences, thesis, judgement)"><span class="dot"></span>Structure</button>
+      <button class="feat-btn" data-feat="rv" data-label="Reporting verbs — how the writer introduces a source quote (e.g. records, reports, describes)"><span class="dot"></span>Reporting Verbs</button>
+      <button class="feat-btn" data-feat="cd" data-label="Cohesive devices — connectives that link ideas (e.g. While, yet, Despite, Although)"><span class="dot"></span>Cohesive Devices</button>
+      <button class="feat-btn" data-feat="nm" data-label="Nominalisation — verbs or adjectives turned into nouns (e.g. humiliate → humiliation)"><span class="dot"></span>Nominalisation</button>
+      <button class="feat-btn" data-feat="ev" data-label="Evaluative language — judgement words and phrases (e.g. fundamentally, ultimately decisive, most significant)"><span class="dot"></span>Evaluative</button>
+      <button class="feat-btn" data-feat="ss" data-label="Subject-specific terminology — period-specific vocabulary (e.g. client kingdom, procurator, imperial cult)"><span class="dot"></span>Subject-specific</button>
+      <button class="feat-btn" data-feat="peel" data-label="PEEL paragraph structure — Point · Evidence · eXplanation · Link"><span class="dot"></span>PEEL Structure</button>
+    </div>
+    <div class="tour-controls">
+      <button id="step-btn" class="btn primary">Step Through →</button>
+      <button id="show-all-btn" class="btn">Show All</button>
+      <button id="hide-all-btn" class="btn">Hide All</button>
+      <button id="back-to-sort-btn" class="btn">← Back to Activity 1</button>
+    </div>
+  </div>
+
+  <div id="step-info" class="step-info">
+    Click a feature button above, or press <strong>Step Through</strong> to reveal features one by one.
+  </div>
+
+  <article id="essay" class="essay">
+
+    <h3>Introduction</h3>
+    <p>
+      <span class="sn">[1]</span> <span class="cd">In AD 60–61</span>, Queen Boudica led a coalition of Iceni and Trinovantes tribes in a violent <span class="nm">uprising</span> against Roman <span class="nm">occupation</span> that destroyed Camulodunum, Londinium, and Verulamium and killed an estimated 70,000–80,000 Romans and Romanised Britons.
+      <span class="sn">[2]</span> <span class="cd">While</span> the personal <span class="nm">humiliation</span> of Boudica and her daughters provided the immediate trigger, the revolt was <span class="ev">fundamentally caused</span> by years of Roman political <span class="nm">annexation</span>, economic <span class="nm">exploitation</span>, and the <span class="nm">alienation</span> of native tribes through cultural and religious <span class="nm">oppression</span>.
+      <span class="sn">[3]</span> <span class="struct" data-label="THESIS">These causes can be grouped as political, economic, cultural, and personal — <span class="cd">yet</span> it will be argued that the structural <span class="nm">failures</span> of Roman <span class="nm">misgovernance</span>, not the personal <span class="nm">cruelty</span> of individual officials, were <span class="ev">ultimately decisive</span>.</span>
+    </p>
+
+    <h3>Body 1 — Political</h3>
+    <p>
+      <span class="sn peel-p" data-peel="P">[4]</span> <span class="struct" data-label="TOPIC SENTENCE">The <span class="ev">first and most structural</span> cause of the revolt was Rome’s <span class="nm">annexation</span> of the Iceni kingdom and its <span class="nm">disregard</span> for the will of King Prasutagus.</span>
+      <span class="sn peel-e" data-peel="E">[5]</span> Tacitus <span class="rv">records</span> that Prasutagus ‘had named the emperor his heir along with his two daughters, supposing that this token of <span class="nm">submission</span> would put his kingdom and household beyond the risk of injury’ (<em>Annals</em> XIV.31).
+      <span class="sn peel-x" data-peel="X">[6]</span> <span class="cd">Despite</span> Prasutagus’s <span class="ev">careful diplomacy</span>, Rome refused to recognise the Iceni daughters as joint heirs with Nero, instead treating the kingdom as conquered territory.
+      <span class="sn peel-x" data-peel="X">[7]</span> This was driven by Roman law — which did not recognise women as political heirs — and by the financial opportunity to seize Iceni wealth.
+      <span class="sn peel-l" data-peel="L">[8]</span> This political <span class="nm">betrayal</span> stripped the Iceni elite of their lands and status, transforming a previously cooperative <span class="ss">client kingdom</span> into hostile occupied territory — <span class="cd">without</span> this <span class="nm">annexation</span>, the conditions for revolt could not have arisen.
+    </p>
+
+    <h3>Body 2 — Economic</h3>
+    <p>
+      <span class="sn peel-p" data-peel="P">[9]</span> <span class="struct" data-label="TOPIC SENTENCE"><span class="cd">Equally rooted</span> in Roman <span class="nm">misgovernance</span> were the economic causes of the revolt — particularly the financial <span class="nm">exploitation</span> carried out by <span class="ss">Procurator</span> Catus Decianus and the philosopher Seneca.</span>
+      <span class="sn peel-e" data-peel="E">[10]</span> Cassius Dio <span class="rv">reports</span> that Seneca had loaned forty million <span class="ss">sesterces</span> to British leaders at high interest, then ‘suddenly called in all the loans at once, using severe measures to extract payment’ (<em>Roman History</em> LXII.2).
+      <span class="sn peel-e" data-peel="E">[11]</span> Tacitus <span class="rv">describes</span> how Decianus’s <span class="ss">centurions</span> plundered Iceni estates ‘as if they were the spoils of war’ (<em>Annals</em> XIV.31).
+      <span class="sn peel-x" data-peel="X">[12]</span> Decianus reclassified earlier Roman gifts as taxable loans and seized Iceni property, <span class="cd">while</span> Seneca’s simultaneous loan recall pushed tribal elites toward bankruptcy.
+      <span class="sn peel-x" data-peel="X">[13]</span> These twin financial <span class="nm">assaults</span> attacked the economic basis of native authority across south-east Britain.
+      <span class="sn peel-l" data-peel="L">[14]</span> <span class="cd">By targeting</span> the wealth that gave tribal nobles their status, Roman economic <span class="nm">exploitation</span> alienated not only the Iceni but the broader native aristocracy, building the <span class="nm">resentment</span> that fuelled the revolt.
+    </p>
+
+    <h3>Body 3 — Cultural / Religious</h3>
+    <p>
+      <span class="sn peel-p" data-peel="P">[15]</span> <span class="struct" data-label="TOPIC SENTENCE"><span class="cd">Beyond the Iceni</span>, the revolt drew its broader power from cultural and religious causes — <span class="ev">most notably</span> the Trinovantes’ <span class="nm">grievances</span> over the <span class="ss">Temple of Claudius</span> and Roman land seizures at Camulodunum.</span>
+      <span class="sn peel-e" data-peel="E">[16]</span> Tacitus <span class="rv">writes</span> that the Britons regarded the <span class="ss">Temple of Claudius</span> as ‘a citadel of perpetual tyranny’ (<em>Annals</em> XIV.31), with native priests forced to fund the <span class="ss">imperial cult</span> at their own ruin.
+      <span class="sn peel-e" data-peel="E">[17]</span> <span class="cd">At the same time</span>, Suetonius Paulinus was destroying the sacred <span class="ss">Druid groves</span> on Mona (Anglesey).
+      <span class="sn peel-x" data-peel="X">[18]</span> Roman veterans had seized fertile Trinovantes land for their <span class="ss">colony</span> and treated native landowners with contempt; the <span class="ss">imperial cult</span> forced subjugated Britons to worship their conqueror as a god.
+      <span class="sn peel-x" data-peel="X">[19]</span> The simultaneous <span class="nm">destruction</span> of the Druids on Mona signalled a wider Roman <span class="nm">assault</span> on Celtic religious identity.
+      <span class="sn peel-l" data-peel="L">[20]</span> These shared cultural <span class="nm">grievances</span> allowed Boudica to forge a coalition with the Trinovantes — the alliance that turned a local Iceni <span class="nm">grievance</span> into a province-wide war capable of destroying three Roman cities.
+    </p>
+
+    <h3>Body 4 — Personal</h3>
+    <p>
+      <span class="sn peel-p" data-peel="P">[21]</span> <span class="struct" data-label="TOPIC SENTENCE"><span class="cd">What finally converted</span> these long-building <span class="nm">grievances</span> into open revolt was a single personal trigger — the <span class="ev">brutal humiliation</span> of Boudica and her daughters.</span>
+      <span class="sn peel-e" data-peel="E">[22]</span> Tacitus <span class="rv">records</span> that ‘his wife Boudica was lashed and his daughters violated; the chief men of the Iceni were stripped of their ancestral estates as if the entire country had been a gift to the Romans, and the king’s relatives were treated as slaves’ (<em>Annals</em> XIV.31).
+      <span class="sn peel-x" data-peel="X">[23]</span> The flogging of Boudica was a <span class="ev">calculated public ritual</span> designed to strip her of royal status, while the assault on her daughters — described by Tacitus using the legal term ‘<span class="ss">stuprum</span>’, reserved for those owed citizen-level rights — <span class="ev">fundamentally violated</span> Iceni honour.
+      <span class="sn peel-x" data-peel="X">[24]</span> In a Celtic society that respected female authority, this was <span class="ev">culturally devastating</span>.
+      <span class="sn peel-l" data-peel="L">[25]</span> This act converted latent <span class="nm">grievance</span> into open <span class="nm">rebellion</span>: it provided both the unifying outrage and the symbolic figurehead — Boudica herself — around which a revolt could form.
+    </p>
+
+    <h3>Conclusion</h3>
+    <p>
+      <span class="sn">[26]</span> The Boudican revolt cannot be reduced to any single cause.
+      <span class="sn">[27]</span> Roman political <span class="nm">annexation</span>, economic <span class="nm">exploitation</span>, cultural-religious <span class="nm">oppression</span>, and personal <span class="nm">humiliation</span> each contributed; together they created what historians <span class="rv">have called</span> a ‘perfect storm’ of <span class="nm">grievance</span>.
+      <span class="sn">[28]</span> <span class="struct" data-label="JUDGEMENT"><span class="cd">Although</span> the flogging of Boudica was the immediate trigger, the <span class="ev">most significant</span> cause was Roman <span class="nm">misgovernance</span>.</span>
+      <span class="sn">[29]</span> <span class="cd">Without</span> years of structural <span class="nm">injustice</span>, no single act of cruelty would have produced the coalition that nearly drove Rome from Britain.
+      <span class="sn">[30]</span> The revolt was, <span class="cd">ultimately</span>, a <span class="ev">failure of Roman colonial policy</span> as much as it was an act of personal vengeance.
+    </p>
+
+  </article>
+</section>
+
+</main>
+
+<footer>
+  Boudica — Year 11 Ancient History · Causes of the Revolt
+  · <a href="#" onclick="window.print(); return false;">Print this page</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.2/Sortable.min.js"></script>
+<script>
+// ============================================================
+// CARD DATA — 21 cards, each with zone + position metadata
+// ============================================================
+const CARDS = [
+  {id:'I1', type:'INTRO — CONTEXT',     zone:'intro',      pos:1, text:'In AD 60–61, Queen Boudica led a coalition of Iceni and Trinovantes tribes in a violent uprising against Roman occupation that destroyed Camulodunum, Londinium, and Verulamium and killed an estimated 70,000–80,000 Romans and Romanised Britons.'},
+  {id:'I2', type:'INTRO — THESIS',      zone:'intro',      pos:2, text:'While the personal humiliation of Boudica and her daughters provided the immediate trigger, the revolt was fundamentally caused by years of Roman political annexation, economic exploitation, and the alienation of native tribes through cultural and religious oppression.'},
+  {id:'I3', type:'INTRO — SIGNPOST',    zone:'intro',      pos:3, text:'These causes can be grouped as political, economic, cultural, and personal — yet it will be argued that the structural failures of Roman misgovernance, not the personal cruelty of individual officials, were ultimately decisive.'},
+
+  {id:'P1', type:'POINT',               zone:'body1',      pos:1, text:'The first and most structural cause of the revolt was Rome’s annexation of the Iceni kingdom and its disregard for the will of King Prasutagus.'},
+  {id:'E1', type:'EVIDENCE',            zone:'body1',      pos:2, text:'Tacitus records that Prasutagus ‘had named the emperor his heir along with his two daughters, supposing that this token of submission would put his kingdom and household beyond the risk of injury’ (Annals XIV.31).'},
+  {id:'X1', type:'EXPLANATION',         zone:'body1',      pos:3, text:'Despite Prasutagus’s careful diplomacy, Rome refused to recognise the Iceni daughters as joint heirs with Nero, instead treating the kingdom as conquered territory. This was driven by Roman law — which did not recognise women as political heirs — and by the financial opportunity to seize Iceni wealth.'},
+  {id:'L1', type:'LINK',                zone:'body1',      pos:4, text:'This political betrayal stripped the Iceni elite of their lands and status, transforming a previously cooperative client kingdom into hostile occupied territory — without this annexation, the conditions for revolt could not have arisen.'},
+
+  {id:'P2', type:'POINT',               zone:'body2',      pos:1, text:'Equally rooted in Roman misgovernance were the economic causes of the revolt — particularly the financial exploitation carried out by Procurator Catus Decianus and the philosopher Seneca.'},
+  {id:'E2', type:'EVIDENCE',            zone:'body2',      pos:2, text:'Cassius Dio reports that Seneca had loaned forty million sesterces to British leaders at high interest, then ‘suddenly called in all the loans at once, using severe measures to extract payment’ (Roman History LXII.2). Tacitus describes how Decianus’s centurions plundered Iceni estates ‘as if they were the spoils of war’ (Annals XIV.31).'},
+  {id:'X2', type:'EXPLANATION',         zone:'body2',      pos:3, text:'Decianus reclassified earlier Roman gifts as taxable loans and seized Iceni property, while Seneca’s simultaneous loan recall pushed tribal elites toward bankruptcy. These twin financial assaults attacked the economic basis of native authority across south-east Britain.'},
+  {id:'L2', type:'LINK',                zone:'body2',      pos:4, text:'By targeting the wealth that gave tribal nobles their status, Roman economic exploitation alienated not only the Iceni but the broader native aristocracy, building the resentment that fuelled the revolt.'},
+
+  {id:'P3', type:'POINT',               zone:'body3',      pos:1, text:'Beyond the Iceni, the revolt drew its broader power from cultural and religious causes — most notably the Trinovantes’ grievances over the Temple of Claudius and Roman land seizures at Camulodunum.'},
+  {id:'E3', type:'EVIDENCE',            zone:'body3',      pos:2, text:'Tacitus writes that the Britons regarded the Temple of Claudius as ‘a citadel of perpetual tyranny’ (Annals XIV.31), with native priests forced to fund the imperial cult at their own ruin. At the same time, Suetonius Paulinus was destroying the sacred Druid groves on Mona (Anglesey).'},
+  {id:'X3', type:'EXPLANATION',         zone:'body3',      pos:3, text:'Roman veterans had seized fertile Trinovantes land for their colony and treated native landowners with contempt; the imperial cult forced subjugated Britons to worship their conqueror as a god. The simultaneous destruction of the Druids on Mona signalled a wider Roman assault on Celtic religious identity.'},
+  {id:'L3', type:'LINK',                zone:'body3',      pos:4, text:'These shared cultural grievances allowed Boudica to forge a coalition with the Trinovantes — the alliance that turned a local Iceni grievance into a province-wide war capable of destroying three Roman cities.'},
+
+  {id:'P4', type:'POINT',               zone:'body4',      pos:1, text:'What finally converted these long-building grievances into open revolt was a single personal trigger — the brutal humiliation of Boudica and her daughters.'},
+  {id:'E4', type:'EVIDENCE',            zone:'body4',      pos:2, text:'Tacitus records that ‘his wife Boudica was lashed and his daughters violated; the chief men of the Iceni were stripped of their ancestral estates as if the entire country had been a gift to the Romans, and the king’s relatives were treated as slaves’ (Annals XIV.31).'},
+  {id:'X4', type:'EXPLANATION',         zone:'body4',      pos:3, text:'The flogging of Boudica was a calculated public ritual designed to strip her of royal status, while the assault on her daughters — described by Tacitus using the legal term ‘stuprum’, reserved for those owed citizen-level rights — fundamentally violated Iceni honour. In a Celtic society that respected female authority, this was culturally devastating.'},
+  {id:'L4', type:'LINK',                zone:'body4',      pos:4, text:'This act converted latent grievance into open rebellion: it provided both the unifying outrage and the symbolic figurehead — Boudica herself — around which a revolt could form.'},
+
+  {id:'C1', type:'CONCLUSION — JUDGEMENT',  zone:'conclusion', pos:1, text:'The Boudican revolt cannot be reduced to any single cause. Roman political annexation, economic exploitation, cultural-religious oppression, and personal humiliation each contributed; together they created what historians have called a ‘perfect storm’ of grievance.'},
+  {id:'C2', type:'CONCLUSION — ASSESSMENT', zone:'conclusion', pos:2, text:'Although the flogging of Boudica was the immediate trigger, the most significant cause was Roman misgovernance. Without years of structural injustice, no single act of cruelty would have produced the coalition that nearly drove Rome from Britain. The revolt was, ultimately, a failure of Roman colonial policy as much as it was an act of personal vengeance.'},
+];
+
+// ============================================================
+// UTILITIES
+// ============================================================
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function makeCardEl(card) {
+  const li = document.createElement('li');
+  li.className = 'card';
+  li.dataset.id = card.id;
+  li.dataset.zone = card.zone;
+  li.dataset.pos = card.pos;
+  li.dataset.type = card.type;
+  li.innerHTML = `
+    <div class="card-header">
+      <span class="card-type">${card.type}</span>
+      <span class="card-id">${card.id}</span>
+    </div>
+    <div class="card-text">${card.text}</div>
+  `;
+  return li;
+}
+
+// ============================================================
+// INIT — populate pool and wire up SortableJS
+// ============================================================
+const pool = document.getElementById('pool');
+const zoneLists = document.querySelectorAll('.zone-list');
+
+function populatePool() {
+  pool.innerHTML = '';
+  zoneLists.forEach(z => z.innerHTML = '');
+  const shuffled = shuffle(CARDS);
+  shuffled.forEach(c => pool.appendChild(makeCardEl(c)));
+  clearFeedback();
+  document.getElementById('goto-features-btn').disabled = true;
+}
+
+function initSortable() {
+  if (typeof Sortable === 'undefined') {
+    // CDN failed — graceful message
+    document.getElementById('feedback').classList.add('show', 'partial');
+    document.getElementById('feedback').textContent =
+      'Drag-and-drop library failed to load (check your internet connection). The activity needs SortableJS to work.';
+    return;
+  }
+  Sortable.create(pool, {
+    group: 'cards',
+    animation: 150,
+    ghostClass: 'sortable-ghost',
+    chosenClass: 'sortable-chosen',
+    onAdd: clearVisualFeedback,
+    onSort: clearVisualFeedback,
+  });
+  zoneLists.forEach(zone => {
+    Sortable.create(zone, {
+      group: 'cards',
+      animation: 150,
+      ghostClass: 'sortable-ghost',
+      chosenClass: 'sortable-chosen',
+      onAdd: clearVisualFeedback,
+      onSort: clearVisualFeedback,
+    });
+  });
+}
+
+function clearVisualFeedback() {
+  document.querySelectorAll('.card').forEach(c => c.classList.remove('correct', 'wrong'));
+}
+
+function clearFeedback() {
+  const fb = document.getElementById('feedback');
+  fb.classList.remove('show', 'partial', 'complete');
+  fb.textContent = '';
+  clearVisualFeedback();
+}
+
+// ============================================================
+// CHECK / SOLVE / RESHUFFLE
+// ============================================================
+function checkOrder() {
+  let correctCount = 0;
+  let totalPlaced = 0;
+  zoneLists.forEach(zoneEl => {
+    const zoneName = zoneEl.dataset.zone;
+    [...zoneEl.children].forEach((cardEl, idx) => {
+      totalPlaced++;
+      const cardZone = cardEl.dataset.zone;
+      const cardPos = parseInt(cardEl.dataset.pos, 10);
+      const isCorrect = (cardZone === zoneName) && (cardPos === idx + 1);
+      cardEl.classList.toggle('correct', isCorrect);
+      cardEl.classList.toggle('wrong', !isCorrect);
+      if (isCorrect) correctCount++;
+    });
+  });
+  // Cards still in pool are not placed — mark wrong
+  [...pool.children].forEach(c => {
+    c.classList.remove('correct');
+    c.classList.add('wrong');
+  });
+  const inPool = pool.children.length;
+  const fb = document.getElementById('feedback');
+  fb.classList.add('show');
+  if (correctCount === CARDS.length) {
+    fb.classList.remove('partial');
+    fb.classList.add('complete');
+    fb.innerHTML = '<strong>Excellent — all 21 cards in the correct order!</strong> The essay is now reconstructed. Click <em>Continue to Language Features</em> to analyse the writing.';
+    document.getElementById('goto-features-btn').disabled = false;
+  } else {
+    fb.classList.add('partial');
+    fb.classList.remove('complete');
+    fb.innerHTML = `<strong>${correctCount} of ${CARDS.length} cards correct.</strong> ${inPool} still in the pool, ${totalPlaced - correctCount} placed incorrectly. Green ticks = right zone AND right position. Red crosses = wrong zone or wrong position.`;
+    document.getElementById('goto-features-btn').disabled = correctCount !== CARDS.length;
+  }
+}
+
+function showSolution() {
+  // Move every card into its correct zone in correct order
+  zoneLists.forEach(z => z.innerHTML = '');
+  pool.innerHTML = '';
+  const groups = {};
+  CARDS.forEach(c => {
+    (groups[c.zone] = groups[c.zone] || []).push(c);
+  });
+  Object.keys(groups).forEach(zoneName => {
+    const sorted = groups[zoneName].sort((a, b) => a.pos - b.pos);
+    const zoneEl = document.querySelector(`.zone-list[data-zone="${zoneName}"]`);
+    sorted.forEach(c => {
+      const el = makeCardEl(c);
+      el.classList.add('correct');
+      zoneEl.appendChild(el);
+    });
+  });
+  const fb = document.getElementById('feedback');
+  fb.classList.add('show', 'complete');
+  fb.classList.remove('partial');
+  fb.innerHTML = '<strong>Solution shown.</strong> Read through the cards in order — this is the reconstructed essay. Click <em>Continue to Language Features</em> to analyse it.';
+  document.getElementById('goto-features-btn').disabled = false;
+}
+
+// ============================================================
+// TAB SWITCHING
+// ============================================================
+function switchTab(tabId) {
+  document.querySelectorAll('.tab').forEach(t => {
+    t.classList.toggle('active', t.dataset.tab === tabId);
+  });
+  document.querySelectorAll('.panel').forEach(p => {
+    p.classList.toggle('active', p.id === tabId);
+  });
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+// ============================================================
+// ACTIVITY 2 — Feature reveal
+// ============================================================
+const FEATURES = [
+  {
+    id: 'struct',
+    label: 'Structure',
+    desc: '<strong>Definition.</strong> Structural elements are the sentences that <em>frame</em> the argument: the <strong>thesis</strong> (the writer\'s main claim, at the end of the Introduction), each <strong>topic sentence</strong> (the opening of every Body paragraph, naming that paragraph\'s cause), and the <strong>judgement</strong> (the final assessment in the Conclusion).<br><strong>Examples here:</strong> sentences [3] thesis · [4], [9], [15], [21] topic sentences · [28] judgement.<br><strong>Why it matters.</strong> Markers look for these signposts to follow your argument. A clear thesis and four strong topic sentences make your essay easy to mark.'
+  },
+  {
+    id: 'rv',
+    label: 'Reporting Verbs',
+    desc: '<strong>Definition.</strong> A reporting verb is the verb you use to introduce a source — <em>Tacitus <u>records</u>...</em>, <em>Cassius Dio <u>reports</u>...</em>, <em>Tacitus <u>describes</u>...</em>.<br><strong>Examples here:</strong> records · reports · describes · writes · have called.<br><strong>Why it matters.</strong> The verb you choose signals how reliable or contested you think the source is. <em>Records</em> sounds factual; <em>claims</em> sounds doubtful; <em>argues</em> sounds analytical.'
+  },
+  {
+    id: 'cd',
+    label: 'Cohesive Devices',
+    desc: '<strong>Definition.</strong> Cohesive devices are connectives — single words or short phrases — that link one idea to the next. They come in five main types: <em>contrastive</em> (While, Although, Despite), <em>additive</em> (Equally, Beyond), <em>causal</em> (By targeting), <em>temporal</em> (At the same time), and <em>counterfactual</em> (Without).<br><strong>Examples here:</strong> While · yet · Despite · Equally rooted · By targeting · Beyond the Iceni · At the same time · What finally converted · Although · Without · ultimately.<br><strong>Why it matters.</strong> Without them your sentences read like a list. With them your argument has flow and direction — the single most fixable weakness in Year 11 writing.'
+  },
+  {
+    id: 'nm',
+    label: 'Nominalisation',
+    desc: '<strong>Definition.</strong> Nominalisation is the process of turning a <u>verb or adjective into a noun</u> — <em>humiliate → humiliation</em>; <em>annex → annexation</em>; <em>exploit → exploitation</em>; <em>cruel → cruelty</em>. Watch for word endings: <strong>-tion, -sion, -ment, -ity, -ance, -ence, -al</strong>.<br><strong>Examples here:</strong> humiliation · annexation · exploitation · alienation · oppression · grievance · destruction · betrayal · resentment · rebellion · injustice.<br><strong>Why it matters.</strong> Nominalisation packs meaning densely and shifts focus from people doing things to abstract processes. Compare <em>"The Romans humiliated her"</em> (narrative) with <em>"the humiliation of Boudica"</em> (analytical) — that\'s the hallmark of academic register.'
+  },
+  {
+    id: 'ev',
+    label: 'Evaluative Language',
+    desc: '<strong>Definition.</strong> Evaluative language is any word or phrase that expresses <em>judgement, significance, or ranking</em>: adverbs (<em>fundamentally, ultimately, culturally</em>), ranking phrases (<em>most significant, first and most structural</em>), and strong adjectives (<em>decisive, devastating, calculated</em>).<br><strong>Examples here:</strong> fundamentally caused · ultimately decisive · first and most structural · careful diplomacy · calculated public ritual · fundamentally violated · culturally devastating · most significant.<br><strong>Why it matters.</strong> An <em>assess</em> question requires evaluative language. Without it you are only describing, not assessing — and the marker can\'t award you for analysis you haven\'t shown.'
+  },
+  {
+    id: 'ss',
+    label: 'Subject-specific Terminology',
+    desc: '<strong>Definition.</strong> Subject-specific terminology is the specialist vocabulary of a discipline. For this period in Ancient History it means Roman concepts (<em>procurator, imperial cult, colony, sesterces, centurions</em>), Celtic concepts (<em>Druid groves</em>), and Latin terms (<em>stuprum, client kingdom</em>).<br><strong>Examples here:</strong> client kingdom · Procurator · sesterces · centurions · Temple of Claudius · imperial cult · Druid groves · colony · stuprum.<br><strong>Why it matters.</strong> Using the period\'s own vocabulary shows command of the field. It is one of the fastest ways to lift a response from a B to an A range.'
+  },
+  {
+    id: 'peel',
+    label: 'PEEL Paragraph Structure',
+    desc: '<strong>Definition.</strong> Every Body paragraph in an analytical essay follows the same four-part shape: <strong style="color:var(--peel-p)">P</strong>oint (topic sentence — names the cause) → <strong style="color:var(--peel-e)">E</strong>vidence (primary source quote or fact) → e<strong style="color:var(--peel-x)">X</strong>planation (analysis of why the evidence matters) → <strong style="color:var(--peel-l)">L</strong>ink (returns the reader to the question).<br><strong>How it appears here.</strong> A small coloured badge sits next to each body sentence number, e.g. <span style="background:var(--peel-p);color:white;padding:1px 5px;border-radius:3px;font-size:0.7rem;font-weight:800">P</span> for Point, <span style="background:var(--peel-e);color:white;padding:1px 5px;border-radius:3px;font-size:0.7rem;font-weight:800">E</span> for Evidence, <span style="background:var(--peel-x);color:white;padding:1px 5px;border-radius:3px;font-size:0.7rem;font-weight:800">X</span> for eXplanation, <span style="background:var(--peel-l);color:white;padding:1px 5px;border-radius:3px;font-size:0.7rem;font-weight:800">L</span> for Link. Introduction and Conclusion sentences are not marked because PEEL applies only to body paragraphs.<br><strong>Why it matters.</strong> PEEL is the most reliable scaffold for analytical paragraphs. If every body paragraph contains all four parts in this order, your argument will be coherent and well-evidenced.'
+  },
+];
+
+const essay = document.getElementById('essay');
+const stepInfo = document.getElementById('step-info');
+let stepIndex = -1; // -1 = nothing revealed yet
+
+function setFeatureActive(featId, active) {
+  essay.classList.toggle(`show-${featId}`, active);
+  const btn = document.querySelector(`.feat-btn[data-feat="${featId}"]`);
+  if (btn) btn.classList.toggle('active', active);
+}
+
+function toggleFeature(featId) {
+  const isActive = essay.classList.contains(`show-${featId}`);
+  setFeatureActive(featId, !isActive);
+  updateStepInfoFromActive();
+}
+
+function updateStepInfoFromActive() {
+  const activeFeats = FEATURES.filter(f => essay.classList.contains(`show-${f.id}`));
+  if (activeFeats.length === 0) {
+    stepInfo.innerHTML = 'No features shown yet. Click a button above, or press <strong>Step Through</strong> to reveal them one by one.';
+  } else if (activeFeats.length === 1) {
+    stepInfo.innerHTML = activeFeats[0].desc;
+  } else {
+    stepInfo.innerHTML = `<strong>${activeFeats.length} features shown:</strong> ` + activeFeats.map(f => f.label).join(' · ');
+  }
+}
+
+function stepThrough() {
+  stepIndex = (stepIndex + 1) % (FEATURES.length + 1);
+  if (stepIndex === FEATURES.length) {
+    // All revealed — next click resets
+    FEATURES.forEach(f => setFeatureActive(f.id, false));
+    stepIndex = -1;
+    stepInfo.innerHTML = '<strong>Reset.</strong> Click <em>Step Through</em> again to start the tour from the beginning.';
+    document.getElementById('step-btn').textContent = 'Step Through →';
+    return;
+  }
+  const feat = FEATURES[stepIndex];
+  setFeatureActive(feat.id, true);
+  stepInfo.innerHTML = `<strong>Step ${stepIndex + 1} of ${FEATURES.length}: ${feat.label}.</strong><br>${feat.desc}`;
+  document.getElementById('step-btn').textContent =
+    (stepIndex + 1 === FEATURES.length) ? 'Reset Tour ↺' : 'Next Feature →';
+}
+
+function showAll() {
+  FEATURES.forEach(f => setFeatureActive(f.id, true));
+  stepInfo.innerHTML = '<strong>All six features shown.</strong> Each colour corresponds to one feature — see the buttons above for the key.';
+  stepIndex = FEATURES.length - 1;
+  document.getElementById('step-btn').textContent = 'Reset Tour ↺';
+}
+
+function hideAll() {
+  FEATURES.forEach(f => setFeatureActive(f.id, false));
+  stepIndex = -1;
+  stepInfo.innerHTML = 'No features shown. Click any feature button, or press <strong>Step Through</strong>.';
+  document.getElementById('step-btn').textContent = 'Step Through →';
+}
+
+// ============================================================
+// EVENT WIRING
+// ============================================================
+document.querySelectorAll('.tab').forEach(t => {
+  t.addEventListener('click', () => switchTab(t.dataset.tab));
+});
+document.getElementById('check-btn').addEventListener('click', checkOrder);
+document.getElementById('show-solution-btn').addEventListener('click', showSolution);
+document.getElementById('reshuffle-btn').addEventListener('click', () => {
+  if (confirm('Reshuffle? Your current arrangement will be lost.')) populatePool();
+});
+document.getElementById('goto-features-btn').addEventListener('click', () => switchTab('features'));
+document.getElementById('back-to-sort-btn').addEventListener('click', () => switchTab('sort'));
+
+document.querySelectorAll('.feat-btn').forEach(b => {
+  b.addEventListener('click', () => toggleFeature(b.dataset.feat));
+});
+document.getElementById('step-btn').addEventListener('click', stepThrough);
+document.getElementById('show-all-btn').addEventListener('click', showAll);
+document.getElementById('hide-all-btn').addEventListener('click', hideAll);
+
+// ============================================================
+// BOOT
+// ============================================================
+populatePool();
+initSortable();
+</script>
+</body>
+</html>
