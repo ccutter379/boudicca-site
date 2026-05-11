@@ -323,6 +323,150 @@
   }
   .activity-controls button:hover { background: var(--feat-cd); }
 
+  /* REWRITE / SYNTHESIS — extra styles */
+  .informal-sentence {
+    background: white;
+    border: 1px solid var(--grey-border);
+    border-left: 4px solid var(--error);
+    border-radius: 5px;
+    padding: 0.6rem 0.9rem;
+    margin: 0.5rem 0 0.6rem;
+    font-style: italic;
+    color: #555;
+    font-size: 0.97rem;
+  }
+  .informal-sentence::before {
+    content: '✗ Everyday talk: ';
+    font-style: normal;
+    font-weight: 700;
+    color: var(--error);
+    margin-right: 0.3rem;
+  }
+  .scaffold {
+    background: white;
+    border: 1px dashed var(--navy);
+    border-radius: 5px;
+    padding: 0.65rem 0.9rem;
+    margin: 0.5rem 0 0.6rem;
+    line-height: 1.75;
+    font-size: 0.97rem;
+  }
+  .scaffold::before {
+    content: 'Try this scaffold: ';
+    font-weight: 700;
+    color: var(--navy);
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+  }
+  .scaffold .blank {
+    display: inline-block;
+    min-width: 90px;
+    border-bottom: 2px solid var(--navy);
+    height: 1.1em;
+    margin: 0 2px;
+    vertical-align: bottom;
+  }
+  .model-rewrite {
+    background: #E8F5E9;
+    border-left: 4px solid var(--success);
+    border-radius: 5px;
+    padding: 0.7rem 0.9rem;
+    margin: 0.4rem 0;
+    line-height: 1.65;
+  }
+  .model-rewrite::before {
+    content: '✓ Academic style: ';
+    font-style: normal;
+    font-weight: 700;
+    color: var(--success);
+    margin-right: 0.3rem;
+  }
+  .model-rewrite .feat-nm-tag { background: var(--feat-nm); padding: 0 4px; border-radius: 3px; font-weight: 600; }
+  .model-rewrite .feat-ev-tag { background: var(--feat-ev); padding: 0 4px; border-radius: 3px; font-weight: 600; }
+  .model-rewrite .feat-rv-tag { background: var(--feat-rv); padding: 0 4px; border-radius: 3px; font-weight: 600; }
+  .model-rewrite .feat-cd-tag { background: var(--feat-cd); padding: 0 4px; border-radius: 3px; font-weight: 600; }
+  .model-rewrite .feat-ss-tag { background: var(--feat-ss); padding: 0 4px; border-radius: 3px; font-weight: 600; }
+  .feature-key {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.4rem;
+    font-size: 0.78rem;
+  }
+  .feature-key span {
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  /* REFLECTION SECTION */
+  .reflection-card {
+    background: white;
+    border: 1px solid var(--grey-border);
+    border-left: 6px solid #BF8F00;
+    border-radius: 8px;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .reflection-card h2 {
+    color: var(--navy);
+    margin: 0 0 0.7rem;
+    font-size: 1.2rem;
+  }
+  .reflection-card .reflection-q {
+    margin-top: 0.9rem;
+    padding-top: 0.7rem;
+    border-top: 1px solid #EEE;
+  }
+  .reflection-card .reflection-q:first-of-type {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .reflection-card label {
+    display: block;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+  }
+  .reflection-card .feature-checks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.3rem 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+  @media (min-width: 700px) {
+    .reflection-card .feature-checks {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  .reflection-card .feature-checks label {
+    font-weight: 400;
+    font-size: 0.92rem;
+    color: #333;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+  }
+  .reflection-card textarea {
+    width: 100%;
+    border: 1px solid var(--grey-border);
+    border-radius: 5px;
+    padding: 0.5rem 0.7rem;
+    font-family: inherit;
+    font-size: 0.95rem;
+    resize: vertical;
+    min-height: 70px;
+  }
+  .reflection-card textarea:focus {
+    outline: none;
+    border-color: var(--navy);
+    box-shadow: 0 0 0 3px rgba(31,56,100,0.15);
+  }
+
   /* COMPLETION CARD */
   .completion-card {
     background: white;
@@ -422,11 +566,12 @@
 
 <div class="intro-card">
   <h2>Welcome — how to use this page</h2>
-  <p>This page has <strong>six activities</strong> (A to F) that help you spot the <em>language features</em> good History essays use. Each one has:</p>
+  <p>This page has <strong>eight activities</strong> (A to H) plus a Reflection. They help you spot and USE the <em>language features</em> good History essays rely on.</p>
   <ol>
-    <li>A <strong>short definition</strong> in plain words.</li>
-    <li>A few <strong>examples</strong> from the Boudica essay.</li>
-    <li>Practice questions — you find the feature, then click <strong>“Show answer”</strong> to check.</li>
+    <li><strong>Activities A–F:</strong> Find each feature in the Boudica essay. Each has a short definition, examples, and toggle-answer practice questions.</li>
+    <li><strong>Activity G:</strong> Rewrite everyday-talk sentences in academic style (with sentence scaffolds).</li>
+    <li><strong>Activity H:</strong> Bigger thinking questions — model answers provided.</li>
+    <li><strong>Reflection:</strong> Set a personal writing goal for your next essay.</li>
   </ol>
   <p style="margin-top:0.7rem"><strong>Tip:</strong> Don't peek too soon! Try to answer each question in your head (or write it down) <em>before</em> you click Show Answer. You'll learn more that way.</p>
 </div>
@@ -939,10 +1084,197 @@
   </div>
 </section>
 
+<!-- ============== ACTIVITY G — Rewrite Practice ============== -->
+<section class="activity" id="activity-g">
+  <div class="activity-header">
+    <div class="activity-badge">G</div>
+    <div>
+      <h2>Rewrite Practice</h2>
+      <div class="subtitle">Turn everyday talk into academic writing</div>
+    </div>
+  </div>
+
+  <div class="explainer">
+    <h3>Now let's PRACTICE using what you've learned</h3>
+    <p class="what-it-is">Each question shows an <strong>everyday-talk sentence</strong>. Your job is to <strong>rewrite it in academic style</strong> using the features you've found in Activities A–F.</p>
+    <div class="examples">
+      <div class="examples-title">3 quick tips for academic writing:</div>
+      <ul>
+        <li>Use <strong>nouns</strong> (like ‘humiliation’) instead of <strong>verbs</strong> (like ‘humiliated her’) — that's nominalisation.</li>
+        <li>Use <strong>connectives</strong> like <em>while, although, equally</em> to join ideas.</li>
+        <li>Use <strong>strong words</strong> like <em>fundamentally, decisive, most significant</em> to show what you think.</li>
+      </ul>
+    </div>
+    <div class="tip">
+      <strong>How to use this section:</strong> Read the everyday sentence. Try to fill the scaffold blanks in your head (or on paper). Then click <strong>Show example answer</strong> to compare yours to a model rewrite.
+    </div>
+  </div>
+
+  <div class="prompts">
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">1</span>Rewrite this sentence in academic style:</div>
+      <div class="informal-sentence">The Romans were really mean to the Iceni and that's why they fought back.</div>
+      <div class="hint">Hint: Blank 1 = a NOMINALISATION (try <em>exploitation</em> or <em>oppression</em>). Blank 2 = a NOMINALISATION (try <em>humiliation</em>). Blank 3 = a strong VERB (try <em>provoked</em> or <em>drove</em>).</div>
+      <div class="scaffold">
+        Years of Roman <span class="blank"></span> — culminating in the personal <span class="blank"></span> of Boudica and her daughters — <span class="blank"></span> the Iceni into open revolt.
+      </div>
+      <button class="reveal-btn">Show example answer</button>
+      <div class="answer">
+        <div class="model-rewrite">
+          Years of Roman <span class="feat-nm-tag">exploitation</span> — culminating in the personal <span class="feat-nm-tag">humiliation</span> of Boudica and her daughters — <span class="feat-ev-tag">provoked</span> the Iceni into open revolt.
+        </div>
+        <div class="feature-key">
+          <span class="feat-nm-tag">nominalisation</span>
+          <span class="feat-ev-tag">evaluative</span>
+        </div>
+        <div class="why"><strong>What changed:</strong> ‘Really mean’ became ‘<em>exploitation</em>’ (a noun, more academic). ‘Fought back’ became ‘<em>provoked into open revolt</em>’ (stronger and more precise). The whole sentence now has CAUSE → TRIGGER → EFFECT structure — perfect for an analytical essay.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">2</span>Rewrite this sentence in academic style:</div>
+      <div class="informal-sentence">Tacitus said Boudica got beaten up which was not okay.</div>
+      <div class="hint">Hint: Blank 1 = a REPORTING VERB (try <em>records</em>). Blank 2 = a quoted word from sentence [22]. Blank 3 = a NOMINALISATION (try <em>humiliation</em>). Blank 4 = an EVALUATIVE word (try <em>fundamentally violated</em>).</div>
+      <div class="scaffold">
+        Tacitus <span class="blank"></span> that Boudica was ‘<span class="blank"></span>’, an act of public <span class="blank"></span> that <span class="blank"></span> Iceni honour.
+      </div>
+      <button class="reveal-btn">Show example answer</button>
+      <div class="answer">
+        <div class="model-rewrite">
+          Tacitus <span class="feat-rv-tag">records</span> that Boudica was ‘<span style="font-style:italic">lashed</span>’, an act of public <span class="feat-nm-tag">humiliation</span> that <span class="feat-ev-tag">fundamentally violated</span> Iceni honour.
+        </div>
+        <div class="feature-key">
+          <span class="feat-rv-tag">reporting verb</span>
+          <span style="background:white;border:1px solid #999">embedded quote</span>
+          <span class="feat-nm-tag">nominalisation</span>
+          <span class="feat-ev-tag">evaluative</span>
+        </div>
+        <div class="why"><strong>What changed:</strong> ‘Said’ became ‘<em>records</em>’ — a stronger, more academic reporting verb. ‘Beaten up’ became the actual quoted word ‘<em>lashed</em>’ — using the SOURCE'S own language is far more powerful. ‘Not okay’ became ‘<em>fundamentally violated Iceni honour</em>’ — a precise, evaluative analysis.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">3</span>Rewrite this sentence in academic style:</div>
+      <div class="informal-sentence">Lots of stuff led to the revolt.</div>
+      <div class="hint">Hint: Blank 1 = a verb from sentence [26] (means ‘boiled down to’). Blanks 2–5 = the four CATEGORY adjectives (look at the topic sentences in Activity F).</div>
+      <div class="scaffold">
+        The Boudican revolt cannot be <span class="blank"></span> to any single cause: <span class="blank"></span>, <span class="blank"></span>, <span class="blank"></span>, and <span class="blank"></span> grievances each contributed.
+      </div>
+      <button class="reveal-btn">Show example answer</button>
+      <div class="answer">
+        <div class="model-rewrite">
+          The Boudican revolt cannot be <span class="feat-ev-tag">reduced</span> to any single cause: <span class="feat-ev-tag">political</span>, <span class="feat-ev-tag">economic</span>, <span class="feat-ev-tag">cultural-religious</span>, and <span class="feat-ev-tag">personal</span> grievances each contributed.
+        </div>
+        <div class="feature-key">
+          <span class="feat-ev-tag">evaluative / categorising</span>
+        </div>
+        <div class="why"><strong>What changed:</strong> ‘Lots of stuff’ — vague and lazy — became four PRECISE CATEGORIES (political, economic, cultural-religious, personal). ‘Led to’ became ‘<em>cannot be reduced to</em>’ — which makes a stronger analytical claim: this is a multi-causal event. This is the kind of sentence you'd use in your conclusion.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="activity-controls">
+    <button class="show-all">Show all 3 example answers</button>
+    <button class="hide-all">Hide all 3 example answers</button>
+  </div>
+</section>
+
+<!-- ============== ACTIVITY H — Synthesis ============== -->
+<section class="activity" id="activity-h">
+  <div class="activity-header">
+    <div class="activity-badge">H</div>
+    <div>
+      <h2>Synthesis — Analysing the Writer's Craft</h2>
+      <div class="subtitle">Bigger thinking questions about the essay</div>
+    </div>
+  </div>
+
+  <div class="explainer">
+    <h3>Now think about WHY the writer made these choices</h3>
+    <p class="what-it-is">The questions below are bigger — they don't have one right answer. They ask you to think about <strong>WHY the writer made certain choices</strong> and HOW those choices make the essay work.</p>
+    <div class="tip">
+      <strong>How to answer:</strong> Each example answer is just a model — yours doesn't need to match it exactly. Try to write 3–5 sentences. Always refer to a specific sentence number (like [5] or [22]).
+    </div>
+  </div>
+
+  <div class="prompts">
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">1</span><strong>How does the writer establish their THESIS in the introduction?</strong> Look at sentences [2] and [3].</div>
+      <div class="hint">Hint: The thesis is the writer's main argument. Look at the cohesive device that starts sentence [2] (it's contrastive), and the evaluative phrase that ends sentence [3].</div>
+      <button class="reveal-btn">Show example answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Example response:</strong></div>
+        <div style="background:white;padding:0.7rem 0.9rem;border-radius:5px;border:1px solid #DDD;margin-top:0.4rem;line-height:1.6;font-size:0.94rem">
+          The writer builds the thesis in two clear steps. In sentence [2], they use the cohesive device <em>‘While’</em> to <strong>concede</strong> that personal humiliation triggered the revolt — but then pivot to the deeper structural causes (annexation, exploitation, alienation). In sentence [3], they use the evaluative phrase <em>‘ultimately decisive’</em> to deliver a clear ranking: Roman misgovernance, not personal cruelty, was the main cause. This two-step ‘<em>yes, but actually…</em>’ structure is far stronger than just listing causes — it shows the writer can weigh evidence and form a judgement, exactly what the ‘assess’ verb requires.
+        </div>
+        <div class="why"><strong>Why this answer works:</strong> It (a) names specific sentences, (b) names specific language features, (c) explains what each feature DOES for the argument, and (d) ties it back to the essay question.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">2</span><strong>How does the writer integrate primary source quotes smoothly?</strong> Look at sentences [5], [10–11], [16], or [22].</div>
+      <div class="hint">Hint: Look at the WORD just before each quote (the reporting verb), and notice how the quote slots into the writer's own sentence (it doesn't sit on its own).</div>
+      <button class="reveal-btn">Show example answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Example response:</strong></div>
+        <div style="background:white;padding:0.7rem 0.9rem;border-radius:5px;border:1px solid #DDD;margin-top:0.4rem;line-height:1.6;font-size:0.94rem">
+          The writer embeds quotes INSIDE their own analytical sentences rather than dropping them in as separate sentences. In [5], the reporting verb <em>‘records’</em> is followed by a quoted clause that completes the writer's sentence grammatically. In [10–11], the writer pairs TWO sources (Cassius Dio on Seneca; Tacitus on Decianus) to evidence the same point — economic exploitation — from two different angles. In [22], the writer takes a long Tacitus quote and breaks it up with their own framing words, keeping their voice in control. The reporting verbs (<em>records, reports, describes, writes</em>) are deliberately varied so the writing doesn't feel repetitive.
+        </div>
+        <div class="why"><strong>Why this answer works:</strong> It identifies the specific TECHNIQUE (embedded quotes, paired sources, varied reporting verbs) and gives sentence numbers to back it up.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">3</span><strong>What three language choices most clearly show this is an ANALYTICAL response (not a narrative one)?</strong> Justify each.</div>
+      <div class="hint">Hint: Pick one feature you found, one you didn't (e.g. counterfactual ‘Without…’), and one structural choice (e.g. the thesis or topic sentences).</div>
+      <button class="reveal-btn">Show example answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Example response:</strong></div>
+        <div style="background:white;padding:0.7rem 0.9rem;border-radius:5px;border:1px solid #DDD;margin-top:0.4rem;line-height:1.6;font-size:0.94rem">
+          <strong>1. Evaluative ranking</strong> — phrases like <em>‘first and most structural’</em> [4] and <em>‘most significant’</em> [28] rank the causes. A narrative would just describe events in time order; an analytical essay weighs which cause matters most.<br><br>
+          <strong>2. Counterfactual conditionals</strong> — sentences like <em>‘without this annexation, the conditions for revolt could not have arisen’</em> [8] and <em>‘Without years of structural injustice, no single act of cruelty would have produced the coalition’</em> [29] argue by imagining the cause's absence. Narrative writing never does this.<br><br>
+          <strong>3. Nominalised abstractions</strong> — words like <em>‘annexation’</em>, <em>‘exploitation’</em>, <em>‘misgovernance’</em>. A narrative uses VERBS and PEOPLE (‘the Romans annexed the kingdom’); an analytical essay uses ABSTRACT NOUNS and PROCESSES (‘Roman annexation of the kingdom’). The shift in voice is the shift to academic register.
+        </div>
+        <div class="why"><strong>Why this answer works:</strong> Each of the three choices is named, given a sentence number, AND contrasted with what a narrative would do. The contrast makes the analytical-vs-narrative distinction crystal clear.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="activity-controls">
+    <button class="show-all">Show all 3 example answers</button>
+    <button class="hide-all">Hide all 3 example answers</button>
+  </div>
+</section>
+
+<!-- ============== REFLECTION ============== -->
+<div class="reflection-card">
+  <h2>Reflection — your own writing</h2>
+  <p style="font-size:0.95rem;color:var(--grey-text);margin:0 0 0.5rem">Now think about <strong>your own writing</strong>. These questions are just for you — there's no answer to reveal. Type your thoughts below (or write them in your book).</p>
+
+  <div class="reflection-q">
+    <label>Which feature do you find HARDEST to use in your own essays? Tick one:</label>
+    <div class="feature-checks">
+      <label><input type="checkbox"> Reporting verbs</label>
+      <label><input type="checkbox"> Cohesive devices</label>
+      <label><input type="checkbox"> Nominalisation</label>
+      <label><input type="checkbox"> Evaluative language</label>
+      <label><input type="checkbox"> Subject-specific terms</label>
+      <label><input type="checkbox"> Topic sentences</label>
+    </div>
+    <label>Why is this one hardest?</label>
+    <textarea placeholder="e.g. I always forget to use connectives, so my paragraphs feel like lists..."></textarea>
+  </div>
+
+  <div class="reflection-q">
+    <label>Set ONE specific writing goal for your next essay:</label>
+    <textarea placeholder="e.g. I will start each body paragraph with a topic sentence that names the cause and connects to my thesis..."></textarea>
+  </div>
+</div>
+
 <div class="completion-card">
-  <h2>You've made it through all six activities!</h2>
-  <p>You can now spot reporting verbs, cohesive devices, nominalisations, evaluative language, subject-specific terms, and topic sentences in an analytical essay.</p>
-  <p style="margin-top:0.6rem;font-size:0.9rem;color:var(--grey-text)"><strong>Next step:</strong> When you write your next essay, deliberately use one of each. Mark them in the margin so you can check yourself.</p>
+  <h2>You've made it through all eight activities!</h2>
+  <p>You can now spot and use the six language features that lift an essay from describing to ANALYSING — plus you've practised rewriting in academic style.</p>
+  <p style="margin-top:0.6rem;font-size:0.9rem;color:var(--grey-text)"><strong>Next step:</strong> When you write your next essay, deliberately use one of each feature. Mark them in the margin so you can check yourself.</p>
   <div class="next-buttons">
     <a href="causes-activity.html">← Back to Card Sort Activity</a>
     <a href="index.html">Go to Boudica unit home</a>
