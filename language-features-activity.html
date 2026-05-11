@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boudica — Language Features Practice | Interactive Activity</title>
+<style>
+  :root {
+    --navy: #1F3864;
+    --navy-light: #2E4A82;
+    --grey-bg: #F5F5F5;
+    --grey-border: #BFBFBF;
+    --grey-text: #555;
+    --success: #2E7D32;
+    --error: #C62828;
+    --feat-rv: #FFF2CC;
+    --feat-cd: #DEEBF7;
+    --feat-nm: #E2EFDA;
+    --feat-ev: #FCE4D6;
+    --feat-ss: #FFD9B3;
+    --feat-tp: #F2D9F2;
+  }
+  * { box-sizing: border-box; }
+  html { font-size: 16px; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #222;
+    background: #FAFAFA;
+    line-height: 1.55;
+  }
+
+  /* HEADER */
+  .site-header {
+    background: var(--navy);
+    color: white;
+    padding: 1.2rem 1.5rem;
+    text-align: center;
+  }
+  .site-header .meta {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+  .site-header h1 {
+    margin: 0.3rem 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  .site-header .question {
+    font-size: 1rem;
+    background: rgba(255,255,255,0.12);
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    border-radius: 4px;
+    margin-top: 0.4rem;
+  }
+
+  /* BREADCRUMB / NAV */
+  .breadcrumb {
+    background: white;
+    border-bottom: 2px solid var(--navy);
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+  }
+  .breadcrumb a {
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    background: var(--grey-bg);
+  }
+  .breadcrumb a:hover { background: var(--feat-cd); }
+  .breadcrumb .current {
+    color: var(--grey-text);
+    font-weight: 600;
+  }
+
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+
+  /* INTRO CARD */
+  .intro-card {
+    background: white;
+    border: 1px solid var(--grey-border);
+    border-left: 6px solid var(--navy);
+    border-radius: 8px;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .intro-card h2 {
+    color: var(--navy);
+    margin: 0 0 0.6rem;
+    font-size: 1.3rem;
+  }
+  .intro-card p { margin: 0 0 0.5rem; }
+  .intro-card ol { margin: 0.5rem 0 0; padding-left: 1.3rem; }
+  .intro-card li { margin-bottom: 0.35rem; }
+
+  /* ACTIVITY SECTION */
+  .activity {
+    background: white;
+    border: 1px solid var(--grey-border);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+  }
+  .activity-header {
+    background: var(--navy);
+    color: white;
+    padding: 0.9rem 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .activity-badge {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: white;
+    color: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+  .activity-header h2 {
+    margin: 0;
+    font-size: 1.15rem;
+    flex: 1;
+  }
+  .activity-header .subtitle {
+    font-size: 0.85rem;
+    opacity: 0.9;
+    margin-top: 0.15rem;
+  }
+
+  /* EXPLAINER (low-literacy definition box) */
+  .explainer {
+    padding: 1rem 1.2rem;
+    background: #FFFDF5;
+    border-bottom: 1px solid #EEE;
+  }
+  .explainer h3 {
+    color: var(--navy);
+    margin: 0 0 0.5rem;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .explainer h3 .swatch {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,0.15);
+  }
+  .explainer h3 .swatch.tp-swatch {
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid var(--navy);
+    border-radius: 0;
+    height: 4px;
+  }
+  .explainer .what-it-is {
+    font-size: 0.98rem;
+    line-height: 1.6;
+    margin: 0 0 0.7rem;
+  }
+  .explainer .examples {
+    background: white;
+    border: 1px dashed var(--grey-border);
+    border-radius: 6px;
+    padding: 0.6rem 0.9rem;
+    margin: 0.6rem 0;
+    font-size: 0.92rem;
+  }
+  .explainer .examples-title {
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.3rem;
+  }
+  .explainer .examples ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+  .explainer .examples li { margin-bottom: 0.2rem; }
+  .explainer .why-it-matters {
+    background: #FFF2CC;
+    border-left: 4px solid #BF8F00;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0 4px 4px 0;
+    font-size: 0.9rem;
+    margin: 0.6rem 0 0;
+  }
+  .explainer .why-it-matters strong { color: var(--navy); }
+  .explainer .tip {
+    background: var(--feat-cd);
+    border-left: 4px solid var(--navy);
+    padding: 0.5rem 0.8rem;
+    border-radius: 0 4px 4px 0;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+  }
+
+  /* PROMPTS */
+  .prompts {
+    padding: 0.8rem 1.2rem 1rem;
+  }
+  .prompt {
+    background: var(--grey-bg);
+    border-radius: 6px;
+    padding: 0.85rem 1rem;
+    margin-bottom: 0.7rem;
+    border-left: 4px solid var(--grey-border);
+    transition: border-color 0.2s;
+  }
+  .prompt.revealed { border-left-color: var(--success); }
+  .prompt-number {
+    display: inline-block;
+    background: var(--navy);
+    color: white;
+    font-weight: 700;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 26px;
+    font-size: 0.85rem;
+    margin-right: 0.5rem;
+  }
+  .prompt .question {
+    font-size: 0.98rem;
+    margin-bottom: 0.5rem;
+  }
+  .prompt .hint {
+    font-size: 0.85rem;
+    color: var(--grey-text);
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem 0.6rem;
+    background: white;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  .reveal-btn {
+    background: var(--navy);
+    color: white;
+    border: none;
+    padding: 0.45rem 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.88rem;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .reveal-btn:hover { background: var(--navy-light); }
+  .answer {
+    display: none;
+    margin-top: 0.7rem;
+    background: white;
+    border-radius: 6px;
+    padding: 0.8rem 1rem;
+    border-left: 4px solid var(--success);
+  }
+  .prompt.revealed .answer { display: block; }
+  .prompt.revealed .reveal-btn { background: var(--grey-text); }
+  .answer .answer-line {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+  }
+  .answer .answer-text {
+    background: var(--feat-nm);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+    color: #1B5E20;
+  }
+  .answer .why {
+    background: #FFF8E1;
+    border-left: 3px solid #F9A825;
+    padding: 0.45rem 0.7rem;
+    border-radius: 0 4px 4px 0;
+    font-size: 0.88rem;
+    color: #555;
+    margin-top: 0.4rem;
+  }
+  .answer .why strong { color: var(--navy); }
+
+  /* ACTIVITY CONTROLS */
+  .activity-controls {
+    background: #FAFAFA;
+    padding: 0.7rem 1.2rem;
+    border-top: 1px solid #EEE;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .activity-controls button {
+    background: white;
+    color: var(--navy);
+    border: 1px solid var(--navy);
+    padding: 0.4rem 0.9rem;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .activity-controls button:hover { background: var(--feat-cd); }
+
+  /* COMPLETION CARD */
+  .completion-card {
+    background: white;
+    border: 1px solid var(--grey-border);
+    border-left: 6px solid var(--success);
+    border-radius: 8px;
+    padding: 1.2rem 1.5rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .completion-card h2 {
+    color: var(--success);
+    margin: 0 0 0.5rem;
+  }
+  .completion-card .next-buttons {
+    display: flex;
+    gap: 0.7rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0.8rem;
+  }
+  .completion-card a {
+    background: var(--navy);
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 1.1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.92rem;
+  }
+  .completion-card a:hover { background: var(--navy-light); }
+
+  /* GLOBAL CONTROLS (top + bottom) */
+  .global-controls {
+    background: white;
+    border: 1px solid var(--grey-border);
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .global-controls span { font-weight: 600; color: var(--navy); }
+  .global-controls button {
+    background: var(--navy);
+    color: white;
+    border: none;
+    padding: 0.4rem 0.9rem;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .global-controls button:hover { background: var(--navy-light); }
+  .global-controls button.secondary {
+    background: white;
+    color: var(--navy);
+    border: 1px solid var(--navy);
+  }
+  .global-controls button.secondary:hover { background: var(--feat-cd); }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.82rem;
+    color: var(--grey-text);
+  }
+
+  /* RESPONSIVE TWEAKS */
+  @media (max-width: 600px) {
+    main { padding: 1rem; }
+    .site-header h1 { font-size: 1.3rem; }
+    .activity-header h2 { font-size: 1.05rem; }
+    .activity-header { padding: 0.7rem 0.9rem; }
+    .explainer { padding: 0.9rem 1rem; }
+    .prompts { padding: 0.7rem 0.9rem 0.8rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="meta">Ancient History · Stage 6 · Year 11 · Boudica</div>
+  <h1>Language Features — Practice Activities</h1>
+  <div class="question"><strong>Essay question:</strong> Assess the causes of the Boudican revolt.</div>
+</header>
+
+<nav class="breadcrumb">
+  <a href="causes-activity.html">← Back to Card Sort Activity</a>
+  <span class="current">You are here: Language Features Practice</span>
+</nav>
+
+<main>
+
+<div class="intro-card">
+  <h2>Welcome — how to use this page</h2>
+  <p>This page has <strong>six activities</strong> (A to F) that help you spot the <em>language features</em> good History essays use. Each one has:</p>
+  <ol>
+    <li>A <strong>short definition</strong> in plain words.</li>
+    <li>A few <strong>examples</strong> from the Boudica essay.</li>
+    <li>Practice questions — you find the feature, then click <strong>“Show answer”</strong> to check.</li>
+  </ol>
+  <p style="margin-top:0.7rem"><strong>Tip:</strong> Don't peek too soon! Try to answer each question in your head (or write it down) <em>before</em> you click Show Answer. You'll learn more that way.</p>
+</div>
+
+<div class="global-controls">
+  <span>Quick controls:</span>
+  <button id="show-all-global">Show every answer</button>
+  <button class="secondary" id="hide-all-global">Hide every answer</button>
+  <button class="secondary" onclick="window.print()">Print this page</button>
+</div>
+
+<!-- ============== ACTIVITY A — Reporting Verbs ============== -->
+<section class="activity" id="activity-a" data-feat="rv">
+  <div class="activity-header">
+    <div class="activity-badge">A</div>
+    <div>
+      <h2>Reporting Verbs</h2>
+      <div class="subtitle">How writers introduce a source quote</div>
+    </div>
+  </div>
+
+  <div class="explainer">
+    <h3><span class="swatch" style="background:var(--feat-rv)"></span>What is a reporting verb?</h3>
+    <p class="what-it-is">A <strong>reporting verb</strong> is the word that tells the reader <em>who said something</em>. It comes just before a quote.</p>
+    <div class="examples">
+      <div class="examples-title">Examples:</div>
+      <ul>
+        <li>Tacitus <strong>records</strong> that… (sounds factual)</li>
+        <li>Cassius Dio <strong>reports</strong> that… (similar — neutral)</li>
+        <li>Tacitus <strong>describes</strong> how… (more vivid)</li>
+      </ul>
+    </div>
+    <div class="why-it-matters">
+      <strong>Why it matters:</strong> The verb you choose tells the reader how confident you are in the source. Words like <em>records</em> sound reliable. Words like <em>claims</em> sound doubtful.
+    </div>
+  </div>
+
+  <div class="prompts">
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">1</span>In <strong>sentence [5]</strong>, Tacitus is about to give a quote about Prasutagus's will. <strong>What reporting verb does the writer use?</strong></div>
+      <div class="hint">Hint: Look just <em>after</em> the word “Tacitus”.</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">records</span></div>
+        <div class="why"><strong>Why it works:</strong> ‘Records’ is neutral — it makes Tacitus sound like a reliable witness who just wrote down what happened, without judging it.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">2</span>In <strong>sentence [10]</strong>, Cassius Dio is the source. <strong>What reporting verb is used?</strong></div>
+      <div class="hint">Hint: Look just after “Cassius Dio”.</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">reports</span></div>
+        <div class="why"><strong>Why it works:</strong> ‘Reports’ is similar to ‘records’ — neutral and factual. The writer is treating Cassius Dio as a trustworthy source.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">3</span>In <strong>sentence [11]</strong>, Tacitus tells us about Decianus's centurions. <strong>What reporting verb is used?</strong></div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">describes</span></div>
+        <div class="why"><strong>Why it works:</strong> ‘Describes’ is slightly more vivid than ‘records’. It suggests Tacitus painted a picture for us — almost like a story.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">4</span>In <strong>sentence [16]</strong>, Tacitus is the source again. <strong>What's the reporting verb?</strong></div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">writes</span></div>
+        <div class="why"><strong>Why it works:</strong> ‘Writes’ is plain and straightforward. It just says what Tacitus put down on the page — no judgement either way.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">5</span>In <strong>sentence [27]</strong>, the writer brings in <em>modern historians</em> (not an ancient source). <strong>What TWO-word phrase introduces their view?</strong></div>
+      <div class="hint">Hint: Two short words, side by side.</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">have called</span></div>
+        <div class="why"><strong>Why it works:</strong> ‘Have called’ is a different kind of reporting — it brings in a <em>group</em> (historians) and tells us what name they've given something (‘a perfect storm’). Useful when you want to bring in modern scholars' views.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="activity-controls">
+    <button class="show-all">Show all 5 answers</button>
+    <button class="hide-all">Hide all 5 answers</button>
+  </div>
+</section>
+
+<!-- ============== ACTIVITY B — Cohesive Devices ============== -->
+<section class="activity" id="activity-b" data-feat="cd">
+  <div class="activity-header">
+    <div class="activity-badge">B</div>
+    <div>
+      <h2>Cohesive Devices</h2>
+      <div class="subtitle">Connectives that link ideas together</div>
+    </div>
+  </div>
+
+  <div class="explainer">
+    <h3><span class="swatch" style="background:var(--feat-cd)"></span>What is a cohesive device?</h3>
+    <p class="what-it-is">A <strong>cohesive device</strong> is a small word (or short phrase) that joins two ideas together. It tells the reader <em>how</em> the next idea connects to the last one.</p>
+    <div class="examples">
+      <div class="examples-title">5 main types:</div>
+      <ul>
+        <li><strong>Contrast</strong> (opposite is coming): <em>While, Although, Despite, yet</em></li>
+        <li><strong>Adding</strong> (more of the same): <em>Equally, Beyond, Also</em></li>
+        <li><strong>Cause</strong> (this caused that): <em>By, Because, So</em></li>
+        <li><strong>Time</strong> (when something happened): <em>At the same time, Finally</em></li>
+        <li><strong>What-if</strong> (imagine if not): <em>Without, Had not</em></li>
+      </ul>
+    </div>
+    <div class="why-it-matters">
+      <strong>Why it matters:</strong> Without these little words, your sentences feel like a list. With them, your essay <em>flows</em> and your argument is easy to follow.
+    </div>
+  </div>
+
+  <div class="prompts">
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">1</span>The writer wants to say: “one cause was personal, BUT something deeper caused the revolt.” <strong>What 5-letter word starts sentence [2]?</strong></div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">While</span> (Contrast)</div>
+        <div class="why"><strong>Why it works:</strong> ‘While’ tells the reader: “yes, one thing is true — but something more important is coming.” It's a perfect way to <em>concede</em> a small point before pushing your main argument.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">2</span>The writer wants to say “Prasutagus tried to be diplomatic, but Rome ignored him.” <strong>What word starts sentence [6]?</strong></div>
+      <div class="hint">Hint: It means “even though”.</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">Despite</span> (Contrast)</div>
+        <div class="why"><strong>Why it works:</strong> ‘Despite’ sets up a contrast. It admits one thing is true (Prasutagus's diplomacy) before showing the opposite happened (Rome refused).</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">3</span>The writer starts Body 2 (economic causes) by tying it back to the thesis (Roman misgovernance). <strong>What 2-word phrase starts sentence [9]?</strong></div>
+      <div class="hint">Hint: Two words. The first word sounds like “the same amount”.</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">Equally rooted</span> (Adding)</div>
+        <div class="why"><strong>Why it works:</strong> ‘Equally rooted’ tells the reader: “this economic cause has the SAME deep roots as the political cause I just discussed.” It links Body 2 to Body 1 AND to the thesis.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">4</span>In Body 3 (cultural causes), the writer wants to widen the focus from just the Iceni to other tribes. <strong>What 3-word phrase starts sentence [15]?</strong></div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">Beyond the Iceni</span> (Adding / Spatial)</div>
+        <div class="why"><strong>Why it works:</strong> ‘Beyond the Iceni’ is a clever connective — it tells the reader, “we've talked about the Iceni already, now we're going wider to other tribes.” It opens up the scope of the argument.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">5</span>Body 4 (personal causes) is the climax — the trigger that set the revolt off. <strong>What 3-word phrase starts sentence [21]?</strong></div>
+      <div class="hint">Hint: Starts with “What”.</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">What finally converted</span> (Time / Sequence)</div>
+        <div class="why"><strong>Why it works:</strong> ‘What finally converted’ tells the reader: “after all this build-up, here's the moment that turned grievance into action.” It signals the climax of the essay.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">6</span>In sentence [29], the writer asks the reader to imagine: “what if the structural injustice hadn't happened?” <strong>What word starts the sentence?</strong></div>
+      <div class="hint">Hint: 7 letters. Means “if not for”.</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">Without</span> (What-if / Counterfactual)</div>
+        <div class="why"><strong>Why it works:</strong> ‘Without’ is a powerful analytical word. It lets you argue by imagining the cause didn't exist: “if X didn't happen, then Y wouldn't have happened either.” That's how historians prove causation.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="activity-controls">
+    <button class="show-all">Show all 6 answers</button>
+    <button class="hide-all">Hide all 6 answers</button>
+  </div>
+</section>
+
+<!-- ============== ACTIVITY C — Nominalisation ============== -->
+<section class="activity" id="activity-c" data-feat="nm">
+  <div class="activity-header">
+    <div class="activity-badge">C</div>
+    <div>
+      <h2>Nominalisation</h2>
+      <div class="subtitle">Turning action words into thing words</div>
+    </div>
+  </div>
+
+  <div class="explainer">
+    <h3><span class="swatch" style="background:var(--feat-nm)"></span>What is nominalisation?</h3>
+    <p class="what-it-is"><strong>Nominalisation</strong> is when you turn a VERB (an action word) into a NOUN (a thing word). It sounds tricky but you do it all the time!</p>
+    <div class="examples">
+      <div class="examples-title">Examples:</div>
+      <ul>
+        <li><em>humiliate</em> (verb) → <strong>humiliation</strong> (noun)</li>
+        <li><em>annex</em> (verb) → <strong>annexation</strong> (noun)</li>
+        <li><em>exploit</em> (verb) → <strong>exploitation</strong> (noun)</li>
+        <li><em>cruel</em> (adjective) → <strong>cruelty</strong> (noun)</li>
+      </ul>
+    </div>
+    <div class="tip">
+      <strong>How to spot one:</strong> Look at the word ending. Most nominalisations end in: <strong>-tion · -sion · -ment · -ity · -ance · -ence</strong>.
+    </div>
+    <div class="why-it-matters">
+      <strong>Why writers do this:</strong> It makes writing more formal. Compare these:
+      <ul style="margin: 0.3rem 0 0; padding-left: 1.2rem;">
+        <li>“The Romans humiliated her” (everyday talk)</li>
+        <li>“the humiliation of Boudica” (academic essay)</li>
+      </ul>
+      The second one shifts focus from <em>people doing things</em> to <em>the IDEA of the thing</em>. That's the academic voice.
+    </div>
+  </div>
+
+  <div class="prompts">
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">1</span>In <strong>sentence [2]</strong>, find the noun that comes from the verb <em>humiliate</em>.</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">humiliation</span></div>
+        <div class="why"><strong>Why:</strong> The verb <em>humiliate</em> + the ending <em>-tion</em> = the noun <em>humiliation</em>. It now refers to the EVENT of being humiliated, not the action.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">2</span>In <strong>sentence [2]</strong>, find the noun that means “the act of taking over (a kingdom)”. (It comes from a verb that starts with “annex”.)</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">annexation</span></div>
+        <div class="why"><strong>Why:</strong> <em>Annex</em> (verb — to absorb a territory) + <em>-ation</em> = <em>annexation</em>. This is a key concept word for Roman expansion.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">3</span>In <strong>sentence [2]</strong>, find a word ending in <em>-tion</em> that means “the act of using someone unfairly”.</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">exploitation</span></div>
+        <div class="why"><strong>Why:</strong> <em>Exploit</em> (verb — to use unfairly) + <em>-ation</em> = <em>exploitation</em>. The noun packs the whole idea into one word.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">4</span>In <strong>sentence [19]</strong>, find the noun that comes from the verb <em>destroy</em>.</div>
+      <div class="hint">Hint: Ends in <em>-tion</em>.</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">destruction</span></div>
+        <div class="why"><strong>Why:</strong> <em>Destroy</em> (verb) → <em>destruction</em> (noun). Notice the spelling changes a little — that's normal for nominalisation.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">5</span>In <strong>sentence [25]</strong>, find the noun that comes from the verb <em>rebel</em>.</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">rebellion</span></div>
+        <div class="why"><strong>Why:</strong> <em>Rebel</em> (verb — to fight against authority) → <em>rebellion</em> (noun — the act/event of rebelling). Ends in <em>-ion</em>, a common ending.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="activity-controls">
+    <button class="show-all">Show all 5 answers</button>
+    <button class="hide-all">Hide all 5 answers</button>
+  </div>
+</section>
+
+<!-- ============== ACTIVITY D — Evaluative Language ============== -->
+<section class="activity" id="activity-d" data-feat="ev">
+  <div class="activity-header">
+    <div class="activity-badge">D</div>
+    <div>
+      <h2>Evaluative Language</h2>
+      <div class="subtitle">Words that show what the writer thinks</div>
+    </div>
+  </div>
+
+  <div class="explainer">
+    <h3><span class="swatch" style="background:var(--feat-ev)"></span>What is evaluative language?</h3>
+    <p class="what-it-is"><strong>Evaluative language</strong> is when the writer uses words that show what <em>they</em> think — words that judge or rank something.</p>
+    <div class="examples">
+      <div class="examples-title">Three kinds:</div>
+      <ul>
+        <li><strong>Strong adverbs:</strong> fundamentally, ultimately, deeply</li>
+        <li><strong>Ranking words:</strong> most, first, biggest, key</li>
+        <li><strong>Judgement adjectives:</strong> decisive, devastating, calculated, significant</li>
+      </ul>
+    </div>
+    <div class="why-it-matters">
+      <strong>Why it matters:</strong> If your essay question says <em>“assess”</em> or <em>“evaluate”</em>, you <strong>must</strong> use this kind of language. Without it, you're just describing facts — not making an argument. Markers want you to <em>take a position</em>.
+    </div>
+  </div>
+
+  <div class="prompts">
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">1</span>In <strong>sentence [2]</strong>, find the TWO words that show the writer believes Roman causes were the deepest reason for the revolt.</div>
+      <div class="hint">Hint: An adverb + a verb. Look near “the revolt was…”.</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">fundamentally caused</span></div>
+        <div class="why"><strong>Why:</strong> ‘Fundamentally’ means “at the very deepest level”. The writer isn't just saying the Roman actions ‘caused’ the revolt — they're saying it was THE root cause. This is stronger than just saying ‘led to’.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">2</span>In <strong>sentence [3]</strong> (the thesis), find TWO words that mean “in the end, this was what mattered most”.</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">ultimately decisive</span></div>
+        <div class="why"><strong>Why:</strong> ‘Ultimately’ = in the end / finally. ‘Decisive’ = the thing that settled it. Together, they make a strong final judgement — perfect for an ‘assess’ essay.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">3</span>In <strong>sentence [4]</strong>, find the 4-word phrase that ranks the political cause above all others.</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">first and most structural</span></div>
+        <div class="why"><strong>Why:</strong> This is a ranking phrase. ‘First’ = the most important. ‘Most structural’ = the deepest in the system. The writer is making a clear judgement about which cause matters most.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">4</span>In <strong>sentence [28]</strong> (the judgement), find the TWO-word phrase that names the most important cause.</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">most significant</span></div>
+        <div class="why"><strong>Why:</strong> ‘Most significant’ ranks this cause above all the others. It's a key phrase for delivering the final judgement in an ‘assess’ essay.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">5</span>In <strong>sentence [24]</strong>, find the TWO words that describe how severe the impact on Iceni honour was.</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">culturally devastating</span></div>
+        <div class="why"><strong>Why:</strong> ‘Devastating’ = completely destructive. ‘Culturally’ = about a society's beliefs and identity. Together, these words tell the reader the assault was not just bad — it broke something deep.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="activity-controls">
+    <button class="show-all">Show all 5 answers</button>
+    <button class="hide-all">Hide all 5 answers</button>
+  </div>
+</section>
+
+<!-- ============== ACTIVITY E — Subject-Specific Terminology ============== -->
+<section class="activity" id="activity-e" data-feat="ss">
+  <div class="activity-header">
+    <div class="activity-badge">E</div>
+    <div>
+      <h2>Subject-Specific Terminology</h2>
+      <div class="subtitle">Special words for the topic</div>
+    </div>
+  </div>
+
+  <div class="explainer">
+    <h3><span class="swatch" style="background:var(--feat-ss)"></span>What is subject-specific terminology?</h3>
+    <p class="what-it-is"><strong>Subject-specific terminology</strong> is the special vocabulary that experts use. For Ancient History, these are Roman or Celtic words you wouldn't use in everyday speech.</p>
+    <div class="examples">
+      <div class="examples-title">Some Boudica-era terms:</div>
+      <ul>
+        <li><strong>client kingdom</strong> = a friendly kingdom under Roman protection (not directly ruled)</li>
+        <li><strong>procurator</strong> = a Roman tax official</li>
+        <li><strong>imperial cult</strong> = forced worship of the Roman emperor as a god</li>
+        <li><strong>stuprum</strong> = a Latin legal word for a serious crime against a citizen</li>
+        <li><strong>Druid groves</strong> = sacred forests where Celtic priests held ceremonies</li>
+      </ul>
+    </div>
+    <div class="why-it-matters">
+      <strong>Why it matters:</strong> Using these words shows you really understand the topic. It's one of the fastest ways to lift a B-grade essay to an A-grade.
+    </div>
+  </div>
+
+  <div class="prompts">
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">1</span>In <strong>sentence [8]</strong>, find the TWO words that describe what the Iceni kingdom was before Rome took it over. (Means: friendly kingdom, kept its king, paid Rome tribute.)</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">client kingdom</span></div>
+        <div class="why"><strong>Definition:</strong> A semi-independent kingdom that kept its monarch but was subordinate to Rome. When the king died, Rome usually took over — which is exactly what triggered the revolt.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">2</span>In <strong>sentence [9]</strong>, find the Roman job title of Catus Decianus.</div>
+      <div class="hint">Hint: It has a capital letter — like a job title would.</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">Procurator</span></div>
+        <div class="why"><strong>Definition:</strong> A Roman financial official — basically a chief tax collector. Decianus held this role in Britain and his greedy actions provoked the revolt.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">3</span>In <strong>sentence [10]</strong>, find the Roman word for the currency Seneca loaned out.</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">sesterces</span></div>
+        <div class="why"><strong>Definition:</strong> The basic unit of Roman currency. Seneca's 40 million sesterces was a huge sum — enough to bankrupt British tribal elites when he called the loans in.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">4</span>In <strong>sentence [16]</strong>, find the TWO words that mean “forced worship of the Roman emperor as a god”.</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">imperial cult</span></div>
+        <div class="why"><strong>Definition:</strong> The Roman state religion — worship of the emperor as divine. Britons hated it, and the Temple of Claudius (the centre of this cult in Britain) was one of the first targets in the revolt.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">5</span>In <strong>sentence [23]</strong>, find the LATIN word Tacitus used to describe what happened to Boudica's daughters.</div>
+      <div class="hint">Hint: It's in italics (slanted text) — that shows it's a foreign word.</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> <span class="answer-text">stuprum</span></div>
+        <div class="why"><strong>Definition:</strong> A Latin legal term for the sexual violation of a person owed citizen-level rights. By using this word, Tacitus (a Roman) signals that Rome was legally and morally in the wrong.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="activity-controls">
+    <button class="show-all">Show all 5 answers</button>
+    <button class="hide-all">Hide all 5 answers</button>
+  </div>
+</section>
+
+<!-- ============== ACTIVITY F — Topic Sentences ============== -->
+<section class="activity" id="activity-f" data-feat="tp">
+  <div class="activity-header">
+    <div class="activity-badge">F</div>
+    <div>
+      <h2>Topic Sentences</h2>
+      <div class="subtitle">The opening sentence of every body paragraph</div>
+    </div>
+  </div>
+
+  <div class="explainer">
+    <h3><span class="swatch tp-swatch"></span>What is a topic sentence?</h3>
+    <p class="what-it-is">A <strong>topic sentence</strong> is the FIRST sentence of a body paragraph. It tells the reader what that paragraph will be about.</p>
+    <div class="examples">
+      <div class="examples-title">A good topic sentence has 2 jobs:</div>
+      <ul>
+        <li>Names the cause / idea this paragraph will discuss</li>
+        <li>Connects to the thesis (your main argument)</li>
+      </ul>
+    </div>
+    <div class="why-it-matters">
+      <strong>Why it matters:</strong> Topic sentences are signposts. They help the reader follow your argument without getting lost. If a marker can read just your topic sentences and follow your essay, you've nailed structure.
+    </div>
+  </div>
+
+  <div class="prompts">
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">1</span><strong>What is the topic sentence of Body 1 (Political)?</strong> Which sentence number is it?</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> Sentence <span class="answer-text">[4]</span></div>
+        <div class="answer-line" style="margin-top:0.4rem">“<em>The first and most structural cause of the revolt was Rome's annexation of the Iceni kingdom and its disregard for the will of King Prasutagus.</em>”</div>
+        <div class="why"><strong>Why this works:</strong> It NAMES the cause (annexation), RANKS it (‘first and most structural’ — evaluative language), and KICKS OFF the political argument. Perfect topic sentence.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">2</span><strong>What is the topic sentence of Body 2 (Economic)?</strong> Which sentence number is it?</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> Sentence <span class="answer-text">[9]</span></div>
+        <div class="answer-line" style="margin-top:0.4rem">“<em>Equally rooted in Roman misgovernance were the economic causes of the revolt — particularly the financial exploitation carried out by Procurator Catus Decianus and the philosopher Seneca.</em>”</div>
+        <div class="why"><strong>Why this works:</strong> ‘Equally rooted in Roman misgovernance’ ties this paragraph BACK to the thesis. It names the cause (economic), keeps the argument coherent, and introduces the key people (Decianus and Seneca).</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">3</span><strong>What is the topic sentence of Body 3 (Cultural / Religious)?</strong> Which sentence number is it?</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> Sentence <span class="answer-text">[15]</span></div>
+        <div class="answer-line" style="margin-top:0.4rem">“<em>Beyond the Iceni, the revolt drew its broader power from cultural and religious causes — most notably the Trinovantes' grievances over the Temple of Claudius and Roman land seizures at Camulodunum.</em>”</div>
+        <div class="why"><strong>Why this works:</strong> ‘Beyond the Iceni’ widens the focus to a new tribe (the Trinovantes). Names the cause (cultural / religious). ‘Most notably’ is evaluative language — it tells the reader what's most important here.</div>
+      </div>
+    </div>
+
+    <div class="prompt">
+      <div class="question"><span class="prompt-number">4</span><strong>What is the topic sentence of Body 4 (Personal)?</strong> Which sentence number is it?</div>
+      <button class="reveal-btn">Show answer</button>
+      <div class="answer">
+        <div class="answer-line"><strong>Answer:</strong> Sentence <span class="answer-text">[21]</span></div>
+        <div class="answer-line" style="margin-top:0.4rem">“<em>What finally converted these long-building grievances into open revolt was a single personal trigger — the brutal humiliation of Boudica and her daughters.</em>”</div>
+        <div class="why"><strong>Why this works:</strong> ‘What finally converted’ signals the climax — this is the moment everything boiled over. ‘Brutal humiliation’ uses evaluative language. Names the cause (personal trigger).</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="activity-controls">
+    <button class="show-all">Show all 4 answers</button>
+    <button class="hide-all">Hide all 4 answers</button>
+  </div>
+</section>
+
+<div class="completion-card">
+  <h2>You've made it through all six activities!</h2>
+  <p>You can now spot reporting verbs, cohesive devices, nominalisations, evaluative language, subject-specific terms, and topic sentences in an analytical essay.</p>
+  <p style="margin-top:0.6rem;font-size:0.9rem;color:var(--grey-text)"><strong>Next step:</strong> When you write your next essay, deliberately use one of each. Mark them in the margin so you can check yourself.</p>
+  <div class="next-buttons">
+    <a href="causes-activity.html">← Back to Card Sort Activity</a>
+    <a href="index.html">Go to Boudica unit home</a>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  Boudica — Year 11 Ancient History · Language Features Practice
+  · <a href="#" onclick="window.print(); return false;">Print this page</a>
+</footer>
+
+<script>
+// ============================================================
+// REVEAL ANSWER TOGGLE
+// ============================================================
+document.querySelectorAll('.reveal-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const prompt = btn.closest('.prompt');
+    const isRevealed = prompt.classList.toggle('revealed');
+    btn.textContent = isRevealed ? 'Hide answer' : 'Show answer';
+  });
+});
+
+// ============================================================
+// PER-ACTIVITY SHOW ALL / HIDE ALL
+// ============================================================
+document.querySelectorAll('.activity-controls .show-all').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const activity = btn.closest('.activity');
+    activity.querySelectorAll('.prompt').forEach(p => {
+      p.classList.add('revealed');
+      p.querySelector('.reveal-btn').textContent = 'Hide answer';
+    });
+  });
+});
+document.querySelectorAll('.activity-controls .hide-all').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const activity = btn.closest('.activity');
+    activity.querySelectorAll('.prompt').forEach(p => {
+      p.classList.remove('revealed');
+      p.querySelector('.reveal-btn').textContent = 'Show answer';
+    });
+  });
+});
+
+// ============================================================
+// GLOBAL SHOW ALL / HIDE ALL
+// ============================================================
+document.getElementById('show-all-global').addEventListener('click', () => {
+  document.querySelectorAll('.prompt').forEach(p => {
+    p.classList.add('revealed');
+    p.querySelector('.reveal-btn').textContent = 'Hide answer';
+  });
+});
+document.getElementById('hide-all-global').addEventListener('click', () => {
+  document.querySelectorAll('.prompt').forEach(p => {
+    p.classList.remove('revealed');
+    p.querySelector('.reveal-btn').textContent = 'Show answer';
+  });
+});
+</script>
+</body>
+</html>
